@@ -23,7 +23,7 @@ python check_setup.py
 Dette vil verifisere at alt er korrekt installert.
 
 ####  Start med Uke 1
-Naviger til `uke01-introduksjon/` og åpne `README.md` for ukens oversikt.
+Naviger til `uke01-introduksjon/` og åpne [`README.md`](uke01-introduksjon/README.md) for ukens oversikt.
 
 
 ### For lokal utvikling - Anaconda (anbefalt for Mac/PC)
