@@ -1,15 +1,22 @@
 {
-  "name": "AI og Helse EVU",
-  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+  "name": "AI og Helse - UiB",
+  "image": "mcr.microsoft.com/devcontainers/miniconda:0-3",
   "features": {
-    "ghcr.io/devcontainers/features/python:1": {},
-    "ghcr.io/devcontainers/features/node:1": {}
+    "ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/devcontainers/features/git:1": {}
   },
   "customizations": {
     "vscode": {
       "settings": {
-        "python.defaultInterpreterPath": "/usr/local/bin/python",
-        "jupyter.widgetScriptSources": ["jsdelivr.com", "unpkg.com"],
+        "python.defaultInterpreterPath": "/opt/conda/envs/ai-helse/bin/python",
+        "python.terminal.activateEnvironment": true,
+        "python.terminal.activateEnvInCurrentTerminal": true,
+        "jupyter.kernels.filter": [
+          {
+            "path": "/opt/conda/envs/ai-helse/bin/python",
+            "displayName": "Python 3.12 (ai-helse)"
+          }
+        ],
         "terminal.integrated.defaultProfile.linux": "bash"
       },
       "extensions": [
@@ -20,18 +27,36 @@
         "ms-toolsai.jupyter-renderers",
         "github.copilot",
         "github.copilot-chat",
-        "ms-vscode.live-server",
-        "bierner.markdown-mermaid",
-        "davidanson.vscode-markdownlint"
+        "ms-vscode.live-server"
       ]
     }
   },
-  "postCreateCommand": "bash .devcontainer/postCreateCommand.sh",
+  "postCreateCommand": "bash .devcontainer/setup.sh",
+  "remoteUser": "vscode",
+  "containerEnv": {
+    "CONDA_DEFAULT_ENV": "ai-helse"
+  },
   "forwardPorts": [8888, 8501, 8000],
   "portsAttributes": {
-    "8888": { "label": "Jupyter", "onAutoForward": "notify" },
-    "8501": { "label": "Streamlit", "onAutoForward": "notify" },
-    "8000": { "label": "FastAPI", "onAutoForward": "notify" }
+    "8888": {
+      "label": "Jupyter Lab",
+      "onAutoForward": "notify"
+    },
+    "8501": {
+      "label": "Streamlit",
+      "onAutoForward": "notify"
+    },
+    "8000": {
+      "label": "FastAPI",
+      "onAutoForward": "notify"
+    }
   },
-  "remoteUser": "vscode"
+  "secrets": {
+    "OPENAI_API_KEY": {
+      "description": "OpenAI API key"
+    },
+    "ANTHROPIC_API_KEY": {
+      "description": "Anthropic API key"
+    }
+  }
 }
