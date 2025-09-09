@@ -11,7 +11,7 @@ echo "📂 Oppretter nye ukemapper med riktige navn..."
 declare -a uker=(
     "01:introduksjon"
     "02:klassisk-ml"
-    "03:dyp-laering"
+    "03:dyplæring"
     "04:generativ-ai"
     "05:multimodal-ai"
     "06:klinisk-praksis"

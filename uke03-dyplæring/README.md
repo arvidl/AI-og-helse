@@ -1,4 +1,4 @@
-# Uke 03: dyp laering
+# Uke 03: dyplæring
 
 ## Læringsmål
 
