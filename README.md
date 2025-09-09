@@ -113,7 +113,7 @@ AI-og-helse/
 
 ## 💻 Teknologi
 
-- **Python 3.11+**
+- **Python 3.12+**
 - **Jupyter Notebooks** for interaktiv læring
 - **GitHub Codespaces** for cloud-basert utvikling
 - **AI-verktøy:** OpenAI, Anthropic, Autogen, LangChain
