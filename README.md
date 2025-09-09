@@ -129,7 +129,7 @@ AI-og-helse/
 - **GitHub Issues:** [Rapporter problemer](https://github.com/arvidl/AI-og-helse/issues)
 - **Diskusjoner:** [Kursforum](https://github.com/arvidl/AI-og-helse/discussions)
 - **E-post:** Kursansvarlig
-  <--!
+  <!--
   arvid.lundervold@uib.no
   -->
 
@@ -162,6 +162,6 @@ Dette kursmaterialet er utviklet ved Universitetet i Bergen og er lisensiert und
 **Lykke til med kurset!** 🎓
 
 For spørsmål, kontakt: Kursansvarlig
-<--!
+<!--
 arvid.lundervold@uib.no
 -->
