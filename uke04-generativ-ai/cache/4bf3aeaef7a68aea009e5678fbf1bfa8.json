@@ -1,0 +1,8 @@
+{
+  "prompt": "\nSom erfaren allmennlege, gi en kort vurdering av denne pasienten:\n\nPasient: 65-årig mann med diabetes type 2\nSymptomer: Tretthet, økt tørste, hyppig vannlating siste 2 uker\nBlodprøver: HbA1c 9.2%, fastende glukose 15.2 mmol/L\n\nGi anbefaling for behandlingsopptrapping.\n",
+  "model": "gpt",
+  "temperature": 0.7,
+  "response": "Denne pasienten viser tegn på dårlig kontrollert diabetes type 2 med høye blodsukkerverdier og symptomer som tretthet, økt tørste og hyppig vannlating. Jeg vil anbefale å trappe opp behandlingen ved å justere medikamentdosen, eventuelt legge til et annet medikament for bedre kontroll av blodsukkernivået. Det kan også være viktig å fokusere på kosthold og fysisk aktivitet for å bedre blodsukkerkontrollen. Pasienten bør følges opp regelmessig for å justere behandlingen etter behov.",
+  "timestamp": "2025-09-10T01:31:11.554933",
+  "cache_key": "4bf3aeaef7a68aea009e5678fbf1bfa8"
+}

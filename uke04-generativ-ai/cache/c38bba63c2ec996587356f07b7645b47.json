@@ -1,0 +1,8 @@
+{
+  "prompt": "Forklar diabetes type 2 på en enkel måte til en pasient",
+  "model": "claude",
+  "temperature": 0.5,
+  "response": "Her er en enkel forklaring av diabetes type 2 som du kan gi til en pasient:\n\n\"Diabetes type 2 er en tilstand der kroppen din har problemer med å kontrollere blodsukkernivået ditt. \n\nNormalt bruker kroppen et hormon som heter insulin for å hjelpe cellene dine med å ta opp sukker fra blodet og bruke det som energi. Ved diabetes type 2 har kroppen din to hovedproblemer:\n\n1. Den produserer ikke nok insulin.\n2. Cellene dine reagerer ikke så godt på insulinet som de burde (dette kalles insulinresistens).\n\nSom et resultat av dette, forblir for mye sukker i blodet ditt i stedet for å gå inn i cellene dine der det trengs.\n\nOver tid kan høyt blodsukker føre til alvorlige helseproblemer, som hjertesykdom, synsproblemer og nerveskader.\n\nGode nyheter er at diabetes type 2 ofte kan kontrolleres gjennom livsstilsendringer som sunn kost, regelmessig mosjon og vektkontroll. I noen tilfeller kan medisiner også være nødvendig.\n\nDet er viktig å samarbeide med helsepersonell for å holde blodsukkeret ditt under kontroll og forebygge komplikasjoner.\"\n\nDenne forklaringen er enkel, direkte og fokuserer på de viktigste punktene uten å bruke for mye medisinsk fagspråk.",
+  "timestamp": "2025-09-10T01:31:55.631670",
+  "cache_key": "c38bba63c2ec996587356f07b7645b47"
+}

@@ -1,0 +1,8 @@
+{
+  "prompt": "Hva er normal blodtrykk for en 50-åring?",
+  "model": "gpt",
+  "temperature": 0,
+  "response": "Normalt blodtrykk for en 50-åring er vanligvis rundt 120/80 mmHg. Det anbefales imidlertjson at blodtrykket ikke bør være høyere enn 140/90 mmHg for personer i denne aldersgruppen. Det er imidlertid viktig å merke seg at blodtrykket kan variere fra person til person, og det er alltid best å konsultere en lege for å få en nøyaktig vurdering av ens individuelle helse.",
+  "timestamp": "2025-09-10T01:32:52.493233",
+  "cache_key": "7f493b50228e66071e3240d7bcc9d5fa"
+}

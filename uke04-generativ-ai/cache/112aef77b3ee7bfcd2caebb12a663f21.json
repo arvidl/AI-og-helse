@@ -1,0 +1,8 @@
+{
+  "prompt": "Forklar diabetes type 2 på en enkel måte til en pasient",
+  "model": "gpt",
+  "temperature": 0.5,
+  "response": "Diabetes type 2 er en tilstand der kroppen din ikke klarer å bruke insulin riktig. Insulin er et hormon som hjelper kroppen din med å regulere blodsukkeret. Når du har diabetes type 2, kan blodsukkeret ditt bli for høyt fordi kroppen din ikke produserer nok insulin eller fordi cellene dine ikke reagerer godt på insulinet. Dette kan føre til helseproblemer hvis det ikke blir behandlet, som tretthet, tørste og hyppig vannlating. Det er viktig å følge legens råd om kosthold, mosjon og medisiner for å holde blodsukkeret under kontroll.",
+  "timestamp": "2025-09-10T01:31:49.564975",
+  "cache_key": "112aef77b3ee7bfcd2caebb12a663f21"
+}

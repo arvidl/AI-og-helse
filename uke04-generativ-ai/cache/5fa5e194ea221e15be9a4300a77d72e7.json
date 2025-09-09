@@ -1,0 +1,8 @@
+{
+  "prompt": "List opp 3 hovedsymptomer på diabetes type 2",
+  "model": "gpt",
+  "temperature": 0,
+  "response": "1. Hyppig vannlating: Personer med diabetes type 2 kan oppleve økt behov for å urinere, spesielt om natten.\n\n2. Tørste: Økt tørste kan være et annet vanlig symptom på diabetes type 2, da kroppen prøver å kvitte seg med overflødig sukker gjennom urinen.\n\n3. Tretthet og svakhet: Personer med diabetes type 2 kan oppleve generell tretthet og svakhet på grunn av kroppens manglende evne til å bruke sukker som energikilde effektivt.",
+  "timestamp": "2025-09-10T01:32:05.053129",
+  "cache_key": "5fa5e194ea221e15be9a4300a77d72e7"
+}
