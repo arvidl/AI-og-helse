@@ -129,7 +129,9 @@ AI-og-helse/
 - **GitHub Issues:** [Rapporter problemer](https://github.com/arvidl/AI-og-helse/issues)
 - **Diskusjoner:** [Kursforum](https://github.com/arvidl/AI-og-helse/discussions)
 - **E-post:** Kursansvarlig
-  <--! arvid.lundervold@uib.no -->
+  <--!
+  arvid.lundervold@uib.no
+  -->
 
 ## 👥 Målgruppe
 
