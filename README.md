@@ -2,6 +2,8 @@
 
 Videreutdanningskurs i kunstig intelligens for helse- og omsorgssektoren ved Universitetet i Bergen.
 
+(Utfyllende [emnebeskrivelse](https://github.com/arvidl/AI-og-helse/blob/main/Emnebeskrivelse.md))
+
 ## 🚀 Kom i gang
 
 ### For studenter - Bruk GitHub Codespaces (anbefalt)
@@ -135,7 +137,7 @@ AI-og-helse/
 
 ## 👥 Målgruppe
 
-- Helsepersonell (leger, sykepleiere, -terapeuter)
+- Helsepersonell (leger, sykepleiere, radiografer, terapeuter, psykologer)
 - Ansatte i omsorgstjenesten
 - Ledere i helse og omsorg
 - IT- og digitaliseringsansvarlige
