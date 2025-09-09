@@ -67,6 +67,7 @@ OPENAI_API_KEY=your-openai-key
 ANTHROPIC_API_KEY=your-anthropic-key
 ```
 
+```bash
 AI-og-helse/
 ├── .devcontainer/          # GitHub Codespaces konfigurasjon
 ├── uke01-introduksjon/     # Introduksjon til AI
@@ -82,6 +83,7 @@ AI-og-helse/
 ├── prosjekt/               # Prosjektoppgave maler
 ├── utils/                  # Hjelpefunksjoner
 └── data/                   # Eksempeldata
+```
 
 
 ------
