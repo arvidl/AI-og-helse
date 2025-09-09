@@ -1,9 +1,9 @@
 # API-nøkkel håndtering for AI og Helse kurset
 
-Her er en gjennomtenkt løsning for API-håndtering som balanserer sikkerhet, kostnader og brukervennlighet.
-## 🎯 **Min anbefaling for AI og Helse kurset:**
+En mulig løsning for API-håndtering som balanserer sikkerhet, kostnader og brukervennlighet.
+## 🎯 **Anbefaling for AI og Helse kurset:**
 
-### **Bruk "Alt inkludert" modellen med GitHub Organization**
+### **Bruker "Alt inkludert" modellen med GitHub Organization**
 
 **Kursavgift kr 12,500 inkluderer:**
 - ~$150 (ca kr 1,650) i API-kreditt per student
