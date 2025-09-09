@@ -1,0 +1,37 @@
+{
+  "name": "AI og Helse EVU",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+  "features": {
+    "ghcr.io/devcontainers/features/python:1": {},
+    "ghcr.io/devcontainers/features/node:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python",
+        "jupyter.widgetScriptSources": ["jsdelivr.com", "unpkg.com"],
+        "terminal.integrated.defaultProfile.linux": "bash"
+      },
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-toolsai.jupyter",
+        "ms-toolsai.jupyter-keymap",
+        "ms-toolsai.jupyter-renderers",
+        "github.copilot",
+        "github.copilot-chat",
+        "ms-vscode.live-server",
+        "bierner.markdown-mermaid",
+        "davidanson.vscode-markdownlint"
+      ]
+    }
+  },
+  "postCreateCommand": "bash .devcontainer/postCreateCommand.sh",
+  "forwardPorts": [8888, 8501, 8000],
+  "portsAttributes": {
+    "8888": { "label": "Jupyter", "onAutoForward": "notify" },
+    "8501": { "label": "Streamlit", "onAutoForward": "notify" },
+    "8000": { "label": "FastAPI", "onAutoForward": "notify" }
+  },
+  "remoteUser": "vscode"
+}
