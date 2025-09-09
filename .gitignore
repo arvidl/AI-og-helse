@@ -70,3 +70,6 @@ docs/_templates/
 tmp/
 temp/
 *.tmp
+
+# My stuff
+my_stuff/
