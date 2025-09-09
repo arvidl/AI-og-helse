@@ -59,85 +59,7 @@ python check_setup.py
 4. Alternativt: Cmd/Ctrl+Shift+P → "Python: Select Interpreter" → ai-helse
 
 
-**API-nøkler**
-Opprett en `.env fil i rotmappen:
-
-```bash
-OPENAI_API_KEY=your-openai-key
-ANTHROPIC_API_KEY=your-anthropic-key
-```
-
-```bash
-AI-og-helse/
-├── .devcontainer/          # GitHub Codespaces konfigurasjon
-├── uke01-introduksjon/     # Introduksjon til AI
-├── uke02-klassisk-ml/      # Klassisk maskinlæring
-├── uke03-dyp-laering/      # Dyp læring og nevrale nettverk
-├── uke04-generativ-ai/     # Store språkmodeller
-├── uke05-multimodal-ai/    # RAG og AI-agenter
-├── uke06-klinisk-praksis/  # AI i helsefag
-├── uke07-velferdsteknologi/# Robotikk og optimering
-├── uke08-etikk-implementering/
-├── uke09-fysisk-samling/
-├── uke10-eksamen/
-├── prosjekt/               # Prosjektoppgave maler
-├── utils/                  # Hjelpefunksjoner
-└── data/                   # Eksempeldata
-```
-
-
-------
-
-
-# Setup for AI-og-helse Repository
-
-## Filstruktur for `/Users/arvid/GitHub/AI-og-helse/`
-
-```bash
-# Kjør disse kommandoene i terminal fra /Users/arvid/GitHub/AI-og-helse/
-```
-
-## 1. README.md
-
-```markdown
-# 🏥 AI og Helse - EVU Kurs (5 ECTS)
-
-Videreutdanningskurs i kunstig intelligens for helse- og omsorgssektoren ved Universitetet i Bergen.
-
-## 🚀 Kom i gang
-
-### For studenter - Bruk GitHub Codespaces (anbefalt)
-
-1. Gå til: https://github.com/arvidl/AI-og-helse
-2. Klikk på den grønne "Code" knappen
-3. Velg "Codespaces" fanen
-4. Klikk "Create codespace on main"
-5. Vent 2-3 minutter mens miljøet settes opp automatisk
-
-### For lokal utvikling (Cursor/VS Code)
-
-```bash
-# Klon repository
-git clone https://github.com/arvidl/AI-og-helse.git
-cd AI-og-helse
-
-# Opprett virtuelt miljø
-python -m venv venv
-
-# Aktiver miljø
-# På Mac/Linux:
-source venv/bin/activate
-# På Windows:
-# venv\Scripts\activate
-
-# Installer dependencies
-pip install -r requirements.txt
-
-# Verifiser installasjon
-python check_setup.py
-```
-
-### API-nøkler (for lokal kjøring)
+**API-nøkler (for lokal kjøring)**
 
 Opprett en `.env` fil i rotmappen:
 ```env
@@ -146,6 +68,8 @@ ANTHROPIC_API_KEY=your-anthropic-key
 ```
 
 **NB:** For studenter i Codespaces er API-nøkler forhåndskonfigurert.
+
+
 
 ## 📚 Kursstruktur
 
