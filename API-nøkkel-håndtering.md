@@ -12,8 +12,8 @@ En mulig løsning for API-håndtering som balanserer sikkerhet, kostnader og bru
 
 ### **Praktisk implementering:**
 
-1. **For deg lokalt:** Fortsett bruk din `/Users/arvid/.env`
-2. **For studenter:** GitHub Organization med Codespaces
+1. **For deg lokalt:** Fortsett bruk din `~/.env`
+2. **Ellers:** GitHub Organization med Codespaces
 3. **Sentralisert API-håndtering** med usage tracking
 4. **Automatisk stopp** ved forbruksgrense
 
@@ -391,12 +391,12 @@ def check_my_usage():
 ### For deg som instruktør:
 ```bash
 # Din lokale .env (IKKE commit denne!)
-# /Users/arvid/.env
+# ~/.env
 OPENAI_API_KEY=sk-proj-xxxxx
 ANTHROPIC_API_KEY=sk-ant-xxxxx
 
 # Prosjekt .env.example (denne kan committes)
-# /Users/arvid/GitHub/AI-og-helse/.env.example
+# ~/GitHub/AI-og-helse/.env.example
 OPENAI_API_KEY=your-openai-key-here
 ANTHROPIC_API_KEY=your-anthropic-key-here
 ```
