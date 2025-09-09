@@ -33,4 +33,7 @@ Bruk [Issues](https://github.com/arvidl/AI-og-helse/issues) for å rapportere:
 
 ## 📧 Kontakt
 
-For spørsmål, kontakt: arvid.lundervold@uib.no
+For spørsmål, kontakt: Kursansvarlig
+<!--
+arvid.lundervold@uib.no
+-->
