@@ -86,7 +86,7 @@ ANTHROPIC_API_KEY=your-anthropic-key
 - Ha innsikt i etiske og regulatoriske aspekter ved AI i helse
 
 ### Ferdigheter
-- Bruke generative AI-verktøy (ChatGPT, Claude) for faglige oppgaver
+- Bruke generative AI-verktøy (ChatGPT, Claude, Gemini) for faglige oppgaver
 - Vurdere egnethet av AI-løsninger for konkrete problemstillinger
 - Identifisere muligheter for AI-støtte i egen arbeidshverdag
 - Kritisk evaluere AI-systemer og deres begrensninger
@@ -128,11 +128,12 @@ AI-og-helse/
 
 - **GitHub Issues:** [Rapporter problemer](https://github.com/arvidl/AI-og-helse/issues)
 - **Diskusjoner:** [Kursforum](https://github.com/arvidl/AI-og-helse/discussions)
-- **E-post:** arvid.lundervold@uib.no
+- **E-post:** Kursansvarlig
+  <--! arvid.lundervold@uib.no -->
 
 ## 👥 Målgruppe
 
-- Helsepersonell (leger, sykepleiere, terapeuter)
+- Helsepersonell (leger, sykepleiere, -terapeuter)
 - Ansatte i omsorgstjenesten
 - Ledere i helse og omsorg
 - IT- og digitaliseringsansvarlige
@@ -158,4 +159,7 @@ Dette kursmaterialet er utviklet ved Universitetet i Bergen og er lisensiert und
 
 **Lykke til med kurset!** 🎓
 
-For spørsmål, kontakt: arvid.lundervold@uib.no
+For spørsmål, kontakt: Kursansvarlig
+<--!
+arvid.lundervold@uib.no
+-->
