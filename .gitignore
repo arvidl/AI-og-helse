@@ -1,0 +1,72 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Environment variables
+.env
+.env.local
+*.env
+
+# API Keys
+api_keys.txt
+secrets.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.cursor/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data files (store large files elsewhere)
+data/external/
+data/raw/
+*.csv
+*.xlsx
+*.h5
+*.pkl
+*.pth
+*.ckpt
+
+# Model files
+models/
+*.bin
+*.safetensors
+
+# Logs
+*.log
+logs/
+
+# Cache
+.cache/
+*.cache
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Documentation build
+docs/_build/
+docs/_static/
+docs/_templates/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
