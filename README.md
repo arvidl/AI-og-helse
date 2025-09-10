@@ -14,9 +14,11 @@ Videreutdanningskurs i kunstig intelligens for helse- og omsorgssektoren ved Uni
 4. Klikk "Create codespace on main"
 5. Vent 2-3 minutter mens miljøet settes opp automatisk
 
-
 Når Codespace er klar, kjør:
 ```bash
+source ~/.bashrc
+conda env update -f environment-codespaces.yml
+conda activate ai-helse
 python check_setup.py
 ```
 
