@@ -2,21 +2,38 @@
 
 ## 🎯 Ukens læringsmål
 
-- Forstå ...
-- Bruke ...
-- Anvende ...
+### 🧠 Tenke gjennom begrepene *forstå*, *identifisere*, *gjenkjenne* og *vurdere* i AI-sammenheng
+- **Forstå** AI sin rolle i dagens og fremtidens helsevesen
+- **Identifisere** hvordan AI allerede påvirker ditt fagområde (medisin, sykepleie, fysioterapi, etc.)
+- **Gjenkjenne** grunnleggende AI-terminologi og konsepter i faglige diskusjoner
+- **Vurdere** potensiale og begrensninger ved AI-teknologi i helsevesenet
 
-## 📚 Innhold
+### 🛠️ Tekniske ferdigheter
+- **Bruke** Python-baserte AI-verktøy i et kontrollert miljø
+- **Installere** og **konfigurere** nødvendige programvarepakker for AI-utvikling
+- **Teste** systemkompatibilitet både lokalt og i sky-baserte løsninger
+- **Navigere** i Jupyter Notebooks og grunnleggende programmeringsmiljø
 
-1. **Teori** (2 timer)
-   - [01_transformer_arkitektur.ipynb](01_transformer_arkitektur.ipynb)
-   - [02_llm_grunnleggende.ipynb](02_llm_grunnleggende.ipynb)
+### 🏥 Praktisk anvendelse
+- **Anvende** enkle AI-teknikker på medisinske tekstdata
+- **Eksperimentere** med norske språkmodeller for helseformål
+- **Simulere** AI-assistert medisinsk beslutningsstøtte
+- **Demonstrere** hvordan AI kan forstå og sammenligne medisinsk terminologi
 
-2. **Praktisk** (4 timer)
-   - [03_prompt_engineering.ipynb](03_prompt_engineering.ipynb)
-   - [04_chatgpt_claude_api.ipynb](04_chatgpt_claude_api.ipynb)
+### 🤝 Profesjonell utvikling
+- **Bygge** trygghet i møte med AI-teknologi på arbeidsplassen
+- **Utvikle** grunnlag for å evaluere AI-løsninger i egen organisasjon
+- **Preparere** seg for videre læring i maskinlæring og AI-verktøy
+- **Etablere** teknisk fundament for resten av kurset
 
-3. **Selvstudium** (4 timer)
-   - Les: ["Attention is All You Need"](https://arxiv.org/abs/1706.03762) (første 5 sider)
-   - Se: [Visualisering av Transformers](https://www.youtube.com/watch?v=...)
-   - Øv: Prompt-oppgaver i `prompts/`
+### 🎓 Læringsutbytte
+Etter uke 1 skal du være:
+- ✅ **Trygg** på AI-terminologi i faglige sammenhenger
+- ✅ **Klar** til å utforske mer avanserte AI-konsepter
+- ✅ **Motivert** til å se hvordan AI kan forbedre ditt fagområde
+- ✅ **Utstyrt** med tekniske verktøy for videre læring
+
+----
+
+## 📚 Mer konkret: sjekk ut [01-test-meg.ipynb](01-test-meg.ipynb)
+
