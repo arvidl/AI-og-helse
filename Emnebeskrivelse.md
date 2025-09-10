@@ -46,7 +46,7 @@ Kandidaten kan:
 
 #### Uke 1: Introduksjon til kunstig intelligens
 - Hva er kunstig intelligens? Historie og utvikling
-- Forskjellen mellom AI, maskinlæring og dyp læring
+- Forskjellen mellom AI, maskinlæring og dyplæring
 - AI 1.0: Regelbaser og ekspertsystemer
 - Oppsett av GitHub Codespaces og første hands-on
 
@@ -56,8 +56,9 @@ Kandidaten kan:
 - Beslutningstrær og Random Forest
 - Praktisk: Prediktive modeller for sykdomsrisiko
 
-#### Uke 3: Dyp læring og nevrale nettverk
+#### Uke 3: Dyplæring og nevrale nettverk
 - Fra perceptron til dype nettverk
+- Nevrale nettverk i menneske og maskin
 - Convolutional Neural Networks (CNN) for bildeanalyse
 - Medisinsk bildeanalyse: Radiologi og patologi eksempler
 - Praktisk: Bildeklassifisering med ferdigtrente modeller
