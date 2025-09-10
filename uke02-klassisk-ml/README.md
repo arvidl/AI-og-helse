@@ -108,38 +108,32 @@ Etter uke 2 skal du kunne:
   - Kritisk tenkning og begrensninger
 - **Ressurs:** `ressurser/02-refleksjoner.md` (inkluderer forslag til besvarelser)
 
-#### 2. **Prompt Engineering Workshop**
-*Praktisk oppgave i AI-kommunikasjon*
-- Utforsk hvordan man kommuniserer effektivt med AI-systemer
-- Zero-shot vs. few-shot prompting for medisinske vurderinger
-- Sammenligning av ulike prompt-strategier
-- **Fil:** `oppgaver/prompt_workshop.ipynb`
 
 ### 🔬 Utforskende oppgaver
 
-#### 3. **Egen dataanalyse**
+#### 2. **Egen dataanalyse**
 - Modifiser diabetesdatasettet med egne parametre
 - Test ulike risikofaktorer og deres påvirkning på modellytelse
 - Eksperimenter med ulike evalueringsmetrikker
 
-#### 4. **Klinisk case-studie**
+#### 3. **Klinisk case-studie**
 - Velg et helseproblem fra ditt eget fagområde
 - Identifiser relevante prediktorer og utfall
 - Skissér hvordan en ML-tilnærming kunne implementeres
 
-#### 5. **Etisk refleksjon**
+#### 4. **Etisk refleksjon**
 - Analyser potensielle etiske utfordringer ved AI i ditt fagområde
 - Diskuter bias, transparens og pasientautonomi
 - Foreslå retningslinjer for ansvarlig AI-bruk
 
 ### 📊 Valgfrie verktøy-oppgaver
 
-#### 6. **Visualisering og kommunikasjon**
+#### 5. **Visualisering og kommunikasjon**
 - Lag presentasjon som forklarer ML-konsepter til kolleger
 - Utvikle intuitive visualiseringer av modellresultater
 - Øv på å oversette tekniske resultater til klinisk språk
 
-#### 7. **Utvidet modellering**
+#### 6. **Utvidet modellering**
 - Prøv andre ML-algoritmer (logistisk regresjon, SVM)
 - Implementer cross-validation for robust evaluering
 - Utforsk feature selection teknikker
