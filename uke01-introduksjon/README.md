@@ -28,7 +28,7 @@
 
 ### 🎓 Læringsutbytte
 Etter uke 1 skal du være:
-- ✅ **Trygg** på AI-terminologi i faglige sammenhenger
+- ✅ **Trygg** på AI-terminologi (som gradvis introduseres) i faglige sammenhenger
 - ✅ **Klar** til å utforske mer avanserte AI-konsepter
 - ✅ **Motivert** til å se hvordan AI kan forbedre ditt fagområde
 - ✅ **Utstyrt** med tekniske verktøy for videre læring
