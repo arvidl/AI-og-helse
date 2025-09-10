@@ -20,7 +20,7 @@
 3. **Selvstudium** (4 timer)
    - Les: ["Attention is All You Need"](https://arxiv.org/abs/1706.03762) (første 5 sider)
    - Se: [Visualisering av Transformers](https://www.youtube.com/watch?v=...)
-   - Øv: Prompt-oppgaver i `prompts/`
+   - Øv: Prompt-oppgaver i [`prompts/`](./prompts)
 
 ## 🏃 Hurtigstart
 
