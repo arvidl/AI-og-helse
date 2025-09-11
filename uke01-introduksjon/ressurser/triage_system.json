@@ -1,0 +1,24 @@
+{
+  "type": "Regelbasert Triagesystem",
+  "versjon": "1.0",
+  "opprettet": "2025-09-11T09:11:17.208774",
+  "statistikk": {
+    "totalt_triagert": 5,
+    "hastegrad_fordeling": {
+      "ORANSJE": 1,
+      "GRØNN": 1,
+      "RØD": 2,
+      "GUL": 1
+    },
+    "gjennomsnittlig_ventetid": {},
+    "symptom_frekvens": {}
+  },
+  "antall_regler": 6,
+  "hastegrader": [
+    "RØD",
+    "ORANSJE",
+    "GUL",
+    "GRØNN",
+    "BLÅ"
+  ]
+}
