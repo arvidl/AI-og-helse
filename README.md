@@ -27,7 +27,7 @@ Dette vil verifisere at alt er korrekt installert.
 
 1. For hver notebook, trykk på [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke01-introduksjon/00-velkommen.ipynb) 
 2. Notebooken vises da i din nettleser
-3. Aksepter at den ikke er et Google-product
+3. Aksepter at den ikke er autorisert av Google (Run anyway)
 4. Lær deg bruk av Python og [Jupyter Notebooks](https://colab.research.google.com/github/jckantor/CBE30338/blob/master/docs/01.01-Getting-Started-with-Python-and-Jupyter-Notebooks.ipynb) i Google Colab ([FAQ](https://research.google.com/colaboratory/faq.html))
 
 ####  Start med Uke 1
