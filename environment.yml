@@ -25,6 +25,9 @@ dependencies:
   - torchvision>=0.16.0
   - tensorflow>=2.15.0 # or tensorflow-macos for M1/M2
 
+  # Imaging
+  - nibabel>=5.0.0
+
   # Jupyter ecosystem
   - jupyter>=1.0.0
   - jupyterlab>=4.0.0
