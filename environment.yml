@@ -24,6 +24,8 @@ dependencies:
   - pytorch>=2.1.0
   - torchvision>=0.16.0
   - tensorflow>=2.15.0 # or tensorflow-macos for M1/M2
+  - torchviz>=0.0.2
+  - torchsummary>=1.5.1
 
   # Imaging
   - nibabel>=5.0.0
