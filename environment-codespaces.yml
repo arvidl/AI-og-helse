@@ -23,14 +23,12 @@ dependencies:
   # Deep Learning (Linux-compatible versions)
   - pytorch>=2.1.0
   - torchvision>=0.16.0
-  - tensorflow>=2.15.0  # Standard tensorflow for Linux
-  - torchviz>=0.0.2
-  - torchsummary>=1.5.1
+  - tensorflow>=2.15.0 # Standard tensorflow for Linux
 
   # Imaging
   - nibabel>=5.0.0
   - nilearn>=0.10.0
-  
+
   # Jupyter ecosystem
   - jupyter>=1.0.0
   - jupyterlab>=4.0.0
@@ -76,3 +74,6 @@ dependencies:
       # Additional utilities
       - pydantic>=2.0.0
       - requests>=2.31.0
+      - torchviz>=0.0.2
+      - torchsummary>=1.5.1
+  - graphviz>=0.20.1  # Systempakke
