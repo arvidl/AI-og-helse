@@ -27,6 +27,7 @@ dependencies:
 
   # Imaging
   - nibabel>=5.0.0
+  - nilearn>=0.10.0
 
   # Jupyter ecosystem
   - jupyter>=1.0.0

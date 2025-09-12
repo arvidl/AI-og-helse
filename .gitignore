@@ -34,6 +34,7 @@ secrets.json
 Thumbs.db
 
 # Data files (store large files elsewhere)
+data/oasis_mri_sample/
 data/external/
 data/raw/
 *.csv
