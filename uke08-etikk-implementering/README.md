@@ -6,9 +6,9 @@ Velkommen til kanskje den viktigste uken i kurset. Her skal vi utforske hvordan 
 
 ## 🎯 Hvorfor er dette viktig?
 
-**Tenk deg dette scenariet:** Du har vært med å bygge det "perfekte" AI-systemet. Det er nøyaktig, effektivt og løser et reelt problem. Men så oppdager du at det diskriminerer mot kvinner, bryter GDPR, eller får en bot på millioner kroner fordi du ikke fulgte MDR-regelverket. 
+**Tenk deg dette scenariet:** Du har vært med å bygge det "perfekte" AI-systemet. Det er nøyaktig, effektivt og løser et reelt problem. Men så oppdager du/dere at det diskriminerer mot kvinner, bryter GDPR, eller får en bot på hundre-tusener av kroner fordi det ikke fulgte MDR-regelverket. 
 
-Dette er realiteten mange organisasjoner står overfor i dag. Denne uken lærer deg å kunne unngå disse fallgruvene.
+Dette er realiteten mange organisasjoner kan stå overfor i dag. Denne uken lærer deg å kunne unngå disse fallgruvene.
 
 ## 🚦 Læringsmål - Hva du kan etter denne uken
 
