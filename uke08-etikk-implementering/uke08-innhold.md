@@ -1,4 +1,4 @@
-Her er forslag til innhold for uke 8 om etikk og implementering:Dette innholdsopplegget for uke 8 kombinerer teoretisk kunnskap med praktiske verktøy og øvelser. Strukturen dekker de viktigste etiske og regulatoriske aspektene ved AI-implementering:
+# Forslag til innhold for uke 8 om etikk og implementering:
 
 **Hovedtemaer:**
 - **GDPR og personvern** - Juridiske krav og praktisk implementering
@@ -17,7 +17,6 @@ Her er forslag til innhold for uke 8 om etikk og implementering:Dette innholdsop
 - Kodeeksemplene demonstrerer konkrete implementeringer
 - Oppgaven simulerer en reell situasjon fra helsesektoren
 
-Ønsker du at jeg utdyper noen av delene eller lager mer detaljert innhold for spesifikke notebooks?
 
 # Uke 8 - Etikk og Implementering av AI-systemer
 
