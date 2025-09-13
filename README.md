@@ -27,18 +27,18 @@
 
 ```
 AI-og-helse/
-├── .devcontainer/          # GitHub Codespaces konfigurasjon
-├── uke01-introduksjon/     # Introduksjon til AI
-├── uke02-klassisk-ml/      # Klassisk maskinlæring
-├── uke03-dyp-laering/      # Dyp læring og nevrale nettverk
-├── uke04-generativ-ai/     # Store språkmodeller
-├── uke05-multimodal-ai/    # RAG og AI-agenter
-├── uke06-klinisk-praksis/  # AI i helsefag
-├── uke07-velferdsteknologi/# Robotikk og optimering
-├── uke08-etikk-implementering/
-├── prosjekt/               # Prosjektoppgave maler
-├── utils/                  # Hjelpefunksjoner
-└── data/                   # Eksempeldata
+├── .devcontainer/               # GitHub Codespaces konfigurasjon
+├── uke01-introduksjon/          # Introduksjon til AI
+├── uke02-klassisk-ml/           # Klassisk maskinlæring
+├── uke03-dyp-laering/           # Dyp læring og nevrale nettverk
+├── uke04-generativ-ai/          # Store språkmodeller
+├── uke05-multimodal-ai/         # RAG og AI-agenter
+├── uke06-klinisk-praksis/       # AI i helsefag
+├── uke07-velferdsteknologi/     # Robotikk og optimering
+├── uke08-etikk-implementering/  # Etikk, bias/fairness, GDPR, MDR, EU AI Act
+├── prosjekt/                    # Prosjektoppgave maler
+├── utils/                       # Hjelpefunksjoner
+└── data/                        # Eksempeldata
 ```
 
 ## 💻 Teknologi
