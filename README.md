@@ -23,14 +23,14 @@
 - Identifisere muligheter for AI-støtte i egen arbeidshverdag
 - Kritisk evaluere AI-systemer og deres begrensninger
 
-## 📂 Repository struktur
-
+## 📂 Repositorium struktur
+"... på svømmekurs må man oppholde seg mye i bassenget ..."
 ```
 AI-og-helse/
 ├── .devcontainer/               # GitHub Codespaces konfigurasjon
 ├── uke01-introduksjon/          # Introduksjon til AI
 ├── uke02-klassisk-ml/           # Klassisk maskinlæring
-├── uke03-dyp-laering/           # Dyp læring og nevrale nettverk
+├── uke03-dyplæring/             # Dyplæring og nevrale nettverk
 ├── uke04-generativ-ai/          # Store språkmodeller
 ├── uke05-multimodal-ai/         # RAG og AI-agenter
 ├── uke06-klinisk-praksis/       # AI i helsefag
