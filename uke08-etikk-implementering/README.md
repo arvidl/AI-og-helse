@@ -15,7 +15,7 @@ Dette er realiteten mange organisasjoner kan stå overfor i dag. Denne uken lær
 Etter å ha fullført uke 8 vil du kunne:
 
 ✅ **Navigere GDPR-lovverket** - Vite nøyaktig hvilke personvernkrav som gjelder for AI  
-✅ **Jakte på bias** - Identifisere og eliminere skjult diskriminering i algorithmer  
+✅ **Jakte på bias** - Identifisere og eliminere skjult diskriminering i algoritmer  
 ✅ **Mestre regulatorisk compliance** - Forstå CE-merking og MDR for AI-produkter  
 ✅ **Lede endring** - Implementere AI-systemer uten å skape uhensiktsmesig uro i organisasjonen  
 
@@ -31,7 +31,7 @@ Etter å ha fullført uke 8 vil du kunne:
 - Forstå "rett til forklaring" vs. komplekse ML-modeller
 - **Hands-on:** Bygg en GDPR-compliance checker
 
-**💡 Takeaway:** Du vil kunne møte en personvernaudit med trygghet og være godt forberedt
+**💡 Takeaway:** Du vil kunne møte et personvernombud med trygghet og være godt forberedt
 
 ### ⚖️ Dag 3: Bias og Rettferdighet
 **Notebook:** `02_bias_rettferdighet.ipynb`
@@ -77,8 +77,8 @@ Etter å ha fullført uke 8 vil du kunne:
 ```python
 # Eksempel på hva du lærer å bruke
 from aif360 import metrics  # For fairness-analyse
-import pandas as pd        # For databehandling
-from faker import Faker    # For anonymisering
+import pandas as pd         # For databehandling
+from faker import Faker     # For anonymisering
 ```
 
 ## 🏁 Hovedoppgave: Etisk AI-analyse
@@ -124,6 +124,6 @@ Du vil ikke bare være teknisk AI-kyndig, men også kunne være en **ansvarlig A
 
 ---
 
-*Husk å erkjenne – hver linje kode som skrives kan påvirke liv og helse ...*
+*Husk å erkjenne – hver kode-linje som skrives kan påvirke liv og helse ...*
 
 **Start din kunnskap- og holdnings-reise 🌍 i etisk AI nå** ➡️ Åpne `01_gdpr_personvern.ipynb`
