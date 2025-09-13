@@ -24,7 +24,7 @@ Etter å ha fullført uke 8 vil du kunne:
 ### 🔒 Dag 1-2: GDPR og Personvern
 **Notebook:** `01_gdpr_personvern.ipynb`
 
-*"Dine data, dine regler – men hvordan følger vi dem?"*
+*"Dine data, felles regelverk – men hvordan følger vi dem?"*
 
 - Lær hvordan GDPR påvirker AI-utvikling
 - Få praktiske verktøy for anonymisering og pseudonymisering
@@ -39,8 +39,8 @@ Etter å ha fullført uke 8 vil du kunne:
 *"Når algoritmer diskriminerer – og hvordan vi stopper dem"*
 
 - Oppdag skjulte bias i "objektive" datasett
-- Mestre fairness-metrics som demografisk paritet
-- Lær pre-, in- og post-processing teknikker for bias-reduksjon
+- Mestre fairness-metrikker som demografisk paritet
+- Lær pre-, in- og post-prosesserings teknikker for bias-reduksjon
 - **Case study:** Analysér bias i ansettelsesalgoritmer
 
 **🎯 Utfordring:** Kan du bygge en algoritme som er både nøyaktig OG rettferdig?
@@ -48,14 +48,14 @@ Etter å ha fullført uke 8 vil du kunne:
 ### 📋 Dag 4: CE-merking og MDR Regulering
 **Notebook:** `03_ce_mdr_regulering.ipynb`
 
-*"Fra kode til marked – uten juridiske problemer"*
+*"Fra kode til marked – uten juridiske heftelser"*
 
 - Forstå når AI trenger CE-merking
 - Navigér MDR-regelverket for medisinsk AI
 - Møt EU AI Act – Europas nye AI-lov
 - **Workshop:** Klassifisér risiko for ulike AI-systemer
 
-**🏆 Bonus:** Du får malene og checklistene som konsulenter tar $$ for.
+**🏆 Bonus:** Du får malene og sjekk-listene som konsulenter tar $$ for.
 
 ### 🔄 Dag 5: Endringsledelse og Implementering
 **Notebook:** `04_endringsledelse.ipynb`
@@ -75,7 +75,7 @@ Etter å ha fullført uke 8 vil du kunne:
 
 ### 💻 Kode og biblioteker
 ```python
-# Eksempel på hva du lærer å bruge
+# Eksempel på hva du lærer å bruke
 from aif360 import metrics  # For fairness-analyse
 import pandas as pd        # For databehandling
 from faker import Faker    # For anonymisering
@@ -91,9 +91,9 @@ Du får rollen som AI-etikkonsulent og skal levere:
 - Regulatorisk compliance-plan
 - Implementeringsstrategi
 
-**Dette er portfolio-materiale** som viser at du behersker hele bredden av ansvarlig AI
+**Dette er portfolio-materiale** som viser at du behersker bredden av ansvarlig AI
 
-## ⚡ Kom i gang - ditt 5-minutters startguide
+## ⚡ Kom i gang - din 5-minutters startguide
 
 1. **Klon/last ned** alle filene i denne mappen
 2. **Installer avhengigheter:**
