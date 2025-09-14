@@ -13,8 +13,9 @@
 ├── uke03-dyp-laering/
 │   ├── README.md
 │   ├── 01_nevrale_nettverk_intro.ipynb         // Hva er nevrale nettverk
-│   ├── 02_cnn_mri_analyse.ipynb               // Analyse av MRI bilder med CNN
-│   ├── 03_dyplaering_med_kliniske_data.ipynb  // Dyplæring med kliniske data
+│   ├── 02_cnn_mri_analyse.ipynb                // Analyse av MRI bilder med CNN
+│   ├── 03_medisinsk_bildeanalyse_MR.ipynb      // Medisinsk MRI bilde-klassifikasjon (OASIS: demens/ikke-demens)
+│   ├── 04_dyplæring_med_kliniske_data.ipynb    // Dyplæring med kliniske data
 │   ├── modeller/
 │   │   └── (Eventuell forhåndstrent MR-modell)
 │   ├── data/
