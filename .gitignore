@@ -35,6 +35,7 @@ Thumbs.db
 
 # Data files (store large files elsewhere)
 data/oasis_mri_sample/
+data/flowers/
 data/external/
 data/raw/
 *.csv
