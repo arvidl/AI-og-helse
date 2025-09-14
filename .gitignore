@@ -38,6 +38,8 @@ data/oasis_mri_sample/
 data/flowers/
 data/external/
 data/raw/
+uke03-dyplæring/modeller/
+
 *.csv
 *.xlsx
 *.h5
