@@ -7,7 +7,7 @@
 
 - **Del 1 (Uke 1-6):** AI Fundamentet - Fra AI 1.0 til AI 2.0
 - **Del 2 (Uke 7-8):** Praktiske anvendelser i helse og omsorg
-- **<strike>Del 3 (Uke 9-10):</strike>** <strike>Fysisk samling og eksamen</strike> (*kun aktuelt for studiepoeng-givende kurs-variant ved undervsiningsinstitusjon*) 
+
 
 ## 🎯 Læringsutbytte
 
@@ -23,7 +23,7 @@
 - Identifisere muligheter for AI-støtte i egen arbeidshverdag
 - Kritisk evaluere AI-systemer og deres begrensninger
 
-## 📂 Repositorium struktur
+## 📂 Repo-struktur
 "... på svømmekurs må man oppholde seg mye i bassenget ..."
 ```
 AI-og-helse/
@@ -45,25 +45,16 @@ AI-og-helse/
 
 - **Python 3.12+**
 - **Jupyter Notebooks** for interaktiv læring
-- **GitHub Codespaces** for cloud-basert utvikling
-- **AI-verktøy:** OpenAI, Anthropic, Autogen, LangChain
+- **GitHub Codespaces** for sky-basert utvikling
+- **Google Colabratory** for sky-basert notebook-kjøring og eksperimentering
+- **AI-verktøy:** OpenAI (gpt-), Anthropic (claude-), Scikit-learn, PyTorch, ...
 
-## 📝 <strike>Vurdering</strike> (ikke aktuelt i åpent kurs)
-<!-- 
-- **Hjemmeeksamen** (60%): 48-timers eksamen i uke 10
-- **Prosjektoppgave** (40%): Praktisk anvendelse av AI
-- **Obligatorisk:** 3 refleksjonsnotater (godkjent/ikke godkjent)
-
--->
 
 ## 🛠️ Teknisk støtte
 
 - **GitHub Issues:** [Rapporter problemer](https://github.com/arvidl/AI-og-helse/issues)
-- **Diskusjoner:** [Kursforum](https://github.com/arvidl/AI-og-helse/discussions)
-<!-- - **E-post:** Kursansvarlig
-  
-  arvid.lundervold@uib.no
-  -->
+- **Diskusjoner:** Kollegaer, Medstudenter, AI-sparringpartner(e)
+
 
 ## 📖 Læringsressurser
 
@@ -82,10 +73,10 @@ AI-og-helse/
 
 ## 📅 Praktisk informasjon
 
-- **Varighet:** 8 uker (<strike>10 uker i vårsemester</strike>)
+- **Varighet:** 8 uker 
 - **Arbeidsomfang:** 10-12 timer per uke
-- **Undervisningsspråk:** Norsk
-- <strike>**Fysisk samling:** 1 dag i uke 9 (under planlegging)</strike>
+- **Læringsspråk (i Jupyter notatbøker):** Norsk (+ engelske fagtermer, e.g. notebooks)
+
 
 ## 📄 Lisens
 
@@ -124,7 +115,7 @@ Dette vil verifisere at alt er korrekt installert.
 
 1. For hver notebook, trykk på [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke01-introduksjon/00-velkommen.ipynb) 
 2. Notebooken vises da i din nettleser
-3. Aksepter at den ikke er autorisert av Google (Run anyway)
+3. Aksepter at den ikke er autorisert av Google ("Run anyway")
 4. Lær deg bruk av Python og [Jupyter Notebooks](https://colab.research.google.com/github/jckantor/CBE30338/blob/master/docs/01.01-Getting-Started-with-Python-and-Jupyter-Notebooks.ipynb) i Google Colab ([FAQ](https://research.google.com/colaboratory/faq.html))
 
 ####  Start med Uke 1
@@ -178,14 +169,133 @@ python check_setup.py
 4. Alternativt: Cmd/Ctrl+Shift+P → "Python: Select Interpreter" → ai-helse
 
 
-**API-nøkler (for lokal kjøring)**
+## **API-nøkler (for lokal kjøring)**
 
-Opprett en `.env` fil i rotmappen:
-```env
-OPENAI_API_KEY=your-openai-key
-ANTHROPIC_API_KEY=your-anthropic-key
+
+### **NB:** Det kreves at API-nøkler blir konfigurert av kursdeltager:
+
+Dvs. hver deltaker skaffer selv, lagrer og bruker sine egne API-nøkler
+
+Her er en strukturert måte å gjøre det på:
+
+---
+
+#### 1. Skaff egne API-nøkler
+
+Hver deltaker må selv registrere seg:
+
+* **OpenAI:** [platform.openai.com](https://platform.openai.com/)
+* **Anthropic:** [console.anthropic.com](https://console.anthropic.com/)
+
+Begge krever at man legger inn kort/betalingsinfo (med gratis startkreditter for nye brukere).
+
+---
+
+### 2. Hvordan lagre nøklene trygt
+
+Du kan velge én av to enkle metoder:
+
+**a) `.env`-fil (anbefalt)**
+
+1. Lag en fil i samme mappe som notebooken med navnet `.env`
+2. Legg inn:
+
+   ```
+   OPENAI_API_KEY=sk-xxxx
+   ANTHROPIC_API_KEY=sk-ant-xxxx
+   ```
+3. Installer `python-dotenv` (én gang):
+
+   ```bash
+   pip install python-dotenv
+   ```
+4. I notebooken:
+
+   ```python
+   from dotenv import load_dotenv
+   load_dotenv()
+
+   import os
+   openai_key = os.getenv("OPENAI_API_KEY")
+   anthropic_key = os.getenv("ANTHROPIC_API_KEY")
+   ```
+
+**b) Direkte miljøvariabler (mer "avansert")**
+
+* I terminal (før du starter Jupyter):
+
+  ```bash
+  export OPENAI_API_KEY="sk-xxxx"
+  export ANTHROPIC_API_KEY="sk-ant-xxxx"
+  ```
+* Notebooken bruker `os.getenv()` som i eksempelet over.
+
+---
+
+#### 3. Bruke nøklene i kode
+
+**OpenAI (GPT-modeller):**
+
+```python
+from openai import OpenAI
+import os
+
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+
+response = client.chat.completions.create(
+    model="gpt-4o-mini",
+    messages=[{"role": "user", "content": "Hei fra OpenAI!"}]
+)
+print(response.choices[0].message.content)
 ```
 
-**NB:** For studenter i Codespaces er API-nøkler forhåndskonfigurert.
+**Anthropic (Claude-modeller):**
+
+```python
+from anthropic import Anthropic
+import os
+
+client = Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
+
+response = client.messages.create(
+    model="claude-3-haiku-20240307",
+    max_tokens=100,
+    messages=[{"role": "user", "content": "Hei fra Claude!"}]
+)
+print(response.content[0].text)
+```
+
+### NB!
+* Husk, ikke dele noen egne nøkler i kursmaterialet – hver deltaker har ansvar for sine.
+* Der det kan være aktuelt, har vi lagt inn et sjekksteg i notebooken som gir en feilmelding hvis nøkkel mangler:
+
+  ```python
+  if not openai_key or not anthropic_key:
+      raise ValueError("Mangler API-nøkkel. Sett den i .env-filen først!")
+  ```
+
+
+## **API-nøkler (for kjøring i skyen)**
+
+Dette er avhengig om du kjører i **Google Colab** eller i **GitHub Codespaces**
+
+For nærmere beskrivelse, se notebooken [`intro_openai_anthropic.ipynb`](./intro_openai_anthropic.ipynb).
+
+
+
+---
+
+#### 5. Oppsummering
+
+* Deltakere skaffer **egne nøkler** fra OpenAI og Anthropic.
+* Nøklene lagres lokalt i `.env` eller som miljøvariabler dersom du kjører lokalt
+* Dersom du kjører i skyen må du konsultere [`intro_openai_anthropic.ipynb`](./intro_openai_anthropic.ipynb).
+* Aktuelle Notebooks er ferdig satt opp til å hente nøkler og bruke dem.
+
+---
+
+
+
+
 
 **Lykke til med kurset!** 🎓
