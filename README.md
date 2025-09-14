@@ -1,24 +1,24 @@
 # 🏥 AI og Helse 
 
-**Åpen variant** av kurs i kunstig intelligens for helse- og omsorgssektoren 
+**Åpen variant** av (avansert) kurs i kunstig intelligens for medisinere og personell i helse- og omsorgssektoren 
 
 
 ## 📚 Kursstruktur
 
-- **Del 1 (Uke 1-6):** AI Fundamentet - Fra AI 1.0 til AI 2.0
-- **Del 2 (Uke 7-8):** Praktiske anvendelser i helse og omsorg
+- **Del 1 (Uke 1-6):** AI Fundamentet - fra AI 1.0 til AI 2.0
+- **Del 2 (Uke 7-8):** Praktiske anvendelser i medisn, helse og omsorg
 
 
 ## 🎯 Læringsutbytte
 
 ### Kunnskaper
-- Forstå forskjellen mellom klassisk maskinlæring (AI 1.0) og generativ AI (AI 2.0)
+- Forstå forskjellen mellom klassisk maskinlæring (AI 1.0), dyplæring og generativ AI (AI 2.0)
 - Kjenne til praktiske anvendelser av AI i helse- og omsorgstjenesten
 - Forstå grunnleggende prinsipper for AI-støttet analyse, optimering og beslutning
-- Ha innsikt i etiske og regulatoriske aspekter ved AI i helse
+- Ha innsikt i etiske og regulatoriske aspekter ved AI i helse og medisin
 
 ### Ferdigheter
-- Bruke generative AI-verktøy (ChatGPT, Claude, Gemini) for faglige oppgaver
+- Bruke generative AI-verktøy (ChatGPT, Claude, Gemini) for faglige oppgaver i medisin og helse
 - Vurdere egnethet av AI-løsninger for konkrete problemstillinger
 - Identifisere muligheter for AI-støtte i egen arbeidshverdag
 - Kritisk evaluere AI-systemer og deres begrensninger
