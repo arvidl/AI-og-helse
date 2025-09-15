@@ -36,6 +36,7 @@ Thumbs.db
 # Data files (store large files elsewhere)
 data/oasis_mri_sample/
 data/flowers/
+data/ansiktsuttrykk/
 data/external/
 data/raw/
 uke03-dyplæring/modeller/
