@@ -72,7 +72,6 @@ docs/_static/
 docs/_templates/
 
 # Temporary files
-tmp/
 temp/
 *.tmp
 
