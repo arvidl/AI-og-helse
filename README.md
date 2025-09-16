@@ -71,8 +71,8 @@ AI-og-helse/
 ## 👥 Målgruppe
 
 - Helsepersonell (leger, sykepleiere, radiografer, terapeuter, psykologer)
-- Ansatte i omsorgstjenesten
-- Ledere i helse og omsorg
+- Ansatte i omsorgstjenesten (deler av kurset)
+- Ledere i helse og omsorg (deler av kurset)
 - IT- og digitaliseringsansvarlige
 - Kvalitets- og utviklingsrådgivere
 
@@ -92,6 +92,14 @@ Dette kursmaterialet er lisensiert under [CC BY-SA 4.0](LICENSE).
 - Arvid Lundervold
 - [Bidragsytere](CONTRIBUTING.md)
 
+
+### 🛠️ Hvordan kurset er laget og ressurser brukt
+
+- bygger på domenekunnskap, godt nettverk av fagfeller og entusiasme for feltet
+- bruk av AI kode-editoren Cursor Ultra 
+- utviklet på en MacBook Pro (M4 Max) 
+- diverse lisenser (GitHub, OpenAI, Anthropic, Perplexity, Gooogle) 
+- ca. 40 timeverk (for basisdelen) 
 
 
 ------
