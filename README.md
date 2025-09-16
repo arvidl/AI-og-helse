@@ -106,7 +106,20 @@ Dette kursmaterialet er lisensiert under [CC BY-SA 4.0](LICENSE) / [MIT License]
 
 ## 🚀 Kom i gang
 
-### Bruk GitHub Codespaces (anbefalt)
+
+### Bruk Google Colab (enkleste alternativ)
+
+Gå til https://github.com/arvidl/AI-og-helse/blob/main/README.md og sjekk Repo-struktur og aktuell uke01-, ..., uke08-
+
+f.eks. [uke01-introduksjon](https://github.com/arvidl/AI-og-helse/tree/main/uke01-introduksjon)
+
+1. For hver notebook, trykk på [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke01-introduksjon/00-velkommen.ipynb) 
+2. Notebooken vises da i din nettleser
+3. Aksepter at den ikke er autorisert av Google ("Run anyway")
+4. Lær deg bruk av Python og [Jupyter Notebooks](https://colab.research.google.com/github/jckantor/CBE30338/blob/master/docs/01.01-Getting-Started-with-Python-and-Jupyter-Notebooks.ipynb) i Google Colab ([FAQ](https://research.google.com/colaboratory/faq.html))
+
+
+### Bruk GitHub Codespaces (for de som ønsker et sky-basert utviklingsmiljø med VS Code)
 
 1. Gå til: https://github.com/arvidl/AI-og-helse
 2. Klikk på den grønne "Code" knappen
@@ -124,18 +137,13 @@ python check_setup.py
 
 Dette vil verifisere at alt er korrekt installert.
 
-### Bruk Google Colab (enklere alternativ)
 
-1. For hver notebook, trykk på [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke01-introduksjon/00-velkommen.ipynb) 
-2. Notebooken vises da i din nettleser
-3. Aksepter at den ikke er autorisert av Google ("Run anyway")
-4. Lær deg bruk av Python og [Jupyter Notebooks](https://colab.research.google.com/github/jckantor/CBE30338/blob/master/docs/01.01-Getting-Started-with-Python-and-Jupyter-Notebooks.ipynb) i Google Colab ([FAQ](https://research.google.com/colaboratory/faq.html))
 
 ####  Start med Uke 1
 Naviger til `uke01-introduksjon/` og åpne [`README.md`](uke01-introduksjon/README.md) for ukens oversikt.
 
 
-### For lokal utvikling - Anaconda (anbefalt for Mac/PC)
+### For lokal utvikling - Anaconda (anbefalt for Mac/Linux/PC)
 
 ```bash
 # Klon repository
