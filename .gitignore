@@ -39,6 +39,7 @@ data/flowers/
 data/ansiktsuttrykk/
 data/external/
 data/raw/
+data/medical/kaggle
 uke03-dyplæring/modeller/
 
 *.csv

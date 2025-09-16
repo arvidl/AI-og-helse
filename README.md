@@ -18,13 +18,18 @@
 - Ha innsikt i etiske og regulatoriske aspekter ved AI i helse og medisin
 
 ### Ferdigheter
-- Bruke generative AI-verktøy (ChatGPT, Claude, Gemini) for faglige oppgaver i medisin og helse
+- Bruke generative AI-verktøy (ChatGPT, Claude, Gemini, ...) for faglige oppgaver i medisin og helse
 - Vurdere egnethet av AI-løsninger for konkrete problemstillinger
 - Identifisere muligheter for AI-støtte i egen arbeidshverdag
-- Kritisk evaluere AI-systemer og deres begrensninger
+- Kritisk evaluere AI-systemer og deres begrensninger (og muligheter)
+
+### Bruk av kurset
+"... på svømmekurs bør man oppholde seg mye i bassenget ..."
+- Det anbefales å "gå i bassenget" (= eksperimentere med notebooks)
+- For noen i målgruppen, kan et realistisk læringsutbytte oppnås ved kun å **lese**, **inspisere**, **kontemplere**: tekst, kode, figurer og referanser rett i GitHub-repositoriet (https://github.com/arvidl/AI-og-helse) -  "holde seg på land ...", samt bruke en AI-sparringspartner
 
 ## 📂 Repo-struktur
-"... på svømmekurs må man oppholde seg mye i bassenget ..."
+
 ```
 AI-og-helse/
 ├── .devcontainer/               # GitHub Codespaces konfigurasjon
