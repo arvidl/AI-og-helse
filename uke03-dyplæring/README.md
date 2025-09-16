@@ -27,9 +27,29 @@
 ````
 
 
-# Teori - "på land"
 
 
+- 02a_cnn_bildeklassifikasjon.ipynb - Miljøoppsett, datasett og CNN-arkitektur
+- 02b_cnn_trening.ipynb - Trening og visualisering av treningsresultater
+- 02c_cnn_evaluering.ipynb - Testing, evaluering og forklarbar AI
 
-# Praksis - "i bassenget"
+
+### 02a: CNN Bildeklassifikasjon - Bygging og Trening
+
+#### �� Mål for denne delen
+- Forstå hvordan CNN fungerer
+- Bygge en CNN-modell fra bunnen
+- Trene modellen på blomsterdata
+- Forberede for evaluering i del 2
+
+#### 🔧 Miljøoppsett
+[Automatisk deteksjon og konfigurasjon]
+
+#### �� Datasett-utforskning
+[Visning og forståelse av data]
+
+#### 🏗️ CNN-arkitektur
+[Konstruksjon og forklaring av modell]
+
+
 
