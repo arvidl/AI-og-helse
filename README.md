@@ -85,7 +85,7 @@ AI-og-helse/
 
 ## 📄 Lisens
 
-Dette kursmaterialet er lisensiert under [CC BY-SA 4.0](LICENSE) / [MIT License](https://github.com/arvidl/AI-og-helse/blob/main/LICENSE)
+Dette kursmaterialet er lisensiert under [CC BY-SA 4.0](LICENSE) / [MIT License](https://github.com/arvidl/AI-og-helse/blob/main/LICENSE) Copyright (c) 2025 Arvid Lundervold
 
 ## 🙏 Bidragsytere
 
