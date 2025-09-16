@@ -82,11 +82,13 @@ dependencies:
       - simpleitk>=2.3.0         # For medical image I/O
       - pydicom>=2.4.0           # For DICOM files
       - itk>=5.3.0               # Insight Toolkit for medical imaging
+      - torchinfo
 
       # Additional utilities
       - pydantic>=2.0.0
       - requests>=2.31.0
       - torchviz>=0.0.2
       - torchsummary>=1.5.1
+      - torchinfo>=1.8
       - faker
       - kaggle>=1.5.0            # For dataset downloads

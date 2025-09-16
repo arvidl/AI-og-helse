@@ -1,0 +1,92 @@
+name: ai-helse-cuda
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Python version
+  - python=3.12
+
+  # Core scientific packages
+  - numpy>=1.26.0
+  - pandas>=2.1.0
+  - matplotlib>=3.8.0
+  - seaborn>=0.13.0
+  - plotly>=5.18.0
+
+  # Machine Learning
+  - scikit-learn>=1.3.0
+  - scikit-image>=0.22.0
+  - xgboost>=2.0.0
+  - lightgbm>=4.1.0
+
+  # Medical Imaging
+  - nibabel>=5.0.0
+  - nilearn>=0.10.0
+  - opencv>=4.8.0
+
+  # Image Processing
+  - pillow>=10.0.0
+  - scipy>=1.11.0
+
+  # Jupyter ecosystem
+  - jupyter>=1.0.0
+  - jupyterlab>=4.0.0
+  - ipywidgets>=8.1.0
+  - notebook>=7.0.0
+  - ipykernel>=6.26.0
+
+  # Development tools
+  - black>=23.0.0
+  - flake8>=6.0.0
+  - pytest>=7.4.0
+
+  # Data handling
+  - openpyxl>=3.1.0
+  - python-dotenv>=1.0.0
+  - pyyaml>=6.0
+  - tqdm>=4.66.0
+
+  # pip dependencies
+  - pip
+  - pip:
+      # PyTorch with CUDA support (MUST be installed via pip)
+      - torch>=2.1.0
+      - torchvision>=0.16.0
+      - torchaudio>=2.1.0
+      - --index-url https://download.pytorch.org/whl/cu121
+
+      # LLM and NLP packages
+      - openai>=1.0.0
+      - anthropic>=0.8.0
+      - langchain>=0.1.0
+      - langchain-community>=0.0.10
+      - langchain-openai>=0.0.5
+      - transformers>=4.36.0
+      - sentence-transformers>=2.2.0
+      - tiktoken>=0.5.0
+
+      # AI Agents
+      - autogen>=0.8.0
+      - chromadb>=0.4.0
+
+      # Web frameworks
+      - streamlit>=1.29.0
+      - gradio>=4.0.0
+      - fastapi>=0.104.0
+      - uvicorn>=0.24.0
+
+      # Medical AI packages
+      - segment-anything>=1.0
+      - monai>=1.3.0
+      - simpleitk>=2.3.0
+      - pydicom>=2.4.0
+      - itk>=5.3.0
+
+      # Additional utilities
+      - pydantic>=2.0.0
+      - requests>=2.31.0
+      - torchviz>=0.0.2
+      - torchsummary>=1.5.1
+      - torchinfo>=1.8
+      - faker
+      - kaggle>=1.5.0
