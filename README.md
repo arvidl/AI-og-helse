@@ -73,19 +73,19 @@ AI-og-helse/
 - Helsepersonell (leger, sykepleiere, radiografer, terapeuter, psykologer)
 - Ansatte i omsorgstjenesten (deler av kurset)
 - Ledere i helse og omsorg (deler av kurset)
-- IT- og digitaliseringsansvarlige
-- Kvalitets- og utviklingsrådgivere
+- IT- og digitaliseringsansvarlige (deler av kurset)
+- Kvalitets- og utviklingsrådgivere (deler av kurset)
 
 ## 📅 Praktisk informasjon
 
 - **Varighet:** 8 uker 
 - **Arbeidsomfang:** 10-12 timer per uke
-- **Læringsspråk (i Jupyter notatbøker):** Norsk (+ engelske fagtermer, e.g. notebooks)
+- **Læringsspråk (i Jupyter notatbøker):** Norsk (+ engelske fagtermer, e.g. "notebooks")
 
 
 ## 📄 Lisens
 
-Dette kursmaterialet er lisensiert under [CC BY-SA 4.0](LICENSE).
+Dette kursmaterialet er lisensiert under [CC BY-SA 4.0](LICENSE) / [MIT License](https://github.com/arvidl/AI-og-helse/blob/main/LICENSE)
 
 ## 🙏 Bidragsytere
 
