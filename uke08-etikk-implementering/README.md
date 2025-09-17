@@ -2,7 +2,8 @@
 
 > *"Med stor kraft følger stort ansvar"* - Spider-Man (og AI-utviklere)
 
-Velkommen til kanskje den viktigste uken i kurset. Her skal vi utforske hvordan vi implementerer AI på en ansvarlig, lovlig og etisk måte. Dette er ikke bare teori – det er praktiske ferdigheter som vil gjøre deg til en mer komplett og ansvarlig profesjonell i sammenhenger der AI utvikles og tas i bruk.
+Velkommen til kanskje den viktigste uken i kurset. Her skal vi utforske hvordan vi implementerer AI på en ansvarlig, lovlig og etisk måte. Dette er ikke bare teori – det er praktiske ferdigheter som vil gjøre deg til en mer komplett og ansvarlig profesjonell i sammenhenger der AI utvikles og tas i bruk.<br>
+Se og Helsedirektoratets: ["Utvikling og bruk av kunstig intelligens"](https://www.helsedirektoratet.no/rapporter/status-og-forslag-til-videre-arbeid-med-kunstig-intelligens-ki-i-helse-og-omsorgstjenesten/utvikling-og-bruk-av-kunstig-intelligens)
 
 ## 🎯 Hvorfor er dette viktig?
 
@@ -16,7 +17,7 @@ Etter å ha fullført uke 8 vil du kunne:
 
 ✅ **Navigere GDPR-lovverket** - Vite nøyaktig hvilke personvernkrav som gjelder for AI  
 ✅ **Jakte på bias** - Identifisere og eliminere skjult diskriminering i algoritmer  
-✅ **Mestre regulatorisk compliance** - Forstå CE-merking og MDR for AI-produkter  
+✅ **Mestre regulatorisk compliance** - Forstå CE-merking og MDR for AI-produkter, EU's KI-forordningen  
 ✅ **Lede endring** - Implementere AI-systemer uten å skape uhensiktsmesig uro i organisasjonen  
 
 ## 📚 Ukens innhold
@@ -52,7 +53,7 @@ Etter å ha fullført uke 8 vil du kunne:
 
 - Forstå når AI trenger CE-merking
 - Navigér MDR-regelverket for medisinsk AI
-- Møt EU AI Act – Europas nye AI-lov
+- Møt EU AI Act (KI-forordningen) – Europas nye AI-lov
 - **Workshop:** Klassifisér risiko for ulike AI-systemer
 
 **🏆 Bonus:** Du får malene og sjekk-listene som konsulenter tar $$ for.
