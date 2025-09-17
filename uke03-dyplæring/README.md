@@ -14,19 +14,23 @@ Etter denne uken skal du:
 
 ### Notebooks
 
+#### Nevrale nettverk (NN) i menneske og maskin (Under utarbeidelse)
+1. **[01a_nn_intro.ipynb]()**
+2. **[01b_læring_i_nn.ipynb]()**
+
 #### Blomsterklassifikasjon (Grunnleggende CNN)
-1. **[02a_cnn_bildeklassifikasjon.ipynb](02a_cnn_bildeklassifikasjon.ipynb)** - Miljøoppsett, datasett og CNN-arkitektur
-2. **[02b_cnn_trening.ipynb](02b_cnn_trening.ipynb)** - Trening og lagring av modell
-3. **[02c_cnn_testing.ipynb](02c_cnn_testing.ipynb)** - Testing, evaluering og Grad-CAM
-4. **[02d_cnn_konklusjon.ipynb](02d_cnn_konklusjon.ipynb)** - Oppsummering og veien videre
+3. **[02a_cnn_bildeklassifikasjon.ipynb](02a_cnn_bildeklassifikasjon.ipynb)** - Miljøoppsett, datasett og CNN-arkitektur
+4. **[02b_cnn_trening.ipynb](02b_cnn_trening.ipynb)** - Trening og lagring av modell
+5. **[02c_cnn_testing.ipynb](02c_cnn_testing.ipynb)** - Testing, evaluering og Grad-CAM
+6. **[02d_cnn_konklusjon.ipynb](02d_cnn_konklusjon.ipynb)** - Oppsummering og veien videre
 
 #### Medisinsk Bildeanalyse
-5. **[03_medisinsk_bildeklassifikasjon_MR.ipynb](03_medisinsk_bildeklassifikasjon_MR.ipynb)** - MRI-bildeanalyse og demens-deteksjon
+7. **[03_medisinsk_bildeklassifikasjon_MR.ipynb](03_medisinsk_bildeklassifikasjon_MR.ipynb)** - MRI-bildeanalyse og demens-deteksjon
 
 #### Ansiktsuttrykk og Emosjoner
-6. **[04a_ansiktsutrykk_klassifikasjon.ipynb](04a_ansiktsutrykk_klassifikasjon.ipynb)** - Emosjonsklassifikasjon del 1
-7. **[04b_ansiktsutrykk_klassifikasjon.ipynb](04b_ansiktsutrykk_klassifikasjon.ipynb)** - Emosjonsklassifikasjon del 2
-8. **[04c_ansiktsutrykk_klassifikasjon.ipynb](04c_ansiktsutrykk_klassifikasjon.ipynb)** - Emosjonsklassifikasjon del 3
+8. **[04a_ansiktsutrykk_klassifikasjon.ipynb](04a_ansiktsutrykk_klassifikasjon.ipynb)** - Emosjonsklassifikasjon del 1
+9. **[04b_ansiktsutrykk_klassifikasjon.ipynb](04b_ansiktsutrykk_klassifikasjon.ipynb)** - Emosjonsklassifikasjon del 2
+10. **[04c_ansiktsutrykk_klassifikasjon.ipynb](04c_ansiktsutrykk_klassifikasjon.ipynb)** - Emosjonsklassifikasjon del 3
 
 ### Oppgaver
 - **Praktisk øvelse**: Bygg og tren din egen CNN-modell
