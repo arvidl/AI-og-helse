@@ -107,6 +107,7 @@ Du får rollen som AI-etikkonsulent og skal levere:
 
 ## 🤝 Få hjelp
 
+- **HD: Utvikling og bruk av kunstig intelligens** [[link](https://www.helsedirektoratet.no/rapporter/status-og-forslag-til-videre-arbeid-med-kunstig-intelligens-ki-i-helse-og-omsorgstjenesten/utvikling-og-bruk-av-kunstig-intelligens)]
 - **Stuck på GDPR-tolkninger?** Se juridiske ressurser i notebook 1
 - **Sliter med bias-deteksjon?** Prøv de interaktive visualiseringene
 - **Trenger implementeringshjelp?** Bruk malene i `/maler/` mappen
@@ -126,4 +127,6 @@ Du vil ikke bare være teknisk AI-kyndig, men også kunne være en **ansvarlig A
 
 *Husk å erkjenne – hver kode-linje som skrives kan påvirke liv og helse ...*
 
-**Start din kunnskap- og holdnings-reise 🌍 i etisk AI nå** ➡️ Åpne `01_gdpr_personvern.ipynb`
+**Start din kunnskap- og holdnings-reise 🌍 i etisk AI nå**
+
+ ➡️ Åpne `01_gdpr_personvern.ipynb`
