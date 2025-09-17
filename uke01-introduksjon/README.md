@@ -4,10 +4,10 @@
 
 Etter denne uken skal du:
 - **Forstå** hva kunstig intelligens er og dens historiske utvikling
-- **Skille** mellom AI, maskinlæring og dyp læring
+- **Skille** mellom AI, maskinlæring og dyplæring
 - **Kjenne til** regelbaserte systemer og tidlige ekspertsystemer i medisin
-- **Ha satt opp** ditt utviklingsmiljø i GitHub Codespaces
-- **Ha kjørt** dine første AI-eksempler
+- **Ha kjørt** dine første AI-eksempler (på Google Colab)
+- **Sett på muligheten for og nytten av å sette opp** ditt eget utviklingsmiljø (lokalt eller i GitHub Codespaces)
 
 ## 📚 Innhold
 
@@ -21,7 +21,7 @@ Etter denne uken skal du:
 7. **[06-oppsett-miljø.ipynb](06-oppsett-miljø.ipynb)** - GitHub Codespaces guide
 
 ### Oppgaver
-- **Refleksjonsnotat**: AI's rolle i fremtidens helsevesen (500 ord)
+- **Refleksjonsnotat**: AI's rolle i fremtidens helsevesen 
 - **Praktisk øvelse**: Bygg et regelbasert triagesystem
 - **Quiz**: Test din forståelse av grunnbegreper
 
@@ -38,13 +38,14 @@ print("🎉 Velkommen til AI og Helse!")
 
 ## 📖 Lesestoff
 
-### Obligatorisk
-- Kapittel 1 i "Artificial Intelligence in Medicine" 
-- [AI in Medicine: A Brief History](https://www.nature.com/articles/s41591-023-02344-1)
+### Nyttig
+- Historien til kunstig intelligens i medisinen" [[link 1](https://www.sciencedirect.com/science/article/pii/S0016510720344667)] [[link 2](https://link.springer.com/chapter/10.1007/978-3-031-09108-7_2)]
+- HD: Utvikling og bruk av kunstig intelligens [[link](https://www.helsedirektoratet.no/rapporter/status-og-forslag-til-videre-arbeid-med-kunstig-intelligens-ki-i-helse-og-omsorgstjenesten/utvikling-og-bruk-av-kunstig-intelligens)]
+- NEJM: [AI in Medicine](https://www.nejm.org/ai-in-medicine)
 
-### Anbefalt
-- [Turing Test and Medical AI](https://www.bmj.com/content/380/bmj-2022-073816)
-- [From MYCIN to ChatGPT](https://academic.oup.com/jamia/article/31/3/791/7457419)
+### Kjekt å vite
+- [[Artificial Intelligence, healthcare and the Turing test](https://www.nature.com/articles/d44224-023-00146-x)]  [[Turing test for analyse av bias](https://pubmed.ncbi.nlm.nih.gov/36313215/)]
+- [[From MYCIN to MedGemma](https://www.isjtrend.com/article_222739.html)]
 
 ## 💭 Refleksjonsspørsmål
 
@@ -53,19 +54,16 @@ print("🎉 Velkommen til AI og Helse!")
 3. Hvilke etiske utfordringer ser du med AI i helsevesenet?
 4. Hvordan kan AI støtte, ikke erstatte, helsepersonell?
 
-## 👩‍🏫 <strike>Ukens Veiledning</strike>
+## 👩‍🏫 Diskutere med andre  eller en AI sparringspartner?
 
-<!--
-- **Tirsdag kl 14-16**: Introduksjonsforelesning (Teams)
-- **Torsdag kl 10-11**: Teknisk support for oppsett (frivillig)
-- **Forum**: Aktiv hele uken for spørsmål
--->
+
 
 ## ✅ Sjekkliste
 
 - [ ] Les gjennom alle notebooks
-- [ ] Sett opp GitHub Codespaces
-- [ ] Kjør test-notebook
-- [ ] <strike>Delta i minst én diskusjon i forum ...</strike>
+- [ ] Kjør notebooks på Google Colab
+- [ ] Evt. satt opp GitHub Codespaces eller lokalt miljø på egen PC
+- [ ] Forberede til uke02-klassisk-ml
+
 
 
