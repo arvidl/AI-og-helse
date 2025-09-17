@@ -95,7 +95,7 @@ Dette kursmaterialet er lisensiert under [CC BY-SA 4.0](LICENSE) / [MIT License]
 
 ### 🛠️ Hvordan kurset er laget og ressurser brukt
 
-- bygger på domenekunnskap, godt nettverk av fagfeller og entusiasme for feltet
+- bygger på domenekunnskap, godt nettverk av fagfeller ([nær](https://www.sciencedirect.com/science/article/pii/S0939388918301181?via%3Dihub) og [fjern](http://en.jnl.ac.cn/article/185.html)) og entusiasme for feltet
 - bruk av AI kode-editoren Cursor Ultra 
 - utviklet på en MacBook Pro (M4 Max) 
 - diverse lisenser (GitHub, OpenAI, Anthropic, Perplexity, Gooogle) 
