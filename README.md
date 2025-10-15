@@ -45,6 +45,57 @@ AI-og-helse/
 └── data/                        # Eksempeldata
 ```
 
+## 📚 Notebok-oversikt med Colab-badges
+
+### Uke 1: Introduksjon til AI
+| Notebok | Beskrivelse | Colab |
+|---------|-------------|-------|
+| `00-velkommen.ipynb` | Velkommen og kursoversikt | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke01-introduksjon/00-velkommen.ipynb) |
+| `01-test-meg.ipynb` | Test av miljø og pakker | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke01-introduksjon/01-test-meg.ipynb) |
+| `02-hva-er-ai.ipynb` | Hva er kunstig intelligens? | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke01-introduksjon/02-hva-er-ai.ipynb) |
+| `03-ai-historie-helse.ipynb` | AI-historie i helsevesenet | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke01-introduksjon/03-ai-historie-helse.ipynb) |
+| `04-ai-ml-dl-forskjeller.ipynb` | AI, ML og dyplæring | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke01-introduksjon/04-ai-ml-dl-forskjeller.ipynb) |
+| `05-regelbaserte-systemer.ipynb` | Regelbaserte systemer | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke01-introduksjon/05-regelbaserte-systemer.ipynb) |
+| `99-oppsett-miljø.ipynb` | Miljøoppsett guide | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke01-introduksjon/99-oppsett-miljø.ipynb) |
+
+### Uke 2: Klassisk maskinlæring
+| Notebok | Beskrivelse | Colab |
+|---------|-------------|-------|
+| `01-klassisk-ml-101.ipynb` | Grunnleggende maskinlæring | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke02-klassisk-ml/01-klassisk-ml-101.ipynb) |
+| `02-fra-symptom-til-diagnose.ipynb` | Fra symptom til diagnose | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke02-klassisk-ml/02-fra-symptom-til-diagnose.ipynb) |
+
+### Uke 3: Dyplæring og nevrale nettverk
+| Notebok | Beskrivelse | Colab |
+|---------|-------------|-------|
+| `02a_cnn_bildeklassifikasjon.ipynb` | CNN bildeklassifikasjon - intro | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke03-dyplæring/02a_cnn_bildeklassifikasjon.ipynb) |
+| `02b_cnn_trening.ipynb` | CNN trening | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke03-dyplæring/02b_cnn_trening.ipynb) |
+| `02c_cnn_testing.ipynb` | CNN testing | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke03-dyplæring/02c_cnn_testing.ipynb) |
+| `02d_cnn_konklusjon.ipynb` | CNN konklusjon | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke03-dyplæring/02d_cnn_konklusjon.ipynb) |
+| `03_medisinsk_bildeklassifikasjon_MR.ipynb` | Medisinsk bildeklassifikasjon | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke03-dyplæring/03_medisinsk_bildeklassifikasjon_MR.ipynb) |
+| `04a_ansiktsutrykk_klassifikasjon.ipynb` | Ansiktsutrykk - del 1 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke03-dyplæring/04a_ansiktsutrykk_klassifikasjon.ipynb) |
+| `04b_ansiktsutrykk_klassifikasjon.ipynb` | Ansiktsutrykk - del 2 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke03-dyplæring/04b_ansiktsutrykk_klassifikasjon.ipynb) |
+| `04c_ansiktsutrykk_klassifikasjon.ipynb` | Ansiktsutrykk - del 3 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke03-dyplæring/04c_ansiktsutrykk_klassifikasjon.ipynb) |
+
+### Uke 4: Generativ AI
+| Notebok | Beskrivelse | Colab |
+|---------|-------------|-------|
+| `01_transformer_arkitektur.ipynb` | Transformer-arkitektur | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke04-generativ-ai/01_transformer_arkitektur.ipynb) |
+| `02_llm_grunnleggende.ipynb` | LLM grunnleggende | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke04-generativ-ai/02_llm_grunnleggende.ipynb) |
+| `03_prompt_engineering.ipynb` | Prompt engineering | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke04-generativ-ai/03_prompt_engineering.ipynb) |
+| `04_chatgpt_claude_api.ipynb` | ChatGPT og Claude API | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke04-generativ-ai/04_chatgpt_claude_api.ipynb) |
+
+### Uke 8: Etikk og implementering
+| Notebok | Beskrivelse | Colab |
+|---------|-------------|-------|
+| `01_gdpr_personvern.ipynb` | GDPR og personvern | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke08-etikk-implementering/01_gdpr_personvern.ipynb) |
+| `02_bias_rettferdighet.ipynb` | Bias og rettferdighet | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke08-etikk-implementering/02_bias_rettferdighet.ipynb) |
+| `03_ce_mdr_regulering.ipynb` | CE/MDR regulering | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke08-etikk-implementering/03_ce_mdr_regulering.ipynb) |
+
+### Andre notebokene
+| Notebok | Beskrivelse | Colab |
+|---------|-------------|-------|
+| `intro_openai_anthropic.ipynb` | OpenAI og Anthropic introduksjon | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/intro_openai_anthropic.ipynb) |
+
 ## 💻 Teknologi
 
 - **Python 3.12+**
