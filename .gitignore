@@ -41,6 +41,15 @@ data/external/
 data/raw/
 data/medical/kaggle
 uke03-dyplæring/modeller/
+uke03-dyplaering/data/oasis_mri_sample/
+uke03-dyplaering/data/flowers/
+uke03-dyplaering/data/ecg/
+uke03-dyplaering/data/ansiktsuttrykk/
+uke03-dyplaering/data/external/
+uke03-dyplaering/data/raw/
+uke03-dyplaering/data/medical/kaggle
+uke03-dyplaering/runs/
+uke03-dyplaering/modeller/
 
 *.csv
 *.xlsx

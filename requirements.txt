@@ -44,6 +44,11 @@ ipywidgets>=8.1.0
 notebook>=7.0.0
 ipykernel>=6.26.0
 
+# ECG and Signal Processing packages
+wfdb>=4.1.0              # For MIT-BIH Arrhythmia Database
+heartpy>=1.2.0           # For ECG analysis
+neurokit2>=0.2.0         # For physiological signal processing
+
 # Utils
 python-dotenv>=1.0.0
 pydantic>=2.0.0
