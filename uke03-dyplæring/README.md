@@ -14,9 +14,11 @@ Etter denne uken skal du:
 
 ### Notebooks
 
-#### Nevrale nettverk (NN) i menneske og maskin (Under utarbeidelse)
-1. **[01a_nn_intro.ipynb]()**
-2. **[01b_læring_i_nn.ipynb]()**
+#### Nevrale nettverk (NN) i menneske og maskin
+1. **[01a_nn_intro.ipynb](01a_nn_intro.ipynb)** - Grunnleggende teori om nevrale nettverk
+2. **[01b_læring_i_nn.ipynb](01b_læring_i_nn.ipynb)** - Læring i nevrale nettverk
+3. **[01c_UCI_heart_disease_klassifikasjon.ipynb](01c_UCI_heart_disease_klassifikasjon.ipynb)** - Hjertesykdom-klassifikasjon
+4. **[01d_EKG_arytmi_klassifikasjon.ipynb](01d_EKG_arytmi_klassifikasjon.ipynb)** - EKG arytmi-klassifikasjon med CNN ⭐ NY
 
 #### Blomsterklassifikasjon (Grunnleggende CNN)
 3. **[02a_cnn_bildeklassifikasjon.ipynb](02a_cnn_bildeklassifikasjon.ipynb)** - Miljøoppsett, datasett og CNN-arkitektur
