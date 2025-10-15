@@ -32,7 +32,6 @@
 
 ```
 AI-og-helse/
-├── .devcontainer/               # GitHub Codespaces konfigurasjon
 ├── uke01-introduksjon/          # Introduksjon til AI
 ├── uke02-klassisk-ml/           # Klassisk maskinlæring
 ├── uke03-dyplæring/             # Dyplæring og nevrale nettverk
@@ -50,7 +49,6 @@ AI-og-helse/
 
 - **Python 3.12+**
 - **Jupyter Notebooks** for interaktiv læring
-- **GitHub Codespaces** for sky-basert utvikling
 - **Google Colabratory** for sky-basert notebook-kjøring og eksperimentering
 - **AI-verktøy:** OpenAI (gpt-), Anthropic (claude-), Scikit-learn, PyTorch, ...
 
@@ -117,30 +115,6 @@ f.eks. [uke01-introduksjon](https://github.com/arvidl/AI-og-helse/tree/main/uke0
 2. Notebooken vises da i din nettleser
 3. Aksepter at den ikke er autorisert av Google ("Run anyway")
 4. Lær deg bruk av Python og [Jupyter Notebooks](https://colab.research.google.com/github/jckantor/CBE30338/blob/master/docs/01.01-Getting-Started-with-Python-and-Jupyter-Notebooks.ipynb) i Google Colab ([FAQ](https://research.google.com/colaboratory/faq.html))
-
-
-### Bruk GitHub Codespaces (for de som ønsker et sky-basert utviklingsmiljø med VS Code)
-
-1. Gå til: https://github.com/arvidl/AI-og-helse
-2. Klikk på den grønne "Code" knappen
-3. Velg "Codespaces" fanen
-4. Klikk "Create codespace on main"
-5. Vent 2-3 minutter mens miljøet settes opp automatisk
-
-Når Codespace er klar, kjør:
-```bash
-source ~/.bashrc
-conda env update -f environment-codespaces.yml
-conda activate ai-helse
-python check_setup.py
-```
-
-Dette vil verifisere at alt er korrekt installert.
-
-
-
-####  Start med Uke 1
-Naviger til `uke01-introduksjon/` og åpne [`README.md`](uke01-introduksjon/README.md) for ukens oversikt.
 
 
 ### For lokal utvikling - Anaconda (anbefalt for Mac/Linux/PC)
@@ -298,7 +272,7 @@ print(response.content[0].text)
 
 ## **API-nøkler (for kjøring i skyen)**
 
-Dette er avhengig om du kjører i **Google Colab** eller i **GitHub Codespaces**
+Dette gjelder kun for **Google Colab**
 
 For nærmere beskrivelse, se notebooken [`intro_openai_anthropic.ipynb`](./intro_openai_anthropic.ipynb).
 
@@ -310,7 +284,7 @@ For nærmere beskrivelse, se notebooken [`intro_openai_anthropic.ipynb`](./intro
 
 * Deltakere skaffer **egne nøkler** fra OpenAI og Anthropic.
 * Nøklene lagres lokalt i `.env` eller som miljøvariabler dersom du kjører lokalt
-* Dersom du kjører i skyen må du konsultere [`intro_openai_anthropic.ipynb`](./intro_openai_anthropic.ipynb).
+* Dersom du kjører i Google Colab må du konsultere [`intro_openai_anthropic.ipynb`](./intro_openai_anthropic.ipynb).
 * Aktuelle Notebooks er ferdig satt opp til å hente nøkler og bruke dem.
 
 ---

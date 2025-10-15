@@ -7,7 +7,7 @@ Etter denne uken skal du:
 - **Skille** mellom AI, maskinlæring og dyplæring
 - **Kjenne til** regelbaserte systemer og tidlige ekspertsystemer i medisin
 - **Ha kjørt** dine første AI-eksempler (på Google Colab)
-- **Sett på muligheten for og nytten av å sette opp** ditt eget utviklingsmiljø (lokalt eller i GitHub Codespaces)
+- **Sett på muligheten for og nytten av å sette opp** ditt eget utviklingsmiljø (lokalt)
 
 ## 📚 Innhold
 
@@ -18,7 +18,7 @@ Etter denne uken skal du:
 4. **[03-ai-historie-helse.ipynb](03-ai-historie-helse.ipynb)** - AI i helsevesenet gjennom tidene
 5. **[04-ai-ml-dl-forskjeller.ipynb](04-ai-ml-dl-forskjeller.ipynb)** - Forstå begrepsjungelen
 6. **[05-regelbaserte-systemer.ipynb](05-regelbaserte-systemer.ipynb)** - Bygge et enkelt ekspertsystem
-7. **[06-oppsett-miljø.ipynb](06-oppsett-miljø.ipynb)** - GitHub Codespaces guide
+7. **[99-oppsett-miljø.ipynb](99-oppsett-miljø.ipynb)** - Lokalt miljøoppsett guide
 
 ### Oppgaver
 - **Refleksjonsnotat**: AI's rolle i fremtidens helsevesen 
@@ -62,7 +62,7 @@ print("🎉 Velkommen til AI og Helse!")
 
 - [ ] Les gjennom alle notebooks
 - [ ] Kjør notebooks på Google Colab
-- [ ] Evt. satt opp GitHub Codespaces eller lokalt miljø på egen PC
+- [ ] Evt. satt opp lokalt miljø på egen PC
 - [ ] Forberede til uke02-klassisk-ml
 
 
