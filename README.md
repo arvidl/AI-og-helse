@@ -67,6 +67,10 @@ AI-og-helse/
 ### Uke 3: Dyplæring og nevrale nettverk
 | Notebok | Beskrivelse | Colab |
 |---------|-------------|-------|
+| `01a_nn_intro.ipynb` | Nevrale nettverk i menneske og maskin - grunnleggende teori | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke03-dyplæring/01a_nn_intro.ipynb) |
+| `01b_læring_i_nn.ipynb` | Læring i nevrale nettverk - i menneske og i maskin| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke03-dyplæring/01b_læring_i_nn.ipynb) |
+| `01c_UCI_heart_disease_klassifikasjon.ipynb` | Hjertesykdom-klassifikasjon ved brek av reelle data fra UCI| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke03-dyplæring/01c_UCI_heart_disease_klassifikasjon.ipynb) |
+| `01d_EKG_arytmi_klassifikasjon.ipynb` | EKG arytmi-klassifikasjon med CNN | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke03-dyplæring/01d_EKG_arytmi_klassifikasjon.ipynb) |
 | `02a_cnn_bildeklassifikasjon.ipynb` | CNN bildeklassifikasjon - intro | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke03-dyplæring/02a_cnn_bildeklassifikasjon.ipynb) |
 | `02b_cnn_trening.ipynb` | CNN trening | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke03-dyplæring/02b_cnn_trening.ipynb) |
 | `02c_cnn_testing.ipynb` | CNN testing | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke03-dyplæring/02c_cnn_testing.ipynb) |
