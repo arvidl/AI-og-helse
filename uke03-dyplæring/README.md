@@ -10,7 +10,7 @@ Etter denne uken skal du:
 - **Sammenligne** naturlige og medisinske bilder for AI-analyse
 - **Kjenne til** moderne verktøy som fastMONAI for medisinsk AI
 
-## �� Innhold
+## 📖 Innhold
 
 ### Notebooks
 
