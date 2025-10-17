@@ -30,9 +30,9 @@ Etter denne uken skal du:
 7. **[03_medisinsk_bildeklassifikasjon_MR.ipynb](03_medisinsk_bildeklassifikasjon_MR.ipynb)** - MRI-bildeanalyse og demens-deteksjon
 
 #### Ansiktsuttrykk og Emosjoner
-8. **[04a_ansiktsutrykk_klassifikasjon.ipynb](04a_ansiktsutrykk_klassifikasjon.ipynb)** - Emosjonsklassifikasjon del 1
-9. **[04b_ansiktsutrykk_klassifikasjon.ipynb](04b_ansiktsutrykk_klassifikasjon.ipynb)** - Emosjonsklassifikasjon del 2
-10. **[04c_ansiktsutrykk_klassifikasjon.ipynb](04c_ansiktsutrykk_klassifikasjon.ipynb)** - Emosjonsklassifikasjon del 3
+8. **[04a_ansiktsutrykk_klassifikasjon.ipynb](04a_ansiktsutrykk_klassifikasjon.ipynb)** - Emosjonsklassifikasjon del 1 (bygging)
+9. **[04b_ansiktsutrykk_klassifikasjon.ipynb](04b_ansiktsutrykk_klassifikasjon.ipynb)** - Emosjonsklassifikasjon del 2 (trening)
+10. **[04c_ansiktsutrykk_klassifikasjon.ipynb](04c_ansiktsutrykk_klassifikasjon.ipynb)** - Emosjonsklassifikasjon del 3 (evaluering)
 
 ### Oppgaver
 - **Praktisk øvelse**: Bygg og tren din egen CNN-modell
