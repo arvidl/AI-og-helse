@@ -44,6 +44,13 @@ ipywidgets>=8.1.0
 notebook>=7.0.0
 ipykernel>=6.26.0
 
+# Feature Importance and Explainable AI packages
+shap>=0.44.0             # SHapley Additive exPlanations
+lime>=0.2.0.1            # Local Interpretable Model-agnostic Explanations
+alibi>=0.9.0             # Algorithmic bias detection and mitigation
+dalex>=1.4.0             # Explanations for ML models
+pdpbox>=0.2.0            # Partial Dependence Plot toolbox
+      
 # ECG and Signal Processing packages
 wfdb>=4.1.0              # For MIT-BIH Arrhythmia Database
 heartpy>=1.2.0           # For ECG analysis
