@@ -88,6 +88,21 @@ AI-og-helse/
 | `03_prompt_engineering.ipynb` | Prompt engineering | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke04-generativ-ai/03_prompt_engineering.ipynb) |
 | `04_chatgpt_claude_api.ipynb` | ChatGPT og Claude API | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke04-generativ-ai/04_chatgpt_claude_api.ipynb) |
 
+### Uke 5: Multimodal AI
+| Notebok | Beskrivelse | Colab |
+|---------|-------------|-------|
+| `01_bilde_tekst_clip_zero_shot_blomster.ipynb` | CLIP zero-shot på blomster (bilde+tekst) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke05-multimodal-ai/01_bilde_tekst_clip_zero_shot_blomster.ipynb) |
+
+### Uke 6: Klinisk praksis
+| Notebok | Beskrivelse | Colab |
+|---------|-------------|-------|
+| `01_risikomodell_logistisk_regresjon_kalibrering_shap.ipynb` | Syntetisk risikomodell: logistisk regresjon, kalibrering, SHAP | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke06-klinisk-praksis/01_risikomodell_logistisk_regresjon_kalibrering_shap.ipynb) |
+
+### Uke 7: Velferdsteknologi
+| Notebok | Beskrivelse | Colab |
+|---------|-------------|-------|
+| `01_robotnavigasjon_i_rutenett_med_astar.ipynb` | A* rutefinning i 2D-grid (robotnavigasjon) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke07-velferdsteknologi/01_robotnavigasjon_i_rutenett_med_astar.ipynb) |
+
 ### Uke 8: Etikk og implementering
 | Notebok | Beskrivelse | Colab |
 |---------|-------------|-------|
