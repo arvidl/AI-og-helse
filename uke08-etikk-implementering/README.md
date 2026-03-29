@@ -1,133 +1,68 @@
-# 🚀 Etikk og Implementering av AI-systemer
+# Uke 8: Etikk og implementering
 
 > *"Med stor kraft følger stort ansvar"* - Spider-Man (og AI-utviklere)
 
-Velkommen til kanskje den viktigste uken i kurset. Her skal vi utforske hvordan vi implementerer AI på en ansvarlig, lovlig og etisk måte. Dette er ikke bare teori – det er praktiske ferdigheter som vil gjøre deg til en mer komplett og ansvarlig profesjonell i sammenhenger der AI utvikles og tas i bruk.<br>
-Se og Helsedirektoratets: ["Utvikling og bruk av kunstig intelligens"](https://www.helsedirektoratet.no/rapporter/status-og-forslag-til-videre-arbeid-med-kunstig-intelligens-ki-i-helse-og-omsorgstjenesten/utvikling-og-bruk-av-kunstig-intelligens)
+Denne uken handler om hvordan AI kan brukes ansvarlig, lovlig og faglig forsvarlig i helse og medisin. Fokus er på tre temaer som går igjen i praktisk AI-arbeid: personvern, rettferdighet og regulering.
 
-## 🎯 Hvorfor er dette viktig?
+Se også Helsedirektoratets rapport: ["Utvikling og bruk av kunstig intelligens"](https://www.helsedirektoratet.no/rapporter/status-og-forslag-til-videre-arbeid-med-kunstig-intelligens-ki-i-helse-og-omsorgstjenesten/utvikling-og-bruk-av-kunstig-intelligens)
 
-**Tenk deg dette scenariet:** Du har vært med å bygge det "perfekte" AI-systemet. Det er nøyaktig, effektivt og løser et reelt problem. Men så oppdager du/dere at det diskriminerer mot kvinner, bryter GDPR, eller får en bot på hundre-tusener av kroner fordi det ikke fulgte MDR-regelverket. 
+## Læringsmål
 
-Dette er realiteten mange organisasjoner kan stå overfor i dag. Denne uken lærer deg å kunne unngå disse fallgruvene.
+Etter denne uken skal du kunne:
 
-## 🚦 Læringsmål - Hva du kan etter denne uken
+- forstå sentrale personvernkrav for AI i helse
+- identifisere og diskutere bias og rettferdighet i algoritmiske systemer
+- kjenne hovedtrekkene i CE-merking, MDR og EU-regulering av medisinsk AI
+- reflektere over implementering, risiko og ansvar i praksis
 
-Etter å ha fullført uke 8 vil du kunne:
+## Ukens notebooks
 
-✅ **Navigere GDPR-lovverket** - Vite nøyaktig hvilke personvernkrav som gjelder for AI  
-✅ **Jakte på bias** - Identifisere og eliminere skjult diskriminering i algoritmer  
-✅ **Mestre regulatorisk compliance** - Forstå CE-merking og MDR for AI-produkter, EU's KI-forordningen  
-✅ **Lede endring** - Implementere AI-systemer uten å skape uhensiktsmesig uro i organisasjonen  
+### `01_gdpr_personvern.ipynb`
 
-## 📚 Ukens innhold
+Temaer:
 
-### 🔒 Dag 1-2: GDPR og Personvern
-**Notebook:** `01_gdpr_personvern.ipynb`
+- GDPR og personvern i AI-prosjekter
+- anonymisering og pseudonymisering
+- dataminimering og informasjonsplikt
+- praktiske vurderinger ved bruk av helseopplysninger
 
-*"Dine data, felles regelverk – men hvordan følger vi dem?"*
+### `02_bias_rettferdighet.ipynb`
 
-- Lær hvordan GDPR påvirker AI-utvikling
-- Få praktiske verktøy for anonymisering og pseudonymisering
-- Forstå "rett til forklaring" vs. komplekse ML-modeller
-- **Hands-on:** Bygg en GDPR-compliance checker
+Temaer:
 
-**💡 Takeaway:** Du vil kunne møte et personvernombud med trygghet og være godt forberedt
+- hva bias er i datasett og modeller
+- fairness-begreper og typiske avveininger
+- eksempler på utilsiktet diskriminering
+- refleksjon rundt måling, evaluering og tiltak
 
-### ⚖️ Dag 3: Bias og Rettferdighet
-**Notebook:** `02_bias_rettferdighet.ipynb`
+### `03_ce_mdr_regulering.ipynb`
 
-*"Når algoritmer diskriminerer – og hvordan vi stopper dem"*
+Temaer:
 
-- Oppdag skjulte bias i "objektive" datasett
-- Mestre fairness-metrikker som demografisk paritet
-- Lær pre-, in- og post-prosesserings teknikker for bias-reduksjon
-- **Case study:** Analysér bias i ansettelsesalgoritmer
+- når AI kan regnes som medisinsk utstyr
+- CE-merking og MDR
+- risikoklassifisering
+- ansvar og dokumentasjon ved innføring av AI-systemer
 
-**🎯 Utfordring:** Kan du bygge en algoritme som er både nøyaktig OG rettferdig?
+## Arbeidsmåte
 
-### 📋 Dag 4: CE-merking og MDR Regulering
-**Notebook:** `03_ce_mdr_regulering.ipynb`
+1. Start med `01_gdpr_personvern.ipynb`.
+2. Fortsett med `02_bias_rettferdighet.ipynb`.
+3. Avslutt med `03_ce_mdr_regulering.ipynb`.
+4. Bruk gjerne `uke08-innhold.md` som støttefil dersom du vil ha en supplerende oversikt.
 
-*"Fra kode til marked – uten juridiske heftelser"*
+## Praktiske tips
 
-- Forstå når AI trenger CE-merking
-- Navigér MDR-regelverket for medisinsk AI
-- Møt EU AI Act (KI-forordningen) – Europas nye AI-lov
-- **Workshop:** Klassifisér risiko for ulike AI-systemer
+- Les notebookene i rolig tempo og noter egne refleksjoner underveis.
+- Diskuter gjerne case med medstudenter, kolleger eller en AI-sparringspartner.
+- Koble stoffet til konkrete helsefaglige situasjoner: journalsystemer, triage, beslutningsstøtte, bildeanalyse og pasientkommunikasjon.
 
-**🏆 Bonus:** Du får malene og sjekk-listene som konsulenter tar $$ for.
+## Få hjelp
 
-### 🔄 Dag 5: Endringsledelse og Implementering
-**Notebook:** `04_endringsledelse.ipynb`
-
-*"Hvordan få organisasjonen med på AI-reisen"*
-
-- Lær hvorfor 70% av AI-prosjekter feiler (hint: det er ikke teknologi)
-- Mestre stakeholder-analyse og motstandshåndtering
-- Få konkrete strategier for suksessfulle AI-implementeringer
-- **Praktisk øving:** Design en komplett implementeringsplan
-
-## 🛠️ Praktiske verktøy du får
-
-### 📊 Ferdiglagde maler
-- **`risikovurdering.xlsx`** - Komplett Excel-mal for AI-risikoanalyse
-- **`implementeringsplan.docx`** - Profesjonell mal for prosjektplanlegging
-
-### 💻 Kode og biblioteker
-```python
-# Eksempel på hva du lærer å bruke
-from aif360 import metrics  # For fairness-analyse
-import pandas as pd         # For databehandling
-from faker import Faker     # For anonymisering
-```
-
-## 🏁 Hovedoppgave: Etisk AI-analyse
-
-**Scenario:** Et sykehus vil implementere AI for triage i akuttmottaket
-
-Du får rollen som AI-etikkonsulent og skal levere:
-- Komplett GDPR-analyse
-- Bias-vurdering med konkrete tiltak
-- Regulatorisk compliance-plan
-- Implementeringsstrategi
-
-**Dette er portfolio-materiale** som viser at du behersker bredden av ansvarlig AI
-
-## ⚡ Kom i gang - din 5-minutters startguide
-
-1. **Klon/last ned** alle filene i denne mappen
-2. **Installer avhengigheter:**
-   ```bash
-   # Vil være implementert i ditt miljø på forhånd 
-   pip install aif360 pandas scikit-learn faker openpyxl
-   ```
-3. **Start med** `01_gdpr_personvern.ipynb`
-4. **Følg** notebook-ene i rekkefølge
-5. **Eksperimentér** med kodeeksemplene
-
-## 🤝 Få hjelp
-
-- **HD: Utvikling og bruk av kunstig intelligens** [[link](https://www.helsedirektoratet.no/rapporter/status-og-forslag-til-videre-arbeid-med-kunstig-intelligens-ki-i-helse-og-omsorgstjenesten/utvikling-og-bruk-av-kunstig-intelligens)]
-- **Stuck på GDPR-tolkninger?** Se juridiske ressurser i notebook 1
-- **Sliter med bias-deteksjon?** Prøv de interaktive visualiseringene
-- **Trenger implementeringshjelp?** Bruk malene i `/maler/` mappen
-- **Generelle spørsmål?** Spør en kollega, medstudent eller en AI sparringspartner
-
-
-## 📈 Etter denne uken...
-
-Du vil ikke bare være teknisk AI-kyndig, men også kunne være en **ansvarlig AI-leder** som:
-- Kan navigere komplekse regulatoriske landskap
-- Være med å bygge systemer som er både kraftige og rettferdige  
-- Implementere AI på måter som skaper verdi og tillit
-- Forstå og kommunisere språk og termer om risiko og compliance
-
+- Se juridiske og faglige lenker i notebookene.
+- Bruk [GitHub Issues](https://github.com/arvidl/AI-og-helse/issues) for å melde fra om feil eller utdaterte lenker.
+- Ved spørsmål om oppsett og kjøring: se toppnivå-`README.md`.
 
 ---
 
-*Husk å erkjenne – hver kode-linje som skrives kan påvirke liv og helse ...*
-
-**Start din kunnskap- og holdnings-reise 🌍 i etisk AI nå**
-
- ➡️ Åpne `01_gdpr_personvern.ipynb`
+Start med `01_gdpr_personvern.ipynb`.

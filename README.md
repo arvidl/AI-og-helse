@@ -35,14 +35,17 @@ AI-og-helse/
 ├── uke01-introduksjon/          # Introduksjon til AI
 ├── uke02-klassisk-ml/           # Klassisk maskinlæring
 ├── uke03-dyplæring/             # Dyplæring og nevrale nettverk
-├── uke04-generativ-ai/          # Store språkmodeller
-├── uke05-multimodal-ai/         # RAG og AI-agenter
+├── uke04-generativ-ai/          # Generativ AI og språkmodeller
+├── uke05-multimodal-ai/         # Multimodal AI
 ├── uke06-klinisk-praksis/       # AI i helsefag
 ├── uke07-velferdsteknologi/     # Robotikk og optimering
 ├── uke08-etikk-implementering/  # Etikk, bias/fairness, GDPR, MDR, EU AI Act
-├── prosjekt/                    # Prosjektoppgave maler
+├── ressurser/                   # Ordliste, verktøy og artikler
 ├── utils/                       # Hjelpefunksjoner
-└── data/                        # Eksempeldata
+├── intro_openai_anthropic.ipynb # API-introduksjon og nøkkelhåndtering
+├── environment.yml              # Standard lokalt miljø
+├── environment_cuda.yml         # Alternativt CUDA-miljø
+└── requirements.txt             # Pip-avhengigheter
 ```
 
 ## 📚 Notebok-oversikt med Colab-badges
@@ -119,7 +122,7 @@ AI-og-helse/
 
 - **Python 3.12+**
 - **Jupyter Notebooks** for interaktiv læring
-- **Google Colabratory** for sky-basert notebook-kjøring og eksperimentering
+- **Google Colaboratory (Colab)** for sky-basert notebook-kjøring og eksperimentering
 - **AI-verktøy:** OpenAI (gpt-), Anthropic (claude-), Scikit-learn, PyTorch, ...
 
 
@@ -134,6 +137,9 @@ AI-og-helse/
 - [Ordliste](ressurser/ordliste.md)
 - [Verktøyguider](ressurser/verktoy/)
 - [Artikkelsamling](ressurser/artikler/)
+- [Google Colab-oppsett](COLAB_SETUP.md)
+- [Colab-kompatibilitetssjekkliste](COLAB_COMPATIBILITY_CHECKLIST.md)
+- [Kaggle-data og API-tilgang](kaggle_data_tilgang.md)
 
 
 ## 👥 Målgruppe
@@ -153,12 +159,12 @@ AI-og-helse/
 
 ## 📄 Lisens
 
-Dette kursmaterialet er lisensiert under [CC BY-SA 4.0](LICENSE) / [MIT License](https://github.com/arvidl/AI-og-helse/blob/main/LICENSE) Copyright (c) 2025 Arvid Lundervold
+Repoet er lisensiert under [MIT-lisensen](LICENSE). Copyright (c) 2025 Arvid Lundervold.
 
 ## 🙏 Bidragsytere
 
 - Arvid Lundervold
-- [Bidragsytere](CONTRIBUTING.md)
+- [Hvordan bidra](CONTRIBUTING.md)
 
 
 ### 🛠️ Hvordan kurset er laget og ressurser brukt
@@ -166,7 +172,7 @@ Dette kursmaterialet er lisensiert under [CC BY-SA 4.0](LICENSE) / [MIT License]
 - bygger på domenekunnskap, godt nettverk av fagfeller ([nær](https://www.sciencedirect.com/science/article/pii/S0939388918301181?via%3Dihub) og [fjern](http://en.jnl.ac.cn/article/185.html)) og entusiasme for feltet
 - bruk av AI kode-editoren Cursor Ultra 
 - utviklet på en MacBook Pro (M4 Max) 
-- diverse lisenser (GitHub, OpenAI, Anthropic, Perplexity, Gooogle) 
+- diverse lisenser (GitHub, OpenAI, Anthropic, Perplexity, Google) 
 - ca. 40 timeverk (for basisdelen) 
 
 

@@ -1,4 +1,4 @@
-# Uke 4: Generativ AI og Store Språkmodeller (AI 2.0)
+# Uke 4: Generativ AI og store språkmodeller
 
 ## 🎯 Ukens læringsmål
 
@@ -19,23 +19,19 @@
 
 3. **Selvstudium** (4 timer)
    - Les: ["Attention is All You Need"](https://arxiv.org/abs/1706.03762) (første 5 sider)
-   - Se: [Visualisering av Transformers](https://www.youtube.com/watch?v=...)
+   - Les: [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/)
    - Øv: Prompt-oppgaver i [`prompts/`](./prompts)
 
 ## 🏃 Hurtigstart
 
 ```python
-# Test at alt fungerer
-from transformers import pipeline
+import os
 
-# Last inn norsk språkmodell
-generator = pipeline("text-generation", model="NbAiLab/nb-gpt-j-6B")
-
-# Generer tekst
-prompt = "Pasienten presenterer symptomer på"
-result = generator(prompt, max_length=50)
-print(result[0]['generated_text'])
+print("OPENAI_API_KEY finnes:", bool(os.getenv("OPENAI_API_KEY")))
+print("ANTHROPIC_API_KEY finnes:", bool(os.getenv("ANTHROPIC_API_KEY")))
 ```
+
+For API-notebookene trenger du egne nøkler. Se toppnivå-`README.md` og `../intro_openai_anthropic.ipynb` for oppsett lokalt og i Colab.
 
 ## ✍️ Ukens oppgaver
 
@@ -56,16 +52,19 @@ print(result[0]['generated_text'])
 ## 🔗 Ressurser
 
 - [OpenAI Prompt Engineering Guide](https://platform.openai.com/docs/guides/prompt-engineering)
-- [Anthropic Claude Best Practices](https://docs.anthropic.com/claude/docs)
+- [Anthropic Documentation](https://docs.anthropic.com/)
 - [Prompts for Healthcare](prompts/)
 
 ## ❓ Ofte stilte spørsmål
 
 **Q: Trenger jeg API-nøkler?**
-A: Nei, disse er inkludert i kurset via miljøvariabler.
+A: Ja, for notebookene som faktisk bruker OpenAI- eller Anthropic-API-er. Flere av eksemplene kan likevel leses og delvis prøves uten nøkler.
 
 **Q: Kan jeg bruke norsk i prompts?**
 A: Ja! Moderne LLM håndterer norsk godt.
+
+**Q: Kan jeg bruke dette i Colab?**
+A: Ja, men API-notebookene krever manuell nøkkeloppsett. Se `../COLAB_SETUP.md` og `../COLAB_COMPATIBILITY_CHECKLIST.md`.
 
 ## 📅 Veiledning
 
