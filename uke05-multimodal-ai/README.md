@@ -1,32 +1,17 @@
-# Uke 5: Multimodal AI
+# Uke 5: Tidligere multimodal uke
 
-## Laringsmal
+Denne mappen brukes ikke lenger som hovedinngang for uke 5.
 
-Etter denne uken skal du kunne:
+Kursopplegget er omstrukturert slik:
 
-- forklare hva multimodale modeller er, og hvorfor koblingen mellom bilde og tekst er nyttig
-- forsta grunnideen bak CLIP og zero-shot klassifikasjon
-- kjorer en enkel bilde-tekst-modell lokalt eller i Colab
-- reflektere over styrker og begrensninger ved multimodale modeller i helse
+- multimodalitet er flyttet inn i [uke04-generativ-ai](../uke04-generativ-ai/)
+- uke 5 er rendyrket som [uke05-agentisk-ai](../uke05-agentisk-ai/)
 
-## Innhold
+Den tidligere CLIP-notebooken finnes na som:
 
-### Notebook
-1. **[01_bilde_tekst_clip_zero_shot_blomster.ipynb](01_bilde_tekst_clip_zero_shot_blomster.ipynb)** - introduksjon til CLIP, bilde-tekst-likhet og zero-shot klassifikasjon
+- [uke04-generativ-ai/10_bilde_tekst_clip_zero_shot_blomster.ipynb](../uke04-generativ-ai/10_bilde_tekst_clip_zero_shot_blomster.ipynb)
 
-## Hva notebooken dekker
+Bruk den nye strukturen videre i kurset:
 
-- grunnleggende forklaring av CLIP og kontrastiv laering
-- robust miljooppsett for lokal kjoring og Google Colab
-- zero-shot klassifikasjon av blomsterbilder med bilde-tekst-prompts
-- enkel evaluering, visualisering og refleksjon rundt resultater
-
-## Arbeidsmate
-
-1. Kjor `01_bilde_tekst_clip_zero_shot_blomster.ipynb` fra toppen.
-2. Prov ulike tekstprompts og sammenlign resultatene.
-3. Se pa topp-prediksjoner og diskuter hvorfor modellen treffer eller bommer.
-
-## Refleksjon
-
-Tenk over hvordan samme metode kan overfores til helsefaglige data, for eksempel bildebeskrivelser, radiologi eller klinisk dokumentasjon med tilhorende visuelle funn.
+- [Uke 4 - Generativ AI, foundation models og multimodalitet](../uke04-generativ-ai/)
+- [Uke 5 - Agentisk AI](../uke05-agentisk-ai/)

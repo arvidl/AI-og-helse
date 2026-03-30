@@ -94,7 +94,7 @@ print("🎉 Klar for maskinlæring!")
 Etter denne uken er du klar for:
 - **Uke 3**: Dyplæring og konvolusjonelle nevrale nettverk
 - **Uke 4**: Generativ AI og transformer-arkitektur
-- **Uke 5**: Multimodal AI (tekst, bilde, lyd)
+- **Uke 5**: Agentisk AI (chatbot, workflow, RAG og helsecase)
 - **Uke 6**: Klinisk praksis og implementering
 - **Uke 7**: Velferdsteknologi og brukeropplevelse
 - **Uke 8**: Etikk, regulering og implementering

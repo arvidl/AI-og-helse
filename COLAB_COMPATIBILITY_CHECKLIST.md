@@ -52,7 +52,7 @@ It is intended as a practical maintenance checklist, not a guarantee that every 
   Note: requires API keys.
 - [ ] `uke04-generativ-ai/oppgaver/prompt_workshop.ipynb`
   Note: can run in simulated mode, but real use needs `OPENAI_API_KEY`.
-- [ ] `uke05-multimodal-ai/01_bilde_tekst_clip_zero_shot_blomster.ipynb`
+- [ ] `uke04-generativ-ai/10_bilde_tekst_clip_zero_shot_blomster.ipynb`
   Note: likely needs heavier model/runtime setup than the simpler notebooks.
 - [ ] `intro_openai_anthropic.ipynb`
   Note: Colab-aware, but requires manual secret setup.

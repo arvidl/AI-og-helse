@@ -35,8 +35,8 @@ AI-og-helse/
 ├── uke01-introduksjon/          # Introduksjon til AI
 ├── uke02-klassisk-ml/           # Klassisk maskinlæring
 ├── uke03-dyplæring/             # Dyplæring og nevrale nettverk
-├── uke04-generativ-ai/          # Generativ AI og språkmodeller
-├── uke05-multimodal-ai/         # Multimodal AI
+├── uke04-generativ-ai/          # Generativ AI, foundation models og multimodalitet
+├── uke05-agentisk-ai/           # Agentisk AI i helse og omsorg
 ├── uke06-klinisk-praksis/       # AI i helsefag
 ├── uke07-velferdsteknologi/     # Robotikk og optimering
 ├── uke08-etikk-implementering/  # Etikk, bias/fairness, GDPR, MDR, EU AI Act
@@ -83,18 +83,24 @@ AI-og-helse/
 | `04b_ansiktsutrykk_klassifikasjon.ipynb` | Emosjonelle ansiktsutrykk - del 2 (trening) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke03-dyplæring/04b_ansiktsutrykk_klassifikasjon.ipynb) |
 | `04c_ansiktsutrykk_klassifikasjon.ipynb` | Emosjonelle ansiktsutrykk - del 3 (evaluering)| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke03-dyplæring/04c_ansiktsutrykk_klassifikasjon.ipynb) |
 
-### Uke 4: Generativ AI
+### Uke 4 og 5: Moderne AI i praksis
+
+Uke 4 gir en innforing i generativ AI, foundation models og multimodalitet. Uke 5 bygger videre pa dette og viser hvordan slike modeller kan inga i agentiske systemer med verktoybruk, arbeidsflyt og helsefaglige anvendelser.
+
+### Uke 4: Generativ AI, foundation models og multimodalitet
 | Notebok | Beskrivelse | Colab |
 |---------|-------------|-------|
 | `01_transformer_arkitektur.ipynb` | Transformer-arkitektur | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke04-generativ-ai/01_transformer_arkitektur.ipynb) |
 | `02_llm_grunnleggende.ipynb` | LLM grunnleggende | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke04-generativ-ai/02_llm_grunnleggende.ipynb) |
 | `03_prompt_engineering.ipynb` | Prompt engineering | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke04-generativ-ai/03_prompt_engineering.ipynb) |
 | `04_chatgpt_claude_api.ipynb` | ChatGPT og Claude API | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke04-generativ-ai/04_chatgpt_claude_api.ipynb) |
+| `10_bilde_tekst_clip_zero_shot_blomster.ipynb` | CLIP zero-shot pa blomster (bilde + tekst) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke04-generativ-ai/10_bilde_tekst_clip_zero_shot_blomster.ipynb) |
 
-### Uke 5: Multimodal AI
+### Uke 5: Agentisk AI
 | Notebok | Beskrivelse | Colab |
 |---------|-------------|-------|
-| `01_bilde_tekst_clip_zero_shot_blomster.ipynb` | CLIP zero-shot på blomster (bilde+tekst) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke05-multimodal-ai/01_bilde_tekst_clip_zero_shot_blomster.ipynb) |
+| `01_chatbot_workflow_agent.ipynb` | Chatbot, workflow og agent: begreper og enkle eksempler | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke05-agentisk-ai/01_chatbot_workflow_agent.ipynb) |
+| `02_agentisk_ai_i_helse.ipynb` | Agentisk AI i helse: verktoybruk, RAG, minne, case og sikkerhet | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke05-agentisk-ai/02_agentisk_ai_i_helse.ipynb) |
 
 ### Uke 6: Klinisk praksis
 | Notebok | Beskrivelse | Colab |
