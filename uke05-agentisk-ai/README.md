@@ -1,11 +1,11 @@
 # Uke 5: Agentisk AI
 
-## Larningsmal
+## Læringsmål
 
 Etter denne uken skal du kunne:
 
 - forklare forskjellen mellom en chatbot, en fast arbeidsflyt og en AI-agent
-- forsta hvordan en sprakmodell kan bruke verktoy for a lose oppgaver i flere steg
+- forstå hvordan en språkmodell kan bruke verktøy for å løse oppgaver i flere steg
 - kjenne hovedideen bak RAG, enkel minnebruk og tilstand i agentiske systemer
 - diskutere helserelevante anvendelser av agentisk AI
 - reflektere over grenser, risiko, personvern, logging og behov for menneskelig kontroll
@@ -13,84 +13,95 @@ Etter denne uken skal du kunne:
 ## Innhold
 
 ### Notebooks
-1. **[01_chatbot_workflow_agent.ipynb](01_chatbot_workflow_agent.ipynb)** - begrepsinnforing med forskjellen mellom chatbot, workflow og agent
-2. **[02_agentisk_ai_i_helse.ipynb](02_agentisk_ai_i_helse.ipynb)** - agentisk AI i helsefaglige anvendelser: verktoybruk, RAG, minne, case og sikkerhet
+1. **[01_chatbot_workflow_agent.ipynb](01_chatbot_workflow_agent.ipynb)** - begrepsinnføring til forskjellen mellom chatbot, workflow og agent
+2. **[02_agentisk_ai_i_helse.ipynb](02_agentisk_ai_i_helse.ipynb)** - agentisk AI i helsefaglige anvendelser: verktøybruk, RAG, minne, case, visualiseringer og sikkerhet
+
+## Hurtigstart
+
+Hvis du kommer direkte til uke 5, holder det å:
+
+1. åpne `01_chatbot_workflow_agent.ipynb`
+2. lese forklaringene og kjøre de enkle kodecellene
+3. fortsette med `02_agentisk_ai_i_helse.ipynb`
+
+Notebookene kan leses uten API-nøkler, og eksemplene er laget for å kunne forstås som pedagogiske demonstrasjoner.
 
 ## Hva denne uken dekker
 
-Denne uken handler om hvordan moderne sprakmodeller kan ga fra a vaere rene samtalepartnere til a bli komponenter i systemer som planlegger, bruker verktoy og utforer flere deloppgaver innenfor gitte rammer.
+Denne uken handler om hvordan moderne språkmodeller kan gå fra å være rene samtalepartnere til å bli komponenter i systemer som planlegger, bruker verktøy og utfører flere deloppgaver innenfor gitte rammer.
 
-Malet er ikke a framstille AI-agenter som autonome kliniske beslutningstakere, men a gi en realistisk og kritisk innforing i hvordan slike systemer kan brukes som stotte i helse og omsorg.
+Målet er ikke å framstille AI-agenter som autonome kliniske beslutningstakere, men å gi en realistisk og kritisk innføring i hvordan slike systemer kan brukes som støtte i helse og omsorg.
 
-Uken dekker saerlig:
+Uken dekker særlig:
 
 - forskjellen mellom chatbot, workflow og agent
-- hvordan verktoybruk kan gjore en modell mer nyttig
-- hva RAG er, og hvorfor oppslag i dokumenter eller kunnskapsbaser kan vaere viktig
+- hvordan verktøybruk kan gjøre en modell mer nyttig
+- hva RAG er, og hvorfor oppslag i dokumenter eller kunnskapsbaser kan være viktig
 - hva vi mener med enkel hukommelse og tilstand i en arbeidsflyt
 - hvilke typer helseoppgaver som kan egne seg for agentisk AI
-- hvilke feil, risikoer og ansvarsutfordringer som folger med
+- hvilke feil, risikoer og ansvarsutfordringer som følger med
 
 ## Helserelevante temaer
 
-Agentisk AI er saerlig interessant nar en oppgave ikke kan loses godt med ett enkelt svar, men krever flere steg, oppslag eller strukturering underveis.
+Agentisk AI er særlig interessant når en oppgave ikke kan løses godt med ett enkelt svar, men krever flere steg, oppslag eller strukturering underveis.
 
-Eksempler kan vaere:
+Eksempler kan være:
 
 - journalsammendrag og strukturering av tekst
-- stotte til triage og informasjonsinnhenting
-- pasientkommunikasjon og omskriving til mer forstaelig sprak
-- administrativ koordinering, dokumenthandtering og oppgavelister
+- støtte til triage og informasjonsinnhenting
+- pasientkommunikasjon og omskriving til mer forståelig språk
+- administrativ koordinering, dokumenthåndtering og oppgavelister
 - oppslag i retningslinjer eller lokale prosedyrer
 
-Samtidig ma slike systemer alltid vurderes kritisk. I helsetjenesten er det ikke nok at en losning virker smart eller effektiv. Den ma ogsa vaere faglig forsvarlig, trygg, sporbar og underlagt tydelig menneskelig kontroll.
+Samtidig må slike systemer alltid vurderes kritisk. I helsetjenesten er det ikke nok at en løsning virker smart eller effektiv. Den må også være faglig forsvarlig, trygg, sporbar og underlagt tydelig menneskelig kontroll.
 
-## Arbeidsmate
+## Arbeidsmåte
 
 1. Start med `01_chatbot_workflow_agent.ipynb`.
-2. Se spesielt etter hvordan samme oppgave kan loses ulikt av en chatbot, en fast arbeidsflyt og en agent.
+2. Se spesielt etter hvordan samme oppgave kan løses ulikt av en chatbot, en fast arbeidsflyt og en agent.
 3. Fortsett med `02_agentisk_ai_i_helse.ipynb`.
-4. Ga gjennom helsecasene og vurder hvilke som virker realistiske og nyttige i praksis.
-5. Diskuter hvilke anvendelser som kan vaere lav risiko, og hvilke som krever strenge rammer eller ikke bor brukes.
+4. Gå gjennom helsecasene og vurder hvilke som virker realistiske og nyttige i praksis.
+5. Se på visualiseringene og diskuter hvilke oppgavetyper som virker mest forsvarlige å starte med.
+6. Diskuter hvilke anvendelser som kan være lav risiko, og hvilke som krever strenge rammer eller ikke bør brukes.
 
-## Sentrale sporsmal denne uken
+## Sentrale spørsmål denne uken
 
 Underveis kan du tenke over:
 
-- Nar er en vanlig chatbot tilstrekkelig?
-- Nar er en fast arbeidsflyt bedre enn en fri agent?
-- Nar kan verktoybruk oke kvaliteten, og nar oker den risikoen?
-- Hvordan bor et agentisk system avgrenses dersom det brukes i helse?
-- Hvem har ansvar nar et system gjor feil i flere steg?
-- Hvilken rolle bor mennesket ha i kontroll, godkjenning og oppfolging?
+- Når er en vanlig chatbot tilstrekkelig?
+- Når er en fast arbeidsflyt bedre enn en fri agent?
+- Når kan verktøybruk øke kvaliteten, og når øker den risikoen?
+- Hvordan bør et agentisk system avgrenses dersom det brukes i helse?
+- Hvem har ansvar når et system gjør feil i flere steg?
+- Hvilken rolle bør mennesket ha i kontroll, godkjenning og oppfølging?
 
 ## Viktige merknader
 
-- Ikke bruk ekte pasientopplysninger i apne AI-tjenester.
-- Agentiske systemer kan gjore feil pa flere nivaer: i planlegging, i verktoybruk, i oppsummering og i anbefalinger.
-- Jo mer handlekraft et system far, desto viktigere blir logging, sporbarhet og menneskelig kontroll.
-- I helse bor agentisk AI som hovedregel brukes som stotte, ikke som erstatning for faglig ansvarlig personell.
+- Ikke bruk ekte pasientopplysninger i åpne AI-tjenester.
+- Agentiske systemer kan gjøre feil på flere nivåer: i planlegging, i verktøybruk, i oppsummering og i anbefalinger.
+- Jo mer handlekraft et system får, desto viktigere blir logging, sporbarhet og menneskelig kontroll.
+- I helse bør agentisk AI som hovedregel brukes som støtte, ikke som erstatning for faglig ansvarlig personell.
 - Temaene denne uken henger tett sammen med personvern, bias, regulering og ansvar, og peker derfor videre mot uke 8.
 
 ## Forbindelse til resten av kurset
 
-Denne uken bygger direkte pa [Uke 4 - Generativ AI, foundation models og multimodalitet](../uke04-generativ-ai/).
+Denne uken bygger direkte på [Uke 4 - Generativ AI, foundation models og multimodalitet](../uke04-generativ-ai/).
 
-I uke 4 laerte du hva moderne sprakmodeller og multimodale modeller er, og hvordan de kan brukes gjennom prompts og API-er. I uke 5 ser vi pa hvordan slike modeller kan inga i storre systemer som bruker verktoy, arbeidsflyt og strukturert samhandling.
+I uke 4 lærte du hva moderne språkmodeller og multimodale modeller er, og hvordan de kan brukes gjennom prompts og API-er. I uke 5 ser vi på hvordan slike modeller kan inngå i større systemer som bruker verktøy, arbeidsflyt og strukturert samhandling.
 
-Senere i kurset blir dette relevant nar vi diskuterer:
+Senere i kurset blir dette relevant når vi diskuterer:
 
-- klinisk praksis og beslutningsstotte
-- ansvarlig innforing av AI i helsetjenesten
+- klinisk praksis og beslutningsstøtte
+- ansvarlig innføring av AI i helsetjenesten
 - personvern, bias og regulering
-- konkrete grenser for hva AI bor og ikke bor brukes til
+- konkrete grenser for hva AI bør og ikke bør brukes til
 
 ## Videre
 
-Se ogsa:
+Se også:
 
 - [Uke 4 - Generativ AI, foundation models og multimodalitet](../uke04-generativ-ai/)
 - [Uke 6 - Klinisk praksis](../uke06-klinisk-praksis/)
 - [Uke 8 - Etikk og implementering](../uke08-etikk-implementering/)
 
-Denne uken markerer et viktig skifte i kurset: fra a forsta modeller til a forsta systemer som kan bruke modeller i praksis.
+Denne uken markerer et viktig skifte i kurset: fra å forstå modeller til å forstå systemer som kan bruke modeller i praksis.
