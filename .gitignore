@@ -50,6 +50,7 @@ uke03-dyplæring/data/raw/
 uke03-dyplæring/data/medical/kaggle
 uke03-dyplæring/runs/
 uke03-dyplæring/modeller/
+uke04-generativ-ai/cache/
 
 *.csv
 *.xlsx

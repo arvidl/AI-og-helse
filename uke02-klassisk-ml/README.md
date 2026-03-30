@@ -1,6 +1,6 @@
 # Uke 2: Klassisk Maskinlæring i Helse
 
-## �� Ukens Læringsmål
+## 🎯 Ukens Læringsmål
 
 Etter denne uken skal du:
 - **Forstå** hva maskinlæring er og hvordan det relaterer til klinisk erfaring
@@ -42,16 +42,16 @@ print("🎉 Klar for maskinlæring!")
 
 ### Nyttig
 - **ML-grunnleggende**: [Introduction to Machine Learning - scikit-learn](https://scikit-learn.org/stable/user_guide.html)
-- **Medisinsk ML**: [Machine Learning in Medicine - Nature]()
+- **Medisinsk ML**: Machine Learning in Medicine - Nature
 - **Klinisk evaluering**: [Clinical Prediction Models - Steyerberg](https://link.springer.com/book/10.1007/978-3-030-16399-0)
-- **Etikk i medisinsk AI**: [Ethical challenges in medical AI - PLOS Digital Health]()
+- **Etikk i medisinsk AI**: Ethical challenges in medical AI - PLOS Digital Health
 
 ### Kjekt å vite
 - **Beslutningstrær**: [Decision Trees in Healthcare - CUP](https://www.cambridge.org/core/books/abs/dataguided-healthcare-decision-making/how-healthcare-decision-trees-emerge-and-function/9B4B93CFB31A330EE84132FFDE929EAA)
-- **Random Forest**: [Random Forest for Medical Diagnosis]()
-- **ROC-kurver**: [ROC Analysis in Medical Research]()
+- **Random Forest**: Random Forest for Medical Diagnosis
+- **ROC-kurver**: ROC Analysis in Medical Research
 
-## �� Refleksjonsspørsmål
+## 💭 Refleksjonsspørsmål
 
 1. Hvordan skiller maskinlæring seg fra tradisjonell klinisk diagnostikk?
 2. Hvorfor er beslutningstrær intuitive for helsepersonell?
@@ -105,7 +105,7 @@ Etter denne uken er du klar for:
 - Gjennomfør `01-klassisk-ml-101.ipynb`
 - Les gjennom refleksjonsspørsmålene
 
-### �� Dag 2-3: Praksis
+### 📅 Dag 2-3: Praksis
 - Arbeide gjennom `02-fra-symptom-til-diagnose.ipynb`
 - Begynn på refleksjonsoppgaven
 
