@@ -1,0 +1,8 @@
+{
+  "prompt": "Forklar diabetes type 2 på en enkel måte til en pasient",
+  "model": "gemini",
+  "temperature": 0.5,
+  "response": "Ok, la meg forklare diabetes type 2 på en enkel måte, uten for mye vanskelige ord.\n\nTenk deg at kroppen din trenger energi, akkurat som en bil",
+  "timestamp": "2026-03-31T00:19:28.056053",
+  "cache_key": "3b0ffe86c34393dad513ba03366d6446"
+}

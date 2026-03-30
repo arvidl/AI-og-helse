@@ -1,0 +1,8 @@
+{
+  "prompt": "List opp 3 hovedsymptomer på diabetes type 2",
+  "model": "gpt",
+  "temperature": 0,
+  "response": "De tre hovedsymptomene på diabetes type 2 inkluderer:\n\n1. **Økt tørst (polydipsi)**: Personer med diabetes type 2 kan oppleve en vedvarende følelse av tørst, selv etter å ha drukket væske.\n\n2. **Hyppig vannlating (polyuri)**: Økt tørst fører ofte til at man drikker mer væske, noe som igjen resulterer i hyppigere vannlating.\n\n3. **Uforklarlig vekttap**: Selv om man kan oppleve økt appetitt, kan kroppen begynne å bryte ned muskler og fett for energi, noe som kan føre til vekttap.\n\nAndre symptomer kan inkludere tretthet, sløret syn og sår som tar lang tid å hele. Det er viktig å oppsøke lege hvis man mistenker diabetes.",
+  "timestamp": "2026-03-31T00:03:54.457311",
+  "cache_key": "5fa5e194ea221e15be9a4300a77d72e7"
+}

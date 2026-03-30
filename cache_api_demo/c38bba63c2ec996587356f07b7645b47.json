@@ -1,0 +1,8 @@
+{
+  "prompt": "Forklar diabetes type 2 på en enkel måte til en pasient",
+  "model": "claude",
+  "temperature": 0.5,
+  "response": "# Diabetes type 2 - enkelt forklart\n\n## Hva er det?\n\nDiabetes type 2 betyr at du har for mye sukker i blodet over tid. Dette skjer fordi kroppen din ikke klarer å håndtere sukkeret på en god måte lenger.\n\n## Hvordan fungerer det normalt?\n\n- Når du spiser, blir maten omdannet til sukker (glukose)\n- Bukspyttkjertelen lager et hormon som heter **insulin**\n- Insulinet er som en \"nøkkel\" som låser opp kroppens celler, slik at sukkeret kan komme inn og gi deg energi\n\n## Hva går galt ved diabetes type 2?\n\nTo ting skjer:\n\n1. **Cellene blir \"døve\"** - de reagerer ikke så godt på insulin lenger (insulinresistens)\n2. **Bukspyttkjertelen sliter** - den klarer ikke lage nok insulin til å kompensere\n\nResultatet: Sukkeret blir værende i blodet i stedet for å komme inn i cellene.\n\n## Hva kan du gjøre?\n\n- **Sunt kosthold** - mindre sukker og bearbeidet mat\n- **Fysisk aktivitet** - hjelper cellene å ta opp sukker bedre\n- **Vektnedgang** hvis aktuelt\n- **Medisiner** hvis nødvendig\n\n**Godt nytt:** Diabetes type 2 kan ofte kontrolleres godt med livsstilsendringer!\n\nHar du spørsmål om noe?",
+  "timestamp": "2026-03-31T00:19:43.813273",
+  "cache_key": "c38bba63c2ec996587356f07b7645b47"
+}

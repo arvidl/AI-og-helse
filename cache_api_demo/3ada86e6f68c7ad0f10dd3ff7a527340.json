@@ -1,0 +1,8 @@
+{
+  "prompt": "Forklar diabetes type 2 på en enkel måte til en pasient",
+  "model": "openai",
+  "temperature": 0.5,
+  "response": "Diabetes type 2 er en tilstand der kroppen ikke bruker insulin på en effektiv måte, eller hvor kroppen ikke lager nok insulin. Insulin er et hormon som hjelper kroppen med å bruke sukker (glukose) fra maten som energi. \n\nNår man har diabetes type 2, kan sukkeret bygge seg opp i blodet fordi kroppen ikke klarer å flytte det inn i cellene der det trengs. Dette kan føre til høye blodsukkernivåer, som over tid kan skade kroppen, spesielt hjertet, blodårene, nervene og nyrene.\n\nDe viktigste faktorene som bidrar til diabetes type 2 inkluderer overvekt, lite fysisk aktivitet, usunn kosthold og genetiske faktorer. \n\nBehandlingen for diabetes type 2 inkluderer ofte livsstilsendringer som sunnere kosthold, mer trening og vekttap. I noen tilfeller kan medisiner være nødvendig for å hjelpe kroppen med å håndtere blodsukkeret bedre.\n\nDet er viktig å følge opp med legen din for å holde blodsukkernivåene under kontroll og for å unngå komplikasjoner.",
+  "timestamp": "2026-03-31T00:19:32.286135",
+  "cache_key": "3ada86e6f68c7ad0f10dd3ff7a527340"
+}

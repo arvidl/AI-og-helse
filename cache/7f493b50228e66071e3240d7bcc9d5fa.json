@@ -1,0 +1,8 @@
+{
+  "prompt": "Hva er normal blodtrykk for en 50-åring?",
+  "model": "gpt",
+  "temperature": 0,
+  "response": "Normal blodtrykk for en voksen, inkludert en 50-åring, anses vanligvis å være rundt 120/80 mmHg. Blodtrykket kan imidlertid variere avhengig av individuelle faktorer som helse, livsstil og genetikk. Verdier under 120/80 mmHg regnes som optimalt, mens blodtrykk mellom 120/80 mmHg og 139/89 mmHg kan klassifiseres som forhøyet eller prehypertensjon. Blodtrykk på 140/90 mmHg eller høyere anses som hypertensjon. Det er viktig å konsultere en lege for å få en nøyaktig vurdering av blodtrykket og hva som er normalt for deg.",
+  "timestamp": "2026-03-31T00:03:57.941274",
+  "cache_key": "7f493b50228e66071e3240d7bcc9d5fa"
+}

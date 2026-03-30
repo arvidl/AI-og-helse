@@ -1,0 +1,8 @@
+{
+  "prompt": "List opp 3 hovedsymptomer på diabetes type 2",
+  "model": "gemini",
+  "temperature": 0,
+  "response": "De 3 hovedsymptomene på diabetes type 2 er ofte:\n\n1.  **Økt tørste (polydipsi):** Kroppen prøver",
+  "timestamp": "2026-03-31T00:19:48.898102",
+  "cache_key": "c9b9f7e8085c5e4adf04fcca5b4d8691"
+}

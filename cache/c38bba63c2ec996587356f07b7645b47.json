@@ -1,0 +1,8 @@
+{
+  "prompt": "Forklar diabetes type 2 på en enkel måte til en pasient",
+  "model": "claude",
+  "temperature": 0.5,
+  "response": "## Hva er diabetes type 2?\n\nDiabetes type 2 er en tilstand der kroppen din ikke klarer å regulere blodsukkeret på en normal måte.\n\n### Hvordan fungerer det normalt?\n- Når du spiser, stiger blodsukkeret\n- Bukspyttkjertelen lager insulin (et hormon)\n- Insulin hjelper sukkeret å komme inn i cellene dine\n- Blodsukkeret synker til normale nivåer\n\n### Hva skjer ved diabetes type 2?\n- Cellene dine blir mindre følsomme for insulin (insulinresistens)\n- Bukspyttkjertelen må jobbe hardere for å lage nok insulin\n- Over tid klarer den ikke å produsere nok insulin\n- Blodsukkeret blir for høyt\n\n### Enkelt sagt:\nDet er som om insulin er \"nøkkelen\" som låser opp cellene dine, men ved diabetes type 2 passer ikke nøkkelen like godt i låsen lenger.\n\n### Vanlige symptomer:\n- Tørste og hyppig vannlating\n- Tretthet\n- Sløret syn\n- Sakte sårheling\n\n### Den gode nyheten:\nType 2-diabetes kan ofte kontrolleres godt med:\n- Sunt kosthold\n- Regelmessig mosjon  \n- Eventuelt medisiner\n- Regelmessige kontroller\n\nHar du spørsmål om noe av dette?",
+  "timestamp": "2026-03-31T00:03:48.380285",
+  "cache_key": "c38bba63c2ec996587356f07b7645b47"
+}
