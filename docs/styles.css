@@ -406,6 +406,47 @@ h1 {
   margin-bottom: 12px;
 }
 
+.presentation-panel {
+  align-items: center;
+}
+
+.presentation-note {
+  margin-top: 16px;
+  margin-bottom: 0;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.presentation-qr-card {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  gap: 10px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(255, 250, 240, 0.98));
+  border: 1px solid rgba(67, 51, 38, 0.12);
+  border-radius: var(--radius-md);
+  padding: 22px;
+}
+
+.presentation-qr {
+  width: min(100%, 280px);
+  aspect-ratio: 1;
+  object-fit: contain;
+  border-radius: 18px;
+  background: #fff;
+  border: 1px solid rgba(67, 51, 38, 0.12);
+  padding: 10px;
+}
+
+.presentation-qr-card p {
+  margin-bottom: 0;
+}
+
+.presentation-qr-card p:last-child {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
 .path-list p {
   color: var(--muted);
   line-height: 1.65;
