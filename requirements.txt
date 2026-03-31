@@ -1,72 +1,57 @@
-# A fallback requirements.txt if conda fails
+# Fallback for pip/venv.
+# Denne fila speiler standardmiljøet i `environment.yml` så langt det lar seg gjøre med pip.
 
-# Core packages
+# Grunnleggende dataarbeid og visualisering
 numpy>=1.26.0,<2.4
 pandas>=2.1.0
+scipy>=1.11.0
 matplotlib>=3.8.0
 seaborn>=0.13.0
-plotly>=5.18.0
 
-# Machine Learning
+# Klassisk maskinlæring
 scikit-learn>=1.3.0
+scikit-image>=0.22.0
 xgboost>=2.0.0
 lightgbm>=4.1.0
 
-# Deep Learning (CPU versions for compatibility)
+# Dyplæring og bildearbeid
 torch>=2.1.0
 torchvision>=0.16.0
-tensorflow>=2.15.0
-
-# LLM and NLP
-openai>=1.0.0
-anthropic>=0.8.0
-langchain>=0.1.0
-langchain-community>=0.0.10
-langchain-openai>=0.0.5
-transformers>=4.36.0
-sentence-transformers>=2.2.0
-tiktoken>=0.5.0
-
-# AI Agents
-crewai                  # Optional week 05 advanced agent demo
-autogen>=0.2.0
-chromadb>=0.4.0
-
-# Web frameworks
-streamlit>=1.29.0
-gradio>=4.0.0
-fastapi>=0.104.0
-uvicorn>=0.24.0
-
-# Jupyter
-jupyter>=1.0.0
-jupyterlab>=4.0.0
-ipywidgets>=8.1.0
-notebook>=7.0.0
-ipykernel>=6.26.0
-
-# Feature Importance and Explainable AI packages
-shap>=0.44.0             # SHapley Additive exPlanations
-lime>=0.2.0.1            # Local Interpretable Model-agnostic Explanations
-alibi>=0.9.0             # Algorithmic bias detection and mitigation
-dalex>=1.4.0             # Explanations for ML models
-pdpbox>=0.2.0            # Partial Dependence Plot toolbox
-      
-# ECG and Signal Processing packages
-wfdb>=4.1.0              # For MIT-BIH Arrhythmia Database
-heartpy>=1.2.0           # For ECG analysis
-neurokit2>=0.2.0         # For physiological signal processing
-
-# Utils
-python-dotenv>=1.0.0
-pydantic>=2.0.0
-requests>=2.31.0
-tqdm>=4.66.0
-pyyaml>=6.0
-openpyxl>=3.1.0
+opencv-python>=4.8.0
 pillow>=10.0.0
 
-# Dev tools
+# Notebook-miljø
+jupyterlab>=4.0.0
+notebook>=7.0.0
+ipywidgets>=8.1.0
+ipykernel>=6.26.0
+
+# Hjelpepakker
+python-dotenv>=1.0.0
+pyyaml>=6.0
+tqdm>=4.66.0
+openpyxl>=3.1.0
+
+# Språkmodeller og API-bruk
+google-genai
+openai>=1.0.0
+anthropic>=0.8.0
+transformers>=4.36.0
+tiktoken>=0.5.0
+
+# Kursnotebooks og fordypning
+crewai
+shap>=0.44.0
+lime>=0.2.0.1
+nibabel>=5.0.0
+nilearn>=0.10.0
+wfdb>=4.1.0
+torchsummary>=1.5.1
+torchinfo>=1.8
+faker
+kaggle>=1.5.0
+
+# Utvikling og testing
 black>=23.0.0
 flake8>=6.0.0
 pytest>=7.4.0

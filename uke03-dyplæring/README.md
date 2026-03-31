@@ -1,114 +1,54 @@
-# Uke 3: Dyplæring og Konvolusjonelle Nevrale Nettverk
+# Uke 3: Dyplæring og konvolusjonelle nevrale nettverk
 
-## 🎯 Ukens Læringsmål
+## Læringsmål
 
-Etter denne uken skal du:
-- **Forstå** hvordan konvolusjonelle nevrale nettverk (CNN) fungerer
-- **Bygge** og **trene** en CNN-modell fra bunnen av
-- **Evaluere** modellens ytelse med metrikker og visualisering
-- **Bruke** forklarbar AI (Grad-CAM) for å forstå modellens beslutninger
-- **Sammenligne** naturlige og medisinske bilder for AI-analyse
-- **Kjenne til** moderne verktøy som fastMONAI for medisinsk AI
+Etter denne uken skal du kunne:
 
-## 📖 Innhold
+- forklare grunnideen bak nevrale nettverk og CNN-er
+- forstå hvorfor dyplæring er særlig relevant for bilder og signaler
+- følge en enkel arbeidsflyt for trening, evaluering og testing av modeller
+- bruke forklarbarhetsverktøy som Grad-CAM for å undersøke modellatferd
+- reflektere over forskjeller mellom naturlige og medisinske bilder i AI-arbeid
+
+## Innhold
 
 ### Notebooks
+1. **[01a_nn_intro.ipynb](01a_nn_intro.ipynb)** - grunnleggende teori om nevrale nettverk
+2. **[01b_læring_i_nn.ipynb](01b_læring_i_nn.ipynb)** - læring i nevrale nettverk
+3. **[01c_UCI_heart_disease_klassifikasjon.ipynb](01c_UCI_heart_disease_klassifikasjon.ipynb)** - klassifikasjon med helsedata
+4. **[01d_EKG_arytmi_klassifikasjon.ipynb](01d_EKG_arytmi_klassifikasjon.ipynb)** - EKG-arytmi som eksempel på dypere modellering
+5. **[02a_cnn_bildeklassifikasjon.ipynb](02a_cnn_bildeklassifikasjon.ipynb)** - oppsett, datasett og CNN-arkitektur
+6. **[02b_cnn_trening.ipynb](02b_cnn_trening.ipynb)** - trening og lagring av modell
+7. **[02c_cnn_testing.ipynb](02c_cnn_testing.ipynb)** - testing, evaluering og Grad-CAM
+8. **[02d_cnn_konklusjon.ipynb](02d_cnn_konklusjon.ipynb)** - oppsummering og veien videre
+9. **[03_medisinsk_bildeklassifikasjon_MR.ipynb](03_medisinsk_bildeklassifikasjon_MR.ipynb)** - medisinsk bildeanalyse med MR-eksempel
+10. **[04a_ansiktsutrykk_klassifikasjon.ipynb](04a_ansiktsutrykk_klassifikasjon.ipynb)** - emosjonsklassifikasjon del 1
+11. **[04b_ansiktsutrykk_klassifikasjon.ipynb](04b_ansiktsutrykk_klassifikasjon.ipynb)** - emosjonsklassifikasjon del 2
+12. **[04c_ansiktsutrykk_klassifikasjon.ipynb](04c_ansiktsutrykk_klassifikasjon.ipynb)** - emosjonsklassifikasjon del 3
 
-#### Nevrale nettverk (NN) i menneske og maskin
-1. **[01a_nn_intro.ipynb](01a_nn_intro.ipynb)** - Grunnleggende teori om nevrale nettverk
-2. **[01b_læring_i_nn.ipynb](01b_læring_i_nn.ipynb)** - Læring i nevrale nettverk
-3. **[01c_UCI_heart_disease_klassifikasjon.ipynb](01c_UCI_heart_disease_klassifikasjon.ipynb)** - Hjertesykdom-klassifikasjon
-4. **[01d_EKG_arytmi_klassifikasjon.ipynb](01d_EKG_arytmi_klassifikasjon.ipynb)** - EKG arytmi-klassifikasjon med CNN ⭐ NY
+## Hva denne uken dekker
 
-#### Blomsterklassifikasjon (Grunnleggende CNN)
-3. **[02a_cnn_bildeklassifikasjon.ipynb](02a_cnn_bildeklassifikasjon.ipynb)** - Miljøoppsett, datasett og CNN-arkitektur
-4. **[02b_cnn_trening.ipynb](02b_cnn_trening.ipynb)** - Trening og lagring av modell
-5. **[02c_cnn_testing.ipynb](02c_cnn_testing.ipynb)** - Testing, evaluering og Grad-CAM
-6. **[02d_cnn_konklusjon.ipynb](02d_cnn_konklusjon.ipynb)** - Oppsummering og veien videre
+Denne uken bygger videre på maskinlæringsideen fra uke 2, men går over til modeller som kan lære mer komplekse representasjoner. Tyngdepunktet ligger på bilder, mønstergjenkjenning og hvordan lagvise modeller kan oppdage strukturer som er vanskelige å kode eksplisitt.
 
-#### Medisinsk Bildeanalyse
-7. **[03_medisinsk_bildeklassifikasjon_MR.ipynb](03_medisinsk_bildeklassifikasjon_MR.ipynb)** - MRI-bildeanalyse og demens-deteksjon
+Uken dekker særlig:
 
-#### Ansiktsuttrykk og Emosjoner
-8. **[04a_ansiktsutrykk_klassifikasjon.ipynb](04a_ansiktsutrykk_klassifikasjon.ipynb)** - Emosjonsklassifikasjon del 1 (bygging)
-9. **[04b_ansiktsutrykk_klassifikasjon.ipynb](04b_ansiktsutrykk_klassifikasjon.ipynb)** - Emosjonsklassifikasjon del 2 (trening)
-10. **[04c_ansiktsutrykk_klassifikasjon.ipynb](04c_ansiktsutrykk_klassifikasjon.ipynb)** - Emosjonsklassifikasjon del 3 (evaluering)
+- overgangen fra klassiske modeller til nevrale nettverk
+- hvorfor konvolusjoner er nyttige for bildeanalyse
+- hvordan trening, validering og testing henger sammen
+- hvordan forklarbarhet kan brukes for å undersøke modellens fokus
+- hvordan medisinske bilder og helsesignaler skiller seg fra enklere undervisningseksempler
 
-### Oppgaver
-- **Praktisk øvelse**: Bygg og tren din egen CNN-modell
-- **Eksperimentering**: Test ulike hyperparametere og arkitekturer
-- **Refleksjon**: Sammenlign naturlige vs medisinske bilder
-- **Forklarbar AI**: Analyser modellens beslutninger med Grad-CAM
-- **Medisinsk AI**: Utforsk MRI-bildeanalyse og demens-deteksjon
-- **Emosjonsanalyse**: Test ansiktsuttrykk-klassifikasjon
+## Arbeidsmåte
 
-## 🚀 Hurtigstart
+1. Start med `01a_nn_intro.ipynb` og `01b_læring_i_nn.ipynb` for å få det konseptuelle grunnlaget på plass.
+2. Fortsett med `01c_UCI_heart_disease_klassifikasjon.ipynb` og `01d_EKG_arytmi_klassifikasjon.ipynb` for å se nevrale nettverk i helsekontekst.
+3. Gå deretter gjennom `02a`-`02d` som en sammenhengende arbeidsflyt for CNN-basert bildeklassifikasjon.
+4. Bruk `03_medisinsk_bildeklassifikasjon_MR.ipynb` og `04a`-`04c` som eksempler på hvordan samme idé kan anvendes på ulike datatyper og problemstillinger.
 
-```python
-# Sjekk at PyTorch fungerer
-import torch
-print(f"PyTorch versjon: {torch.__version__}")
-print(f"CUDA tilgjengelig: {torch.cuda.is_available()}")
-print(f"MPS tilgjengelig: {torch.backends.mps.is_available()}")
-print("🎉 Klar for CNN-trening!")
-```
+## Refleksjon
 
-## 📖 Lesestoff
+Tenk over hva du vinner og hva du mister når modellen blir mer fleksibel og mer kompleks. Spør ikke bare om ytelsen blir bedre, men også om modellen blir vanskeligere å forstå, forklare og stole på i medisinske sammenhenger.
 
-### Nyttig
-- **CNN-grunnleggende**: [Convolutional Neural Networks - 3Blue1Brown](https://www.youtube.com/watch?v=aircAruvnKk)
-- **Medisinsk AI**: [Deep Learning for Medical Imaging - Nature]()
-- **Forklarbar AI**: [Grad-CAM: Visual Explanations - arXiv](https://arxiv.org/abs/1610.02391)
-- **fastMONAI**: [Bergen-basert medisinsk AI](https://fastmonai.no/)
+## Videre
 
-### Kjekt å vite
-- **Attention Mechanisms**: [Attention is all you need - Vaswani et al.](https://arxiv.org/abs/1706.03762)
-- **Medisinsk bildeanalyse**: [MONAI - Medical Open Network for AI](https://monai.io/)
-- **Etikk i medisinsk AI**: [Ethical challenges ... PLOS Digit Health, 2025](https://pmc.ncbi.nlm.nih.gov/articles/PMC11977975/)
-
-## 💭 Refleksjonsspørsmål
-
-1. Hvordan skiller CNN seg fra tradisjonelle nevrale nettverk?
-2. Hvorfor er konvolusjonelle lag effektive for bildeanalyse?
-3. Hvilke utfordringer ser du med AI i medisinsk bildeanalyse?
-4. Hvordan kan forklarbar AI styrke tilliten til medisinske AI-systemer?
-5. Hva er forskjellen mellom naturlige og medisinske bilder for AI?
-6. Hvordan kan emosjonsanalyse hjelpe i helsevesenet?
-7. Hvilke etiske utfordringer ser du med ansiktsuttrykk-analyse?
-
-## 👩‍🏫 Diskutere med andre eller en AI sparringspartner?
-
-- **Tekniske spørsmål**: Diskuter CNN-arkitektur og hyperparametere
-- **Medisinske applikasjoner**: Hvilke sykdommer kan CNN hjelpe med å diagnostisere?
-- **Etiske utfordringer**: Hvordan sikre rettferdighet i medisinsk AI?
-- **Fremtidige muligheter**: Hvor ser du AI i medisin om 10 år?
-- **Emosjonsanalyse**: Hvordan kan AI hjelpe med mental helse?
-
-## ✅ Sjekkliste
-
-- [ ] Les gjennom alle 8 notebooks i rekkefølge
-- [ ] Kjør notebooks på Google Colab eller lokalt
-- [ ] Tren din egen CNN-modell på blomsterdata
-- [ ] Eksperimenter med ulike hyperparametere
-- [ ] Test Grad-CAM på dine egne bilder
-- [ ] Reflekter over sammenligningen natur vs medisin
-- [ ] Utforsk MRI-bildeanalyse og demens-deteksjon
-- [ ] Test ansiktsuttrykk-klassifikasjon
-- [ ] Utforsk fastMONAI for medisinsk AI
-- [ ] Forberede til uke04-generativ-ai
-
-## 🔗 Relaterte ressurser
-
-- **3Blue1Brown**: [Neural Networks](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)
-- **PyTorch Tutorials**: [Deep Learning with PyTorch](https://pytorch.org/tutorials/)
-- **Medisinsk AI**: [AI in Medicine - Stanford](https://aimi.stanford.edu/)
-- **Norsk AI**: [fastMONAI - Bergen](https://fastmonai.no/)
-
-## 🎓 Veien videre
-
-Etter denne uken er du klar for:
-- **Uke 4**: Generativ AI og transformer-arkitektur
-- **Uke 5**: Agentisk AI (chatbot, workflow, RAG og helsecase)
-- **Uke 6**: Klinisk praksis og implementering
-- **Uke 7**: Velferdsteknologi og brukeropplevelse
-- **Uke 8**: Etikk, regulering og implementering
+[Uke 4 - Generativ AI, foundation models og multimodalitet](../uke04-generativ-ai/) markerer neste store skifte i kurset: fra modeller som lærer spesifikke oppgaver til modeller som kan brukes mer generelt gjennom språk, prompts og API-er.

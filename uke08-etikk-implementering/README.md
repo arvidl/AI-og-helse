@@ -2,7 +2,7 @@
 
 > *"Med stor kraft følger stort ansvar"* - Spider-Man (og AI-utviklere)
 
-Denne uken handler om hvordan AI kan brukes ansvarlig, lovlig og faglig forsvarlig i helse og medisin. Fokus er på tre temaer som går igjen i praktisk AI-arbeid: personvern, rettferdighet og regulering.
+Denne uken handler om hvordan AI kan brukes ansvarlig, lovlig og faglig forsvarlig i helse og medisin. Fokus er på fem temaer som bygger på hverandre: personvern, rettferdighet, regulering, medisinsk etikk og trustworthy AI.
 
 Se også Helsedirektoratets rapport: ["Utvikling og bruk av kunstig intelligens"](https://www.helsedirektoratet.no/rapporter/status-og-forslag-til-videre-arbeid-med-kunstig-intelligens-ki-i-helse-og-omsorgstjenesten/utvikling-og-bruk-av-kunstig-intelligens)
 
@@ -13,6 +13,8 @@ Etter denne uken skal du kunne:
 - forstå sentrale personvernkrav for AI i helse
 - identifisere og diskutere bias og rettferdighet i algoritmiske systemer
 - kjenne hovedtrekkene i CE-merking, MDR og EU-regulering av medisinsk AI
+- anvende medisinsk-etiske prinsipper på klinisk bruk av AI
+- forklare hva som gjør et AI-system tillitsverdig i helsetjenesten
 - reflektere over implementering, risiko og ansvar i praksis
 
 ## Ukens notebooks
@@ -44,12 +46,32 @@ Temaer:
 - risikoklassifisering
 - ansvar og dokumentasjon ved innføring av AI-systemer
 
+### `04_ai_etikk_i_medisinen.ipynb`
+
+Temaer:
+
+- de fire medisinsk-etiske prinsippene anvendt på AI i helse
+- kliniske dilemmaer ved bruk av beslutningsstøtte
+- sammenhengen mellom bias, personvern og ansvar
+- en enkel etisk sjekkliste for vurdering av AI-systemer
+
+### `05_trustworthy_ai_i_helse.ipynb`
+
+Temaer:
+
+- hva trustworthy AI betyr i helsekontekst
+- robusthet, distribusjonsskifte og usikkerhet
+- human-in-the-loop og klinisk kontroll
+- validering, monitorering og trygg innføring i praksis
+
 ## Arbeidsmåte
 
 1. Start med `01_gdpr_personvern.ipynb`.
 2. Fortsett med `02_bias_rettferdighet.ipynb`.
-3. Avslutt med `03_ce_mdr_regulering.ipynb`.
-4. Bruk gjerne `uke08-innhold.md` som støttefil dersom du vil ha en supplerende oversikt.
+3. Gå videre til `03_ce_mdr_regulering.ipynb`.
+4. Les deretter `04_ai_etikk_i_medisinen.ipynb` for å samle de etiske linjene.
+5. Avslutt med `05_trustworthy_ai_i_helse.ipynb`.
+6. Bruk gjerne `uke08-innhold.md` som støttefil dersom du vil ha en supplerende oversikt.
 
 ## Praktiske tips
 
@@ -65,4 +87,4 @@ Temaer:
 
 ---
 
-Start med `01_gdpr_personvern.ipynb`.
+Start med `01_gdpr_personvern.ipynb` og jobb deg videre mot `05_trustworthy_ai_i_helse.ipynb`.

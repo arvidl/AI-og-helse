@@ -15,6 +15,8 @@ Etter denne uken skal du kunne:
 ### Notebooks
 1. **[01_chatbot_workflow_agent.ipynb](01_chatbot_workflow_agent.ipynb)** - begrepsinnføring til forskjellen mellom chatbot, workflow og agent
 2. **[02_agentisk_ai_i_helse.ipynb](02_agentisk_ai_i_helse.ipynb)** - agentisk AI i helsefaglige anvendelser: verktøybruk, RAG, minne, case, visualiseringer og sikkerhet
+3. **[03_crewai_fordypning_rehabilitering.ipynb](03_crewai_fordypning_rehabilitering.ipynb)** - frivillig fordypning med syntetisk rehabiliteringscase og tverrfaglige roller
+4. **[04_agentisk_ai_perspektiver.ipynb](04_agentisk_ai_perspektiver.ipynb)** - perspektiver på framtidig praksis, forskning, tjenesteutvikling og sensitive data
 
 ## Hurtigstart
 
@@ -23,6 +25,7 @@ Hvis du kommer direkte til uke 5, holder det å:
 1. åpne `01_chatbot_workflow_agent.ipynb`
 2. lese forklaringene og kjøre de enkle kodecellene
 3. fortsette med `02_agentisk_ai_i_helse.ipynb`
+4. bruke `03_crewai_fordypning_rehabilitering.ipynb` og `04_agentisk_ai_perspektiver.ipynb` som fordypning og refleksjon ved behov
 
 Notebookene kan leses uten API-nøkler, og eksemplene er laget for å kunne forstås som pedagogiske demonstrasjoner.
 
@@ -62,7 +65,9 @@ Samtidig må slike systemer alltid vurderes kritisk. I helsetjenesten er det ikk
 3. Fortsett med `02_agentisk_ai_i_helse.ipynb`.
 4. Gå gjennom helsecasene og vurder hvilke som virker realistiske og nyttige i praksis.
 5. Se på visualiseringene og diskuter hvilke oppgavetyper som virker mest forsvarlige å starte med.
-6. Diskuter hvilke anvendelser som kan være lav risiko, og hvilke som krever strenge rammer eller ikke bør brukes.
+6. Bruk `03_crewai_fordypning_rehabilitering.ipynb` som frivillig fordypning dersom du vil se en mer sammensatt arbeidsflyt.
+7. Avslutt med `04_agentisk_ai_perspektiver.ipynb` for å løfte blikket mot implementering, ansvar og framtidige anvendelser.
+8. Diskuter hvilke anvendelser som kan være lav risiko, og hvilke som krever strenge rammer eller ikke bør brukes.
 
 ## Sentrale spørsmål denne uken
 

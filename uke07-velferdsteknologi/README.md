@@ -1,32 +1,48 @@
 # Uke 7: Velferdsteknologi
 
-## Laringsmal
+## Læringsmål
 
 Etter denne uken skal du kunne:
 
-- forklare hvordan A*-sok finner en korteste vei i et rutenett
-- forsta samspillet mellom heuristikk, hinder og navigasjon
+- forklare hvordan A*-søk finner en korteste vei i et rutenett
+- forstå samspillet mellom heuristikk, hinder og navigasjon
 - lese og eksperimentere med en enkel planleggingsalgoritme
 - knytte slik teknologi til praktiske anvendelser i velferdsteknologi og robotikk
+- forstå hvordan sensorer kan brukes til aktivitetstolkning og hendelsesforståelse
+- diskutere hvordan beslutningsstøtte kan brukes i hjem og omsorg
+- reflektere over sikkerhet, etikk og menneske-maskin-samspill i velferdsteknologiske systemer
 
 ## Innhold
 
-### Notebook
-1. **[01_robotnavigasjon_i_rutenett_med_astar.ipynb](01_robotnavigasjon_i_rutenett_med_astar.ipynb)** - introduksjon til A*-sok med visualisering i et 2D-grid
+### Notebooks
+1. **[01_robotnavigasjon_i_rutenett_med_astar.ipynb](01_robotnavigasjon_i_rutenett_med_astar.ipynb)** - introduksjon til A*-søk med visualisering i et 2D-grid
+2. **[02_sensorer_aktivitet_og_hendelsesforståelse.ipynb](02_sensorer_aktivitet_og_hendelsesforståelse.ipynb)** - hvordan enkle sensorer kan brukes til å tolke aktivitet og avvik
+3. **[03_beslutningsstøtte_i_hjem_og_omsorg.ipynb](03_beslutningsstøtte_i_hjem_og_omsorg.ipynb)** - varsling, prioritering og støtte i omsorgstjenester
+4. **[04_sikkerhet_etikk_og_menneske_maskin_samspill.ipynb](04_sikkerhet_etikk_og_menneske_maskin_samspill.ipynb)** - trygg bruk, personvern og etiske avveininger
 
-## Hva notebooken dekker
+## Hva ukens notebooks dekker
 
-- grunnideen bak graf- og rutenettbasert sok
+- grunnideen bak graf- og rutenettbasert søk
 - A*-algoritmen med 4-naboer
 - demo med startpunkt, malpunkt og tilfeldige hindringer
 - enkel visualisering av funnet rute
+- bruk av sensorer til å observere aktivitet i et hjemmemiljø
+- enkle eksempler på varsling og beslutningsstøtte
+- samspillet mellom teknisk sikkerhet, brukervennlighet og etikk
 
-## Arbeidsmate
+## Arbeidsmåte
 
-1. Kjor notebooken fra toppen.
-2. Endre grid, start- og sluttpunkt eller antall hindringer.
-3. Diskuter hvordan valg av heuristikk pavirker soket.
+1. Start med `01_robotnavigasjon_i_rutenett_med_astar.ipynb` for å forstå et konkret teknologisk eksempel.
+2. Gå deretter til `02_sensorer_aktivitet_og_hendelsesforståelse.ipynb` for å se hvordan velferdsteknologi ofte bygger på tolkning av signaler.
+3. Fortsett med `03_beslutningsstøtte_i_hjem_og_omsorg.ipynb` for å se hvordan slike signaler kan brukes i praksis.
+4. Avslutt med `04_sikkerhet_etikk_og_menneske_maskin_samspill.ipynb` for å reflektere over trygg og ansvarlig bruk.
 
 ## Refleksjon
 
-Tenk over hvordan tilsvarende navigasjonslogikk kan brukes i hjelpemidler, mobile roboter eller andre systemer som skal bevege seg trygt i et fysisk miljo.
+Tenk over hvordan velferdsteknologi ikke bare handler om algoritmer, men også om brukssituasjon, trygghet, verdighet og ansvar. Spør ikke bare hva teknologien kan gjøre, men også hvordan den bør brukes.
+
+## Videre
+
+Denne uken tar med seg idéen om beslutningsstøtte fra klinisk praksis og flytter den inn i hjem, omsorg og daglig oppfølging, der sensorer, varsler og menneske-maskin-samspill blir sentrale.
+
+[Uke 8 - Etikk og implementering](../uke08-etikk-implementering/) bygger videre på dette ved å systematisere personvern, bias, regulering og trustworthy AI for hele kursets anvendelser.

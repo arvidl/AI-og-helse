@@ -1,11 +1,11 @@
 # 🏥 AI og Helse 
 
-**Åpen variant** av (avansert) kurs i kunstig intelligens for medisinere og personell i helse- og omsorgssektoren 
+**Åpen variant** av et avansert kurs i kunstig intelligens for medisinere og personell i helse- og omsorgssektoren.
 
 
 ## 📚 Kursstruktur
 
-- **Del 1 (Uke 1-6):** AI Fundamentet - fra AI 1.0 til AI 2.0
+- **Del 1 (Uke 1-6):** AI-fundamentet - fra AI 1.0 til AI 2.0
 - **Del 2 (Uke 7-8):** Praktiske anvendelser i medisin, helse og omsorg
 
 
@@ -23,7 +23,7 @@
 - Identifisere muligheter for AI-støtte i egen arbeidshverdag
 - Kritisk evaluere AI-systemer og deres begrensninger (og muligheter)
 
-### Bruk av kurset
+### Hvordan kurset kan brukes
 "... på svømmekurs bør man oppholde seg mye i bassenget ..."
 - Det anbefales å "gå i bassenget" (= eksperimentere med notebooks)
 - For noen i målgruppen kan et realistisk læringsutbytte oppnås ved kun å **lese**, **inspisere** og **kontemplere** tekst, kode, figurer og referanser direkte i GitHub-repositoriet (https://github.com/arvidl/AI-og-helse), altså "holde seg på land ...", kombinert med bruk av en AI-sparringspartner
@@ -37,14 +37,14 @@ AI-og-helse/
 ├── uke03-dyplæring/             # Dyplæring og nevrale nettverk
 ├── uke04-generativ-ai/          # Generativ AI, foundation models og multimodalitet
 ├── uke05-agentisk-ai/           # Agentisk AI i helse og omsorg
-├── uke06-klinisk-praksis/       # AI i helsefag
-├── uke07-velferdsteknologi/     # Robotikk og optimering
-├── uke08-etikk-implementering/  # Etikk, bias/fairness, GDPR, MDR, EU AI Act
+├── uke06-klinisk-praksis/       # Klinisk praksis, beslutningsstøtte og validering
+├── uke07-velferdsteknologi/     # Sensorer, beslutningsstøtte og trygg teknologi
+├── uke08-etikk-implementering/  # Etikk, bias/fairness, GDPR, MDR og trustworthy AI
 ├── ressurser/                   # Ordliste, verktøy og artikler
 ├── utils/                       # Hjelpefunksjoner
 ├── intro_openai_anthropic.ipynb # API-introduksjon og nøkkelhåndtering
 ├── environment.yml              # Standard lokalt miljø
-├── environment_cuda.yml         # Alternativt CUDA-miljø
+├── environment_cuda.yml         # NVIDIA/CUDA-variant for Linux/Windows
 └── requirements.txt             # Pip-avhengigheter
 ```
 
@@ -108,11 +108,17 @@ Uke 4 gir en innføring i generativ AI, foundation models og multimodalitet. Uke
 | Notebok | Beskrivelse | Colab |
 |---------|-------------|-------|
 | `01_risikomodell_logistisk_regresjon_kalibrering_shap.ipynb` | Syntetisk risikomodell: logistisk regresjon, kalibrering, SHAP | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke06-klinisk-praksis/01_risikomodell_logistisk_regresjon_kalibrering_shap.ipynb) |
+| `02_klinisk_beslutningsstøtte_terskler_og_avveininger.ipynb` | Hvordan risikoskår blir til klinisk beslutningsstøtte | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke06-klinisk-praksis/02_klinisk_beslutningsstøtte_terskler_og_avveininger.ipynb) |
+| `03_validering_generalisering_og_subgrupper.ipynb` | Generalisering, distribusjonsskifte og subgruppeanalyse | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke06-klinisk-praksis/03_validering_generalisering_og_subgrupper.ipynb) |
+| `04_fra_modell_til_klinisk_arbeidsflyt.ipynb` | Hva som kreves før en modell kan brukes i klinisk arbeidsflyt | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke06-klinisk-praksis/04_fra_modell_til_klinisk_arbeidsflyt.ipynb) |
 
 ### Uke 7: Velferdsteknologi
 | Notebok | Beskrivelse | Colab |
 |---------|-------------|-------|
 | `01_robotnavigasjon_i_rutenett_med_astar.ipynb` | A* rutefinning i 2D-grid (robotnavigasjon) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke07-velferdsteknologi/01_robotnavigasjon_i_rutenett_med_astar.ipynb) |
+| `02_sensorer_aktivitet_og_hendelsesforståelse.ipynb` | Hvordan sensorer kan brukes til å tolke aktivitet og avvik | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke07-velferdsteknologi/02_sensorer_aktivitet_og_hendelsesforståelse.ipynb) |
+| `03_beslutningsstøtte_i_hjem_og_omsorg.ipynb` | Varsling, prioritering og støtte i hjem og omsorg | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke07-velferdsteknologi/03_beslutningsstøtte_i_hjem_og_omsorg.ipynb) |
+| `04_sikkerhet_etikk_og_menneske_maskin_samspill.ipynb` | Sikkerhet, etikk og menneske-maskin-samspill i velferdsteknologi | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke07-velferdsteknologi/04_sikkerhet_etikk_og_menneske_maskin_samspill.ipynb) |
 
 ### Uke 8: Etikk og implementering
 | Notebok | Beskrivelse | Colab |
@@ -120,8 +126,10 @@ Uke 4 gir en innføring i generativ AI, foundation models og multimodalitet. Uke
 | `01_gdpr_personvern.ipynb` | GDPR og personvern | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke08-etikk-implementering/01_gdpr_personvern.ipynb) |
 | `02_bias_rettferdighet.ipynb` | Bias og rettferdighet | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke08-etikk-implementering/02_bias_rettferdighet.ipynb) |
 | `03_ce_mdr_regulering.ipynb` | CE/MDR regulering | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke08-etikk-implementering/03_ce_mdr_regulering.ipynb) |
+| `04_ai_etikk_i_medisinen.ipynb` | Kliniske dilemmaer, etiske prinsipper og ansvarlig bruk av AI | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke08-etikk-implementering/04_ai_etikk_i_medisinen.ipynb) |
+| `05_trustworthy_ai_i_helse.ipynb` | Robusthet, usikkerhet, validering og monitorering i medisinsk AI | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke08-etikk-implementering/05_trustworthy_ai_i_helse.ipynb) |
 
-### Andre notebokene
+### Andre notebooks
 | Notebok | Beskrivelse | Colab |
 |---------|-------------|-------|
 | `intro_openai_anthropic.ipynb` | OpenAI og Anthropic introduksjon | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/intro_openai_anthropic.ipynb) |
@@ -130,7 +138,7 @@ Uke 4 gir en innføring i generativ AI, foundation models og multimodalitet. Uke
 
 - **Python 3.12+**
 - **Jupyter Notebooks** for interaktiv læring
-- **Google Colaboratory (Colab)** for sky-basert notebook-kjøring og eksperimentering
+- **Google Colab** for skybasert notebook-kjøring og eksperimentering
 - **AI-verktøy:** OpenAI (gpt-), Anthropic (claude-), Scikit-learn, PyTorch, ...
 
 
@@ -162,7 +170,7 @@ Uke 4 gir en innføring i generativ AI, foundation models og multimodalitet. Uke
 
 - **Varighet:** 8 uker 
 - **Arbeidsomfang:** 10-12 timer per uke
-- **Læringsspråk (i Jupyter notatbøker):** Norsk (+ engelske fagtermer, f.eks. "notebooks")
+- **Læringsspråk (i Jupyter-notebooks):** Norsk (+ engelske fagtermer, for eksempel "notebooks")
 
 
 ## 📄 Lisens
@@ -175,13 +183,13 @@ Repoet er lisensiert under [MIT-lisensen](LICENSE). Copyright (c) 2025 Arvid Lun
 - [Hvordan bidra](CONTRIBUTING.md)
 
 
-### 🛠️ Hvordan kurset er laget og ressurser brukt
+### 🛠️ Hvordan kurset er laget og hvilke ressurser som er brukt
 
-- bygger på domenekunnskap, godt nettverk av fagfeller ([nær](https://www.sciencedirect.com/science/article/pii/S0939388918301181?via%3Dihub) og [fjern](http://en.jnl.ac.cn/article/185.html)) og entusiasme for feltet
-- bruk av AI-kodeeditoren Cursor Ultra
-- utviklet på en MacBook Pro (M4 Max) 
-- diverse lisenser (GitHub, OpenAI, Anthropic, Perplexity, Google) 
-- ca. 40 timeverk (for basisdelen)
+- Domenekunnskap, et godt nettverk av fagfeller ([nær](https://www.sciencedirect.com/science/article/pii/S0939388918301181?via%3Dihub) og [fjern](http://en.jnl.ac.cn/article/185.html)) og entusiasme for feltet
+- Bruk av AI-kodeeditoren Cursor Ultra
+- Utviklet på en MacBook Pro (M4 Max)
+- Diverse lisenser og tjenester (GitHub, OpenAI, Anthropic, Perplexity, Google)
+- Omtrent 40 timeverk for basisdelen
 
 
 ------
@@ -191,11 +199,11 @@ Repoet er lisensiert under [MIT-lisensen](LICENSE). Copyright (c) 2025 Arvid Lun
 
 ### Bruk Google Colab (enkleste alternativ)
 
-Gå til https://github.com/arvidl/AI-og-helse/blob/main/README.md og se repo-strukturen og aktuell uke, fra `uke01-` til `uke08-`.
+Gå til [repoets README på GitHub](https://github.com/arvidl/AI-og-helse/blob/main/README.md) og finn aktuell uke, fra `uke01-` til `uke08-`.
 
-f.eks. [uke01-introduksjon](https://github.com/arvidl/AI-og-helse/tree/main/uke01-introduksjon)
+For eksempel: [uke01-introduksjon](https://github.com/arvidl/AI-og-helse/tree/main/uke01-introduksjon)
 
-1. For hver notebook, trykk på [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke01-introduksjon/00-velkommen.ipynb) 
+1. For hver notebook, trykk på [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke01-introduksjon/00-velkommen.ipynb)
 2. Notebooken vises da i din nettleser
 3. Aksepter at den ikke er autorisert av Google ("Run anyway")
 4. Lær deg bruk av Python og [Jupyter Notebooks](https://colab.research.google.com/github/jckantor/CBE30338/blob/master/docs/01.01-Getting-Started-with-Python-and-Jupyter-Notebooks.ipynb) i Google Colab ([FAQ](https://research.google.com/colaboratory/faq.html))
@@ -251,14 +259,14 @@ python check_setup.py
 4. Alternativt: Cmd/Ctrl+Shift+P → "Python: Select Interpreter" → ai-helse
 
 
-## **API-nøkler (for lokal kjøring)**
+## API-nøkler for lokal kjøring
 
 
-### **NB:** Det kreves at API-nøkler blir konfigurert av kursdeltaker:
+### NB
 
-Dvs. hver deltaker skaffer selv, lagrer og bruker sine egne API-nøkler
+Hver kursdeltaker må selv skaffe, lagre og bruke sine egne API-nøkler.
 
-Her er en strukturert måte å gjøre det på:
+Her er en enkel måte å gjøre det på:
 
 ---
 
@@ -273,7 +281,7 @@ Begge krever at man legger inn kort/betalingsinfo (med gratis startkreditter for
 
 ---
 
-### 2. Hvordan lagre nøklene trygt
+#### 2. Hvordan lagre nøklene trygt
 
 Du kan velge én av to enkle metoder:
 
@@ -347,7 +355,7 @@ response = client.messages.create(
 print(response.content[0].text)
 ```
 
-### NB!
+#### NB
 * Husk, ikke dele noen egne nøkler i kursmaterialet – hver deltaker har ansvar for sine.
 * Der det kan være aktuelt, har vi lagt inn et sjekksteg i notebooken som gir en feilmelding hvis nøkkel mangler:
 
@@ -357,7 +365,7 @@ print(response.content[0].text)
   ```
 
 
-## **API-nøkler (for kjøring i skyen)**
+## API-nøkler for kjøring i skyen
 
 Dette gjelder kun for **Google Colab**.
 
@@ -367,7 +375,7 @@ For nærmere beskrivelse, se notebooken [`intro_openai_anthropic.ipynb`](./intro
 
 ---
 
-#### 5. Oppsummering
+#### Oppsummering
 
 * Deltakere skaffer **egne nøkler** fra OpenAI og Anthropic.
 * Nøklene lagres lokalt i `.env` eller som miljøvariabler dersom du kjører lokalt.
