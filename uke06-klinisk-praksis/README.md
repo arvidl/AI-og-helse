@@ -22,6 +22,8 @@ Etter denne uken skal du kunne:
 
 ## Hva ukens notebooks dekker
 
+Uken følger en klinisk progresjon: først hvordan en modell lager risikoanslag, deretter hvordan slike anslag blir til beslutninger, så hvordan vi vurderer om modellen generaliserer til nye pasientgrupper og settinger, og til slutt hvordan den eventuelt kan inngå i faktisk arbeidsflyt.
+
 - syntetiske kliniske data for en enkel prediksjonsoppgave
 - logistisk regresjon som baseline-modell
 - kalibreringskurve og ROC-kurve
@@ -34,9 +36,9 @@ Etter denne uken skal du kunne:
 ## Arbeidsmåte
 
 1. Kjør notebookene i rekkefølge fra topp til bunn.
-2. Start med å forstå modellen i `01`, og gå deretter videre til hvordan den brukes i beslutninger i `02`.
-3. Bruk `03` til å vurdere hvor robust modellen er når pasientgrunnlag og kontekst endrer seg.
-4. Avslutt med `04` for å se hva som skal til for å ta modellen inn i faktisk klinisk praksis.
+2. Start med `01` for å forstå hvordan en klinisk modell anslår risiko, og gå deretter videre til `02` for å se hvordan risiko kobles til terskler og beslutninger.
+3. Bruk `03` til å vurdere hvor robust modellen er når pasientgrunnlag og kontekst endrer seg, og hvilke subgrupper som eventuelt rammes ulikt.
+4. Avslutt med `04` for å samle trådene og se hva som må være på plass før modellen kan inngå i faktisk klinisk arbeidsflyt.
 
 ## Refleksjon
 
