@@ -2,7 +2,11 @@
 
 **Åpen variant** av et avansert kurs i kunstig intelligens for medisinere og personell i helse- og omsorgssektoren.
 
-[Åpne kursnettsiden](https://arvidl.github.io/AI-og-helse/)
+[![Åpne kursnettsiden](https://img.shields.io/badge/Kursnettside-AI%20og%20Helse-7d3c98?style=for-the-badge)](https://arvidl.github.io/AI-og-helse/)
+
+> [!TIP]
+> Start på kursnettsiden for en ryddig inngang til ukeoversikt, ressurser og videre lenker til notebooks:
+> [Åpne kursnettsiden](https://arvidl.github.io/AI-og-helse/)
 
 
 ## 📚 Kursstruktur
