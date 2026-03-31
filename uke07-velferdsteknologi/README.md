@@ -22,6 +22,8 @@ Etter denne uken skal du kunne:
 
 ## Hva ukens notebooks dekker
 
+Uken følger en tydelig progresjon fra teknologiens grunnlag til praktisk og ansvarlig bruk: først navigasjon og robotikk, deretter sensortolkning, så beslutningsstøtte i hjem og omsorg, og til slutt sikkerhet, etikk og menneske-maskin-samspill.
+
 - grunnideen bak graf- og rutenettbasert søk
 - A*-algoritmen med 4-naboer
 - demo med startpunkt, malpunkt og tilfeldige hindringer
@@ -32,10 +34,10 @@ Etter denne uken skal du kunne:
 
 ## Arbeidsmåte
 
-1. Start med `01_robotnavigasjon_i_rutenett_med_astar.ipynb` for å forstå et konkret teknologisk eksempel.
-2. Gå deretter til `02_sensorer_aktivitet_og_hendelsesforståelse.ipynb` for å se hvordan velferdsteknologi ofte bygger på tolkning av signaler.
-3. Fortsett med `03_beslutningsstøtte_i_hjem_og_omsorg.ipynb` for å se hvordan slike signaler kan brukes i praksis.
-4. Avslutt med `04_sikkerhet_etikk_og_menneske_maskin_samspill.ipynb` for å reflektere over trygg og ansvarlig bruk.
+1. Start med `01_robotnavigasjon_i_rutenett_med_astar.ipynb` for å forstå et konkret teknologisk eksempel på hvordan et system kan orientere seg og handle i et miljø.
+2. Gå deretter til `02_sensorer_aktivitet_og_hendelsesforståelse.ipynb` for å se hvordan velferdsteknologi også bygger på tolkning av signaler og observasjoner.
+3. Fortsett med `03_beslutningsstøtte_i_hjem_og_omsorg.ipynb` for å se hvordan slike signaler kan omsettes til varsler, prioriteringer og støtte til ansatte.
+4. Avslutt med `04_sikkerhet_etikk_og_menneske_maskin_samspill.ipynb` for å samle trådene og reflektere over trygg, ansvarlig og menneskenær bruk.
 
 ## Refleksjon
 
