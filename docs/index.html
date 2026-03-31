@@ -12,53 +12,111 @@
   </head>
   <body>
     <div class="page-shell">
-      <header class="hero">
-        <p class="eyebrow">AI og Helse</p>
-        <h1>Et aapent kursopplegg i kunstig intelligens for helse og omsorg.</h1>
-        <p class="hero-text">
-          Kurset samler notebooks, ukevise temaer og praktiske ressurser for
-          helsepersonell, studenter og fagmiljoer som vil utforske AI i
-          medisinsk og klinisk kontekst.
-        </p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="https://github.com/arvidl/AI-og-helse">
-            Gaa til GitHub-repoet
-          </a>
-          <a
-            class="button"
-            href="https://github.com/arvidl/AI-og-helse/blob/main/README.md"
-          >
-            Se komplett kursoversikt
-          </a>
+      <nav class="topbar" aria-label="Hovednavigasjon">
+        <a class="brandmark" href="./">AI og Helse</a>
+        <div class="topbar-links">
+          <a href="#weeks">Uker</a>
+          <a href="#resources">Ressurser</a>
+          <a href="https://github.com/arvidl/AI-og-helse">GitHub</a>
         </div>
+      </nav>
+
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">AI og Helse</p>
+          <h1>Et åpent kursopplegg i kunstig intelligens for helse og omsorg.</h1>
+          <p class="hero-text">
+            Kurset samler ukevise notebooks, faglige forklaringer og praktiske
+            ressurser for helsepersonell, studenter og fagmiljøer som vil
+            utforske AI i medisinsk og klinisk kontekst.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://github.com/arvidl/AI-og-helse">
+              Gå til GitHub-repoet
+            </a>
+            <a
+              class="button"
+              href="https://github.com/arvidl/AI-og-helse/blob/main/README.md"
+            >
+              Se komplett kursoversikt
+            </a>
+            <a class="button" href="#weeks">Start med ukeoversikten</a>
+          </div>
+        </div>
+
+        <aside class="hero-panel" aria-label="Kursfakta">
+          <p class="eyebrow">Oversikt</p>
+          <div class="hero-metrics">
+            <article>
+              <strong>8</strong>
+              <span>uker</span>
+            </article>
+            <article>
+              <strong>40+</strong>
+              <span>notebooks</span>
+            </article>
+            <article>
+              <strong>3</strong>
+              <span>måter å bruke kurset på</span>
+            </article>
+          </div>
+          <p class="hero-note">
+            Les direkte i GitHub, åpne i Google Colab, eller bruk materialet
+            som strukturert lesestoff sammen med en AI-sparringspartner.
+          </p>
+        </aside>
       </header>
+
+      <section class="hero-strip" aria-label="Bruksmuligheter">
+        <article>
+          <h2>Les</h2>
+          <p>Bruk uke-README-er og notebooks som et åpent kompendium.</p>
+        </article>
+        <article>
+          <h2>Prøv</h2>
+          <p>Kjør notebookene i Colab eller lokalt og eksperimenter selv.</p>
+        </article>
+        <article>
+          <h2>Reflekter</h2>
+          <p>Knytt teknologi, praksis og etikk til egne problemstillinger.</p>
+        </article>
+      </section>
 
       <main>
         <section class="panel">
           <div class="section-heading">
             <p class="section-label">Kursstruktur</p>
             <h2>Fra grunnbegreper til klinisk anvendelse</h2>
+            <p class="section-text">
+              Kurset er bygget som en progresjon fra AI-grunnlag og
+              modellforståelse til generativ AI, klinisk beslutningsstøtte,
+              velferdsteknologi og ansvarlig implementering.
+            </p>
           </div>
           <div class="summary-grid">
             <article class="summary-card">
               <h3>Del 1</h3>
-              <p>Uke 1-6 dekker AI-grunnlag, klassisk maskinlaering, dyplaering, generativ AI, agentisk AI og klinisk praksis.</p>
+              <p>Uke 1-6 dekker AI-grunnlag, klassisk maskinlæring, dyplæring, generativ AI, agentisk AI og klinisk praksis.</p>
             </article>
             <article class="summary-card">
               <h3>Del 2</h3>
-              <p>Uke 7-8 fokuserer paa velferdsteknologi, ansvarlig bruk, personvern, regulering og trustworthy AI.</p>
+              <p>Uke 7-8 fokuserer på velferdsteknologi, ansvarlig bruk, personvern, regulering og trustworthy AI.</p>
             </article>
             <article class="summary-card">
-              <h3>Arbeidsmaate</h3>
-              <p>Notebookene kan leses direkte i GitHub eller aapnes i Google Colab. Lokal kjoring er valgfritt.</p>
+              <h3>Arbeidsmåte</h3>
+              <p>Notebookene kan leses direkte i GitHub eller åpnes i Google Colab. Lokal kjøring er valgfritt.</p>
             </article>
-          </div>
+        </div>
         </section>
 
         <section class="panel">
           <div class="section-heading">
             <p class="section-label">Uker</p>
             <h2>Utforsk kursinnholdet uke for uke</h2>
+            <p class="section-text">
+              Hver uke har en egen README med læringsmål, anbefalt rekkefølge
+              og lenker videre til notebooks og fordypning.
+            </p>
           </div>
           <div id="weeks" class="card-grid"></div>
         </section>
@@ -68,9 +126,9 @@
             <p class="section-label">Komme i gang</p>
             <h2>Den enkleste veien inn</h2>
             <ol class="steps">
-              <li>Velg en uke under og aapne ukeoversikten paa GitHub.</li>
-              <li>Les uke-README for maal, progresjon og anbefalt rekkefolge.</li>
-              <li>Bruk Colab-lenkene i repoets hoved-README for aa aapne notebooks i nettleseren.</li>
+              <li>Velg en uke under og åpne ukeoversikten på GitHub.</li>
+              <li>Les uke-README for mål, progresjon og anbefalt rekkefølge.</li>
+              <li>Bruk Colab-lenkene i repoets hoved-README for å åpne notebooks i nettleseren.</li>
             </ol>
           </div>
           <div class="callout">
@@ -78,7 +136,7 @@
             <p>
               Dette er en lett kursportal for offentlig navigasjon. Selve
               undervisningsmaterialet lever fortsatt i repoet og i notebookene,
-              slik at strukturen kan videreutvikles uten aa duplisere innhold.
+              slik at strukturen kan videreutvikles uten å duplisere innhold.
             </p>
           </div>
         </section>
@@ -87,10 +145,20 @@
           <div class="section-heading">
             <p class="section-label">Ressurser</p>
             <h2>Praktiske sider rundt kursarbeidet</h2>
+            <p class="section-text">
+              Her finner du oppsett, ordliste, verktøy og tilleggsstoff som
+              støtter bruk av kurset i undervisning, selvstudium og faglig
+              utforsking.
+            </p>
           </div>
           <div id="resources" class="card-grid compact-grid"></div>
         </section>
       </main>
+
+      <footer class="site-footer">
+        <p>Publisert med GitHub Pages fra `main/docs`.</p>
+        <a href="https://github.com/arvidl/AI-og-helse">Se kilde og kursmateriale på GitHub</a>
+      </footer>
     </div>
 
     <script>
@@ -99,21 +167,21 @@
           week: "Uke 1",
           title: "Introduksjon til AI",
           description:
-            "Begreper, historiske linjer, forskjellen mellom AI, maskinlaering og dyplaering, samt oppstart i Colab eller lokalt miljo.",
+            "Begreper, historiske linjer, forskjellen mellom AI, maskinlæring og dyplæring, samt oppstart i Colab eller lokalt miljø.",
           folderUrl: "https://github.com/arvidl/AI-og-helse/tree/main/uke01-introduksjon",
           readmeUrl: "https://github.com/arvidl/AI-og-helse/blob/main/uke01-introduksjon/README.md"
         },
         {
           week: "Uke 2",
-          title: "Klassisk maskinlaering",
+          title: "Klassisk maskinlæring",
           description:
-            "Supervised og unsupervised learning, enkle prediksjonsmodeller og vurdering av klinisk nytte og evalueringsmaal.",
+            "Supervised og unsupervised learning, enkle prediksjonsmodeller og vurdering av klinisk nytte og evalueringsmål.",
           folderUrl: "https://github.com/arvidl/AI-og-helse/tree/main/uke02-klassisk-ml",
           readmeUrl: "https://github.com/arvidl/AI-og-helse/blob/main/uke02-klassisk-ml/README.md"
         },
         {
           week: "Uke 3",
-          title: "Dyplaering og CNN",
+          title: "Dyplæring og CNN",
           description:
             "Nevrale nettverk, bilde- og signalanalyse, trening og evaluering av modeller, forklarbarhet og medisinske eksempler.",
           folderUrl: "https://github.com/arvidl/AI-og-helse/tree/main/uke03-dyplæring",
@@ -123,7 +191,7 @@
           week: "Uke 4",
           title: "Generativ AI",
           description:
-            "Transformers, store spraakmodeller, prompt engineering, trygg API-bruk og multimodalitet som inngang til moderne AI.",
+            "Transformers, store språkmodeller, prompt engineering, trygg API-bruk og multimodalitet som inngang til moderne AI.",
           folderUrl: "https://github.com/arvidl/AI-og-helse/tree/main/uke04-generativ-ai",
           readmeUrl: "https://github.com/arvidl/AI-og-helse/blob/main/uke04-generativ-ai/README.md"
         },
@@ -131,7 +199,7 @@
           week: "Uke 5",
           title: "Agentisk AI",
           description:
-            "Forskjellen mellom chatbot, arbeidsflyt og agent, samt verktoybruk, RAG, minne, case og sikkerhetsvurderinger.",
+            "Forskjellen mellom chatbot, arbeidsflyt og agent, samt verktøybruk, RAG, minne, case og sikkerhetsvurderinger.",
           folderUrl: "https://github.com/arvidl/AI-og-helse/tree/main/uke05-agentisk-ai",
           readmeUrl: "https://github.com/arvidl/AI-og-helse/blob/main/uke05-agentisk-ai/README.md"
         },
@@ -147,7 +215,7 @@
           week: "Uke 7",
           title: "Velferdsteknologi",
           description:
-            "A*-sok, sensorer, beslutningsstotte og etiske avveininger i hjem, omsorg og teknologi som virker tett paa mennesker.",
+            "A*-søk, sensorer, beslutningsstøtte og etiske avveininger i hjem, omsorg og teknologi som virker tett på mennesker.",
           folderUrl: "https://github.com/arvidl/AI-og-helse/tree/main/uke07-velferdsteknologi",
           readmeUrl: "https://github.com/arvidl/AI-og-helse/blob/main/uke07-velferdsteknologi/README.md"
         },
@@ -155,7 +223,7 @@
           week: "Uke 8",
           title: "Etikk og implementering",
           description:
-            "GDPR, bias, CE og MDR, medisinsk etikk og trustworthy AI med vekt paa ansvarlig innforing i helsetjenesten.",
+            "GDPR, bias, CE og MDR, medisinsk etikk og trustworthy AI med vekt på ansvarlig innføring i helsetjenesten.",
           folderUrl: "https://github.com/arvidl/AI-og-helse/tree/main/uke08-etikk-implementering",
           readmeUrl: "https://github.com/arvidl/AI-og-helse/blob/main/uke08-etikk-implementering/README.md"
         }
@@ -173,7 +241,7 @@
           url: "https://github.com/arvidl/AI-og-helse/blob/main/ressurser/ordliste.md"
         },
         {
-          title: "Verktoeyguider",
+          title: "Verktøyguider",
           description: "Supplerende materiale om verktøy og praktisk arbeidsflyt.",
           url: "https://github.com/arvidl/AI-og-helse/tree/main/ressurser/verktoy"
         },
@@ -184,7 +252,7 @@
         },
         {
           title: "Colab-oppsett",
-          description: "Praktisk hjelp for aa bruke kursnotebooks i Google Colab.",
+          description: "Praktisk hjelp for å bruke kursnotebooks i Google Colab.",
           url: "https://github.com/arvidl/AI-og-helse/blob/main/COLAB_SETUP.md"
         },
         {
@@ -194,7 +262,7 @@
         },
         {
           title: "Kaggle og data",
-          description: "Notater om dataadgang, Kaggle og relaterte oppsettsporsmaal.",
+          description: "Notater om dataadgang, Kaggle og relaterte oppsettspørsmål.",
           url: "https://github.com/arvidl/AI-og-helse/blob/main/kaggle_data_tilgang.md"
         },
         {
@@ -214,7 +282,7 @@
             <h3>${item.title}</h3>
             <p>${item.description}</p>
             <div class="card-actions">
-              <a class="button button-small button-primary" href="${item.folderUrl}">Aapne mappe</a>
+              <a class="button button-small button-primary" href="${item.folderUrl}">Åpne mappe</a>
               <a class="button button-small" href="${item.readmeUrl}">Les README</a>
             </div>
           `;
@@ -223,7 +291,7 @@
             <h3>${item.title}</h3>
             <p>${item.description}</p>
             <div class="card-actions">
-              <a class="button button-small" href="${item.url}">Aapne ressurs</a>
+              <a class="button button-small" href="${item.url}">Åpne ressurs</a>
             </div>
           `;
         }
