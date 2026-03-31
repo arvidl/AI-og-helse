@@ -15,6 +15,7 @@
       <nav class="topbar" aria-label="Hovednavigasjon">
         <a class="brandmark" href="./">AI og Helse</a>
         <div class="topbar-links">
+          <a href="#start">Start her</a>
           <a href="#weeks">Uker</a>
           <a href="#resources">Ressurser</a>
           <a href="https://github.com/arvidl/AI-og-helse">GitHub</a>
@@ -88,6 +89,51 @@
       </section>
 
       <main>
+        <section id="start" class="panel">
+          <div class="section-heading">
+            <p class="section-label">Start her</p>
+            <h2>En enkel førstegangsreise inn i kurset</h2>
+            <p class="section-text">
+              Hvis du er ny her, trenger du ikke lese alt i rekkefølge med én
+              gang. Start med én av inngangene under, og gå videre derfra i
+              ditt eget tempo.
+            </p>
+          </div>
+
+          <div class="start-grid">
+            <div class="journey-card">
+              <h3>Tre enkle steg</h3>
+              <ol class="steps">
+                <li>Begynn med `Uke 1` for å få språk, begreper og retning for resten av kurset.</li>
+                <li>Åpne én anbefalt notebook direkte i Colab hvis du vil prøve stoffet med en gang.</li>
+                <li>Bruk ukeoversikten lenger ned for å velge fordypning innen generativ AI, klinisk praksis eller etikk.</li>
+              </ol>
+            </div>
+
+            <div class="journey-card">
+              <h3>Velg inngang etter behov</h3>
+              <div class="path-list">
+                <p><strong>Jeg vil orientere meg:</strong> start med `Uke 1` og les README-en før du åpner notebooks.</p>
+                <p><strong>Jeg vil prøve noe med en gang:</strong> bruk en av Colab-knappene under og utforsk direkte i nettleseren.</p>
+                <p><strong>Jeg jobber klinisk:</strong> gå videre til `Uke 6` og `Uke 8` når du vil koble AI til beslutningsstøtte, ansvar og innføring i praksis.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="section-heading">
+            <p class="section-label">Anbefalte innganger</p>
+            <h2>Åpne utvalgte notebooks direkte i Colab</h2>
+            <p class="section-text">
+              Disse notebookene er valgt som gode startpunkter for ulike typer
+              brukere: én for å komme i gang, én for grunnbegreper, én for
+              moderne AI og én for klinisk relevans.
+            </p>
+          </div>
+          <div id="featured-colab" class="card-grid"></div>
+        </section>
+
         <section class="panel">
           <div class="section-heading">
             <p class="section-label">Kursstruktur</p>
@@ -264,6 +310,53 @@
         }
       ];
 
+      const featuredColab = [
+        {
+          week: "Uke 1",
+          title: "00-velkommen.ipynb",
+          focus: "Best for å komme i gang",
+          description:
+            "En rolig og praktisk start med kursoversikt, arbeidsmåte og hvordan materialet kan brukes.",
+          colabUrl:
+            "https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke01-introduksjon/00-velkommen.ipynb",
+          readmeUrl:
+            "https://github.com/arvidl/AI-og-helse/blob/main/uke01-introduksjon/README.md"
+        },
+        {
+          week: "Uke 1",
+          title: "02-hva-er-ai.ipynb",
+          focus: "Best for begrepsforståelse",
+          description:
+            "Gir et godt første møte med hva AI faktisk betyr i praksis, og hvorfor feltet ser ut som det gjør i helse.",
+          colabUrl:
+            "https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke01-introduksjon/02-hva-er-ai.ipynb",
+          readmeUrl:
+            "https://github.com/arvidl/AI-og-helse/blob/main/uke01-introduksjon/README.md"
+        },
+        {
+          week: "Uke 4",
+          title: "02_llm_grunnleggende.ipynb",
+          focus: "Best for moderne AI",
+          description:
+            "Et naturlig startpunkt hvis du vil forstå store språkmodeller, generativ AI og hva som driver utviklingen nå.",
+          colabUrl:
+            "https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke04-generativ-ai/02_llm_grunnleggende.ipynb",
+          readmeUrl:
+            "https://github.com/arvidl/AI-og-helse/blob/main/uke04-generativ-ai/README.md"
+        },
+        {
+          week: "Uke 6",
+          title: "01_risikomodell_logistisk_regresjon_kalibrering_shap.ipynb",
+          focus: "Best for klinisk relevans",
+          description:
+            "Passer godt hvis du vil se hvordan modellering, evaluering og klinisk beslutningsstøtte henger sammen.",
+          colabUrl:
+            "https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke06-klinisk-praksis/01_risikomodell_logistisk_regresjon_kalibrering_shap.ipynb",
+          readmeUrl:
+            "https://github.com/arvidl/AI-og-helse/blob/main/uke06-klinisk-praksis/README.md"
+        }
+      ];
+
       const resources = [
         {
           title: "Kursets hoved-README",
@@ -322,6 +415,17 @@
               <a class="button button-small" href="${item.readmeUrl}">Les README</a>
             </div>
           `;
+        } else if (type === "featured-colab") {
+          card.innerHTML = `
+            <p class="card-kicker">${item.week}</p>
+            <h3>${item.title}</h3>
+            <p class="card-focus">${item.focus}</p>
+            <p>${item.description}</p>
+            <div class="card-actions">
+              <a class="button button-small button-primary" href="${item.colabUrl}">Åpne i Colab</a>
+              <a class="button button-small" href="${item.readmeUrl}">Se uke-README</a>
+            </div>
+          `;
         } else {
           card.innerHTML = `
             <h3>${item.title}</h3>
@@ -336,9 +440,13 @@
       }
 
       const weeksContainer = document.getElementById("weeks");
+      const featuredColabContainer = document.getElementById("featured-colab");
       const resourcesContainer = document.getElementById("resources");
 
       weeks.forEach((item) => weeksContainer.appendChild(createCard(item, "week")));
+      featuredColab.forEach((item) =>
+        featuredColabContainer.appendChild(createCard(item, "featured-colab"))
+      );
       resources.forEach((item) =>
         resourcesContainer.appendChild(createCard(item, "resource"))
       );
