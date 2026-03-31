@@ -8,6 +8,11 @@
 > Start på kursnettsiden for en ryddig inngang til ukeoversikt, ressurser og videre lenker til notebooks:
 > [Åpne kursnettsiden](https://arvidl.github.io/AI-og-helse/)
 
+> [!NOTE]
+> Forelesningsversjonen ligger også ute som Google Slides:
+> [Åpne presentasjonen](https://docs.google.com/presentation/d/e/2PACX-1vSzWu6-_2T9G9SopUObXy_tn_t1qxzXMe9PZeFBnOMN-xUtAJNZujn5ZGJ_x11zSq4jKVP_i8z6AfuU/pub?start=false&loop=false&delayms=3000)
+> eller gå via [kursnettsiden med QR-kode](https://arvidl.github.io/AI-og-helse/).
+
 
 ## 📚 Kursstruktur
 
