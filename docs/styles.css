@@ -120,7 +120,14 @@ h1 {
   font-size: 1.08rem;
   line-height: 1.7;
   color: var(--muted);
-  margin-bottom: 28px;
+  margin-bottom: 18px;
+}
+
+.hero-support {
+  max-width: 58ch;
+  color: var(--muted);
+  line-height: 1.65;
+  margin-bottom: 0;
 }
 
 .hero-panel {
@@ -281,6 +288,13 @@ h1 {
 .card h3,
 .callout h3 {
   font-size: 1.18rem;
+  margin-bottom: 10px;
+}
+
+.card-focus {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--accent-strong);
   margin-bottom: 10px;
 }
 
