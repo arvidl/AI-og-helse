@@ -174,6 +174,172 @@ def add_section_slide(slide, title, subtitle):
     r.font.color.rgb = MUTED
 
 
+def add_repo_overview_slide(slide, title, items, references=None, section=None):
+    add_bg(slide)
+
+    if section:
+        sec = slide.shapes.add_textbox(Inches(0.75), Inches(0.55), Inches(4.5), Inches(0.35))
+        p = sec.text_frame.paragraphs[0]
+        r = p.add_run()
+        r.text = section
+        r.font.name = "Aptos"
+        r.font.size = Pt(13)
+        r.font.bold = True
+        r.font.color.rgb = PURPLE_DARK
+
+    title_box = slide.shapes.add_textbox(Inches(0.75), Inches(0.95), Inches(11.6), Inches(0.8))
+    p = title_box.text_frame.paragraphs[0]
+    r = p.add_run()
+    r.text = title
+    r.font.name = "Aptos Display"
+    r.font.size = Pt(24)
+    r.font.bold = True
+    r.font.color.rgb = TEXT
+
+    x_positions = [0.75, 4.55, 8.35]
+    y_positions = [1.9, 4.2]
+    width = 3.45
+    height = 1.95
+
+    for idx, item in enumerate(items):
+        col = idx % 3
+        row = idx // 3
+        x = Inches(x_positions[col])
+        y = Inches(y_positions[row])
+
+        panel = slide.shapes.add_shape(
+            MSO_AUTO_SHAPE_TYPE.ROUNDED_RECTANGLE, x, y, Inches(width), Inches(height)
+        )
+        panel.fill.solid()
+        panel.fill.fore_color.rgb = WHITE
+        panel.line.color.rgb = LINE
+
+        icon = slide.shapes.add_textbox(x + Inches(0.22), y + Inches(0.18), Inches(0.45), Inches(0.35))
+        p = icon.text_frame.paragraphs[0]
+        r = p.add_run()
+        r.text = item["icon"]
+        r.font.name = "Aptos"
+        r.font.size = Pt(18)
+        r.font.bold = True
+        r.font.color.rgb = PURPLE_DARK
+
+        tb = slide.shapes.add_textbox(x + Inches(0.62), y + Inches(0.18), Inches(2.55), Inches(0.35))
+        p = tb.text_frame.paragraphs[0]
+        r = p.add_run()
+        r.text = item["title"]
+        r.font.name = "Aptos"
+        r.font.size = Pt(16)
+        r.font.bold = True
+        r.font.color.rgb = TEXT
+
+        db = slide.shapes.add_textbox(x + Inches(0.22), y + Inches(0.62), Inches(3.0), Inches(0.78))
+        tf = db.text_frame
+        tf.word_wrap = True
+        p = tf.paragraphs[0]
+        r = p.add_run()
+        r.text = item["description"]
+        r.font.name = "Aptos"
+        r.font.size = Pt(12.5)
+        r.font.color.rgb = MUTED
+
+        nb = slide.shapes.add_textbox(x + Inches(0.22), y + Inches(1.42), Inches(3.0), Inches(0.3))
+        p = nb.text_frame.paragraphs[0]
+        r = p.add_run()
+        r.text = item["notebook"]
+        r.font.name = "Aptos"
+        r.font.size = Pt(10)
+        r.font.italic = True
+        r.font.color.rgb = BLUE
+
+    add_footer_reference(slide, references)
+
+
+def add_case_slide(slide, title, scenario, left_title, left_points, right_title, right_points, references=None, section=None):
+    add_bg(slide)
+
+    if section:
+        sec = slide.shapes.add_textbox(Inches(0.75), Inches(0.55), Inches(4.5), Inches(0.35))
+        p = sec.text_frame.paragraphs[0]
+        r = p.add_run()
+        r.text = section
+        r.font.name = "Aptos"
+        r.font.size = Pt(13)
+        r.font.bold = True
+        r.font.color.rgb = PURPLE_DARK
+
+    title_box = slide.shapes.add_textbox(Inches(0.75), Inches(0.95), Inches(11.4), Inches(0.8))
+    p = title_box.text_frame.paragraphs[0]
+    r = p.add_run()
+    r.text = title
+    r.font.name = "Aptos Display"
+    r.font.size = Pt(24)
+    r.font.bold = True
+    r.font.color.rgb = TEXT
+
+    scenario_box = slide.shapes.add_shape(
+        MSO_AUTO_SHAPE_TYPE.ROUNDED_RECTANGLE, Inches(0.75), Inches(1.8), Inches(11.8), Inches(1.1)
+    )
+    scenario_box.fill.solid()
+    scenario_box.fill.fore_color.rgb = WHITE
+    scenario_box.line.color.rgb = LINE
+
+    tb = slide.shapes.add_textbox(Inches(1.0), Inches(2.03), Inches(11.2), Inches(0.6))
+    p = tb.text_frame.paragraphs[0]
+    r = p.add_run()
+    r.text = scenario
+    r.font.name = "Aptos"
+    r.font.size = Pt(16)
+    r.font.bold = True
+    r.font.color.rgb = TEXT
+
+    for x, panel_title, panel_points, symbol in [
+        (0.75, left_title, left_points, "⊕"),
+        (6.75, right_title, right_points, "◇"),
+    ]:
+        panel = slide.shapes.add_shape(
+            MSO_AUTO_SHAPE_TYPE.ROUNDED_RECTANGLE, Inches(x), Inches(3.15), Inches(5.8), Inches(3.25)
+        )
+        panel.fill.solid()
+        panel.fill.fore_color.rgb = WHITE
+        panel.line.color.rgb = LINE
+
+        sb = slide.shapes.add_textbox(Inches(x + 0.25), Inches(3.38), Inches(0.4), Inches(0.3))
+        p = sb.text_frame.paragraphs[0]
+        r = p.add_run()
+        r.text = symbol
+        r.font.name = "Aptos"
+        r.font.size = Pt(18)
+        r.font.bold = True
+        r.font.color.rgb = PURPLE_DARK
+
+        hb = slide.shapes.add_textbox(Inches(x + 0.65), Inches(3.35), Inches(4.6), Inches(0.35))
+        p = hb.text_frame.paragraphs[0]
+        r = p.add_run()
+        r.text = panel_title
+        r.font.name = "Aptos"
+        r.font.size = Pt(16)
+        r.font.bold = True
+        r.font.color.rgb = TEXT
+
+        pb = slide.shapes.add_textbox(Inches(x + 0.28), Inches(3.82), Inches(5.1), Inches(2.2))
+        tf = pb.text_frame
+        tf.word_wrap = True
+        first = True
+        for point in panel_points:
+            p = tf.paragraphs[0] if first else tf.add_paragraph()
+            p.bullet = True
+            p.level = 0
+            p.space_after = Pt(4)
+            r = p.add_run()
+            r.text = point
+            r.font.name = "Aptos"
+            r.font.size = Pt(15)
+            r.font.color.rgb = TEXT
+            first = False
+
+    add_footer_reference(slide, references)
+
+
 def add_title_slide(slide, title, subtitle, footer):
     add_bg(slide)
 
@@ -462,6 +628,69 @@ SLIDES = [
         ],
     },
     {
+        "type": "repo_overview",
+        "section": "Del 1",
+        "title": "Temaene i repoet, som kurskart",
+        "items": [
+            {
+                "icon": "◎",
+                "title": "Uke 1",
+                "description": "Begreper, historikk og hva AI faktisk er i helsefaglig sammenheng.",
+                "notebook": "uke01-introduksjon/02-hva-er-ai.ipynb",
+            },
+            {
+                "icon": "∿",
+                "title": "Uke 2",
+                "description": "Klassisk maskinlæring, prediksjon og grunnleggende evaluering.",
+                "notebook": "uke02-klassisk-ml/01-klassisk-ml-101.ipynb",
+            },
+            {
+                "icon": "▣",
+                "title": "Uke 3",
+                "description": "Dyplæring, bilder, signaler og forklarbarhet.",
+                "notebook": "uke03-dyplæring/03_medisinsk_bildeklassifikasjon_MR.ipynb",
+            },
+            {
+                "icon": "✦",
+                "title": "Uke 4-5",
+                "description": "Generativ AI, språkmodeller, prompt engineering og agentisk AI.",
+                "notebook": "uke04-generativ-ai/02_llm_grunnleggende.ipynb",
+            },
+            {
+                "icon": "⊕",
+                "title": "Uke 6",
+                "description": "Klinisk praksis, risikomodeller og beslutningsstøtte.",
+                "notebook": "uke06-klinisk-praksis/01_risikomodell_logistisk_regresjon_kalibrering_shap.ipynb",
+            },
+            {
+                "icon": "◇",
+                "title": "Uke 7-8",
+                "description": "Velferdsteknologi, etikk, regulering og trustworthy AI.",
+                "notebook": "uke08-etikk-implementering/05_trustworthy_ai_i_helse.ipynb",
+            },
+        ],
+        "references": ["README.md"],
+    },
+    {
+        "type": "case",
+        "section": "Del 1",
+        "title": "Visuelt case: AI i radiologi",
+        "scenario": "Tenk deg en radiologisk arbeidsflyt der et AI-system markerer mistenkelige funn før klinikeren leser bildet.",
+        "left_title": "Mulig verdi",
+        "left_points": [
+            "Kan bidra til raskere sortering og prioritering",
+            "Kan være ekstra nyttig i store volumer og ved belastet arbeidsflyt",
+            "Kan fungere som et ekstra blikk, ikke nødvendigvis en erstatning",
+        ],
+        "right_title": "Viktige spørsmål",
+        "right_points": [
+            "Hvordan er systemet validert og i hvilken setting?",
+            "Hvilke typer feil gjør det oftest?",
+            "Hvordan påvirker det klinikerens oppmerksomhet og beslutning?",
+        ],
+        "references": ["uke03-dyplæring/03_medisinsk_bildeklassifikasjon_MR.ipynb"],
+    },
+    {
         "type": "content",
         "section": "Del 1",
         "title": "Hva AI ofte er god på",
@@ -721,6 +950,50 @@ SLIDES = [
         ],
     },
     {
+        "type": "repo_overview",
+        "section": "Del 2",
+        "title": "Hvor i repoet finner dere temaene vi har snakket om?",
+        "items": [
+            {
+                "icon": "⊕",
+                "title": "Risiko og kalibrering",
+                "description": "Hvordan prediksjon blir til klinisk vurdering og terskelvalg.",
+                "notebook": "uke06-klinisk-praksis/02_klinisk_beslutningsstøtte_terskler_og_avveininger.ipynb",
+            },
+            {
+                "icon": "∿",
+                "title": "Generalisering",
+                "description": "Hvorfor modeller feiler når data og kontekst endrer seg.",
+                "notebook": "uke06-klinisk-praksis/03_validering_generalisering_og_subgrupper.ipynb",
+            },
+            {
+                "icon": "◇",
+                "title": "Bias og rettferdighet",
+                "description": "Hvordan skjevhet kan oppstå og hvorfor det betyr noe klinisk.",
+                "notebook": "uke08-etikk-implementering/02_bias_rettferdighet.ipynb",
+            },
+            {
+                "icon": "◎",
+                "title": "Personvern",
+                "description": "GDPR og praktiske vurderinger ved helseopplysninger.",
+                "notebook": "uke08-etikk-implementering/01_gdpr_personvern.ipynb",
+            },
+            {
+                "icon": "↗",
+                "title": "Regulering",
+                "description": "CE, MDR og ansvar ved innføring av medisinsk AI.",
+                "notebook": "uke08-etikk-implementering/03_ce_mdr_regulering.ipynb",
+            },
+            {
+                "icon": "✦",
+                "title": "Trustworthy AI",
+                "description": "Robusthet, monitorering og trygg innføring i praksis.",
+                "notebook": "uke08-etikk-implementering/05_trustworthy_ai_i_helse.ipynb",
+            },
+        ],
+        "references": ["README.md", "uke08-etikk-implementering/README.md"],
+    },
+    {
         "type": "content",
         "section": "Del 2",
         "title": "Hva kan være lavere risiko og likevel nyttig?",
@@ -730,6 +1003,25 @@ SLIDES = [
             "Administrative støtteoppgaver",
             "Utkast som alltid kontrolleres av fagperson",
         ],
+    },
+    {
+        "type": "case",
+        "section": "Del 2",
+        "title": "Visuelt case: generativ AI i dokumentasjon",
+        "scenario": "Tenk deg at et system lager utkast til epikrise, pasientbrev eller journalsammendrag basert på eksisterende tekst og struktur.",
+        "left_title": "Mulige gevinster",
+        "left_points": [
+            "Sparer tid i formulering og strukturering",
+            "Kan gjøre dokumentasjon mer konsistent",
+            "Kan være nyttig som førsteutkast i lavere risiko-oppgaver",
+        ],
+        "right_title": "Hva må kontrolleres",
+        "right_points": [
+            "At innholdet faktisk stemmer med pasientforløpet",
+            "At det ikke introduseres feil, hallusinasjoner eller tvetydighet",
+            "At kliniker fortsatt har ansvar for språk, innhold og konsekvenser",
+        ],
+        "references": ["uke04-generativ-ai/04_chatgpt_claude_api.ipynb", "intro_openai_anthropic.ipynb"],
     },
     {
         "type": "content",
@@ -861,6 +1153,26 @@ def build_presentation():
             add_title_slide(slide, spec["title"], spec["subtitle"], spec["footer"])
         elif slide_type == "section":
             add_section_slide(slide, spec["title"], spec["subtitle"])
+        elif slide_type == "repo_overview":
+            add_repo_overview_slide(
+                slide,
+                spec["title"],
+                spec["items"],
+                references=spec.get("references"),
+                section=spec.get("section"),
+            )
+        elif slide_type == "case":
+            add_case_slide(
+                slide,
+                spec["title"],
+                spec["scenario"],
+                spec["left_title"],
+                spec["left_points"],
+                spec["right_title"],
+                spec["right_points"],
+                references=spec.get("references"),
+                section=spec.get("section"),
+            )
         else:
             add_content_slide(
                 slide,
