@@ -4,7 +4,7 @@ Denne filen er en kort praktisk guide til å bruke notebookene i Google Colab.
 
 For full oversikt over alle notebooker, se toppnivå-`README.md`.
 
-## Hurtig start
+## Hurtigstart
 
 1. Åpne ønsket notebook via Colab-badge i `README.md`.
 2. Godta eventuelt meldingen om at notebooken ikke er autorisert av Google.
@@ -22,7 +22,7 @@ For full oversikt over alle notebooker, se toppnivå-`README.md`.
 
 - Ikke alle notebooks er like "plug-and-play" i Colab.
 - Noen notebooks krever API-nøkler, opplasting av filer, Google Drive eller GPU-runtime.
-- Se `COLAB_COMPATIBILITY_CHECKLIST.md` for en vedlikeholdt oversikt over hva som er klart i Colab og hva som krever manuell oppsett.
+- Se `COLAB_COMPATIBILITY_CHECKLIST.md` for en vedlikeholdt oversikt over hva som er klart i Colab og hva som krever manuelt oppsett.
 
 ## Tips for Colab
 

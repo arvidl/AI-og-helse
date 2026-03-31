@@ -26,7 +26,7 @@
 ### Bruk av kurset
 "... på svømmekurs bør man oppholde seg mye i bassenget ..."
 - Det anbefales å "gå i bassenget" (= eksperimentere med notebooks)
-- For noen i målgruppen, kan et realistisk læringsutbytte oppnås ved kun å **lese**, **inspisere**, **kontemplere**: tekst, kode, figurer og referanser rett i GitHub-repositoriet (https://github.com/arvidl/AI-og-helse) -  "holde seg på land ...", samt bruke en AI-sparringspartner
+- For noen i målgruppen kan et realistisk læringsutbytte oppnås ved kun å **lese**, **inspisere** og **kontemplere** tekst, kode, figurer og referanser direkte i GitHub-repositoriet (https://github.com/arvidl/AI-og-helse), altså "holde seg på land ...", kombinert med bruk av en AI-sparringspartner
 
 ## 📂 Repo-struktur
 
@@ -85,7 +85,7 @@ AI-og-helse/
 
 ### Uke 4 og 5: Moderne AI i praksis
 
-Uke 4 gir en innforing i generativ AI, foundation models og multimodalitet. Uke 5 bygger videre pa dette og viser hvordan slike modeller kan inga i agentiske systemer med verktoybruk, arbeidsflyt og helsefaglige anvendelser.
+Uke 4 gir en innføring i generativ AI, foundation models og multimodalitet. Uke 5 bygger videre på dette og viser hvordan slike modeller kan inngå i agentiske systemer med verktøybruk, arbeidsflyt og helsefaglige anvendelser.
 
 ### Uke 4: Generativ AI, foundation models og multimodalitet
 | Notebok | Beskrivelse | Colab |
@@ -94,13 +94,13 @@ Uke 4 gir en innforing i generativ AI, foundation models og multimodalitet. Uke 
 | `02_llm_grunnleggende.ipynb` | LLM grunnleggende | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke04-generativ-ai/02_llm_grunnleggende.ipynb) |
 | `03_prompt_engineering.ipynb` | Prompt engineering | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke04-generativ-ai/03_prompt_engineering.ipynb) |
 | `04_chatgpt_claude_api.ipynb` | ChatGPT og Claude API | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke04-generativ-ai/04_chatgpt_claude_api.ipynb) |
-| `10_bilde_tekst_clip_zero_shot_blomster.ipynb` | CLIP zero-shot pa blomster (bilde + tekst) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke04-generativ-ai/10_bilde_tekst_clip_zero_shot_blomster.ipynb) |
+| `10_bilde_tekst_clip_zero_shot_blomster.ipynb` | CLIP zero-shot på blomster (bilde + tekst) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke04-generativ-ai/10_bilde_tekst_clip_zero_shot_blomster.ipynb) |
 
 ### Uke 5: Agentisk AI
 | Notebok | Beskrivelse | Colab |
 |---------|-------------|-------|
 | `01_chatbot_workflow_agent.ipynb` | Chatbot, workflow og agent: begreper og enkle eksempler | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke05-agentisk-ai/01_chatbot_workflow_agent.ipynb) |
-| `02_agentisk_ai_i_helse.ipynb` | Agentisk AI i helse: verktoybruk, RAG, minne, case og sikkerhet | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke05-agentisk-ai/02_agentisk_ai_i_helse.ipynb) |
+| `02_agentisk_ai_i_helse.ipynb` | Agentisk AI i helse: verktøybruk, RAG, minne, case og sikkerhet | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke05-agentisk-ai/02_agentisk_ai_i_helse.ipynb) |
 
 ### Uke 6: Klinisk praksis
 | Notebok | Beskrivelse | Colab |
@@ -135,7 +135,7 @@ Uke 4 gir en innforing i generativ AI, foundation models og multimodalitet. Uke 
 ## 🛠️ Teknisk støtte
 
 - **GitHub Issues:** [Rapporter problemer](https://github.com/arvidl/AI-og-helse/issues)
-- **Diskusjoner:** Kollegaer, Medstudenter, AI-sparringpartner(e)
+- **Diskusjoner:** kollegaer, medstudenter, AI-sparringspartner(e)
 
 
 ## 📖 Læringsressurser
@@ -160,7 +160,7 @@ Uke 4 gir en innforing i generativ AI, foundation models og multimodalitet. Uke 
 
 - **Varighet:** 8 uker 
 - **Arbeidsomfang:** 10-12 timer per uke
-- **Læringsspråk (i Jupyter notatbøker):** Norsk (+ engelske fagtermer, e.g. "notebooks")
+- **Læringsspråk (i Jupyter notatbøker):** Norsk (+ engelske fagtermer, f.eks. "notebooks")
 
 
 ## 📄 Lisens
@@ -176,10 +176,10 @@ Repoet er lisensiert under [MIT-lisensen](LICENSE). Copyright (c) 2025 Arvid Lun
 ### 🛠️ Hvordan kurset er laget og ressurser brukt
 
 - bygger på domenekunnskap, godt nettverk av fagfeller ([nær](https://www.sciencedirect.com/science/article/pii/S0939388918301181?via%3Dihub) og [fjern](http://en.jnl.ac.cn/article/185.html)) og entusiasme for feltet
-- bruk av AI kode-editoren Cursor Ultra 
+- bruk av AI-kodeeditoren Cursor Ultra
 - utviklet på en MacBook Pro (M4 Max) 
 - diverse lisenser (GitHub, OpenAI, Anthropic, Perplexity, Google) 
-- ca. 40 timeverk (for basisdelen) 
+- ca. 40 timeverk (for basisdelen)
 
 
 ------
@@ -189,7 +189,7 @@ Repoet er lisensiert under [MIT-lisensen](LICENSE). Copyright (c) 2025 Arvid Lun
 
 ### Bruk Google Colab (enkleste alternativ)
 
-Gå til https://github.com/arvidl/AI-og-helse/blob/main/README.md og sjekk Repo-struktur og aktuell uke01-, ..., uke08-
+Gå til https://github.com/arvidl/AI-og-helse/blob/main/README.md og se repo-strukturen og aktuell uke, fra `uke01-` til `uke08-`.
 
 f.eks. [uke01-introduksjon](https://github.com/arvidl/AI-og-helse/tree/main/uke01-introduksjon)
 
@@ -206,7 +206,7 @@ f.eks. [uke01-introduksjon](https://github.com/arvidl/AI-og-helse/tree/main/uke0
 git clone https://github.com/arvidl/AI-og-helse.git
 cd AI-og-helse
 
-# Opprett conda environment fra yml fil
+# Opprett conda-miljø fra `environment.yml`
 conda env create -f environment.yml
 
 # Aktiver miljøet
@@ -219,7 +219,7 @@ python -m ipykernel install --user --name ai-helse --display-name "Python 3.12 (
 python check_setup.py
 ```
 
-`CrewAI` er na inkludert i standardmiljoet for det frivillige fordypningssporet i uke 05, blant annet notebooken `uke05-agentisk-ai/03_crewai_fordypning_rehabilitering.ipynb`.
+`CrewAI` er nå inkludert i standardmiljøet for det frivillige fordypningssporet i uke 05, blant annet notebooken `uke05-agentisk-ai/03_crewai_fordypning_rehabilitering.ipynb`.
 
 **Alternativ: Bruk pip/venv (hvis du ikke har Anaconda)**
 
@@ -234,7 +234,7 @@ python3.12 -m venv venv
 source venv/bin/activate  # Mac/Linux
 # venv\Scripts\activate   # Windows
 
-# Installer dependencies
+# Installer avhengigheter
 pip install --upgrade pip
 pip install -r requirements.txt
 
@@ -244,7 +244,7 @@ python check_setup.py
 
 **For Cursor-brukere**
 1. Åpne prosjektet i Cursor
-2. Cursor vil automatisk detektere conda environment
+2. Cursor vil automatisk oppdage conda-miljøet
 3. Velg "Python 3.12 (ai-helse)" som interpreter
 4. Alternativt: Cmd/Ctrl+Shift+P → "Python: Select Interpreter" → ai-helse
 
@@ -252,7 +252,7 @@ python check_setup.py
 ## **API-nøkler (for lokal kjøring)**
 
 
-### **NB:** Det kreves at API-nøkler blir konfigurert av kursdeltager:
+### **NB:** Det kreves at API-nøkler blir konfigurert av kursdeltaker:
 
 Dvs. hver deltaker skaffer selv, lagrer og bruker sine egne API-nøkler
 
@@ -357,7 +357,7 @@ print(response.content[0].text)
 
 ## **API-nøkler (for kjøring i skyen)**
 
-Dette gjelder kun for **Google Colab**
+Dette gjelder kun for **Google Colab**.
 
 For nærmere beskrivelse, se notebooken [`intro_openai_anthropic.ipynb`](./intro_openai_anthropic.ipynb).
 
@@ -368,8 +368,8 @@ For nærmere beskrivelse, se notebooken [`intro_openai_anthropic.ipynb`](./intro
 #### 5. Oppsummering
 
 * Deltakere skaffer **egne nøkler** fra OpenAI og Anthropic.
-* Nøklene lagres lokalt i `.env` eller som miljøvariabler dersom du kjører lokalt
-* Dersom du kjører i Google Colab må du konsultere [`intro_openai_anthropic.ipynb`](./intro_openai_anthropic.ipynb).
+* Nøklene lagres lokalt i `.env` eller som miljøvariabler dersom du kjører lokalt.
+* Dersom du kjører i Google Colab, må du konsultere [`intro_openai_anthropic.ipynb`](./intro_openai_anthropic.ipynb).
 * Aktuelle Notebooks er ferdig satt opp til å hente nøkler og bruke dem.
 
 ---

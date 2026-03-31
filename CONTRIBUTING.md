@@ -16,12 +16,12 @@ Dette repoet er laget som åpent kursmateriale for norskspråklige studenter og 
 
 - sjekk at endringen passer med kursnivået og målgruppen
 - hold språk og tone på norsk der materialet er studentrettet
-- unngå å commite hemmeligheter som API-nøkler, `.env`-filer eller `kaggle.json`
+- unngå å committe hemmeligheter som API-nøkler, `.env`-filer eller `kaggle.json`
 - unngå utilsiktet notebook-støy som endrede execution counts, output eller lokal metadata hvis det ikke er meningen
 
 ## Praktisk arbeidsflyt
 
-1. Opprett en branch fra `main` hvis du jobber i din egen fork eller lokalt.
+1. Opprett en branch fra `main` dersom du jobber i din egen fork eller lokalt.
 2. Gjør små og tydelige endringer.
 3. Test det som er naturlig å teste:
    - åpning av notebook
