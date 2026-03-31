@@ -218,6 +218,9 @@ python -m ipykernel install --user --name ai-helse --display-name "Python 3.12 (
 # Verifiser installasjon
 python check_setup.py
 ```
+
+`CrewAI` er na inkludert i standardmiljoet for det frivillige fordypningssporet i uke 05, blant annet notebooken `uke05-agentisk-ai/03_crewai_fordypning_rehabilitering.ipynb`.
+
 **Alternativ: Bruk pip/venv (hvis du ikke har Anaconda)**
 
 ```bash
