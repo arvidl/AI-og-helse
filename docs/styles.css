@@ -307,6 +307,40 @@ h1 {
   margin-bottom: 0;
 }
 
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.filter-chip {
+  min-height: 36px;
+  padding: 0 14px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(67, 51, 38, 0.14);
+  background: rgba(255, 255, 255, 0.72);
+  color: var(--muted);
+  font: inherit;
+  font-size: 0.92rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 140ms ease, background 140ms ease, border-color 140ms ease;
+}
+
+.filter-chip:hover,
+.filter-chip:focus-visible {
+  transform: translateY(-1px);
+  background: #ffffff;
+  border-color: rgba(67, 51, 38, 0.24);
+}
+
+.filter-chip.is-active {
+  background: rgba(125, 60, 152, 0.12);
+  color: var(--accent-strong);
+  border-color: rgba(125, 60, 152, 0.22);
+}
+
 .start-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));

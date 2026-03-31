@@ -19,6 +19,7 @@
         </a>
         <div class="topbar-links">
           <a href="#start">Start her</a>
+          <a href="./om-kurset.html">Om kurset</a>
           <a href="#weeks">Uker</a>
           <a href="./ressurser.html">Ressurser</a>
           <a href="./for-undervisere.html">For undervisere</a>
@@ -209,6 +210,13 @@
               hovedideen i hver uke.
             </p>
           </div>
+          <div class="filter-bar" aria-label="Filtrer ukekort">
+            <button class="filter-chip is-active" type="button" data-filter="Alle">Alle</button>
+            <button class="filter-chip" type="button" data-filter="Intro">Intro</button>
+            <button class="filter-chip" type="button" data-filter="Praktisk">Praktisk</button>
+            <button class="filter-chip" type="button" data-filter="Klinisk">Klinisk</button>
+            <button class="filter-chip" type="button" data-filter="Etikk">Etikk</button>
+          </div>
           <div id="weeks" class="card-grid"></div>
         </section>
 
@@ -397,6 +405,12 @@
 
       const resources = [
         {
+          title: "Om kurset",
+          icon: "◎",
+          description: "Samlet side for målgruppe, læringsutbytte, praktisk bruk og hvordan kurset kan tas i bruk i eget tempo.",
+          url: "./om-kurset.html"
+        },
+        {
           title: "Ressurssiden",
           icon: "⌘",
           description: "Samlet side for ordliste, verktøy, Colab-oppsett og andre praktiske innganger til kursmaterialet.",
@@ -463,6 +477,7 @@
         card.className = "card";
 
         if (type === "week") {
+          card.dataset.labels = item.labels.join("|");
           card.innerHTML = `
             <p class="card-kicker">${item.week}</p>
             <div class="card-heading">
@@ -510,6 +525,7 @@
       }
 
       const weeksContainer = document.getElementById("weeks");
+      const weekFilterButtons = Array.from(document.querySelectorAll(".filter-chip"));
       const featuredColabContainer = document.getElementById("featured-colab");
       const resourcesContainer = document.getElementById("resources");
 
@@ -520,6 +536,24 @@
       resources.forEach((item) =>
         resourcesContainer.appendChild(createCard(item, "resource"))
       );
+
+      function applyWeekFilter(filterValue) {
+        const weekCards = Array.from(weeksContainer.querySelectorAll(".card"));
+
+        weekCards.forEach((card) => {
+          const labels = (card.dataset.labels || "").split("|");
+          const shouldShow = filterValue === "Alle" || labels.includes(filterValue);
+          card.hidden = !shouldShow;
+        });
+
+        weekFilterButtons.forEach((button) => {
+          button.classList.toggle("is-active", button.dataset.filter === filterValue);
+        });
+      }
+
+      weekFilterButtons.forEach((button) => {
+        button.addEventListener("click", () => applyWeekFilter(button.dataset.filter));
+      });
     </script>
   </body>
 </html>
