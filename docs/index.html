@@ -17,7 +17,8 @@
         <div class="topbar-links">
           <a href="#start">Start her</a>
           <a href="#weeks">Uker</a>
-          <a href="#resources">Ressurser</a>
+          <a href="./ressurser.html">Ressurser</a>
+          <a href="./for-undervisere.html">For undervisere</a>
           <a href="https://github.com/arvidl/AI-og-helse">GitHub</a>
         </div>
       </nav>
@@ -240,6 +241,7 @@
           week: "Uke 1",
           title: "Introduksjon til AI",
           focus: "Begreper, historikk og oppstart",
+          labels: ["Intro", "Grunnlag"],
           description:
             "Bygg et felles språk for resten av kurset: hva AI er, hvordan feltet har utviklet seg, og hvorfor helse stiller særlige krav til nytte, risiko og ansvar.",
           folderUrl: "https://github.com/arvidl/AI-og-helse/tree/main/uke01-introduksjon",
@@ -249,6 +251,7 @@
           week: "Uke 2",
           title: "Klassisk maskinlæring",
           focus: "Prediksjon, modeller og evaluering",
+          labels: ["Praktisk", "Grunnlag"],
           description:
             "Se hvordan modeller lærer fra data, og hvordan prediksjon må vurderes opp mot klinisk nytte, feiltyper og valg av evalueringsmål.",
           folderUrl: "https://github.com/arvidl/AI-og-helse/tree/main/uke02-klassisk-ml",
@@ -258,6 +261,7 @@
           week: "Uke 3",
           title: "Dyplæring og CNN",
           focus: "Bilder, signaler og nevrale nettverk",
+          labels: ["Praktisk", "Modeller"],
           description:
             "Utforsk hvordan nevrale nettverk brukes på bilder og signaler, og hvordan trening, testing og forklarbarhet blir viktige i medisinske eksempler.",
           folderUrl: "https://github.com/arvidl/AI-og-helse/tree/main/uke03-dyplæring",
@@ -267,6 +271,7 @@
           week: "Uke 4",
           title: "Generativ AI",
           focus: "Transformere, språkmodeller og multimodalitet",
+          labels: ["Praktisk", "Moderne AI"],
           description:
             "Få en praktisk innføring i transformere, store språkmodeller, prompt engineering og multimodale modeller som preger dagens AI-utvikling.",
           folderUrl: "https://github.com/arvidl/AI-og-helse/tree/main/uke04-generativ-ai",
@@ -276,6 +281,7 @@
           week: "Uke 5",
           title: "Agentisk AI",
           focus: "Verktøybruk, arbeidsflyt og agenter",
+          labels: ["Praktisk", "Anvendelse"],
           description:
             "Undersøk hvordan språkmodeller kan gå fra samtale til handling gjennom verktøybruk, arbeidsflyt, RAG, minne og helsefaglige case.",
           folderUrl: "https://github.com/arvidl/AI-og-helse/tree/main/uke05-agentisk-ai",
@@ -285,6 +291,7 @@
           week: "Uke 6",
           title: "Klinisk praksis",
           focus: "Risiko, kalibrering og beslutningsstøtte",
+          labels: ["Klinisk", "Praktisk"],
           description:
             "Koble modellarbeid til klinisk virkelighet gjennom risikomodeller, kalibrering, terskler, generalisering og krav til bruk i arbeidsflyt.",
           folderUrl: "https://github.com/arvidl/AI-og-helse/tree/main/uke06-klinisk-praksis",
@@ -294,6 +301,7 @@
           week: "Uke 7",
           title: "Velferdsteknologi",
           focus: "Sensorer, navigasjon og omsorgsteknologi",
+          labels: ["Klinisk", "Anvendelse"],
           description:
             "Se hvordan algoritmer, sensorer og beslutningsstøtte kan brukes i hjem og omsorg, og hvilke menneskelige og etiske hensyn som følger med.",
           folderUrl: "https://github.com/arvidl/AI-og-helse/tree/main/uke07-velferdsteknologi",
@@ -303,6 +311,7 @@
           week: "Uke 8",
           title: "Etikk og implementering",
           focus: "Personvern, regulering og trustworthy AI",
+          labels: ["Etikk", "Klinisk"],
           description:
             "Avslutt kurset med spørsmål om personvern, bias, regulering, medisinsk etikk og hva som kreves for å innføre AI på en trygg og ansvarlig måte.",
           folderUrl: "https://github.com/arvidl/AI-og-helse/tree/main/uke08-etikk-implementering",
@@ -359,6 +368,16 @@
 
       const resources = [
         {
+          title: "Ressurssiden",
+          description: "Samlet side for ordliste, verktøy, Colab-oppsett og andre praktiske innganger til kursmaterialet.",
+          url: "./ressurser.html"
+        },
+        {
+          title: "For undervisere",
+          description: "Egen side for deg som vil bruke kurset i undervisning, seminarer eller faglige læringsmiljøer.",
+          url: "./for-undervisere.html"
+        },
+        {
           title: "Kursets hoved-README",
           description: "Komplett oversikt over notebooks, Colab-lenker og praktisk bruk.",
           url: "https://github.com/arvidl/AI-og-helse/blob/main/README.md"
@@ -408,6 +427,9 @@
           card.innerHTML = `
             <p class="card-kicker">${item.week}</p>
             <h3>${item.title}</h3>
+            <div class="tag-row">
+              ${item.labels.map((label) => `<span class="tag">${label}</span>`).join("")}
+            </div>
             <p class="card-focus">${item.focus}</p>
             <p>${item.description}</p>
             <div class="card-actions">

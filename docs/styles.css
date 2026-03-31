@@ -319,6 +319,26 @@ h1 {
   margin-bottom: 10px;
 }
 
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 0 10px;
+  border-radius: var(--radius-sm);
+  background: rgba(125, 60, 152, 0.1);
+  border: 1px solid rgba(125, 60, 152, 0.16);
+  color: var(--accent-strong);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
 .card-focus {
   font-size: 0.92rem;
   font-weight: 700;
@@ -382,6 +402,15 @@ h1 {
 .site-footer a {
   text-decoration: none;
   font-weight: 700;
+}
+
+.link-list {
+  display: grid;
+  gap: 14px;
+}
+
+.link-list a {
+  text-decoration: none;
 }
 
 @media (max-width: 980px) {

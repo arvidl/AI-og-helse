@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ressurser | AI og Helse</title>
+    <meta
+      name="description"
+      content="Ressursside for AI og Helse med ordliste, verktøy, artikler, Colab-oppsett og praktiske lenker for bruk av kurset."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <nav class="topbar" aria-label="Hovednavigasjon">
+        <a class="brandmark" href="./index.html">AI og Helse</a>
+        <div class="topbar-links">
+          <a href="./index.html#start">Start her</a>
+          <a href="./index.html#weeks">Uker</a>
+          <a href="./ressurser.html">Ressurser</a>
+          <a href="./for-undervisere.html">For undervisere</a>
+          <a href="https://github.com/arvidl/AI-og-helse">GitHub</a>
+        </div>
+      </nav>
+
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Ressurser</p>
+          <h1>Praktiske innganger til kursmaterialet.</h1>
+          <p class="hero-text">
+            Her finner du støttemateriale for å bruke kurset i eget tempo:
+            ordliste, verktøy, artikler, Colab-oppsett og lenker som gjør det
+            enklere å komme raskt i gang.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="./index.html#start">Gå til Start her</a>
+            <a class="button" href="./for-undervisere.html">Se side for undervisere</a>
+          </div>
+        </div>
+
+        <aside class="hero-panel" aria-label="Ressursoverblikk">
+          <p class="eyebrow">Oversikt</p>
+          <div class="hero-metrics">
+            <article>
+              <strong>4</strong>
+              <span>typer støtte</span>
+            </article>
+            <article>
+              <strong>2</strong>
+              <span>praktiske oppsettguider</span>
+            </article>
+            <article>
+              <strong>1</strong>
+              <span>felles inngang til videre fordypning</span>
+            </article>
+          </div>
+          <p class="hero-note">
+            Ressurssidene er laget for å redusere friksjon: mindre leting,
+            raskere oppstart og tydeligere vei videre til relevant materiale.
+          </p>
+        </aside>
+      </header>
+
+      <main>
+        <section class="panel">
+          <div class="section-heading">
+            <p class="section-label">Kom i gang</p>
+            <h2>Det viktigste først</h2>
+            <p class="section-text">
+              Hvis du bare trenger de viktigste inngangene, er dette et godt
+              sted å begynne før du går videre til hele kurset.
+            </p>
+          </div>
+          <div class="card-grid">
+            <article class="card">
+              <h3>Colab-oppsett</h3>
+              <p>En kort praktisk guide til hvordan notebookene brukes i Google Colab.</p>
+              <div class="card-actions">
+                <a class="button button-small button-primary" href="https://github.com/arvidl/AI-og-helse/blob/main/COLAB_SETUP.md">Åpne guide</a>
+              </div>
+            </article>
+            <article class="card">
+              <h3>Kompatibilitetssjekkliste</h3>
+              <p>Oversikt over hva som fungerer rett i Colab, og hva som krever litt ekstra oppsett eller omtanke.</p>
+              <div class="card-actions">
+                <a class="button button-small button-primary" href="https://github.com/arvidl/AI-og-helse/blob/main/COLAB_COMPATIBILITY_CHECKLIST.md">Åpne sjekkliste</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="panel split-panel">
+          <div>
+            <p class="section-label">Faglige ressurser</p>
+            <h2>Begreper, verktøy og videre lesning</h2>
+            <div class="link-list">
+              <a class="card" href="https://github.com/arvidl/AI-og-helse/blob/main/ressurser/ordliste.md">
+                <h3>Ordliste</h3>
+                <p>Korte forklaringer av sentrale AI- og helsetermer som gjør resten av kurset lettere å lese.</p>
+              </a>
+              <a class="card" href="https://github.com/arvidl/AI-og-helse/tree/main/ressurser/verktoy">
+                <h3>Verktøyguider</h3>
+                <p>Supplerende materiale om arbeidsflyt, plattformer og nyttige hjelpemidler rundt kursbruken.</p>
+              </a>
+              <a class="card" href="https://github.com/arvidl/AI-og-helse/tree/main/ressurser/artikler">
+                <h3>Artikkelsamling</h3>
+                <p>Utvalgt lesestoff for deg som vil knytte kursinnholdet til videre refleksjon og faglig fordypning.</p>
+              </a>
+            </div>
+          </div>
+          <div class="callout">
+            <h3>Når bør du bruke denne siden?</h3>
+            <p>
+              Denne siden passer best når du allerede vet at du vil inn i
+              kursmaterialet, men trenger rask tilgang til støttesider, begreper
+              eller praktiske oppsett rundt notebookene.
+            </p>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="section-heading">
+            <p class="section-label">Spesielle innganger</p>
+            <h2>Noen nyttige veier videre</h2>
+          </div>
+          <div class="card-grid">
+            <article class="card">
+              <h3>API-introduksjon</h3>
+              <p>Et eget startpunkt for OpenAI og Anthropic hvis du vil jobbe mer aktivt med generativ AI i kurset.</p>
+              <div class="card-actions">
+                <a class="button button-small button-primary" href="https://github.com/arvidl/AI-og-helse/blob/main/intro_openai_anthropic.ipynb">Åpne notebook</a>
+              </div>
+            </article>
+            <article class="card">
+              <h3>Kaggle og data</h3>
+              <p>Notater om dataadgang og eksterne ressurser når du vil gå videre til mer praktisk modellarbeid.</p>
+              <div class="card-actions">
+                <a class="button button-small button-primary" href="https://github.com/arvidl/AI-og-helse/blob/main/kaggle_data_tilgang.md">Åpne side</a>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>Publisert med GitHub Pages fra `main/docs`.</p>
+        <a href="./index.html">Tilbake til forsiden</a>
+      </footer>
+    </div>
+  </body>
+</html>
