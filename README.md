@@ -2,6 +2,8 @@
 
 **Åpen variant** av et avansert kurs i kunstig intelligens for medisinere og personell i helse- og omsorgssektoren.
 
+[Åpne kursnettsiden](https://arvidl.github.io/AI-og-helse/)
+
 
 ## 📚 Kursstruktur
 
