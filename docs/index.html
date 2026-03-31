@@ -210,14 +210,27 @@
               hovedideen i hver uke.
             </p>
           </div>
+          <div class="filter-tools" aria-label="Søk og filtrering">
+            <label class="search-field" for="week-search">
+              <span class="search-label">Søk i uker</span>
+              <input
+                id="week-search"
+                type="search"
+                placeholder="Søk etter tittel, tagg eller tema"
+                autocomplete="off"
+              />
+            </label>
+            <p id="filter-summary" class="filter-summary">Viser alle 8 ukene.</p>
+          </div>
           <div class="filter-bar" aria-label="Filtrer ukekort">
-            <button class="filter-chip is-active" type="button" data-filter="Alle">Alle</button>
             <button class="filter-chip" type="button" data-filter="Intro">Intro</button>
             <button class="filter-chip" type="button" data-filter="Praktisk">Praktisk</button>
             <button class="filter-chip" type="button" data-filter="Klinisk">Klinisk</button>
             <button class="filter-chip" type="button" data-filter="Etikk">Etikk</button>
+            <button class="filter-chip filter-chip-secondary" type="button" data-filter-reset="true">Nullstill</button>
           </div>
           <div id="weeks" class="card-grid"></div>
+          <p id="filter-empty" class="filter-empty" hidden>Ingen uker matcher dette søket eller filtervalget ennå.</p>
         </section>
 
         <section class="panel split-panel">
@@ -478,6 +491,9 @@
 
         if (type === "week") {
           card.dataset.labels = item.labels.join("|");
+          card.dataset.search = [item.week, item.title, item.focus, item.description, ...item.labels]
+            .join(" ")
+            .toLowerCase();
           card.innerHTML = `
             <p class="card-kicker">${item.week}</p>
             <div class="card-heading">
@@ -526,6 +542,9 @@
 
       const weeksContainer = document.getElementById("weeks");
       const weekFilterButtons = Array.from(document.querySelectorAll(".filter-chip"));
+      const weekSearchInput = document.getElementById("week-search");
+      const filterSummary = document.getElementById("filter-summary");
+      const filterEmpty = document.getElementById("filter-empty");
       const featuredColabContainer = document.getElementById("featured-colab");
       const resourcesContainer = document.getElementById("resources");
 
@@ -537,23 +556,57 @@
         resourcesContainer.appendChild(createCard(item, "resource"))
       );
 
-      function applyWeekFilter(filterValue) {
+      function applyWeekFilter() {
         const weekCards = Array.from(weeksContainer.querySelectorAll(".card"));
+        const activeFilters = weekFilterButtons
+          .filter((button) => button.dataset.filter && button.classList.contains("is-active"))
+          .map((button) => button.dataset.filter);
+        const searchQuery = weekSearchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
 
         weekCards.forEach((card) => {
           const labels = (card.dataset.labels || "").split("|");
-          const shouldShow = filterValue === "Alle" || labels.includes(filterValue);
+          const searchText = card.dataset.search || "";
+          const matchesFilter =
+            activeFilters.length === 0 || activeFilters.some((filter) => labels.includes(filter));
+          const matchesSearch = searchQuery.length === 0 || searchText.includes(searchQuery);
+          const shouldShow = matchesFilter && matchesSearch;
           card.hidden = !shouldShow;
+
+          if (shouldShow) {
+            visibleCount += 1;
+          }
         });
 
-        weekFilterButtons.forEach((button) => {
-          button.classList.toggle("is-active", button.dataset.filter === filterValue);
-        });
+        const filterText =
+          activeFilters.length > 0 ? ` med taggene ${activeFilters.join(", ")}` : "";
+        const searchText =
+          searchQuery.length > 0 ? ` for søket "${weekSearchInput.value.trim()}"` : "";
+        const noun = visibleCount === 1 ? "uke" : "uker";
+        filterSummary.textContent =
+          activeFilters.length === 0 && searchQuery.length === 0
+            ? "Viser alle 8 ukene."
+            : `Viser ${visibleCount} ${noun}${filterText}${searchText}.`;
+        filterEmpty.hidden = visibleCount !== 0;
       }
 
       weekFilterButtons.forEach((button) => {
-        button.addEventListener("click", () => applyWeekFilter(button.dataset.filter));
+        if (button.dataset.filterReset === "true") {
+          button.addEventListener("click", () => {
+            weekFilterButtons.forEach((chip) => chip.classList.remove("is-active"));
+            weekSearchInput.value = "";
+            applyWeekFilter();
+          });
+          return;
+        }
+
+        button.addEventListener("click", () => {
+          button.classList.toggle("is-active");
+          applyWeekFilter();
+        });
       });
+
+      weekSearchInput.addEventListener("input", applyWeekFilter);
     </script>
   </body>
 </html>
