@@ -1,0 +1,235 @@
+:root {
+  color-scheme: light;
+  --bg: #f4f1e8;
+  --panel: rgba(255, 252, 244, 0.88);
+  --panel-strong: #fffaf0;
+  --text: #1f1a17;
+  --muted: #5d524b;
+  --line: rgba(67, 51, 38, 0.16);
+  --accent: #7d3c98;
+  --accent-strong: #5b2c6f;
+  --shadow: 0 24px 60px rgba(50, 31, 14, 0.12);
+  --radius-lg: 24px;
+  --radius-md: 18px;
+  --radius-sm: 999px;
+  --max-width: 1180px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", serif;
+  background:
+    radial-gradient(circle at top left, rgba(125, 60, 152, 0.14), transparent 30%),
+    radial-gradient(circle at top right, rgba(46, 134, 193, 0.12), transparent 28%),
+    linear-gradient(180deg, #fbf8ef 0%, var(--bg) 100%);
+  color: var(--text);
+}
+
+a {
+  color: inherit;
+}
+
+.page-shell {
+  width: min(calc(100% - 32px), var(--max-width));
+  margin: 0 auto;
+  padding: 32px 0 64px;
+}
+
+.hero,
+.panel {
+  backdrop-filter: blur(14px);
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+}
+
+.hero {
+  padding: 48px;
+  margin-bottom: 28px;
+}
+
+.eyebrow,
+.section-label,
+.card-kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--accent-strong);
+  margin: 0 0 14px;
+}
+
+h1,
+h2,
+h3,
+p,
+ol {
+  margin-top: 0;
+}
+
+h1 {
+  max-width: 12ch;
+  font-size: clamp(2.7rem, 5vw, 4.8rem);
+  line-height: 0.95;
+  margin-bottom: 20px;
+}
+
+.hero-text {
+  max-width: 62ch;
+  font-size: 1.08rem;
+  line-height: 1.7;
+  color: var(--muted);
+  margin-bottom: 28px;
+}
+
+.hero-actions,
+.card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 18px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.72);
+  text-decoration: none;
+  font-weight: 700;
+  transition: transform 140ms ease, background 140ms ease, border-color 140ms ease;
+}
+
+.button:hover,
+.button:focus-visible {
+  transform: translateY(-1px);
+  background: #ffffff;
+  border-color: rgba(67, 51, 38, 0.28);
+}
+
+.button-primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fffefb;
+}
+
+.button-primary:hover,
+.button-primary:focus-visible {
+  background: var(--accent-strong);
+  border-color: var(--accent-strong);
+}
+
+.button-small {
+  min-height: 40px;
+  padding: 0 14px;
+  font-size: 0.95rem;
+}
+
+.panel {
+  padding: 34px;
+  margin-bottom: 24px;
+}
+
+.section-heading {
+  margin-bottom: 24px;
+}
+
+.section-heading h2 {
+  font-size: clamp(1.7rem, 3vw, 2.4rem);
+  margin-bottom: 0;
+}
+
+.summary-grid,
+.card-grid {
+  display: grid;
+  gap: 18px;
+}
+
+.summary-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.card-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.compact-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.summary-card,
+.card,
+.callout {
+  background: var(--panel-strong);
+  border: 1px solid rgba(67, 51, 38, 0.12);
+  border-radius: var(--radius-md);
+  padding: 22px;
+}
+
+.summary-card h3,
+.card h3,
+.callout h3 {
+  font-size: 1.18rem;
+  margin-bottom: 10px;
+}
+
+.summary-card p,
+.card p,
+.callout p,
+.steps li {
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.split-panel {
+  display: grid;
+  grid-template-columns: 1.35fr 0.95fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.steps {
+  padding-left: 20px;
+  margin-bottom: 0;
+}
+
+.steps li + li {
+  margin-top: 10px;
+}
+
+@media (max-width: 980px) {
+  .summary-grid,
+  .compact-grid,
+  .card-grid,
+  .split-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .hero,
+  .panel {
+    padding: 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  .page-shell {
+    width: min(calc(100% - 20px), var(--max-width));
+    padding-top: 18px;
+  }
+
+  h1 {
+    max-width: none;
+  }
+}

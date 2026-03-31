@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI og Helse</title>
+    <meta
+      name="description"
+      content="Offentlig kursportal for AI og Helse med ukeoversikt, ressurser og lenker til notebooks i GitHub og Google Colab."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <p class="eyebrow">AI og Helse</p>
+        <h1>Et aapent kursopplegg i kunstig intelligens for helse og omsorg.</h1>
+        <p class="hero-text">
+          Kurset samler notebooks, ukevise temaer og praktiske ressurser for
+          helsepersonell, studenter og fagmiljoer som vil utforske AI i
+          medisinsk og klinisk kontekst.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="https://github.com/arvidl/AI-og-helse">
+            Gaa til GitHub-repoet
+          </a>
+          <a
+            class="button"
+            href="https://github.com/arvidl/AI-og-helse/blob/main/README.md"
+          >
+            Se komplett kursoversikt
+          </a>
+        </div>
+      </header>
+
+      <main>
+        <section class="panel">
+          <div class="section-heading">
+            <p class="section-label">Kursstruktur</p>
+            <h2>Fra grunnbegreper til klinisk anvendelse</h2>
+          </div>
+          <div class="summary-grid">
+            <article class="summary-card">
+              <h3>Del 1</h3>
+              <p>Uke 1-6 dekker AI-grunnlag, klassisk maskinlaering, dyplaering, generativ AI, agentisk AI og klinisk praksis.</p>
+            </article>
+            <article class="summary-card">
+              <h3>Del 2</h3>
+              <p>Uke 7-8 fokuserer paa velferdsteknologi, ansvarlig bruk, personvern, regulering og trustworthy AI.</p>
+            </article>
+            <article class="summary-card">
+              <h3>Arbeidsmaate</h3>
+              <p>Notebookene kan leses direkte i GitHub eller aapnes i Google Colab. Lokal kjoring er valgfritt.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="section-heading">
+            <p class="section-label">Uker</p>
+            <h2>Utforsk kursinnholdet uke for uke</h2>
+          </div>
+          <div id="weeks" class="card-grid"></div>
+        </section>
+
+        <section class="panel split-panel">
+          <div>
+            <p class="section-label">Komme i gang</p>
+            <h2>Den enkleste veien inn</h2>
+            <ol class="steps">
+              <li>Velg en uke under og aapne ukeoversikten paa GitHub.</li>
+              <li>Les uke-README for maal, progresjon og anbefalt rekkefolge.</li>
+              <li>Bruk Colab-lenkene i repoets hoved-README for aa aapne notebooks i nettleseren.</li>
+            </ol>
+          </div>
+          <div class="callout">
+            <h3>Hvorfor denne siden?</h3>
+            <p>
+              Dette er en lett kursportal for offentlig navigasjon. Selve
+              undervisningsmaterialet lever fortsatt i repoet og i notebookene,
+              slik at strukturen kan videreutvikles uten aa duplisere innhold.
+            </p>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="section-heading">
+            <p class="section-label">Ressurser</p>
+            <h2>Praktiske sider rundt kursarbeidet</h2>
+          </div>
+          <div id="resources" class="card-grid compact-grid"></div>
+        </section>
+      </main>
+    </div>
+
+    <script>
+      const weeks = [
+        {
+          week: "Uke 1",
+          title: "Introduksjon til AI",
+          description:
+            "Begreper, historiske linjer, forskjellen mellom AI, maskinlaering og dyplaering, samt oppstart i Colab eller lokalt miljo.",
+          folderUrl: "https://github.com/arvidl/AI-og-helse/tree/main/uke01-introduksjon",
+          readmeUrl: "https://github.com/arvidl/AI-og-helse/blob/main/uke01-introduksjon/README.md"
+        },
+        {
+          week: "Uke 2",
+          title: "Klassisk maskinlaering",
+          description:
+            "Supervised og unsupervised learning, enkle prediksjonsmodeller og vurdering av klinisk nytte og evalueringsmaal.",
+          folderUrl: "https://github.com/arvidl/AI-og-helse/tree/main/uke02-klassisk-ml",
+          readmeUrl: "https://github.com/arvidl/AI-og-helse/blob/main/uke02-klassisk-ml/README.md"
+        },
+        {
+          week: "Uke 3",
+          title: "Dyplaering og CNN",
+          description:
+            "Nevrale nettverk, bilde- og signalanalyse, trening og evaluering av modeller, forklarbarhet og medisinske eksempler.",
+          folderUrl: "https://github.com/arvidl/AI-og-helse/tree/main/uke03-dyplæring",
+          readmeUrl: "https://github.com/arvidl/AI-og-helse/blob/main/uke03-dyplæring/README.md"
+        },
+        {
+          week: "Uke 4",
+          title: "Generativ AI",
+          description:
+            "Transformers, store spraakmodeller, prompt engineering, trygg API-bruk og multimodalitet som inngang til moderne AI.",
+          folderUrl: "https://github.com/arvidl/AI-og-helse/tree/main/uke04-generativ-ai",
+          readmeUrl: "https://github.com/arvidl/AI-og-helse/blob/main/uke04-generativ-ai/README.md"
+        },
+        {
+          week: "Uke 5",
+          title: "Agentisk AI",
+          description:
+            "Forskjellen mellom chatbot, arbeidsflyt og agent, samt verktoybruk, RAG, minne, case og sikkerhetsvurderinger.",
+          folderUrl: "https://github.com/arvidl/AI-og-helse/tree/main/uke05-agentisk-ai",
+          readmeUrl: "https://github.com/arvidl/AI-og-helse/blob/main/uke05-agentisk-ai/README.md"
+        },
+        {
+          week: "Uke 6",
+          title: "Klinisk praksis",
+          description:
+            "Risikomodeller, kalibrering, SHAP, terskelvalg, generalisering og hva som kreves for klinisk arbeidsflyt.",
+          folderUrl: "https://github.com/arvidl/AI-og-helse/tree/main/uke06-klinisk-praksis",
+          readmeUrl: "https://github.com/arvidl/AI-og-helse/blob/main/uke06-klinisk-praksis/README.md"
+        },
+        {
+          week: "Uke 7",
+          title: "Velferdsteknologi",
+          description:
+            "A*-sok, sensorer, beslutningsstotte og etiske avveininger i hjem, omsorg og teknologi som virker tett paa mennesker.",
+          folderUrl: "https://github.com/arvidl/AI-og-helse/tree/main/uke07-velferdsteknologi",
+          readmeUrl: "https://github.com/arvidl/AI-og-helse/blob/main/uke07-velferdsteknologi/README.md"
+        },
+        {
+          week: "Uke 8",
+          title: "Etikk og implementering",
+          description:
+            "GDPR, bias, CE og MDR, medisinsk etikk og trustworthy AI med vekt paa ansvarlig innforing i helsetjenesten.",
+          folderUrl: "https://github.com/arvidl/AI-og-helse/tree/main/uke08-etikk-implementering",
+          readmeUrl: "https://github.com/arvidl/AI-og-helse/blob/main/uke08-etikk-implementering/README.md"
+        }
+      ];
+
+      const resources = [
+        {
+          title: "Kursets hoved-README",
+          description: "Komplett oversikt over notebooks, Colab-lenker og praktisk bruk.",
+          url: "https://github.com/arvidl/AI-og-helse/blob/main/README.md"
+        },
+        {
+          title: "Ordliste",
+          description: "Begreper og korte forklaringer for sentrale AI- og helsetermer.",
+          url: "https://github.com/arvidl/AI-og-helse/blob/main/ressurser/ordliste.md"
+        },
+        {
+          title: "Verktoeyguider",
+          description: "Supplerende materiale om verktøy og praktisk arbeidsflyt.",
+          url: "https://github.com/arvidl/AI-og-helse/tree/main/ressurser/verktoy"
+        },
+        {
+          title: "Artikkelsamling",
+          description: "Utvalgte artikler og lesestoff knyttet til kursinnholdet.",
+          url: "https://github.com/arvidl/AI-og-helse/tree/main/ressurser/artikler"
+        },
+        {
+          title: "Colab-oppsett",
+          description: "Praktisk hjelp for aa bruke kursnotebooks i Google Colab.",
+          url: "https://github.com/arvidl/AI-og-helse/blob/main/COLAB_SETUP.md"
+        },
+        {
+          title: "Kompatibilitetssjekkliste",
+          description: "Oversikt over hva som fungerer godt i Colab og hva som krever ekstra omtanke.",
+          url: "https://github.com/arvidl/AI-og-helse/blob/main/COLAB_COMPATIBILITY_CHECKLIST.md"
+        },
+        {
+          title: "Kaggle og data",
+          description: "Notater om dataadgang, Kaggle og relaterte oppsettsporsmaal.",
+          url: "https://github.com/arvidl/AI-og-helse/blob/main/kaggle_data_tilgang.md"
+        },
+        {
+          title: "API-introduksjon",
+          description: "Notebook om OpenAI og Anthropic som egen inngang til API-bruk i kurset.",
+          url: "https://github.com/arvidl/AI-og-helse/blob/main/intro_openai_anthropic.ipynb"
+        }
+      ];
+
+      function createCard(item, type) {
+        const card = document.createElement("article");
+        card.className = "card";
+
+        if (type === "week") {
+          card.innerHTML = `
+            <p class="card-kicker">${item.week}</p>
+            <h3>${item.title}</h3>
+            <p>${item.description}</p>
+            <div class="card-actions">
+              <a class="button button-small button-primary" href="${item.folderUrl}">Aapne mappe</a>
+              <a class="button button-small" href="${item.readmeUrl}">Les README</a>
+            </div>
+          `;
+        } else {
+          card.innerHTML = `
+            <h3>${item.title}</h3>
+            <p>${item.description}</p>
+            <div class="card-actions">
+              <a class="button button-small" href="${item.url}">Aapne ressurs</a>
+            </div>
+          `;
+        }
+
+        return card;
+      }
+
+      const weeksContainer = document.getElementById("weeks");
+      const resourcesContainer = document.getElementById("resources");
+
+      weeks.forEach((item) => weeksContainer.appendChild(createCard(item, "week")));
+      resources.forEach((item) =>
+        resourcesContainer.appendChild(createCard(item, "resource"))
+      );
+    </script>
+  </body>
+</html>
