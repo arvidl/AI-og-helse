@@ -13,7 +13,10 @@
   <body>
     <div class="page-shell">
       <nav class="topbar" aria-label="Hovednavigasjon">
-        <a class="brandmark" href="./">AI og Helse</a>
+        <a class="brandmark" href="./">
+          <span class="brand-icon" aria-hidden="true">◎</span>
+          <span>AI og Helse</span>
+        </a>
         <div class="topbar-links">
           <a href="#start">Start her</a>
           <a href="#weeks">Uker</a>
@@ -51,6 +54,11 @@
         </div>
 
         <aside class="hero-panel" aria-label="Kursfakta">
+          <div class="panel-ornament" aria-hidden="true">
+            <span>◎</span>
+            <span>◇</span>
+            <span>↗</span>
+          </div>
           <p class="eyebrow">Oversikt</p>
           <div class="hero-metrics">
             <article>
@@ -76,14 +84,17 @@
 
       <section class="hero-strip" aria-label="Bruksmuligheter">
         <article>
+          <span class="section-symbol" aria-hidden="true">◎</span>
           <h2>Forstå</h2>
           <p>Bygg begrepsforståelse gjennom korte forklaringer, eksempler og progresjon uke for uke.</p>
         </article>
         <article>
+          <span class="section-symbol" aria-hidden="true">↗</span>
           <h2>Utforsk</h2>
           <p>Åpne notebookene i Colab eller lokalt og se hvordan modeller, data og arbeidsflyt henger sammen.</p>
         </article>
         <article>
+          <span class="section-symbol" aria-hidden="true">◇</span>
           <h2>Vurder</h2>
           <p>Koble teknologi til klinisk praksis, beslutningsstøtte, risiko, etikk og ansvarlig innføring.</p>
         </article>
@@ -103,7 +114,10 @@
 
           <div class="start-grid">
             <div class="journey-card">
-              <h3>Tre enkle steg</h3>
+              <div class="card-heading">
+                <span class="card-symbol" aria-hidden="true">→</span>
+                <h3>Tre enkle steg</h3>
+              </div>
               <ol class="steps">
                 <li>Begynn med `Uke 1` for å få språk, begreper og retning for resten av kurset.</li>
                 <li>Åpne én anbefalt notebook direkte i Colab hvis du vil prøve stoffet med en gang.</li>
@@ -112,7 +126,10 @@
             </div>
 
             <div class="journey-card">
-              <h3>Velg inngang etter behov</h3>
+              <div class="card-heading">
+                <span class="card-symbol" aria-hidden="true">◌</span>
+                <h3>Velg inngang etter behov</h3>
+              </div>
               <div class="path-list">
                 <p><strong>Jeg vil orientere meg:</strong> start med `Uke 1` og les README-en før du åpner notebooks.</p>
                 <p><strong>Jeg vil prøve noe med en gang:</strong> bruk en av Colab-knappene under og utforsk direkte i nettleseren.</p>
@@ -242,6 +259,7 @@
           title: "Introduksjon til AI",
           focus: "Begreper, historikk og oppstart",
           labels: ["Intro", "Grunnlag"],
+          icon: "◎",
           description:
             "Bygg et felles språk for resten av kurset: hva AI er, hvordan feltet har utviklet seg, og hvorfor helse stiller særlige krav til nytte, risiko og ansvar.",
           folderUrl: "https://github.com/arvidl/AI-og-helse/tree/main/uke01-introduksjon",
@@ -252,6 +270,7 @@
           title: "Klassisk maskinlæring",
           focus: "Prediksjon, modeller og evaluering",
           labels: ["Praktisk", "Grunnlag"],
+          icon: "∿",
           description:
             "Se hvordan modeller lærer fra data, og hvordan prediksjon må vurderes opp mot klinisk nytte, feiltyper og valg av evalueringsmål.",
           folderUrl: "https://github.com/arvidl/AI-og-helse/tree/main/uke02-klassisk-ml",
@@ -262,6 +281,7 @@
           title: "Dyplæring og CNN",
           focus: "Bilder, signaler og nevrale nettverk",
           labels: ["Praktisk", "Modeller"],
+          icon: "▣",
           description:
             "Utforsk hvordan nevrale nettverk brukes på bilder og signaler, og hvordan trening, testing og forklarbarhet blir viktige i medisinske eksempler.",
           folderUrl: "https://github.com/arvidl/AI-og-helse/tree/main/uke03-dyplæring",
@@ -272,6 +292,7 @@
           title: "Generativ AI",
           focus: "Transformere, språkmodeller og multimodalitet",
           labels: ["Praktisk", "Moderne AI"],
+          icon: "✦",
           description:
             "Få en praktisk innføring i transformere, store språkmodeller, prompt engineering og multimodale modeller som preger dagens AI-utvikling.",
           folderUrl: "https://github.com/arvidl/AI-og-helse/tree/main/uke04-generativ-ai",
@@ -282,6 +303,7 @@
           title: "Agentisk AI",
           focus: "Verktøybruk, arbeidsflyt og agenter",
           labels: ["Praktisk", "Anvendelse"],
+          icon: "↗",
           description:
             "Undersøk hvordan språkmodeller kan gå fra samtale til handling gjennom verktøybruk, arbeidsflyt, RAG, minne og helsefaglige case.",
           folderUrl: "https://github.com/arvidl/AI-og-helse/tree/main/uke05-agentisk-ai",
@@ -292,6 +314,7 @@
           title: "Klinisk praksis",
           focus: "Risiko, kalibrering og beslutningsstøtte",
           labels: ["Klinisk", "Praktisk"],
+          icon: "⊕",
           description:
             "Koble modellarbeid til klinisk virkelighet gjennom risikomodeller, kalibrering, terskler, generalisering og krav til bruk i arbeidsflyt.",
           folderUrl: "https://github.com/arvidl/AI-og-helse/tree/main/uke06-klinisk-praksis",
@@ -302,6 +325,7 @@
           title: "Velferdsteknologi",
           focus: "Sensorer, navigasjon og omsorgsteknologi",
           labels: ["Klinisk", "Anvendelse"],
+          icon: "⌂",
           description:
             "Se hvordan algoritmer, sensorer og beslutningsstøtte kan brukes i hjem og omsorg, og hvilke menneskelige og etiske hensyn som følger med.",
           folderUrl: "https://github.com/arvidl/AI-og-helse/tree/main/uke07-velferdsteknologi",
@@ -312,6 +336,7 @@
           title: "Etikk og implementering",
           focus: "Personvern, regulering og trustworthy AI",
           labels: ["Etikk", "Klinisk"],
+          icon: "◇",
           description:
             "Avslutt kurset med spørsmål om personvern, bias, regulering, medisinsk etikk og hva som kreves for å innføre AI på en trygg og ansvarlig måte.",
           folderUrl: "https://github.com/arvidl/AI-og-helse/tree/main/uke08-etikk-implementering",
@@ -324,6 +349,7 @@
           week: "Uke 1",
           title: "00-velkommen.ipynb",
           focus: "Best for å komme i gang",
+          icon: "→",
           description:
             "En rolig og praktisk start med kursoversikt, arbeidsmåte og hvordan materialet kan brukes.",
           colabUrl:
@@ -335,6 +361,7 @@
           week: "Uke 1",
           title: "02-hva-er-ai.ipynb",
           focus: "Best for begrepsforståelse",
+          icon: "◎",
           description:
             "Gir et godt første møte med hva AI faktisk betyr i praksis, og hvorfor feltet ser ut som det gjør i helse.",
           colabUrl:
@@ -346,6 +373,7 @@
           week: "Uke 4",
           title: "02_llm_grunnleggende.ipynb",
           focus: "Best for moderne AI",
+          icon: "✦",
           description:
             "Et naturlig startpunkt hvis du vil forstå store språkmodeller, generativ AI og hva som driver utviklingen nå.",
           colabUrl:
@@ -357,6 +385,7 @@
           week: "Uke 6",
           title: "01_risikomodell_logistisk_regresjon_kalibrering_shap.ipynb",
           focus: "Best for klinisk relevans",
+          icon: "⊕",
           description:
             "Passer godt hvis du vil se hvordan modellering, evaluering og klinisk beslutningsstøtte henger sammen.",
           colabUrl:
@@ -369,51 +398,61 @@
       const resources = [
         {
           title: "Ressurssiden",
+          icon: "⌘",
           description: "Samlet side for ordliste, verktøy, Colab-oppsett og andre praktiske innganger til kursmaterialet.",
           url: "./ressurser.html"
         },
         {
           title: "For undervisere",
+          icon: "◫",
           description: "Egen side for deg som vil bruke kurset i undervisning, seminarer eller faglige læringsmiljøer.",
           url: "./for-undervisere.html"
         },
         {
           title: "Kursets hoved-README",
+          icon: "≡",
           description: "Komplett oversikt over notebooks, Colab-lenker og praktisk bruk.",
           url: "https://github.com/arvidl/AI-og-helse/blob/main/README.md"
         },
         {
           title: "Ordliste",
+          icon: "Aa",
           description: "Begreper og korte forklaringer for sentrale AI- og helsetermer.",
           url: "https://github.com/arvidl/AI-og-helse/blob/main/ressurser/ordliste.md"
         },
         {
           title: "Verktøyguider",
+          icon: "⌘",
           description: "Supplerende materiale om verktøy og praktisk arbeidsflyt.",
           url: "https://github.com/arvidl/AI-og-helse/tree/main/ressurser/verktoy"
         },
         {
           title: "Artikkelsamling",
+          icon: "✦",
           description: "Utvalgte artikler og lesestoff knyttet til kursinnholdet.",
           url: "https://github.com/arvidl/AI-og-helse/tree/main/ressurser/artikler"
         },
         {
           title: "Colab-oppsett",
+          icon: "▶",
           description: "Praktisk hjelp for å bruke kursnotebooks i Google Colab.",
           url: "https://github.com/arvidl/AI-og-helse/blob/main/COLAB_SETUP.md"
         },
         {
           title: "Kompatibilitetssjekkliste",
+          icon: "✓",
           description: "Oversikt over hva som fungerer godt i Colab og hva som krever ekstra omtanke.",
           url: "https://github.com/arvidl/AI-og-helse/blob/main/COLAB_COMPATIBILITY_CHECKLIST.md"
         },
         {
           title: "Kaggle og data",
+          icon: "▤",
           description: "Notater om dataadgang, Kaggle og relaterte oppsettspørsmål.",
           url: "https://github.com/arvidl/AI-og-helse/blob/main/kaggle_data_tilgang.md"
         },
         {
           title: "API-introduksjon",
+          icon: "⚬",
           description: "Notebook om OpenAI og Anthropic som egen inngang til API-bruk i kurset.",
           url: "https://github.com/arvidl/AI-og-helse/blob/main/intro_openai_anthropic.ipynb"
         }
@@ -426,7 +465,10 @@
         if (type === "week") {
           card.innerHTML = `
             <p class="card-kicker">${item.week}</p>
-            <h3>${item.title}</h3>
+            <div class="card-heading">
+              <span class="card-symbol" aria-hidden="true">${item.icon}</span>
+              <h3>${item.title}</h3>
+            </div>
             <div class="tag-row">
               ${item.labels.map((label) => `<span class="tag">${label}</span>`).join("")}
             </div>
@@ -440,7 +482,10 @@
         } else if (type === "featured-colab") {
           card.innerHTML = `
             <p class="card-kicker">${item.week}</p>
-            <h3>${item.title}</h3>
+            <div class="card-heading">
+              <span class="card-symbol" aria-hidden="true">${item.icon}</span>
+              <h3>${item.title}</h3>
+            </div>
             <p class="card-focus">${item.focus}</p>
             <p>${item.description}</p>
             <div class="card-actions">
@@ -450,7 +495,10 @@
           `;
         } else {
           card.innerHTML = `
-            <h3>${item.title}</h3>
+            <div class="card-heading">
+              <span class="card-symbol" aria-hidden="true">${item.icon}</span>
+              <h3>${item.title}</h3>
+            </div>
             <p>${item.description}</p>
             <div class="card-actions">
               <a class="button button-small" href="${item.url}">Åpne ressurs</a>

@@ -13,7 +13,10 @@
   <body>
     <div class="page-shell">
       <nav class="topbar" aria-label="Hovednavigasjon">
-        <a class="brandmark" href="./index.html">AI og Helse</a>
+        <a class="brandmark" href="./index.html">
+          <span class="brand-icon" aria-hidden="true">◎</span>
+          <span>AI og Helse</span>
+        </a>
         <div class="topbar-links">
           <a href="./index.html#start">Start her</a>
           <a href="./index.html#weeks">Uker</a>
@@ -39,6 +42,11 @@
         </div>
 
         <aside class="hero-panel" aria-label="Ressursoverblikk">
+          <div class="panel-ornament" aria-hidden="true">
+            <span>⌘</span>
+            <span>✓</span>
+            <span>✦</span>
+          </div>
           <p class="eyebrow">Oversikt</p>
           <div class="hero-metrics">
             <article>
@@ -73,14 +81,20 @@
           </div>
           <div class="card-grid">
             <article class="card">
-              <h3>Colab-oppsett</h3>
+              <div class="card-heading">
+                <span class="card-symbol" aria-hidden="true">▶</span>
+                <h3>Colab-oppsett</h3>
+              </div>
               <p>En kort praktisk guide til hvordan notebookene brukes i Google Colab.</p>
               <div class="card-actions">
                 <a class="button button-small button-primary" href="https://github.com/arvidl/AI-og-helse/blob/main/COLAB_SETUP.md">Åpne guide</a>
               </div>
             </article>
             <article class="card">
-              <h3>Kompatibilitetssjekkliste</h3>
+              <div class="card-heading">
+                <span class="card-symbol" aria-hidden="true">✓</span>
+                <h3>Kompatibilitetssjekkliste</h3>
+              </div>
               <p>Oversikt over hva som fungerer rett i Colab, og hva som krever litt ekstra oppsett eller omtanke.</p>
               <div class="card-actions">
                 <a class="button button-small button-primary" href="https://github.com/arvidl/AI-og-helse/blob/main/COLAB_COMPATIBILITY_CHECKLIST.md">Åpne sjekkliste</a>
@@ -95,15 +109,24 @@
             <h2>Begreper, verktøy og videre lesning</h2>
             <div class="link-list">
               <a class="card" href="https://github.com/arvidl/AI-og-helse/blob/main/ressurser/ordliste.md">
-                <h3>Ordliste</h3>
+                <div class="card-heading">
+                  <span class="card-symbol" aria-hidden="true">Aa</span>
+                  <h3>Ordliste</h3>
+                </div>
                 <p>Korte forklaringer av sentrale AI- og helsetermer som gjør resten av kurset lettere å lese.</p>
               </a>
               <a class="card" href="https://github.com/arvidl/AI-og-helse/tree/main/ressurser/verktoy">
-                <h3>Verktøyguider</h3>
+                <div class="card-heading">
+                  <span class="card-symbol" aria-hidden="true">⌘</span>
+                  <h3>Verktøyguider</h3>
+                </div>
                 <p>Supplerende materiale om arbeidsflyt, plattformer og nyttige hjelpemidler rundt kursbruken.</p>
               </a>
               <a class="card" href="https://github.com/arvidl/AI-og-helse/tree/main/ressurser/artikler">
-                <h3>Artikkelsamling</h3>
+                <div class="card-heading">
+                  <span class="card-symbol" aria-hidden="true">✦</span>
+                  <h3>Artikkelsamling</h3>
+                </div>
                 <p>Utvalgt lesestoff for deg som vil knytte kursinnholdet til videre refleksjon og faglig fordypning.</p>
               </a>
             </div>
@@ -125,14 +148,20 @@
           </div>
           <div class="card-grid">
             <article class="card">
-              <h3>API-introduksjon</h3>
+              <div class="card-heading">
+                <span class="card-symbol" aria-hidden="true">⚬</span>
+                <h3>API-introduksjon</h3>
+              </div>
               <p>Et eget startpunkt for OpenAI og Anthropic hvis du vil jobbe mer aktivt med generativ AI i kurset.</p>
               <div class="card-actions">
                 <a class="button button-small button-primary" href="https://github.com/arvidl/AI-og-helse/blob/main/intro_openai_anthropic.ipynb">Åpne notebook</a>
               </div>
             </article>
             <article class="card">
-              <h3>Kaggle og data</h3>
+              <div class="card-heading">
+                <span class="card-symbol" aria-hidden="true">▤</span>
+                <h3>Kaggle og data</h3>
+              </div>
               <p>Notater om dataadgang og eksterne ressurser når du vil gå videre til mer praktisk modellarbeid.</p>
               <div class="card-actions">
                 <a class="button button-small button-primary" href="https://github.com/arvidl/AI-og-helse/blob/main/kaggle_data_tilgang.md">Åpne side</a>

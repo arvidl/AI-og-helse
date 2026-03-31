@@ -53,11 +53,32 @@ a {
 }
 
 .brandmark {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   font-size: 0.95rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.brand-icon,
+.card-symbol,
+.section-symbol {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--accent-strong);
+}
+
+.brand-icon {
+  width: 28px;
+  height: 28px;
+  background: rgba(125, 60, 152, 0.12);
+  border: 1px solid rgba(125, 60, 152, 0.18);
+  font-size: 0.88rem;
 }
 
 .topbar-links {
@@ -131,11 +152,31 @@ h1 {
 }
 
 .hero-panel {
+  position: relative;
   align-self: stretch;
   background: linear-gradient(180deg, rgba(125, 60, 152, 0.08), rgba(255, 255, 255, 0.84));
   border: 1px solid rgba(67, 51, 38, 0.12);
   border-radius: var(--radius-md);
   padding: 24px;
+}
+
+.panel-ornament {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.panel-ornament span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(67, 51, 38, 0.1);
+  color: var(--accent-strong);
+  font-weight: 700;
 }
 
 .hero-metrics {
@@ -181,6 +222,15 @@ h1 {
 .hero-strip h2 {
   font-size: 1.05rem;
   margin-bottom: 8px;
+}
+
+.section-symbol {
+  width: 34px;
+  height: 34px;
+  margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(67, 51, 38, 0.12);
+  font-size: 0.95rem;
 }
 
 .hero-strip p {
@@ -317,6 +367,26 @@ h1 {
 .callout h3 {
   font-size: 1.18rem;
   margin-bottom: 10px;
+}
+
+.card-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-heading h3 {
+  margin-bottom: 0;
+}
+
+.card-symbol {
+  min-width: 34px;
+  width: 34px;
+  height: 34px;
+  background: rgba(125, 60, 152, 0.1);
+  border: 1px solid rgba(125, 60, 152, 0.16);
+  font-size: 0.92rem;
+  font-weight: 700;
 }
 
 .tag-row {
