@@ -1,0 +1,879 @@
+from pathlib import Path
+
+from pptx import Presentation
+from pptx.dml.color import RGBColor
+from pptx.enum.shapes import MSO_AUTO_SHAPE_TYPE
+from pptx.enum.text import PP_ALIGN, MSO_ANCHOR
+from pptx.util import Inches, Pt
+
+
+OUTPUT_PATH = Path(__file__).resolve().parent / "AI_og_Helse_2x45min_klinisk_forelesning.pptx"
+
+
+PURPLE = RGBColor(125, 60, 152)
+PURPLE_DARK = RGBColor(91, 44, 111)
+BLUE = RGBColor(46, 134, 193)
+TEXT = RGBColor(31, 26, 23)
+MUTED = RGBColor(93, 82, 75)
+BG = RGBColor(251, 248, 239)
+WHITE = RGBColor(255, 255, 255)
+LINE = RGBColor(226, 216, 206)
+
+
+def add_bg(slide):
+    fill = slide.background.fill
+    fill.solid()
+    fill.fore_color.rgb = BG
+
+    band = slide.shapes.add_shape(
+        MSO_AUTO_SHAPE_TYPE.RECTANGLE, Inches(0), Inches(0), Inches(13.333), Inches(0.32)
+    )
+    band.fill.solid()
+    band.fill.fore_color.rgb = PURPLE
+    band.line.fill.background()
+
+
+def add_title(slide, title, subtitle=None, kicker=None):
+    add_bg(slide)
+
+    if kicker:
+        tb = slide.shapes.add_textbox(Inches(0.7), Inches(0.6), Inches(6.0), Inches(0.4))
+        p = tb.text_frame.paragraphs[0]
+        r = p.add_run()
+        r.text = kicker
+        r.font.name = "Aptos"
+        r.font.size = Pt(14)
+        r.font.bold = True
+        r.font.color.rgb = PURPLE_DARK
+
+    tb = slide.shapes.add_textbox(Inches(0.7), Inches(1.0), Inches(11.7), Inches(1.6))
+    tf = tb.text_frame
+    tf.word_wrap = True
+    p = tf.paragraphs[0]
+    r = p.add_run()
+    r.text = title
+    r.font.name = "Aptos Display"
+    r.font.size = Pt(28)
+    r.font.bold = True
+    r.font.color.rgb = TEXT
+
+    if subtitle:
+        stb = slide.shapes.add_textbox(Inches(0.75), Inches(2.1), Inches(10.8), Inches(1.2))
+        stf = stb.text_frame
+        stf.word_wrap = True
+        p = stf.paragraphs[0]
+        r = p.add_run()
+        r.text = subtitle
+        r.font.name = "Aptos"
+        r.font.size = Pt(18)
+        r.font.color.rgb = MUTED
+
+
+def add_footer_reference(slide, references):
+    if not references:
+        return
+
+    box = slide.shapes.add_textbox(Inches(0.75), Inches(6.95), Inches(11.8), Inches(0.4))
+    tf = box.text_frame
+    tf.word_wrap = True
+    p = tf.paragraphs[0]
+    r = p.add_run()
+    r.text = "Referanser i repoet: " + " | ".join(references)
+    r.font.name = "Aptos"
+    r.font.size = Pt(9)
+    r.font.italic = True
+    r.font.color.rgb = MUTED
+
+
+def add_content_slide(slide, title, bullets, references=None, section=None):
+    add_bg(slide)
+
+    if section:
+        sec = slide.shapes.add_textbox(Inches(0.75), Inches(0.55), Inches(4.5), Inches(0.35))
+        p = sec.text_frame.paragraphs[0]
+        r = p.add_run()
+        r.text = section
+        r.font.name = "Aptos"
+        r.font.size = Pt(13)
+        r.font.bold = True
+        r.font.color.rgb = PURPLE_DARK
+
+    title_box = slide.shapes.add_textbox(Inches(0.75), Inches(0.95), Inches(11.6), Inches(0.8))
+    p = title_box.text_frame.paragraphs[0]
+    r = p.add_run()
+    r.text = title
+    r.font.name = "Aptos Display"
+    r.font.size = Pt(24)
+    r.font.bold = True
+    r.font.color.rgb = TEXT
+
+    content_shape = slide.shapes.add_shape(
+        MSO_AUTO_SHAPE_TYPE.ROUNDED_RECTANGLE, Inches(0.75), Inches(1.85), Inches(11.8), Inches(4.8)
+    )
+    content_shape.fill.solid()
+    content_shape.fill.fore_color.rgb = WHITE
+    content_shape.line.color.rgb = LINE
+
+    text_box = slide.shapes.add_textbox(Inches(1.0), Inches(2.08), Inches(11.1), Inches(4.3))
+    tf = text_box.text_frame
+    tf.word_wrap = True
+    tf.margin_left = 0
+    tf.margin_right = 0
+    tf.margin_top = 0
+    tf.margin_bottom = 0
+    tf.vertical_anchor = MSO_ANCHOR.TOP
+
+    first = True
+    for bullet in bullets:
+        p = tf.paragraphs[0] if first else tf.add_paragraph()
+        p.level = 0
+        p.space_after = Pt(6)
+        p.bullet = True
+        r = p.add_run()
+        r.text = bullet
+        r.font.name = "Aptos"
+        r.font.size = Pt(20)
+        r.font.color.rgb = TEXT
+        first = False
+
+    add_footer_reference(slide, references)
+
+
+def add_section_slide(slide, title, subtitle):
+    add_bg(slide)
+
+    panel = slide.shapes.add_shape(
+        MSO_AUTO_SHAPE_TYPE.ROUNDED_RECTANGLE, Inches(0.95), Inches(1.2), Inches(11.4), Inches(4.8)
+    )
+    panel.fill.solid()
+    panel.fill.fore_color.rgb = WHITE
+    panel.line.color.rgb = LINE
+
+    accent = slide.shapes.add_shape(
+        MSO_AUTO_SHAPE_TYPE.RECTANGLE, Inches(0.95), Inches(1.2), Inches(0.22), Inches(4.8)
+    )
+    accent.fill.solid()
+    accent.fill.fore_color.rgb = PURPLE
+    accent.line.fill.background()
+
+    tbox = slide.shapes.add_textbox(Inches(1.5), Inches(2.0), Inches(9.8), Inches(1.0))
+    p = tbox.text_frame.paragraphs[0]
+    r = p.add_run()
+    r.text = title
+    r.font.name = "Aptos Display"
+    r.font.size = Pt(30)
+    r.font.bold = True
+    r.font.color.rgb = TEXT
+
+    sbox = slide.shapes.add_textbox(Inches(1.5), Inches(3.0), Inches(9.4), Inches(1.4))
+    p = sbox.text_frame.paragraphs[0]
+    r = p.add_run()
+    r.text = subtitle
+    r.font.name = "Aptos"
+    r.font.size = Pt(20)
+    r.font.color.rgb = MUTED
+
+
+def add_title_slide(slide, title, subtitle, footer):
+    add_bg(slide)
+
+    accent = slide.shapes.add_shape(
+        MSO_AUTO_SHAPE_TYPE.ROUNDED_RECTANGLE, Inches(7.95), Inches(0.85), Inches(4.45), Inches(5.5)
+    )
+    accent.fill.solid()
+    accent.fill.fore_color.rgb = WHITE
+    accent.line.color.rgb = LINE
+
+    deco = slide.shapes.add_textbox(Inches(8.35), Inches(1.2), Inches(3.6), Inches(0.6))
+    p = deco.text_frame.paragraphs[0]
+    p.alignment = PP_ALIGN.RIGHT
+    r = p.add_run()
+    r.text = "◎   ◇   ↗"
+    r.font.name = "Aptos"
+    r.font.size = Pt(18)
+    r.font.bold = True
+    r.font.color.rgb = PURPLE_DARK
+
+    tbox = slide.shapes.add_textbox(Inches(0.85), Inches(1.25), Inches(6.6), Inches(2.1))
+    tf = tbox.text_frame
+    tf.word_wrap = True
+    p = tf.paragraphs[0]
+    r = p.add_run()
+    r.text = title
+    r.font.name = "Aptos Display"
+    r.font.size = Pt(30)
+    r.font.bold = True
+    r.font.color.rgb = TEXT
+
+    sbox = slide.shapes.add_textbox(Inches(0.9), Inches(3.35), Inches(6.2), Inches(1.3))
+    p = sbox.text_frame.paragraphs[0]
+    r = p.add_run()
+    r.text = subtitle
+    r.font.name = "Aptos"
+    r.font.size = Pt(20)
+    r.font.color.rgb = MUTED
+
+    fbox = slide.shapes.add_textbox(Inches(0.9), Inches(6.55), Inches(8.0), Inches(0.45))
+    p = fbox.text_frame.paragraphs[0]
+    r = p.add_run()
+    r.text = footer
+    r.font.name = "Aptos"
+    r.font.size = Pt(12)
+    r.font.bold = True
+    r.font.color.rgb = PURPLE_DARK
+
+    info_box = slide.shapes.add_textbox(Inches(8.35), Inches(2.0), Inches(3.2), Inches(3.3))
+    tf = info_box.text_frame
+    tf.word_wrap = True
+    for i, line in enumerate(
+        [
+            "Målgruppe",
+            "Leger, sykepleiere, psykologer, fysioterapeuter, radiografer, bioingeniører",
+            "",
+            "Format",
+            "2 x 45 minutter",
+            "",
+            "Utgangspunkt",
+            "Kurset AI og Helse",
+        ]
+    ):
+        p = tf.paragraphs[0] if i == 0 else tf.add_paragraph()
+        r = p.add_run()
+        r.text = line
+        r.font.name = "Aptos"
+        r.font.size = Pt(15 if line and line[0].isupper() and len(line.split()) <= 2 else 13)
+        r.font.bold = line in {"Målgruppe", "Format", "Utgangspunkt"}
+        r.font.color.rgb = TEXT if r.font.bold else MUTED
+
+
+SLIDES = [
+    {
+        "type": "title",
+        "title": "AI i helse: hva er nyttig, hva er hype, og hva må vi forstå?",
+        "subtitle": "To forelesningsøkter à 45 minutter for klinisk målgruppe med liten eller moderat teknisk bakgrunn.",
+        "footer": "Basert på AI og Helse-repoet og tilhørende notebooks",
+    },
+    {
+        "type": "content",
+        "section": "Innledning",
+        "title": "Hvem denne forelesningen er for",
+        "bullets": [
+            "Leger, sykepleiere, psykologer, fysioterapeuter, radiografer og bioingeniører",
+            "Andre som jobber klinisk eller tett på helsefaglige arbeidsprosesser",
+            "Personer som vil forstå AI uten å måtte gå dypt inn i matematikk eller programmering",
+        ],
+        "references": ["README.md", "docs/om-kurset.html"],
+    },
+    {
+        "type": "content",
+        "section": "Innledning",
+        "title": "Hva dere skal sitte igjen med",
+        "bullets": [
+            "Et språk for å snakke om AI i helse",
+            "En forståelse av hva AI er god og mindre god til",
+            "Noen konkrete spørsmål å stille før man tar AI i bruk",
+            "En bedre forståelse av risiko, ansvar og klinisk nytte",
+        ],
+    },
+    {
+        "type": "content",
+        "section": "Innledning",
+        "title": "Hvorfor AI i helse er et viktig tema nå",
+        "bullets": [
+            "Data, bilder, signaler og tekst finnes i stor skala",
+            "Arbeidshverdagen er presset og kompleks",
+            "Mange AI-verktøy lover effektivitet og bedre beslutninger",
+            "Men helsefeltet tåler dårlig feil og falsk trygghet",
+        ],
+    },
+    {
+        "type": "content",
+        "section": "Innledning",
+        "title": "Hvorfor AI i helse er vanskeligere enn i mange andre felt",
+        "bullets": [
+            "Pasientsikkerhet og ansvar står sentralt",
+            "Kontekst betyr mye mer enn i mange generelle AI-demoer",
+            "Skjevheter og generalisering er klinisk viktige spørsmål",
+            "Arbeidsflyt og implementering avgjør om noe faktisk fungerer",
+        ],
+    },
+    {
+        "type": "content",
+        "section": "Innledning",
+        "title": "Et raskt startspørsmål til salen",
+        "bullets": [
+            "Hvem har brukt ChatGPT eller lignende verktøy?",
+            "Hvem har møtt AI i journalsystemer, bildeanalyse eller beslutningsstøtte?",
+            "Hvem er nysgjerrig, men usikker på hva som faktisk er nyttig?",
+        ],
+    },
+    {
+        "type": "content",
+        "section": "Del 1",
+        "title": "Hva mener vi egentlig med AI?",
+        "bullets": [
+            "AI er et samlebegrep, ikke én enkelt teknologi",
+            "AI kan brukes til å klassifisere, predikere, anbefale eller generere",
+            "I helse er det viktig å skille mellom teknologitype og faktisk bruksområde",
+        ],
+        "references": ["uke01-introduksjon/02-hva-er-ai.ipynb"],
+    },
+    {
+        "type": "content",
+        "section": "Del 1",
+        "title": "Fra regler til læring",
+        "bullets": [
+            "Tidlige systemer bygget på eksplisitte regler",
+            "Moderne systemer lærer mønstre fra data",
+            "Dette gir mer fleksibilitet, men også mindre gjennomsiktighet",
+        ],
+        "references": ["uke01-introduksjon/05-regelbaserte-systemer.ipynb"],
+    },
+    {
+        "type": "content",
+        "section": "Del 1",
+        "title": "Tre hovedfamilier vi møter i kurset",
+        "bullets": [
+            "Klassisk maskinlæring",
+            "Dyplæring",
+            "Generativ AI",
+        ],
+        "references": ["uke01-introduksjon/04-ai-ml-dl-forskjeller.ipynb"],
+    },
+    {
+        "type": "content",
+        "section": "Del 1",
+        "title": "Klassisk maskinlæring, veldig kort",
+        "bullets": [
+            "Modeller finner mønstre i strukturerte data",
+            "Brukes ofte til prediksjon og klassifikasjon",
+            "Relevante spørsmål er hvilke data som brukes, hva som måles og hvilke feil som betyr mest",
+        ],
+        "references": ["uke02-klassisk-ml/01-klassisk-ml-101.ipynb"],
+    },
+    {
+        "type": "content",
+        "section": "Del 1",
+        "title": "Dyplæring, veldig kort",
+        "bullets": [
+            "Særlig nyttig når data er komplekse",
+            "Typiske eksempler er bilder, signaler og tekst",
+            "Mer kraftfullt, men ofte vanskeligere å forklare og kontrollere",
+        ],
+        "references": [
+            "uke03-dyplæring/01a_nn_intro.ipynb",
+            "uke03-dyplæring/02a_cnn_bildeklassifikasjon.ipynb",
+        ],
+    },
+    {
+        "type": "content",
+        "section": "Del 1",
+        "title": "Generativ AI, veldig kort",
+        "bullets": [
+            "Lager tekst, oppsummeringer, forslag eller multimodalt innhold",
+            "Kan være nyttig i dokumentasjon, dialog og kunnskapsstøtte",
+            "Men kan også hallusinere og virke mer sikker enn den burde",
+        ],
+        "references": [
+            "uke04-generativ-ai/02_llm_grunnleggende.ipynb",
+            "uke04-generativ-ai/03_prompt_engineering.ipynb",
+        ],
+    },
+    {
+        "type": "content",
+        "section": "Del 1",
+        "title": "Hvorfor helse er interessant for AI",
+        "bullets": [
+            "Mange mønstre er vanskelige å se uten støtte",
+            "Kliniske beslutninger er ofte probabilistiske",
+            "Bilder, signaler og tekst spiller en stor rolle",
+            "Små forbedringer kan ha stor verdi i praksis",
+        ],
+    },
+    {
+        "type": "content",
+        "section": "Del 1",
+        "title": "Hvorfor helse også er risikofylt for AI",
+        "bullets": [
+            "Kontekst betyr mye",
+            "Data er ofte skjeve, mangelfulle eller lokale",
+            "Feil kan skade pasienter",
+            "Tillit og ansvar kan ikke automatiseres bort",
+        ],
+    },
+    {
+        "type": "content",
+        "section": "Del 1",
+        "title": "Eksempel 1: bildeanalyse",
+        "bullets": [
+            "Radiologi, patologi og dermatologi bygger alle på mønstergjenkjenning",
+            "AI kan være sterk på å oppdage signaler i bilder",
+            "Det avgjørende spørsmålet er hvordan dette brukes i klinisk arbeid",
+        ],
+        "references": ["uke03-dyplæring/03_medisinsk_bildeklassifikasjon_MR.ipynb"],
+    },
+    {
+        "type": "content",
+        "section": "Del 1",
+        "title": "Eksempel 2: risikomodeller",
+        "bullets": [
+            "Hvem har økt risiko?",
+            "Hvem bør følges opp tettere?",
+            "Når blir en prediksjon faktisk nyttig for klinisk beslutningsstøtte?",
+        ],
+        "references": ["uke06-klinisk-praksis/01_risikomodell_logistisk_regresjon_kalibrering_shap.ipynb"],
+    },
+    {
+        "type": "content",
+        "section": "Del 1",
+        "title": "Eksempel 3: språk og dokumentasjon",
+        "bullets": [
+            "Oppsummering av tekst og strukturering av informasjon",
+            "Forslag til formuleringer og støtte i administrativt arbeid",
+            "Lavere terskel enn mange andre AI-bruksområder, men fortsatt ikke risikofritt",
+        ],
+        "references": [
+            "uke04-generativ-ai/04_chatgpt_claude_api.ipynb",
+            "intro_openai_anthropic.ipynb",
+        ],
+    },
+    {
+        "type": "content",
+        "section": "Del 1",
+        "title": "Eksempel 4: velferdsteknologi og sensorer",
+        "bullets": [
+            "Tolkning av aktivitet og avvik",
+            "Varsling og prioritering i hjem og omsorg",
+            "Teknologi som virker tett på hverdagsliv og omsorgspraksis",
+        ],
+        "references": [
+            "uke07-velferdsteknologi/02_sensorer_aktivitet_og_hendelsesforståelse.ipynb",
+            "uke07-velferdsteknologi/03_beslutningsstøtte_i_hjem_og_omsorg.ipynb",
+        ],
+    },
+    {
+        "type": "content",
+        "section": "Del 1",
+        "title": "Eksempel 5: generativ AI som støtte",
+        "bullets": [
+            "Utkast til tekst og oppsummering av informasjon",
+            "Strukturering av faglig innhold og spørsmål",
+            "Kan være nyttig som støtte, men ikke som automatisk fasit",
+        ],
+    },
+    {
+        "type": "content",
+        "section": "Del 1",
+        "title": "Hva AI ofte er god på",
+        "bullets": [
+            "Mønstergjenkjenning i store datamengder",
+            "Skalerbarhet og repetitive oppgaver",
+            "Forslag, sortering og raske førsteutkast",
+        ],
+    },
+    {
+        "type": "content",
+        "section": "Del 1",
+        "title": "Hva AI ofte er dårlig på",
+        "bullets": [
+            "Dyp klinisk kontekstforståelse",
+            "Å vite hva som ikke er representert i data",
+            "Å forstå ansvar, konsekvenser og etiske avveininger",
+            "Å være pålitelig i nye situasjoner",
+        ],
+    },
+    {
+        "type": "content",
+        "section": "Del 1",
+        "title": "Hva klinikere bør spørre om først",
+        "bullets": [
+            "Hvilket problem er dette ment å løse?",
+            "Hva er input og hva er output?",
+            "Hvem påvirkes hvis systemet tar feil?",
+            "Hva skjer i praksis hvis vi følger anbefalingen?",
+        ],
+    },
+    {
+        "type": "content",
+        "section": "Del 1",
+        "title": "Mini-case 1: høy risiko for sepsis",
+        "bullets": [
+            "Et AI-system markerer høy risiko for sepsis",
+            "Hva vil du vite om datagrunnlaget?",
+            "Hva vil du vite om feilmarginer og terskler?",
+            "Hvordan bør dette brukes i klinisk arbeidsflyt?",
+        ],
+    },
+    {
+        "type": "content",
+        "section": "Del 1",
+        "title": "Fra fascinasjon til vurdering",
+        "bullets": [
+            "Ikke spør bare om systemet fungerer",
+            "Spør for hvem det fungerer, i hvilken setting og med hvilke konsekvenser",
+            "Spør hva som er baseline, og hva som faktisk blir bedre",
+        ],
+    },
+    {
+        "type": "content",
+        "section": "Del 1",
+        "title": "Oppsummering av del 1",
+        "bullets": [
+            "AI er ikke én ting, men flere familier av verktøy og modeller",
+            "Helse er et felt med både store muligheter og høy risiko",
+            "Klinisk nytte avhenger av kontekst, ikke bare teknologi",
+        ],
+    },
+    {
+        "type": "section",
+        "title": "Del 2",
+        "subtitle": "Fra teknologi til trygg, nyttig og ansvarlig bruk i praksis",
+    },
+    {
+        "type": "content",
+        "section": "Del 2",
+        "title": "Hva betyr det at en modell virker?",
+        "bullets": [
+            "Høy ytelse i et datasett er ikke nok",
+            "Vi må spørre om klinisk nytte, robusthet og praktisk bruk",
+            "God teknologi kan fortsatt være dårlig implementert",
+        ],
+    },
+    {
+        "type": "content",
+        "section": "Del 2",
+        "title": "Nøyaktighet er ikke hele historien",
+        "bullets": [
+            "Sensitivitet og spesifisitet sier ulike ting",
+            "Falske positive og falske negative har ulike kliniske kostnader",
+            "Terskler og konsekvenser må forstås før verktøy tas i bruk",
+        ],
+        "references": ["uke06-klinisk-praksis/02_klinisk_beslutningsstøtte_terskler_og_avveininger.ipynb"],
+    },
+    {
+        "type": "content",
+        "section": "Del 2",
+        "title": "Kalibrering på klinisk språk",
+        "bullets": [
+            "Hvis modellen sier 10 prosent risiko, stemmer det omtrent?",
+            "Kalibrering er viktig når tall skal brukes i beslutningsstøtte",
+            "Dårlig kalibrering kan gi falsk trygghet eller unødig alarm",
+        ],
+        "references": ["uke06-klinisk-praksis/01_risikomodell_logistisk_regresjon_kalibrering_shap.ipynb"],
+    },
+    {
+        "type": "content",
+        "section": "Del 2",
+        "title": "Hvorfor generalisering er vanskelig",
+        "bullets": [
+            "En modell kan fungere godt ett sted og dårlig et annet",
+            "Pasientgrupper, utstyr og praksis kan være ulike",
+            "Data i drift ligner ikke alltid data i utvikling",
+        ],
+        "references": ["uke06-klinisk-praksis/03_validering_generalisering_og_subgrupper.ipynb"],
+    },
+    {
+        "type": "content",
+        "section": "Del 2",
+        "title": "Distribusjonsskifte",
+        "bullets": [
+            "Pasientpopulasjoner endrer seg",
+            "Arbeidsflyt og rutiner endrer seg",
+            "Data endrer karakter over tid",
+            "Modeller må derfor monitoreres, ikke bare lanseres",
+        ],
+    },
+    {
+        "type": "content",
+        "section": "Del 2",
+        "title": "Subgrupper og rettferdighet",
+        "bullets": [
+            "Samme modell kan ha ulik ytelse for ulike grupper",
+            "Dette er både et faglig og et etisk spørsmål",
+            "Lik gjennomsnittsytelse er ikke det samme som rettferdig ytelse",
+        ],
+        "references": ["uke08-etikk-implementering/02_bias_rettferdighet.ipynb"],
+    },
+    {
+        "type": "content",
+        "section": "Del 2",
+        "title": "Hvor kan bias oppstå?",
+        "bullets": [
+            "I hvem som er med i datasettet",
+            "I hvordan data måles og merkes",
+            "I hvordan modellen utvikles",
+            "I hvordan resultatene brukes og tolkes i praksis",
+        ],
+    },
+    {
+        "type": "content",
+        "section": "Del 2",
+        "title": "Forklarbarhet: nyttig, men ikke magisk",
+        "bullets": [
+            "Forklaringer kan hjelpe oss å se hva modellen reagerer på",
+            "Men forklaringer beviser ikke at modellen er klinisk riktig",
+            "Forklarbarhet må brukes kritisk, ikke ritualistisk",
+        ],
+        "references": ["uke03-dyplæring/02c_cnn_testing.ipynb"],
+    },
+    {
+        "type": "content",
+        "section": "Del 2",
+        "title": "Human-in-the-loop",
+        "bullets": [
+            "AI bør vanligvis støtte, ikke erstatte",
+            "Klinikerens vurdering forsvinner ikke",
+            "Det avgjørende er hvordan menneske og system samspiller",
+        ],
+    },
+    {
+        "type": "content",
+        "section": "Del 2",
+        "title": "Arbeidsflyt er en del av kvaliteten",
+        "bullets": [
+            "En god modell som ikke passer i praksis har liten verdi",
+            "Dårlig integrasjon kan skape friksjon og nye feil",
+            "Implementering er et klinisk og organisatorisk spørsmål",
+        ],
+        "references": ["uke06-klinisk-praksis/04_fra_modell_til_klinisk_arbeidsflyt.ipynb"],
+    },
+    {
+        "type": "content",
+        "section": "Del 2",
+        "title": "Hva skjer hvis modellen er feil?",
+        "bullets": [
+            "Hvem merker det?",
+            "Hvem stopper det?",
+            "Hvor raskt oppdages problemet?",
+            "Hvem har myndighet til å korrigere eller slå av systemet?",
+        ],
+    },
+    {
+        "type": "content",
+        "section": "Del 2",
+        "title": "Personvern og helseopplysninger",
+        "bullets": [
+            "Helseopplysninger krever særlig aktsomhet",
+            "Dataminimering, tilgangskontroll og informasjonsplikt betyr noe",
+            "Tillit er en del av implementeringen",
+        ],
+        "references": ["uke08-etikk-implementering/01_gdpr_personvern.ipynb"],
+    },
+    {
+        "type": "content",
+        "section": "Del 2",
+        "title": "Etikk i praksis",
+        "bullets": [
+            "Autonomi",
+            "Velgjørenhet",
+            "Ikke-skade",
+            "Rettferdighet",
+        ],
+        "references": ["uke08-etikk-implementering/04_ai_etikk_i_medisinen.ipynb"],
+    },
+    {
+        "type": "content",
+        "section": "Del 2",
+        "title": "Regulering i grove trekk",
+        "bullets": [
+            "Noe AI i helse kan være medisinsk utstyr",
+            "Da følger dokumentasjon, vurdering og ansvar",
+            "Regulering er ikke bare byråkrati, men en del av sikkerheten",
+        ],
+        "references": ["uke08-etikk-implementering/03_ce_mdr_regulering.ipynb"],
+    },
+    {
+        "type": "content",
+        "section": "Del 2",
+        "title": "Hva betyr trustworthy AI i helse?",
+        "bullets": [
+            "Robusthet",
+            "Transparens",
+            "Menneskelig kontroll",
+            "Validering og monitorering over tid",
+        ],
+        "references": ["uke08-etikk-implementering/05_trustworthy_ai_i_helse.ipynb"],
+    },
+    {
+        "type": "content",
+        "section": "Del 2",
+        "title": "Generativ AI i klinikken: egne utfordringer",
+        "bullets": [
+            "Hallusinasjoner og overbevisende språk",
+            "Uklare kilder og usikker sporbarhet",
+            "Vanskelig å vite når modellen gjetter",
+            "Stor risiko for ukritisk overtakelse av formuleringer",
+        ],
+        "references": [
+            "uke04-generativ-ai/02_llm_grunnleggende.ipynb",
+            "uke04-generativ-ai/04_chatgpt_claude_api.ipynb",
+        ],
+    },
+    {
+        "type": "content",
+        "section": "Del 2",
+        "title": "Hva bør man ikke outsource blindt?",
+        "bullets": [
+            "Diagnostiske konklusjoner",
+            "Høyrisikobeslutninger",
+            "Følsom pasientkommunikasjon",
+            "Ansvaret for klinisk skjønn",
+        ],
+    },
+    {
+        "type": "content",
+        "section": "Del 2",
+        "title": "Hva kan være lavere risiko og likevel nyttig?",
+        "bullets": [
+            "Strukturering av tekst",
+            "Oppsummering av informasjon",
+            "Administrative støtteoppgaver",
+            "Utkast som alltid kontrolleres av fagperson",
+        ],
+    },
+    {
+        "type": "content",
+        "section": "Del 2",
+        "title": "Praktisk sjekkliste før innføring",
+        "bullets": [
+            "Hvilket problem skal løses?",
+            "Finnes det en god baseline uten AI?",
+            "Er data gode nok og relevant validering gjort?",
+            "Hvem har ansvar hvis noe går galt?",
+        ],
+    },
+    {
+        "type": "content",
+        "section": "Del 2",
+        "title": "Praktisk sjekkliste under bruk",
+        "bullets": [
+            "Følger vi med på avvik?",
+            "Forstår brukerne begrensningene?",
+            "Har vi tydelig rollefordeling?",
+            "Vet vi når systemet ikke bør brukes?",
+        ],
+    },
+    {
+        "type": "content",
+        "section": "Del 2",
+        "title": "Praktisk sjekkliste etter innføring",
+        "bullets": [
+            "Re-evaluer ytelse over tid",
+            "Se etter endringer i pasientgrunnlag og praksis",
+            "Samle tilbakemeldinger fra brukere",
+            "Oppdater eller stopp løsninger som ikke fungerer godt nok",
+        ],
+    },
+    {
+        "type": "content",
+        "section": "Del 2",
+        "title": "Mini-case 2: generativ AI lager pasientbrevutkast",
+        "bullets": [
+            "Hva kan være nyttig i et slikt verktøy?",
+            "Hva må alltid kontrolleres manuelt?",
+            "Hvor kan feil oppstå?",
+            "Hvordan kan dette brukes uten å svekke kvalitet og tillit?",
+        ],
+    },
+    {
+        "type": "content",
+        "section": "Avslutning",
+        "title": "Tre ting klinikere bør ta med seg",
+        "bullets": [
+            "AI kan være nyttig, men må brukes med forståelse",
+            "God ytelse er ikke nok uten klinisk kontekst",
+            "Kritiske spørsmål er en del av faglig ansvar",
+        ],
+    },
+    {
+        "type": "content",
+        "section": "Avslutning",
+        "title": "Tre ting organisasjoner bør ta med seg",
+        "bullets": [
+            "Implementering handler om mer enn teknologi",
+            "Arbeidsflyt, opplæring og ansvar er avgjørende",
+            "Trygg bruk krever monitorering, ikke bare lansering",
+        ],
+    },
+    {
+        "type": "content",
+        "section": "Avslutning",
+        "title": "Hvordan bruke repoet videre etter forelesningen",
+        "bullets": [
+            "Start med uke 1 for begreper og oversikt",
+            "Bruk uke 4 for generativ AI og uke 6 for klinisk beslutningsstøtte",
+            "Bruk uke 8 når dere vil arbeide med etikk, regulering og trustworthy AI",
+        ],
+        "references": [
+            "README.md",
+            "uke04-generativ-ai/README.md",
+            "uke06-klinisk-praksis/README.md",
+            "uke08-etikk-implementering/README.md",
+        ],
+    },
+    {
+        "type": "content",
+        "section": "Avslutning",
+        "title": "Spørsmål til diskusjon i salen",
+        "bullets": [
+            "Hvor ser dere størst nytte i egen praksis?",
+            "Hvor ser dere størst risiko?",
+            "Hva ville dere krevd å få vite før dere stolte på et AI-system?",
+        ],
+    },
+    {
+        "type": "content",
+        "section": "Avslutning",
+        "title": "Mulige neste steg etter forelesningen",
+        "bullets": [
+            "Velg én notebook og utforsk den i Google Colab",
+            "Diskuter et konkret klinisk AI-case i eget fagmiljø",
+            "Bruk kursets sjekklister når nye AI-verktøy vurderes lokalt",
+        ],
+        "references": ["docs/index.html", "docs/for-undervisere.html", "docs/ressurser.html"],
+    },
+    {
+        "type": "content",
+        "section": "Avslutning",
+        "title": "Takk for oppmerksomheten",
+        "bullets": [
+            "AI i helse bør ikke bare imponere",
+            "Den bør forstås, vurderes og brukes ansvarlig",
+            "Det er et klinisk og faglig arbeid, ikke bare et teknologisk prosjekt",
+        ],
+        "references": ["https://arvidl.github.io/AI-og-helse/", "https://github.com/arvidl/AI-og-helse"],
+    },
+]
+
+
+def build_presentation():
+    prs = Presentation()
+    prs.slide_width = Inches(13.333)
+    prs.slide_height = Inches(7.5)
+
+    blank = prs.slide_layouts[6]
+
+    for spec in SLIDES:
+        slide = prs.slides.add_slide(blank)
+        slide_type = spec["type"]
+
+        if slide_type == "title":
+            add_title_slide(slide, spec["title"], spec["subtitle"], spec["footer"])
+        elif slide_type == "section":
+            add_section_slide(slide, spec["title"], spec["subtitle"])
+        else:
+            add_content_slide(
+                slide,
+                spec["title"],
+                spec["bullets"],
+                references=spec.get("references"),
+                section=spec.get("section"),
+            )
+
+    prs.save(OUTPUT_PATH)
+    return OUTPUT_PATH
+
+
+if __name__ == "__main__":
+    path = build_presentation()
+    print(path)
