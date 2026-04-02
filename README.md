@@ -197,8 +197,8 @@ Repoet er lisensiert under [MIT-lisensen](LICENSE). Copyright (c) 2025 Arvid Lun
 ### 🛠️ Hvordan kurset er laget og hvilke ressurser som er brukt
 
 - Domenekunnskap, et godt nettverk av fagfeller ([nær](https://www.sciencedirect.com/science/article/pii/S0939388918301181?via%3Dihub) og [fjern](http://en.jnl.ac.cn/article/185.html)) og entusiasme for feltet
-- Bruk av AI-kodeeditoren Cursor Ultra
-- Utviklet på en MacBook Pro (M4 Max)
+- Bruk av AI-kodeeditoren [Cursor](https://cursor.com/get-started) Ultra
+- Utviklet på en MacBook Pro M4 Max
 - Diverse lisenser og tjenester (GitHub, OpenAI, Anthropic, Perplexity, Google)
 - Omtrent 40 timeverk for basisdelen
 
