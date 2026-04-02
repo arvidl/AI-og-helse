@@ -417,6 +417,29 @@ h1 {
   line-height: 1.65;
 }
 
+.presentation-note-resources {
+  max-width: 64ch;
+}
+
+.presentation-resource-link {
+  color: var(--accent-strong);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: rgba(125, 60, 152, 0.4);
+}
+
+.presentation-resource-link:hover,
+.presentation-resource-link:focus-visible {
+  color: var(--accent);
+}
+
+.presentation-resource-source {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+
 .presentation-qr-card {
   display: grid;
   justify-items: center;
