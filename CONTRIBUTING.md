@@ -12,13 +12,14 @@ Dette repoet er laget som åpent kursmateriale for norskspråklige studenter og 
 - rydde opp i notebook-metadata når endringen er bevisst og konsekvent
 - foreslå nye faglige eksempler eller relevante ressurser
 
-## Før du sender inn endringer
+## Før du sender meg forslag til endringer / issues
 
 - sjekk at endringen passer med kursnivået og målgruppen
 - hold språk og tone på norsk der materialet er studentrettet
 - unngå å committe hemmeligheter som API-nøkler, `.env`-filer eller `kaggle.json`
 - unngå utilsiktet notebook-støy som endrede execution counts, output eller lokal metadata hvis det ikke er meningen
 
+<!--
 ## Praktisk arbeidsflyt
 
 1. Opprett en branch fra `main` dersom du jobber i din egen fork eller lokalt.
@@ -29,6 +30,7 @@ Dette repoet er laget som åpent kursmateriale for norskspråklige studenter og 
    - lenker i dokumentasjon
 4. Skriv en kort commit-melding som forklarer hvorfor endringen er nyttig.
 5. Opprett en pull request eller send inn endringsforslag på annen avtalt måte.
+-->
 
 ## Issues og forslag
 
@@ -47,4 +49,6 @@ Ved endringer i `.ipynb`-filer er det spesielt nyttig å skille mellom:
 - output-endringer etter kjøring
 - rene metadataendringer
 
+<!--
 Hvis du bare endrer metadata, bør det helst gjøres bevisst og konsistent på tvers av relevante notebooks.
+-->
