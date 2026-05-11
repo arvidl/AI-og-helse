@@ -220,21 +220,27 @@ For eksempel: [uke01-introduksjon](https://github.com/arvidl/AI-og-helse/tree/ma
 4. Lær deg bruk av Python og [Jupyter Notebooks](https://colab.research.google.com/github/jckantor/CBE30338/blob/master/docs/01.01-Getting-Started-with-Python-and-Jupyter-Notebooks.ipynb) i Google Colab ([FAQ](https://research.google.com/colaboratory/faq.html))
 
 
-### For lokal utvikling - Anaconda (anbefalt for Mac/Linux/PC)
+### For lokal utvikling - uv (anbefalt for Mac/Linux/PC uten CUDA)
+
+[`uv`](https://docs.astral.sh/uv/) er anbefalt lokal løsning for vanlig notebook-kjøring på egen maskin. Det gir rask oppretting av virtuelt miljø, rask installasjon av pip-avhengigheter og fungerer godt sammen med `requirements.txt`.
 
 ```bash
 # Klon repository
 git clone https://github.com/arvidl/AI-og-helse.git
 cd AI-og-helse
 
-# Opprett conda-miljø fra `environment.yml`
-conda env create -f environment.yml
+# Opprett virtuelt miljø med Python 3.12
+uv venv --python 3.12
 
 # Aktiver miljøet
-conda activate ai-helse
+source .venv/bin/activate  # Mac/Linux
+# .venv\Scripts\activate   # Windows
+
+# Installer avhengigheter
+uv pip install -r requirements.txt
 
 # Installer Jupyter kernel
-python -m ipykernel install --user --name ai-helse --display-name "Python 3.12 (AI-Helse)"
+python -m ipykernel install --user --name ai-helse-uv --display-name "Python 3.12 (AI-Helse uv)"
 
 # Verifiser installasjon
 python check_setup.py
@@ -242,20 +248,43 @@ python check_setup.py
 
 [`CrewAI`](https://docs.crewai.com) er nå inkludert i standardmiljøet for det frivillige fordypningssporet i uke 05, blant annet notebooken `uke05-agentisk-ai/03_crewai_fordypning_rehabilitering.ipynb`.
 
-**Alternativ: Bruk pip/venv (hvis du ikke har Anaconda)**
+**CUDA/NVIDIA-unntak: bruk conda**
+
+Hvis du skal kjøre tunge dyplæringsnotebooks lokalt med NVIDIA-GPU og CUDA på Linux/Windows, bruk conda-miljøet i `environment_cuda.yml`. Dette er mer robust for CUDA-spesifikke binærpakker enn et rent `uv`/pip-miljø.
 
 ```bash
-# Sørg for at du har Python 3.12 installert
-python3.12 --version
+# Opprett CUDA-miljø fra `environment_cuda.yml`
+conda env create -f environment_cuda.yml
 
-# Opprett virtuelt miljø med Python 3.12
-python3.12 -m venv venv
+# Aktiver miljøet
+conda activate ai-helse-cuda
 
-# Aktiver miljø
-source venv/bin/activate  # Mac/Linux
-# venv\Scripts\activate   # Windows
+# Installer Jupyter kernel
+python -m ipykernel install --user --name ai-helse-cuda --display-name "Python 3.12 (AI-Helse CUDA)"
 
-# Installer avhengigheter
+# Verifiser installasjon
+python check_setup.py
+```
+
+**Alternativ: conda uten CUDA**
+
+Hvis du allerede bruker conda og ønsker et conda-basert CPU-/Mac-miljø, kan du fortsatt bruke `environment.yml`.
+
+```bash
+conda env create -f environment.yml
+conda activate ai-helse
+python -m ipykernel install --user --name ai-helse --display-name "Python 3.12 (AI-Helse)"
+python check_setup.py
+```
+
+**Alternativ: vanlig pip/venv**
+
+Dette fungerer også, men `uv` er normalt raskere og enklere å gjenskape.
+
+```bash
+python3.12 -m venv .venv
+source .venv/bin/activate  # Mac/Linux
+# .venv\Scripts\activate   # Windows
 pip install --upgrade pip
 pip install -r requirements.txt
 
@@ -265,9 +294,9 @@ python check_setup.py
 
 **For Cursor-brukere**
 1. Åpne prosjektet i Cursor
-2. Cursor vil automatisk oppdage conda-miljøet
-3. Velg "Python 3.12 (ai-helse)" som interpreter
-4. Alternativt: Cmd/Ctrl+Shift+P → "Python: Select Interpreter" → ai-helse
+2. Cursor vil normalt oppdage `.venv` automatisk
+3. Velg "Python 3.12 (AI-Helse uv)" som interpreter/kernel
+4. Alternativt: Cmd/Ctrl+Shift+P → "Python: Select Interpreter" → `.venv`
 
 
 ## API-nøkler for lokal kjøring
