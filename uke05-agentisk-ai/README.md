@@ -27,7 +27,7 @@ Hvis du kommer direkte til uke 5, holder det å:
 3. fortsette med `02_agentisk_ai_i_helse.ipynb`
 4. bruke `03_crewai_fordypning_rehabilitering.ipynb` og `04_agentisk_ai_perspektiver.ipynb` som fordypning og refleksjon ved behov
 
-Notebookene kan leses uten API-nøkler, og eksemplene er laget for å kunne forstås som pedagogiske demonstrasjoner.
+Notebookene kan leses uten API-nøkler, og eksemplene er laget for å kunne forstås som pedagogiske demonstrasjoner. Hvis du vil kjøre den operative `CrewAI`-demoen i notebook 03, trenger du derimot en individuell Gemini API-nøkkel, som helst legges i Colab Secrets som `GOOGLE_API_KEY`.
 
 ## Hva denne uken dekker
 
