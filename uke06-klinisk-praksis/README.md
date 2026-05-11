@@ -24,6 +24,8 @@ Etter denne uken skal du kunne:
 
 Uken følger en klinisk progresjon: først hvordan en modell lager risikoanslag, deretter hvordan slike anslag blir til beslutninger, så hvordan vi vurderer om modellen generaliserer til nye pasientgrupper og settinger, og til slutt hvordan den eventuelt kan inngå i faktisk arbeidsflyt.
 
+Alle eksemplene bruker syntetiske data og kan kjøres uten API-nøkkel, både lokalt og i Google Colab.
+
 - syntetiske kliniske data for en enkel prediksjonsoppgave
 - logistisk regresjon som baseline-modell
 - kalibreringskurve og ROC-kurve
