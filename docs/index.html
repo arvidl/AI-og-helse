@@ -67,7 +67,7 @@
               <span>uker</span>
             </article>
             <article>
-              <strong>40+</strong>
+              <strong>46</strong>
               <span>notebooks</span>
             </article>
             <article>
@@ -120,7 +120,7 @@
                 <h3>Tre enkle steg</h3>
               </div>
               <ol class="steps">
-                <li>Begynn med `Uke 1` for å få språk, begreper og retning for resten av kurset.</li>
+                <li>Begynn med <code>Uke 1</code> for å få språk, begreper og retning for resten av kurset.</li>
                 <li>Åpne én anbefalt notebook direkte i Colab hvis du vil prøve stoffet med en gang.</li>
                 <li>Bruk ukeoversikten lenger ned for å velge fordypning innen generativ AI, klinisk praksis eller etikk.</li>
               </ol>
@@ -132,9 +132,9 @@
                 <h3>Velg inngang etter behov</h3>
               </div>
               <div class="path-list">
-                <p><strong>Jeg vil orientere meg:</strong> start med `Uke 1` og les README-en før du åpner notebooks.</p>
+                <p><strong>Jeg vil orientere meg:</strong> start med <code>Uke 1</code> og les README-en før du åpner notebooks.</p>
                 <p><strong>Jeg vil prøve noe med en gang:</strong> bruk en av Colab-knappene under og utforsk direkte i nettleseren.</p>
-                <p><strong>Jeg jobber klinisk:</strong> gå videre til `Uke 6` og `Uke 8` når du vil koble AI til beslutningsstøtte, ansvar og innføring i praksis.</p>
+                <p><strong>Jeg jobber klinisk:</strong> gå videre til <code>Uke 6</code> og <code>Uke 8</code> når du vil koble AI til beslutningsstøtte, ansvar og innføring i praksis.</p>
               </div>
             </div>
           </div>
@@ -151,6 +151,27 @@
             </p>
           </div>
           <div id="featured-colab" class="card-grid"></div>
+        </section>
+
+        <section class="panel split-panel">
+          <div>
+            <p class="section-label">Kjøring</p>
+            <h2>Felles Colab-konvensjon og lokal kjøring</h2>
+            <ol class="steps">
+              <li>Første markdown-celle beskriver Colab-kjøring, anbefalt runtime, forventet kjøretid og krav til API, data eller GPU.</li>
+              <li>Første kodecelle er en standard setup-celle som oppdager Colab, installerer kun notebook-spesifikke pakker ved behov og definerer felles hjelpefunksjoner.</li>
+              <li>Secrets håndteres likt: Colab bruker <code>userdata.get(...)</code>, mens lokal kjøring bruker miljøvariabler eller <code>.env</code>.</li>
+            </ol>
+          </div>
+          <div class="callout">
+            <h3>Verifisert startpunkt</h3>
+            <p>
+              Uke 1 og uke 2 er kjørt og verifisert både lokalt og i Google
+              Colab av kursansvarlig 2026-05-11. For lokal kjøring anbefales
+              <code>uv</code>; conda er først og fremst aktuelt for CUDA/NVIDIA
+              på Linux/Windows.
+            </p>
+          </div>
         </section>
 
         <section class="panel split-panel presentation-panel">
@@ -266,6 +287,33 @@
 
         <section class="panel">
           <div class="section-heading">
+            <p class="section-label">Kompetanse</p>
+            <h2>Hvilken KI-kompetanse kurset bygger</h2>
+            <p class="section-text">
+              Kurset skal bidra til bred tverrfaglig kompetanse, ikke bare
+              verktøyopplæring. Målet er at flere i helsevesenet kan forstå,
+              prøve ut, vurdere og innføre KI på en trygg og faglig forsvarlig
+              måte.
+            </p>
+          </div>
+          <div class="summary-grid">
+            <article class="summary-card">
+              <h3>Modellforståelse og praktisk bruk</h3>
+              <p>Fra klassisk maskinlæring og dyplæring til generativ og agentisk AI, med konkrete notebooks som kan leses, kjøres og diskuteres.</p>
+            </article>
+            <article class="summary-card">
+              <h3>Kritisk evaluering og klinisk nytte</h3>
+              <p>Vekt på sensitivitet, spesifisitet, kalibrering, generalisering, arbeidsflyt og hva som faktisk gir verdi i klinisk praksis.</p>
+            </article>
+            <article class="summary-card">
+              <h3>Etikk, regulering og trygg implementering</h3>
+              <p>Personvern, bias, ansvar, MDR/CE og trustworthy AI kobles til praktiske vurderinger før KI tas i bruk.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="section-heading">
             <p class="section-label">Uker</p>
             <h2>Utforsk kursinnholdet uke for uke</h2>
             <p class="section-text">
@@ -304,7 +352,7 @@
             <ol class="steps">
               <li>Velg en uke under og åpne ukeoversikten på GitHub.</li>
               <li>Les uke-README for mål, progresjon og anbefalt rekkefølge.</li>
-              <li>Bruk Colab-lenkene i repoets hoved-README for å åpne notebooks i nettleseren.</li>
+              <li>Bruk Colab-lenkene i repoets hoved-README for å åpne notebooks i nettleseren, eller sett opp lokalt med <code>uv</code>.</li>
             </ol>
           </div>
           <div class="callout">
@@ -332,7 +380,7 @@
       </main>
 
       <footer class="site-footer">
-        <p>Publisert med GitHub Pages fra `main/docs`.</p>
+        <p>Publisert med GitHub Pages fra <code>main/docs</code>.</p>
         <a href="https://github.com/arvidl/AI-og-helse">Se kilde og kursmateriale på GitHub</a>
       </footer>
     </div>
@@ -490,7 +538,7 @@
         {
           title: "Ressurssiden",
           icon: "⌘",
-          description: "Samlet side for ordliste, verktøy, Colab-oppsett og andre praktiske innganger til kursmaterialet.",
+          description: "Samlet side for ordliste, verktøy, Colab-oppsett, lokal uv-kjøring og andre praktiske innganger til kursmaterialet.",
           url: "./ressurser.html"
         },
         {
@@ -526,8 +574,14 @@
         {
           title: "Colab-oppsett",
           icon: "▶",
-          description: "Praktisk hjelp for å bruke kursnotebooks i Google Colab.",
+          description: "Praktisk hjelp for å bruke kursnotebooks med felles Colab-konvensjon, setup-celle og secrets.",
           url: "https://github.com/arvidl/AI-og-helse/blob/main/COLAB_SETUP.md"
+        },
+        {
+          title: "Lokal kjøring med uv",
+          icon: "⎇",
+          description: "Anbefalt lokal oppstart for Mac, Linux og PC uten CUDA. CUDA/NVIDIA-brukere bør se conda-unntaket.",
+          url: "https://github.com/arvidl/AI-og-helse/blob/main/README.md#for-lokal-utvikling---uv-anbefalt-for-maclinuxpc-uten-cuda"
         },
         {
           title: "Kompatibilitetssjekkliste",

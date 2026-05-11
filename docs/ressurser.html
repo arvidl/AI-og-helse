@@ -6,7 +6,7 @@
     <title>Ressurser | AI og Helse</title>
     <meta
       name="description"
-      content="Ressursside for AI og Helse med ordliste, verktøy, artikler, Colab-oppsett og praktiske lenker for bruk av kurset."
+      content="Ressursside for AI og Helse med ordliste, verktøy, artikler, Colab-oppsett, uv-oppsett og praktiske lenker for bruk av kurset."
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
@@ -33,7 +33,7 @@
           <h1>Praktiske innganger til kursmaterialet.</h1>
           <p class="hero-text">
             Her finner du støttemateriale for å bruke kurset i eget tempo:
-            ordliste, verktøy, artikler, Colab-oppsett og lenker som gjør det
+            ordliste, verktøy, artikler, Colab-oppsett, uv-oppsett og lenker som gjør det
             enklere å komme raskt i gang.
           </p>
           <div class="hero-actions">
@@ -86,9 +86,19 @@
                 <span class="card-symbol" aria-hidden="true">▶</span>
                 <h3>Colab-oppsett</h3>
               </div>
-              <p>En kort praktisk guide til hvordan notebookene brukes i Google Colab.</p>
+              <p>En kort praktisk guide til hvordan notebookene brukes i Google Colab med felles informasjonscelle, setup-celle og secrets-mønster.</p>
               <div class="card-actions">
                 <a class="button button-small button-primary" href="https://github.com/arvidl/AI-og-helse/blob/main/COLAB_SETUP.md">Åpne guide</a>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-heading">
+                <span class="card-symbol" aria-hidden="true">⎇</span>
+                <h3>Lokal kjøring med uv</h3>
+              </div>
+              <p>Anbefalt lokal oppstart for Mac, Linux og PC uten CUDA. CUDA/NVIDIA-brukere bør bruke conda-unntaket i hoved-README.</p>
+              <div class="card-actions">
+                <a class="button button-small button-primary" href="https://github.com/arvidl/AI-og-helse/blob/main/README.md#for-lokal-utvikling---uv-anbefalt-for-maclinuxpc-uten-cuda">Åpne oppsett</a>
               </div>
             </article>
             <article class="card">
@@ -96,7 +106,7 @@
                 <span class="card-symbol" aria-hidden="true">✓</span>
                 <h3>Kompatibilitetssjekkliste</h3>
               </div>
-              <p>Oversikt over hva som fungerer rett i Colab, og hva som krever litt ekstra oppsett eller omtanke.</p>
+              <p>Oversikt over alle notebooks, Colab-krav, manuelle oppsettbehov og verifiseringsstatus for uke 1 og uke 2.</p>
               <div class="card-actions">
                 <a class="button button-small button-primary" href="https://github.com/arvidl/AI-og-helse/blob/main/COLAB_COMPATIBILITY_CHECKLIST.md">Åpne sjekkliste</a>
               </div>
@@ -173,7 +183,7 @@
       </main>
 
       <footer class="site-footer">
-        <p>Publisert med GitHub Pages fra `main/docs`.</p>
+        <p>Publisert med GitHub Pages fra <code>main/docs</code>.</p>
         <a href="./index.html">Tilbake til forsiden</a>
       </footer>
     </div>

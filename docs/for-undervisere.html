@@ -106,9 +106,9 @@
             <p class="section-label">Anbefalt oppstart</p>
             <h2>Et enkelt opplegg for første gang</h2>
             <ol class="steps">
-              <li>Start med forsiden og `Start her` for å velge riktig inngang for målgruppen din.</li>
-              <li>Bruk `Uke 1` som felles introduksjon hvis deltakerne har ulik bakgrunn.</li>
-              <li>Velg deretter temauker som passer formålet: `Uke 4` for generativ AI, `Uke 6` for klinisk praksis, `Uke 8` for etikk og innføring.</li>
+              <li>Start med forsiden og <code>Start her</code> for å velge riktig inngang for målgruppen din.</li>
+              <li>Bruk <code>Uke 1</code> som felles introduksjon hvis deltakerne har ulik bakgrunn.</li>
+              <li>Velg deretter temauker som passer formålet: <code>Uke 4</code> for generativ AI, <code>Uke 6</code> for klinisk praksis, <code>Uke 8</code> for etikk og innføring.</li>
             </ol>
           </div>
           <div class="callout">
@@ -117,6 +117,28 @@
               Mange deltakere vil ha godt utbytte av å lese og diskutere
               materialet uten å kjøre all kode selv. Notebookene kan derfor
               brukes både som interaktive øvelser og som lesbare fagtekster.
+            </p>
+          </div>
+        </section>
+
+        <section class="panel split-panel">
+          <div>
+            <p class="section-label">Teknisk gjennomføring</p>
+            <h2>Samme startpunkt i Colab og lokalt</h2>
+            <p class="section-text">
+              Alle kursnotebooks har en felles Colab-konvensjon øverst: en
+              informasjonscelle med runtime, kjøretid og krav, etterfulgt av en
+              setup-celle som håndterer miljødeteksjon og notebook-spesifikke
+              avhengigheter.
+            </p>
+          </div>
+          <div class="callout">
+            <h3>For kursansvarlige</h3>
+            <p>
+              Be deltakere bruke Colab Secrets for API-nøkler via
+              <code>userdata.get(...)</code>. Ved lokal kjøring anbefales
+              <code>uv</code> og <code>.env</code>, mens conda primært er
+              relevant for CUDA/NVIDIA.
             </p>
           </div>
         </section>
@@ -192,7 +214,7 @@
                 <span class="card-symbol" aria-hidden="true">◎</span>
                 <h3>Orientering i feltet</h3>
               </div>
-              <p>Start med `Uke 1` og `Uke 2` hvis målet er å bygge et felles språk rundt AI, maskinlæring og evaluering.</p>
+              <p>Start med <code>Uke 1</code> og <code>Uke 2</code> hvis målet er å bygge et felles språk rundt AI, maskinlæring og evaluering.</p>
             </article>
             <article class="card">
               <div class="tag-row">
@@ -203,7 +225,7 @@
                 <span class="card-symbol" aria-hidden="true">✦</span>
                 <h3>Aktuell teknologiforståelse</h3>
               </div>
-              <p>Bruk `Uke 4` og `Uke 5` når fokus er språkmodeller, generativ AI og agentiske systemer i dagens praksis.</p>
+              <p>Bruk <code>Uke 4</code> og <code>Uke 5</code> når fokus er språkmodeller, generativ AI og agentiske systemer i dagens praksis.</p>
             </article>
             <article class="card">
               <div class="tag-row">
@@ -214,7 +236,7 @@
                 <span class="card-symbol" aria-hidden="true">⊕</span>
                 <h3>Klinisk relevans</h3>
               </div>
-              <p>Velg `Uke 6` og `Uke 7` for å diskutere beslutningsstøtte, velferdsteknologi og praktisk bruk i helse og omsorg.</p>
+              <p>Velg <code>Uke 6</code> og <code>Uke 7</code> for å diskutere beslutningsstøtte, velferdsteknologi og praktisk bruk i helse og omsorg.</p>
             </article>
             <article class="card">
               <div class="tag-row">
@@ -225,7 +247,7 @@
                 <span class="card-symbol" aria-hidden="true">◇</span>
                 <h3>Ansvarlig innføring</h3>
               </div>
-              <p>Bruk `Uke 8` når du vil samle diskusjonen om personvern, regulering, bias, medisinsk etikk og trustworthy AI.</p>
+              <p>Bruk <code>Uke 8</code> når du vil samle diskusjonen om personvern, regulering, bias, medisinsk etikk og trustworthy AI.</p>
             </article>
           </div>
         </section>
@@ -261,7 +283,7 @@
       </main>
 
       <footer class="site-footer">
-        <p>Publisert med GitHub Pages fra `main/docs`.</p>
+        <p>Publisert med GitHub Pages fra <code>main/docs</code>.</p>
         <a href="./index.html">Tilbake til forsiden</a>
       </footer>
     </div>
