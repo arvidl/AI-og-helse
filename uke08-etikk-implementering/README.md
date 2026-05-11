@@ -6,6 +6,8 @@ Denne uken handler om hvordan AI kan brukes ansvarlig, lovlig og faglig forsvarl
 
 Se også Helsedirektoratets rapport: ["Utvikling og bruk av kunstig intelligens"](https://www.helsedirektoratet.no/rapporter/status-og-forslag-til-videre-arbeid-med-kunstig-intelligens-ki-i-helse-og-omsorgstjenesten/utvikling-og-bruk-av-kunstig-intelligens)
 
+Alle eksemplene bruker syntetiske eller innebygde data og kan kjøres uten API-nøkkel, GPU eller eksterne datafiler, både lokalt og i Google Colab.
+
 ## Læringsmål
 
 Etter denne uken skal du kunne:
@@ -37,6 +39,8 @@ Temaer:
 - eksempler på utilsiktet diskriminering
 - refleksjon rundt måling, evaluering og tiltak
 
+Anbefalt lesemåte: bruk introduksjon, bias-typologi, fairness-metrikker og oppsummering som kjerne. De praktiske eksperimentene og utfordringsdelen kan brukes som fordypning eller øvelse dersom du har tid.
+
 ### `03_ce_mdr_regulering.ipynb`
 
 Temaer:
@@ -45,6 +49,8 @@ Temaer:
 - CE-merking og MDR
 - risikoklassifisering
 - ansvar og dokumentasjon ved innføring av AI-systemer
+
+Anbefalt lesemåte: bruk oversikten over CE-merking, MDR/SaMD, AI Act og oppsummeringen som kjerne. Generatorer, dashbord og case-øvelser kan leses som fordypning eller praktisk øvelse.
 
 ### `04_ai_etikk_i_medisinen.ipynb`
 
