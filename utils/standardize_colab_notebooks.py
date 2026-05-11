@@ -332,6 +332,17 @@ def remove_duplicate_colab_badge(nb: dict) -> None:
             del cells[2]
 
 
+def remove_empty_cells(nb: dict, relative_path: str) -> None:
+    if not relative_path.startswith("uke02-klassisk-ml/"):
+        return
+
+    nb["cells"] = [
+        cell
+        for cell in nb.get("cells", [])
+        if cell_source(cell).strip() or cell.get("outputs")
+    ]
+
+
 def simple_week01_import_cell(message: str = "✅ Imports klare.") -> dict:
     text = f"""# Felles imports for notebooken
 import json
@@ -369,8 +380,11 @@ Colab-oppsettet er allerede håndtert i standardcellen øverst. Denne cellen las
     return {"cell_type": "markdown", "metadata": {}, "source": source_to_lines(text)}
 
 
-def cleanup_legacy_week01_setup(nb: dict, relative_path: str) -> None:
-    if not relative_path.startswith("uke01-introduksjon/"):
+def cleanup_legacy_standard_setup(nb: dict, relative_path: str) -> None:
+    if not (
+        relative_path.startswith("uke01-introduksjon/")
+        or relative_path.startswith("uke02-klassisk-ml/")
+    ):
         return
 
     cells = nb.get("cells", [])
@@ -386,6 +400,26 @@ def cleanup_legacy_week01_setup(nb: dict, relative_path: str) -> None:
             cells[idx] = simple_week01_import_markdown()
             cells[idx + 1] = simple_week01_import_cell()
             break
+
+
+def cleanup_week02_ad_hoc_installs(nb: dict, relative_path: str) -> None:
+    if relative_path != "uke02-klassisk-ml/02-fra-symptom-til-diagnose.ipynb":
+        return
+
+    cells = nb.get("cells", [])
+    for idx, cell in enumerate(list(cells)):
+        source = cell_source(cell)
+        if "!pip install scikit-learn" in source:
+            cells[idx] = {
+                "cell_type": "markdown",
+                "metadata": {},
+                "source": source_to_lines(
+                    """### Avhengigheter
+
+`scikit-learn` er en del av standardmiljøet for kurset. I Colab og lokalt håndteres avhengigheter av setup-cellen øverst og `requirements.txt`, så vi installerer ikke pakker manuelt midt i notebooken.
+"""
+                ),
+            }
 
 
 def update_week01_setup_text(nb: dict, relative_path: str) -> None:
@@ -665,9 +699,11 @@ def main() -> int:
 
         upsert_top_cells(nb, relative_path)
         remove_duplicate_colab_badge(nb)
-        cleanup_legacy_week01_setup(nb, relative_path)
+        cleanup_legacy_standard_setup(nb, relative_path)
+        cleanup_week02_ad_hoc_installs(nb, relative_path)
         update_week01_setup_text(nb, relative_path)
         update_optional_bert_demo(nb, relative_path)
+        remove_empty_cells(nb, relative_path)
         cleared_total += clear_outputs_with_local_paths(nb)
 
         after = json.dumps(nb, ensure_ascii=False, sort_keys=True)

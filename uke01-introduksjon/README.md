@@ -39,6 +39,12 @@ Uken dekker særlig:
 3. Bruk `05-regelbaserte-systemer.ipynb` til å se hvordan tidlige AI-idéer kan uttrykkes som eksplisitte regler.
 4. Åpne `99-oppsett-miljø.ipynb` dersom du vil sette opp et lokalt arbeidsmiljø i tillegg til Colab.
 
+## Kjøring og verifisering
+
+Alle notebookene i uke 1 har en standard Colab-celle øverst. Kjør denne først, enten du åpner notebooken i Google Colab eller arbeider lokalt med kursmiljøet.
+
+Uke 1 er verifisert lokalt og i Google Colab av kursansvarlig 2026-05-11. `99-oppsett-miljø.ipynb` er valgfri støtte for lokalt oppsett med `uv`; Colab-brukere kan starte direkte i notebookene.
+
 ## Refleksjon
 
 Tenk over hva som egentlig skiller et intelligent system fra et system som bare følger regler. Spør også hvordan slike forskjeller påvirker tillit, ansvar og forventninger når AI tas inn i helse og omsorg.

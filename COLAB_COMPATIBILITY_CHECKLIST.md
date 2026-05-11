@@ -23,8 +23,8 @@ This checklist confirms that the notebooks have a consistent Colab entry path. I
 - [x] `uke01-introduksjon/03-ai-historie-helse.ipynb` - CPU, synthetic/inline data. Verified locally and in Colab by course maintainer, 2026-05-11.
 - [x] `uke01-introduksjon/04-ai-ml-dl-forskjeller.ipynb` - CPU, synthetic/inline data. Verified locally and in Colab by course maintainer, 2026-05-11.
 - [x] `uke01-introduksjon/05-regelbaserte-systemer.ipynb` - CPU, synthetic/inline data. Verified locally and in Colab by course maintainer, 2026-05-11.
-- [x] `uke02-klassisk-ml/01-klassisk-ml-101.ipynb` - CPU, synthetic/inline data.
-- [x] `uke02-klassisk-ml/02-fra-symptom-til-diagnose.ipynb` - CPU, synthetic data.
+- [x] `uke02-klassisk-ml/01-klassisk-ml-101.ipynb` - CPU, synthetic/inline data. Verified locally and in Colab by course maintainer, 2026-05-11.
+- [x] `uke02-klassisk-ml/02-fra-symptom-til-diagnose.ipynb` - CPU, synthetic data. Verified locally and in Colab by course maintainer, 2026-05-11.
 - [x] `uke03-dyplæring/01a_nn_intro.ipynb` - CPU, conceptual/demo notebook.
 - [x] `uke03-dyplæring/01b_læring_i_nn.ipynb` - CPU, optional accelerator.
 - [x] `uke03-dyplæring/01c_UCI_heart_disease_klassifikasjon.ipynb` - CPU, small open dataset workflow.

@@ -34,6 +34,12 @@ Uken dekker særlig:
 3. Stopp underveis og vurder hva som faktisk er en nyttig modell, ikke bare en modell som gir høy score.
 4. Bruk refleksjonsspørsmålene og eventuelle egne varianter av datasettet til å knytte stoffet til eget fagområde.
 
+## Kjøring og verifisering
+
+Begge notebookene i uke 2 har en standard Colab-celle øverst. Kjør denne først; den håndterer miljødeteksjon og eventuelle notebook-spesifikke avhengigheter.
+
+Uke 2 er verifisert lokalt og i Google Colab av kursansvarlig 2026-05-11. Avhengigheter håndteres av felles setup/`requirements.txt`, så notebookene skal ikke installere pakker manuelt midt i gjennomgangen.
+
 ## Refleksjon
 
 Tenk over hvordan en statistisk modell skiller seg fra klinisk skjønn. Spør ikke bare om modellen kan forutsi noe, men også hva slags feil som er akseptable, hvem som påvirkes av dem, og hvordan resultatene bør tolkes i praksis.
