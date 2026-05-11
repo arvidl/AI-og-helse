@@ -24,9 +24,11 @@ Etter denne uken skal du kunne:
 
 Uken følger en tydelig progresjon fra teknologiens grunnlag til praktisk og ansvarlig bruk: først navigasjon og robotikk, deretter sensortolkning, så beslutningsstøtte i hjem og omsorg, og til slutt sikkerhet, etikk og menneske-maskin-samspill.
 
+Alle eksemplene bruker syntetiske eller simulerte data og kan kjøres uten API-nøkkel, GPU eller eksterne datafiler, både lokalt og i Google Colab.
+
 - grunnideen bak graf- og rutenettbasert søk
 - A*-algoritmen med 4-naboer
-- demo med startpunkt, malpunkt og tilfeldige hindringer
+- demo med startpunkt, målpunkt og tilfeldige hindringer
 - enkel visualisering av funnet rute
 - bruk av sensorer til å observere aktivitet i et hjemmemiljø
 - enkle eksempler på varsling og beslutningsstøtte
