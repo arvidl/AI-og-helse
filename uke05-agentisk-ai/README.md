@@ -25,7 +25,7 @@ Hvis du kommer direkte til uke 5, holder det å:
 1. åpne `01_chatbot_workflow_agent.ipynb`
 2. lese forklaringene og kjøre de enkle kodecellene
 3. fortsette med `02_agentisk_ai_i_helse.ipynb`
-4. bruke `03_crewai_fordypning_rehabilitering.ipynb` og `04_agentisk_ai_perspektiver.ipynb` som fordypning og refleksjon ved behov
+4. bruke `03_crewai_fordypning_rehabilitering.ipynb` som valgfri teknisk fordypning og `04_agentisk_ai_perspektiver.ipynb` som anbefalt avslutning
 
 Notebookene kan leses uten API-nøkler, og eksemplene er laget for å kunne forstås som pedagogiske demonstrasjoner. Hvis du vil kjøre den operative `CrewAI`-demoen i notebook 03, trenger du derimot en individuell Gemini API-nøkkel, som helst legges i Colab Secrets som `GOOGLE_API_KEY`.
 
@@ -65,8 +65,8 @@ Samtidig må slike systemer alltid vurderes kritisk. I helsetjenesten er det ikk
 3. Fortsett med `02_agentisk_ai_i_helse.ipynb`.
 4. Gå gjennom helsecasene og vurder hvilke som virker realistiske og nyttige i praksis.
 5. Se på visualiseringene og diskuter hvilke oppgavetyper som virker mest forsvarlige å starte med.
-6. Bruk `03_crewai_fordypning_rehabilitering.ipynb` som frivillig fordypning dersom du vil se en mer sammensatt arbeidsflyt.
-7. Avslutt med `04_agentisk_ai_perspektiver.ipynb` for å løfte blikket mot implementering, ansvar og framtidige anvendelser.
+6. Bruk `03_crewai_fordypning_rehabilitering.ipynb` som frivillig teknisk fordypning dersom du vil se en mer sammensatt arbeidsflyt.
+7. Avslutt helst med `04_agentisk_ai_perspektiver.ipynb` for å løfte blikket mot implementering, ansvar og framtidige anvendelser.
 8. Diskuter hvilke anvendelser som kan være lav risiko, og hvilke som krever strenge rammer eller ikke bør brukes.
 
 ## Sentrale spørsmål denne uken
