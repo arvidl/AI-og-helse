@@ -1,0 +1,8 @@
+{
+  "prompt": "Forklar diabetes type 2 på en enkel måte til en pasient",
+  "model": "claude",
+  "temperature": 0.5,
+  "response": "# Diabetes type 2 - en enkel forklaring\n\n## Hva skjer i kroppen?\n\nTenk på kroppen din som et hus med mange rom. Sukker fra maten du spiser er som brensel som skal inn i rommene (cellene) for å gi deg energi.\n\n**Insulin** er som nøkkelen som låser opp dørene, slik at sukkeret kan komme inn.\n\nVed diabetes type 2 skjer to ting:\n1. **Nøklene virker ikke så godt lenger** (cellene blir \"resistente\" mot insulin)\n2. **Bukspyttkjertelen klarer ikke lage nok nøkler** (produserer mindre insulin)\n\nResultatet? Sukkeret blir stående utenfor i blodet i stedet for å komme inn i cellene der det trengs.\n\n## Hvorfor får man det?\n\nDe vanligste årsakene er:\n- Overvekt (spesielt rundt magen)\n- For lite fysisk aktivitet\n- Arv (det går i familier)\n- Økende alder\n\n## Hva kan du gjøre?\n\n**Gode nyheter:** Du kan påvirke sykdommen mye selv!\n\n- **Sunt kosthold** - mindre sukker og bearbeidet mat\n- **Fysisk aktivitet** - 30 min daglig hjelper mye\n- **Gå ned i vekt** - selv 5-10% gjør stor forskjell\n- **Medisiner** - hvis nødvendig, etter avtale med lege\n\nHar du spørsmål om noe?",
+  "timestamp": "2026-05-12T08:38:55.955109",
+  "cache_key": "c38bba63c2ec996587356f07b7645b47"
+}

@@ -1,0 +1,8 @@
+{
+  "prompt": "\nSom erfaren allmennlege, gi en kort og forsiktig oppsummering av hva som bør følges opp hos denne pasienten:\n\nPasient: 65-årig mann med diabetes type 2\nSymptomer: Tretthet, økt tørste, hyppig vannlating siste 2 uker\nBlodprøver: HbA1c 9.2%, fastende glukose 15.2 mmol/L\n\nIkke gi konkrete doseringsforslag eller oppstart av legemidler.\n",
+  "model": "gemini",
+  "temperature": 0.7,
+  "response": "Som allmennlege vil jeg oppsummere følgende punkter for oppfølging hos denne pasienten:\n\nPasienten presenterer med symptomer og funn forenlig med",
+  "timestamp": "2026-05-12T08:38:28.838319",
+  "cache_key": "f57cd1b1664a168309db054f3939434f"
+}

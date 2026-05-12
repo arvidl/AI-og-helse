@@ -1,0 +1,8 @@
+{
+  "prompt": "List opp 3 hovedsymptomer på diabetes type 2",
+  "model": "gemini",
+  "temperature": 0,
+  "response": "De tre hovedsymptomene på diabetes type 2, som ofte utvikler seg gradvis og kan være milde i starten, er:\n\n1.  **Økt",
+  "timestamp": "2026-05-12T08:39:05.297875",
+  "cache_key": "c9b9f7e8085c5e4adf04fcca5b4d8691"
+}
