@@ -19,6 +19,14 @@
 - **Del 1 (Uke 1-6):** AI-fundamentet - fra AI 1.0 til AI 2.0
 - **Del 2 (Uke 7-8):** Praktiske anvendelser i medisin, helse og omsorg
 
+### Kurskart: fra grunnlag til ansvarlig implementering
+
+Kurset er bygget som én sammenhengende reise. Uke 1 etablerer begrepene og den historiske rammen. Uke 2 viser hvordan klassisk maskinlæring lærer fra data og må evalueres i kontekst. Uke 3 går videre til dyplæring for bilder, signaler og mer komplekse mønstre.
+
+Uke 4 åpner for generativ AI, språkmodeller, multimodalitet og API-bruk. Uke 5 bygger dette ut til agentiske arbeidsflyter med verktøybruk, RAG, logging og menneskelig kontroll. Uke 6 spør hva som kreves før slike modeller kan nærme seg klinisk praksis: validering, kalibrering, terskler, subgrupper, monitorering og arbeidsflyt.
+
+Uke 7 flytter vurderingene ut i hjem, omsorg og velferdsteknologi, der sensorer, varsling og beslutningsstøtte må fungere i reelle tjenester. Uke 8 samler hele kursreisen i ansvarlig implementering: personvern, bias/fairness, regulering, etikk, dokumentasjon og trustworthy AI.
+
 
 ## 🎯 Læringsutbytte
 

@@ -88,6 +88,9 @@ def main():
         ("notebook", None),
         ("ipywidgets", None),
         ("python-dotenv", "dotenv"),
+    ]
+
+    api_and_llm_packages = [
         ("google-genai", "google.genai"),
         ("transformers", None),
         ("tiktoken", None),
@@ -108,8 +111,12 @@ def main():
         ("kaggle", None),
     ]
 
-    print_section("📦 Sjekker kjernepakker")
+    print_section("📦 Sjekker grunnpakker")
     all_ok = run_checks(core_packages)
+
+    print()
+    print_section("🤖 Sjekker API- og generativ-AI-pakker")
+    api_ok = run_checks(api_and_llm_packages)
 
     print()
     print_section("🧪 Sjekker pakker for utvalgte notebooks")
@@ -124,16 +131,21 @@ def main():
     print("=" * 50)
 
     if all_ok:
-        print("✅ Alt ser bra ut! Du er klar til å starte kurset.")
+        print("✅ Grunnmiljøet ser bra ut! Du er klar til å starte kurset.")
         print("📚 Åpne 'uke01-introduksjon/README.md' for å begynne.")
     else:
-        print("⚠️  Én eller flere kjernepakker mangler.")
+        print("⚠️  Én eller flere grunnpakker mangler.")
         print("Anbefalt: conda env create -f environment.yml")
         print("Alternativt: pip install -r requirements.txt")
 
+    if not api_ok:
+        print("ℹ️  Noen API-/LLM-pakker mangler.")
+        print("De trengs særlig for uke 04-05 og live modellkall, men ikke for alle notebooks.")
+
     if not optional_ok:
-        print("ℹ️  Noen valgfrie pakker mangler.")
-        print("Det er vanlig hvis du ikke trenger alle fordypningsnotebooks.")
+        print("ℹ️  Noen notebook-spesifikke fordypningspakker mangler.")
+        print("Det er normalt hvis du ikke skal kjøre alle data-, bilde- eller agentnotebooks.")
+        print("Installer hele standardmiljøet med 'pip install -r requirements.txt' eller 'conda env create -f environment.yml' hvis du vil dekke alt.")
 
     print("=" * 50)
 

@@ -63,7 +63,7 @@ This checklist confirms that the notebooks have a consistent Colab entry path. I
 - [x] `uke04-generativ-ai/03_prompt_engineering.ipynb` - live model calls require `GEMINI_API_KEY`/`GOOGLE_API_KEY`; OpenAI/Anthropic optional.
 - [x] `uke04-generativ-ai/04_chatgpt_claude_api.ipynb` - live model calls require one or more provider API keys.
 - [x] `uke04-generativ-ai/10_bilde_tekst_clip_zero_shot_blomster.ipynb` - downloads model weights; GPU optional.
-- [x] `uke04-generativ-ai/oppgaver/prompt_workshop.ipynb` - live mode requires `OPENAI_API_KEY`; can be read without.
+- [x] `uke04-generativ-ai/oppgaver/prompt_workshop.ipynb` - live mode uses `OPENAI_API_KEY`, `GEMINI_API_KEY` or `GOOGLE_API_KEY`; falls back to demo mode and can be read without keys.
 - [x] `uke05-agentisk-ai/03_crewai_fordypning_rehabilitering.ipynb` - requires `GOOGLE_API_KEY` or `GEMINI_API_KEY`; installs `crewai` if missing.
 
 ## Utility
@@ -77,6 +77,7 @@ This checklist confirms that the notebooks have a consistent Colab entry path. I
 - [x] Standardize package installation pattern: only notebook-specific packages are installed in Colab.
 - [x] Mark API/data/GPU requirements at the top of every notebook.
 - [x] Clear outputs that contained local machine paths.
+- [x] Validate tracked notebooks as `nbformat` JSON and normalize cell/output metadata, 2026-05-12.
 - [ ] Run every notebook end-to-end in a fresh Colab runtime.
 - [ ] For heavy data notebooks, decide whether to add small downloadable teaching fixtures to reduce manual setup.
 - [ ] Keep this checklist in sync when adding or substantially refactoring notebooks.
