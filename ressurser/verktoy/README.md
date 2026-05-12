@@ -65,3 +65,37 @@ Uke04 handler mest om prompts og API-kall. Uke05 bygger videre med agentiske mø
 - **Logging og evaluering:** prompt, svar, modellnavn og vurdering lagres slik at systemet kan etterprøves.
 
 I helse bør slike mønstre alltid kombineres med personvern, tilgangsstyring, validering og menneskelig kontroll.
+
+## Minimumslogg for agentiske demoer
+
+For undervisningsdemoer er en enkel logg ofte nok. For mer praksisnære systemer må logging vurderes sammen med personvern og tilgangsstyring.
+
+En pedagogisk minimumslogg kan inneholde:
+
+```json
+{
+  "oppgave": "kort beskrivelse",
+  "modell": "modellnavn",
+  "verktøy": ["kunnskapsoppslag"],
+  "kontekst_kilde": ["syntetisk prosedyre eller lokal demo-kilde"],
+  "menneskelig_kontroll": "påkrevd før klinisk bruk",
+  "evaluering": {
+    "format_ok": true,
+    "mangler_kjent": ["ikke validert klinisk"],
+    "risikonivå": "lav/moderat/høy"
+  }
+}
+```
+
+Ikke logg identifiserbare pasientopplysninger i åpne demoer.
+
+## Agentisk AI: enkel sikkerhetssjekk
+
+Før et agentisk system brukes utenfor undervisning, bør minst disse spørsmålene være besvart:
+
+1. Hva får systemet lov til å gjøre selv?
+2. Hvilke verktøy kan det bruke?
+3. Hvilke data får det lese?
+4. Hvordan stoppes feil verktøyvalg eller feil kontekst?
+5. Hva logges, og hvem kan se loggen?
+6. Hvem godkjenner forslag før de påvirker pasient, dokumentasjon eller prioritering?

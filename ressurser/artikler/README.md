@@ -21,6 +21,21 @@ Denne siden samler korte, kuraterte innganger til stoff som er relevant for kurs
 - **CLIP: Learning Transferable Visual Models From Natural Language Supervision** (Radford mfl., 2021) - grunnartikkelen for CLIP.
 - **Hugging Face multimodal course material** - praktiske eksempler på bilde-tekst-modeller og zero-shot klassifikasjon.
 
+## Uke 5: Agentisk AI
+
+### RAG, tool calling og agenter
+
+- **Retrieval-augmented generation (RAG)** - se etter kilder som forklarer dokumentoppslag, chunking, kildegrunnlag og evaluering av svar med referanser.
+- **Tool calling / function calling** - les leverandørdokumentasjon fra OpenAI, Google og Anthropic som tekniske mønstre, ikke som helsefaglige anbefalinger.
+- **Agentic workflows** - prioriter nøkterne kilder som skiller mellom chatbot, fast workflow, agent og multi-agent-systemer.
+- **CrewAI-dokumentasjon** - nyttig for å forstå `Agent`, `Task`, `Tool`, `Crew` og `Process`, men undervisningseksempler må fortsatt vurderes mot helsekrav.
+
+### Evaluering og styring
+
+- **Human-in-the-loop** - relevant for alle systemer som kan påvirke prioritering, dokumentasjon eller klinisk oppfølging.
+- **Audit logs og traceability** - viktig for å forstå hvilke verktøy, kilder og mellomsteg et system brukte.
+- **Red-teaming av agentiske systemer** - særlig nyttig fordi feil kan oppstå i planlegging, verktøyvalg, kildebruk og oppsummering.
+
 ## Helsefaglig lesning
 
 - Prioriter artikler og veiledere som diskuterer validering, personvern, ansvar, dokumentasjon og menneskelig kontroll.

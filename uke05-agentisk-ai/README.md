@@ -29,6 +29,8 @@ Hvis du kommer direkte til uke 5, holder det å:
 
 Notebookene kan leses uten API-nøkler, og eksemplene er laget for å kunne forstås som pedagogiske demonstrasjoner. Hvis du vil kjøre den operative `CrewAI`-demoen i notebook 03, trenger du derimot en individuell Gemini API-nøkkel, som helst legges i Colab Secrets som `GOOGLE_API_KEY`.
 
+Uke 5 bygger direkte på den nye broen fra uke 4: `structured outputs`, API-kall, modell-fallback og RAG blir her satt inn i agentiske arbeidsflyter. Les derfor særlig etter hvordan hvert eksempel håndterer verktøyvalg, kontekst, logging/evaluering, sikkerhetsrekkverk og menneskelig godkjenning.
+
 ## Hva denne uken dekker
 
 Denne uken handler om hvordan moderne språkmodeller kan gå fra å være rene samtalepartnere til å bli komponenter i systemer som planlegger, bruker verktøy og utfører flere deloppgaver innenfor gitte rammer.
@@ -41,6 +43,7 @@ Uken dekker særlig:
 - hvordan verktøybruk kan gjøre en modell mer nyttig
 - hva RAG er, og hvorfor oppslag i dokumenter eller kunnskapsbaser kan være viktig
 - hva vi mener med enkel hukommelse og tilstand i en arbeidsflyt
+- hvorfor logging, prompt-/stegsporing og enkel evaluering må bygges inn tidlig
 - hvilke typer helseoppgaver som kan egne seg for agentisk AI
 - hvilke feil, risikoer og ansvarsutfordringer som følger med
 
@@ -68,6 +71,24 @@ Samtidig må slike systemer alltid vurderes kritisk. I helsetjenesten er det ikk
 6. Bruk `03_crewai_fordypning_rehabilitering.ipynb` som frivillig teknisk fordypning dersom du vil se en mer sammensatt arbeidsflyt.
 7. Avslutt helst med `04_agentisk_ai_perspektiver.ipynb` for å løfte blikket mot implementering, ansvar og framtidige anvendelser.
 8. Diskuter hvilke anvendelser som kan være lav risiko, og hvilke som krever strenge rammer eller ikke bør brukes.
+
+## API og kjøring
+
+- Notebook 01, 02 og 04 er laget for å kunne kjøres uten API-nøkler.
+- Notebook 03 kan leses uten API-nøkkel, men den operative `CrewAI`-demoen krever `GOOGLE_API_KEY` eller `GEMINI_API_KEY`.
+- I Colab legges nøkkelen i Secrets. Lokalt kan den ligge i `.env` eller vanlige miljøvariabler.
+- Hvis nøkkel eller `crewai` mangler, skal notebook 03 forklare hva som hoppes over i stedet for å stoppe hele læringsløpet.
+
+## Minimumskrav til trygg agentisk arbeidsflyt
+
+For alle agentiske helseeksempler bør du spørre:
+
+1. Hvilken oppgave fikk systemet?
+2. Hvilket verktøy eller hvilken kunnskapskilde brukte det?
+3. Hvilken kontekst ble hentet inn?
+4. Hva ble logget?
+5. Hvilken enkel evaluering eller etterkontroll ble gjort?
+6. Hvor kreves menneskelig kontroll før noe brukes i praksis?
 
 ## Sentrale spørsmål denne uken
 

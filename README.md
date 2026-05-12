@@ -113,8 +113,8 @@ Uke 4 gir en innføring i generativ AI, foundation models og multimodalitet. Uke
 |---------|-------------|-------|
 | `01_chatbot_workflow_agent.ipynb` | Chatbot, workflow og agent: begreper og enkle eksempler | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke05-agentisk-ai/01_chatbot_workflow_agent.ipynb) |
 | `02_agentisk_ai_i_helse.ipynb` | Agentisk AI i helse: verktøybruk, RAG, minne, case og sikkerhet | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke05-agentisk-ai/02_agentisk_ai_i_helse.ipynb) |
-| `03_crewai_fordypning_rehabilitering.ipynb` | Frivillig fordypning: CrewAI i rehabilitering med syntetisk case og tverrfaglige roller | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke05-agentisk-ai/03_crewai_fordypning_rehabilitering.ipynb) |
-| `04_agentisk_ai_perspektiver.ipynb` | Perspektiver: agentisk AI i framtidig praksis, forskning, tjenesteutvikling og sensitive data | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke05-agentisk-ai/04_agentisk_ai_perspektiver.ipynb) |
+| `03_crewai_fordypning_rehabilitering.ipynb` | Frivillig fordypning: CrewAI i rehabilitering med syntetisk case og tverrfaglige roller (Gemini-nøkkel for operativ demo) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke05-agentisk-ai/03_crewai_fordypning_rehabilitering.ipynb) |
+| `04_agentisk_ai_perspektiver.ipynb` | Perspektiver: agentisk AI, logging, styring, lokale modeller og menneskelig kontroll | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke05-agentisk-ai/04_agentisk_ai_perspektiver.ipynb) |
 
 ### Uke 6: Klinisk praksis
 | Notebok | Beskrivelse | Colab |
