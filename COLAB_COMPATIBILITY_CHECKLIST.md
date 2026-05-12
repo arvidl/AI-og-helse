@@ -78,6 +78,20 @@ This checklist confirms that the notebooks have a consistent Colab entry path. I
 - [x] Mark API/data/GPU requirements at the top of every notebook.
 - [x] Clear outputs that contained local machine paths.
 - [x] Validate tracked notebooks as `nbformat` JSON and normalize cell/output metadata, 2026-05-12.
+- [x] Strip large embedded outputs from the largest week 03 notebooks to reduce repository size, 2026-05-12.
 - [ ] Run every notebook end-to-end in a fresh Colab runtime.
 - [ ] For heavy data notebooks, decide whether to add small downloadable teaching fixtures to reduce manual setup.
 - [ ] Keep this checklist in sync when adding or substantially refactoring notebooks.
+
+## Notebook Output Hygiene
+
+For normal maintenance, keep notebooks executable but avoid committing large
+embedded outputs. When a notebook has become too large because of plots or other
+rich outputs, clear outputs before committing:
+
+```bash
+jupyter nbconvert --ClearOutputPreprocessor.enabled=True --inplace path/to/notebook.ipynb
+```
+
+After clearing outputs, validate the notebook and do a light Colab/opening check
+for notebooks that are part of the public course path.
