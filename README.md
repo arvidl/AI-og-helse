@@ -1,4 +1,4 @@
-# 🏥 AI og Helse 🏥 
+# AI og Helse 🏥 
 
 **Åpen variant** av et avansert kurs i kunstig intelligens for medisinere og personell i helse- og omsorgssektoren.
 
