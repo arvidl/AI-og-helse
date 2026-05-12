@@ -66,6 +66,18 @@ Uke04 handler mest om prompts og API-kall. Uke05 bygger videre med agentiske mø
 
 I helse bør slike mønstre alltid kombineres med personvern, tilgangsstyring, validering og menneskelig kontroll.
 
+## Fra uke05 til uke06
+
+Uke05 viser at et system kan hente kontekst, bruke verktøy og foreslå neste steg. Uke06 spør hva som må være dokumentert før dette kan ligne klinisk praksis:
+
+1. **Validering:** er systemet testet på relevante data, brukere og settinger?
+2. **Kalibrering:** betyr risikoanslaget det det ser ut til å bety?
+3. **Terskler:** når skal systemet anbefale handling, avventing eller eskalering?
+4. **Subgrupper:** fungerer systemet rimelig likt for viktige pasientgrupper og tjenestekontekster?
+5. **Arbeidsflyt:** kommer anbefalingen på et tidspunkt der en person faktisk kan handle?
+6. **Monitorering:** oppdages datadrift, feil, avvik og endret ytelse etter innføring?
+7. **Menneskelig kontroll:** hvem kan godkjenne, overstyre, stoppe eller rapportere systemet?
+
 ## Minimumslogg for agentiske demoer
 
 For undervisningsdemoer er en enkel logg ofte nok. For mer praksisnære systemer må logging vurderes sammen med personvern og tilgangsstyring.
@@ -99,3 +111,16 @@ Før et agentisk system brukes utenfor undervisning, bør minst disse spørsmål
 4. Hvordan stoppes feil verktøyvalg eller feil kontekst?
 5. Hva logges, og hvem kan se loggen?
 6. Hvem godkjenner forslag før de påvirker pasient, dokumentasjon eller prioritering?
+
+## Klinisk modenhetssjekk
+
+Før en AI-løsning omtales som klinisk beslutningsstøtte, bør prosjektet minst kunne svare kort på:
+
+1. Hvilken beslutning, prioritering eller dokumentasjonsoppgave støttes?
+2. Hvilken menneskelig rolle har siste ord?
+3. Hvilke data er brukt til utvikling, intern validering og ekstern validering?
+4. Hvilke måltall følges: diskriminering, kalibrering, sensitivitet, spesifisitet, nytte og subgruppeytelse?
+5. Hvilke terskler brukes, og hvilken handling utløser hver terskel?
+6. Hvordan håndteres usikkerhet, manglende data og teknisk nedetid?
+7. Hvordan logges bruk, feil og avvik uten å eksponere pasientopplysninger unødvendig?
+8. Når skal systemet re-valideres, pauses eller trekkes tilbake?

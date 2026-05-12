@@ -26,6 +26,10 @@ Uken følger en klinisk progresjon: først hvordan en modell lager risikoanslag,
 
 Alle eksemplene bruker syntetiske data og kan kjøres uten API-nøkkel, både lokalt og i Google Colab.
 
+## Bro fra uke 4 og 5
+
+Uke 4 og 5 viste hva moderne modeller, API-er, RAG-løsninger og agentiske systemer kan gjøre i avgrensede demoer. Uke 6 viser hva som må vurderes før slike systemer kan nærme seg klinisk praksis. Hovedspørsmålet er ikke bare om systemet kan gi et svar, men om svaret er validert, kalibrert, forståelig, riktig tersklet, robust i subgrupper, mulig å monitorere og trygt plassert i en menneskelig arbeidsflyt.
+
 - syntetiske kliniske data for en enkel prediksjonsoppgave
 - logistisk regresjon som baseline-modell
 - kalibreringskurve og ROC-kurve
@@ -34,6 +38,7 @@ Alle eksemplene bruker syntetiske data og kan kjøres uten API-nøkkel, både lo
 - intern versus ekstern validering og distribusjonsskifte
 - subgruppeanalyse og generaliserbarhet
 - koblingen mellom modell, kliniker og klinisk arbeidsflyt
+- logging, monitorering, avvikshåndtering og menneskelig kontroll som krav før drift
 
 ## Arbeidsmåte
 
@@ -45,6 +50,14 @@ Alle eksemplene bruker syntetiske data og kan kjøres uten API-nøkkel, både lo
 ## Refleksjon
 
 Vurder hvordan en modell kan være både nyttig og problematisk i klinisk praksis. Spør ikke bare om modellen virker, men også hvem den virker for, når den bør brukes, og hvilke krav som må oppfylles for at den skal brukes forsvarlig.
+
+En nyttig huskeregel er at en AI-demo fra uke 4 eller 5 først blir klinisk relevant når den har et tydelig svar på minst disse punktene:
+
+1. Hvilket klinisk beslutningspunkt støtter systemet?
+2. Hvilke data, pasientgrupper og settinger er systemet validert på?
+3. Hvordan er terskler, eskalering og anbefalt handling begrunnet?
+4. Hvem har ansvar for menneskelig kontroll, overstyring og avvik?
+5. Hvordan logges, monitoreres og re-evalueres systemet etter innføring?
 
 ## Videre
 

@@ -98,6 +98,8 @@ AI-og-helse/
 
 Uke 4 gir en innføring i generativ AI, foundation models og multimodalitet. Uke 5 bygger videre på dette og viser hvordan slike modeller kan inngå i agentiske systemer med verktøybruk, arbeidsflyt og helsefaglige anvendelser.
 
+Uke 6 tar stafettpinnen videre fra demo til klinisk praksis: selv gode LLM-, RAG- og agenteksempler må vurderes gjennom validering, kalibrering, terskelvalg, subgruppeanalyse, monitorering og menneskelig arbeidsflyt før de kan nærme seg pasientnær bruk.
+
 ### Uke 4: Generativ AI, foundation models og multimodalitet
 | Notebok | Beskrivelse | Colab |
 |---------|-------------|-------|
@@ -119,10 +121,10 @@ Uke 4 gir en innføring i generativ AI, foundation models og multimodalitet. Uke
 ### Uke 6: Klinisk praksis
 | Notebok | Beskrivelse | Colab |
 |---------|-------------|-------|
-| `01_risikomodell_logistisk_regresjon_kalibrering_shap.ipynb` | Syntetisk risikomodell: logistisk regresjon, kalibrering, SHAP | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke06-klinisk-praksis/01_risikomodell_logistisk_regresjon_kalibrering_shap.ipynb) |
-| `02_klinisk_beslutningsstøtte_terskler_og_avveininger.ipynb` | Hvordan risikoskår blir til klinisk beslutningsstøtte | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke06-klinisk-praksis/02_klinisk_beslutningsstøtte_terskler_og_avveininger.ipynb) |
-| `03_validering_generalisering_og_subgrupper.ipynb` | Generalisering, distribusjonsskifte og subgruppeanalyse | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke06-klinisk-praksis/03_validering_generalisering_og_subgrupper.ipynb) |
-| `04_fra_modell_til_klinisk_arbeidsflyt.ipynb` | Hva som kreves før en modell kan brukes i klinisk arbeidsflyt | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke06-klinisk-praksis/04_fra_modell_til_klinisk_arbeidsflyt.ipynb) |
+| `01_risikomodell_logistisk_regresjon_kalibrering_shap.ipynb` | Syntetisk risikomodell: diskriminering, kalibrering, SHAP og klinisk tolkning | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke06-klinisk-praksis/01_risikomodell_logistisk_regresjon_kalibrering_shap.ipynb) |
+| `02_klinisk_beslutningsstøtte_terskler_og_avveininger.ipynb` | Fra risikoanslag til terskler, handlinger og kliniske avveininger | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke06-klinisk-praksis/02_klinisk_beslutningsstøtte_terskler_og_avveininger.ipynb) |
+| `03_validering_generalisering_og_subgrupper.ipynb` | Ekstern validering, distribusjonsskifte, subgrupper og generaliserbarhet | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke06-klinisk-praksis/03_validering_generalisering_og_subgrupper.ipynb) |
+| `04_fra_modell_til_klinisk_arbeidsflyt.ipynb` | Overgangen fra AI-demo til klinisk arbeidsflyt, monitorering og menneskelig kontroll | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke06-klinisk-praksis/04_fra_modell_til_klinisk_arbeidsflyt.ipynb) |
 
 ### Uke 7: Velferdsteknologi
 | Notebok | Beskrivelse | Colab |

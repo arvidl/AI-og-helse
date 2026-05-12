@@ -36,6 +36,21 @@ Denne siden samler korte, kuraterte innganger til stoff som er relevant for kurs
 - **Audit logs og traceability** - viktig for å forstå hvilke verktøy, kilder og mellomsteg et system brukte.
 - **Red-teaming av agentiske systemer** - særlig nyttig fordi feil kan oppstå i planlegging, verktøyvalg, kildebruk og oppsummering.
 
+## Uke 6: Klinisk praksis og validering
+
+### Prediksjonsmodeller og beslutningsstøtte
+
+- **TRIPOD / TRIPOD-AI** - rapporteringsstandarder for utvikling og validering av prediksjonsmodeller.
+- **PROBAST / PROBAST-AI** - rammeverk for å vurdere risiko for bias og anvendbarhet i prediksjonsmodellstudier.
+- **Calibration in clinical prediction models** - se etter kilder som skiller tydelig mellom diskriminering, kalibrering og klinisk nytte.
+- **Decision curve analysis** - nyttig inngang til å forstå terskler, net benefit og avveininger i klinisk beslutningsstøtte.
+
+### Fra modell til drift
+
+- **External validation and transportability** - relevant for å vurdere om en modell fungerer i andre pasientgrupper, sykehus, kommuner eller arbeidsflyter.
+- **Subgroup performance and fairness** - les sammen med uke 8 om bias, rettferdighet og ansvarlig implementering.
+- **Post-deployment monitoring** - se etter litteratur om datadrift, modellforringelse, kalibrering over tid og avvikshåndtering.
+
 ## Helsefaglig lesning
 
 - Prioriter artikler og veiledere som diskuterer validering, personvern, ansvar, dokumentasjon og menneskelig kontroll.
