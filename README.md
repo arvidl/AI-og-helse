@@ -106,6 +106,7 @@ Uke 4 gir en innføring i generativ AI, foundation models og multimodalitet. Uke
 | `03_prompt_engineering.ipynb` | Prompt engineering | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke04-generativ-ai/03_prompt_engineering.ipynb) |
 | `04_chatgpt_claude_api.ipynb` | ChatGPT og Claude API | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke04-generativ-ai/04_chatgpt_claude_api.ipynb) |
 | `10_bilde_tekst_clip_zero_shot_blomster.ipynb` | CLIP zero-shot på blomster (bilde + tekst) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke04-generativ-ai/10_bilde_tekst_clip_zero_shot_blomster.ipynb) |
+| `oppgaver/prompt_workshop.ipynb` | Workshop: anvendt prompt-øving for helseoppgaver | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke04-generativ-ai/oppgaver/prompt_workshop.ipynb) |
 
 ### Uke 5: Agentisk AI
 | Notebok | Beskrivelse | Colab |
@@ -315,9 +316,10 @@ Her er en enkel måte å gjøre det på:
 Hver deltaker må selv registrere seg:
 
 * **OpenAI:** [platform.openai.com](https://platform.openai.com/)
+* **Google Gemini:** [aistudio.google.com](https://aistudio.google.com/app/apikey)
 * **Anthropic:** [console.anthropic.com](https://console.anthropic.com/)
 
-Begge krever at man legger inn kort/betalingsinfo (med gratis startkreditter for nye brukere).
+OpenAI og Anthropic krever normalt at man legger inn kort/betalingsinfo. Gemini kan ofte brukes med gratis kvote, men kvoter og modelltilgang kan endres over tid.
 
 ---
 
@@ -332,6 +334,9 @@ Du kan velge én av to enkle metoder:
 
    ```
    OPENAI_API_KEY=sk-xxxx
+   GEMINI_API_KEY=xxxx
+   # Alternativt navn som også støttes i uke04:
+   GOOGLE_API_KEY=xxxx
    ANTHROPIC_API_KEY=sk-ant-xxxx
    ```
 3. Installer `python-dotenv` (én gang):
@@ -347,6 +352,7 @@ Du kan velge én av to enkle metoder:
 
    import os
    openai_key = os.getenv("OPENAI_API_KEY")
+   gemini_key = os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY")
    anthropic_key = os.getenv("ANTHROPIC_API_KEY")
    ```
 
@@ -356,6 +362,7 @@ Du kan velge én av to enkle metoder:
 
   ```bash
   export OPENAI_API_KEY="sk-xxxx"
+  export GEMINI_API_KEY="xxxx"
   export ANTHROPIC_API_KEY="sk-ant-xxxx"
   ```
 * Notebooken bruker `os.getenv()` som i eksempelet over.
@@ -395,6 +402,20 @@ response = client.messages.create(
 print(response.content[0].text)
 ```
 
+**Google Gemini:**
+
+```python
+from google import genai
+import os
+
+client = genai.Client(api_key=os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY"))
+response = client.models.generate_content(
+    model="gemini-2.5-flash",
+    contents="Hei fra Gemini!"
+)
+print(response.text)
+```
+
 #### NB
 * Husk, ikke dele noen egne nøkler i kursmaterialet – hver deltaker har ansvar for sine.
 * Der det kan være aktuelt, har vi lagt inn et sjekksteg i notebooken som gir en feilmelding hvis nøkkel mangler:
@@ -417,7 +438,7 @@ For nærmere beskrivelse, se notebooken [`intro_openai_anthropic.ipynb`](./intro
 
 #### Oppsummering
 
-* Deltakere skaffer **egne nøkler** fra OpenAI og Anthropic.
+* Deltakere skaffer **egne nøkler** fra OpenAI, Google Gemini og/eller Anthropic.
 * Nøklene lagres lokalt i `.env` eller som miljøvariabler dersom du kjører lokalt.
 * Dersom du kjører i Google Colab, må du konsultere [`intro_openai_anthropic.ipynb`](./intro_openai_anthropic.ipynb).
 * Aktuelle Notebooks er ferdig satt opp til å hente nøkler og bruke dem.

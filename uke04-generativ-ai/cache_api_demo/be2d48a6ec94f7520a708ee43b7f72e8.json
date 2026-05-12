@@ -1,8 +1,0 @@
-{
-  "prompt": "Hva er normalt blodtrykk for en 50-åring?",
-  "model": "gemini",
-  "temperature": 0,
-  "response": "For en 50-åring er det samme definisjon av normalt blodtrykk som for voksne generelt.\n\n**Normalt blodtrykk:**\n*   **M",
-  "timestamp": "2026-05-12T08:39:17.175989",
-  "cache_key": "be2d48a6ec94f7520a708ee43b7f72e8"
-}
