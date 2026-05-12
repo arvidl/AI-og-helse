@@ -8,8 +8,8 @@
 > Start på [kursnettsiden](https://arvidl.github.io/AI-og-helse) for en inngang til ukeoversikt, ressurser og videre lenker til notebooks.
 
 > [!NOTE]
-> Forelesningsversjonen foreligger også som [Google Slides](https://docs.google.com/presentation/d/e/2PACX-1vSzWu6-_2T9G9SopUObXy_tn_t1qxzXMe9PZeFBnOMN-xUtAJNZujn5ZGJ_x11zSq4jKVP_i8z6AfuU/pub?start=false&loop=false&delayms=3000) <br>
-> Relatert presentasjon:  ["KI i helse"](https://docs.google.com/presentation/d/e/2PACX-1vSgNis1ri7ZyaB6PMe4X3vVTY7BYanVDdktyB196LogRuNj01fMuY-zIbs508ieuPhzucy4FFlTnRPT/pub?start=false&loop=false&delayms=3000)  (2 x 45 min) ved HVL's _THO802 Implementering av e-helse_
+> Forelesningsversjonen foreligger også som [Google Slides](https://docs.google.com/presentation/d/e/2PACX-1vSzWu6-_2T9G9SopUObXy_tn_t1qxzXMe9PZeFBnOMN-xUtAJNZujn5ZGJ_x11zSq4jKVP_i8z6AfuU/pub?start=false&loop=false&delayms=3000). <br>
+> Relatert presentasjon:  ["KI i helse"](https://docs.google.com/presentation/d/e/2PACX-1vSgNis1ri7ZyaB6PMe4X3vVTY7BYanVDdktyB196LogRuNj01fMuY-zIbs508ieuPhzucy4FFlTnRPT/pub?start=false&loop=false&delayms=3000)  (2 x 45 min) ved HVL's THO802 Implementering av e-helse.
 
 
 ## 📚 Kursstruktur
