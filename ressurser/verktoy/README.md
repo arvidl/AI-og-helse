@@ -124,3 +124,16 @@ Før en AI-løsning omtales som klinisk beslutningsstøtte, bør prosjektet mins
 6. Hvordan håndteres usikkerhet, manglende data og teknisk nedetid?
 7. Hvordan logges bruk, feil og avvik uten å eksponere pasientopplysninger unødvendig?
 8. Når skal systemet re-valideres, pauses eller trekkes tilbake?
+
+## Velferdsteknologi: tjenestesjekk
+
+For sensorer, varsling, robotikk og beslutningsstøtte i hjem/omsorg bør en teknisk demo ikke forveksles med en tjeneste. Minst disse punktene bør avklares:
+
+1. **Bruker og formål:** hvem skal teknologien hjelpe, og med hvilket konkret problem?
+2. **Autonomi og samtykke:** kan brukeren forstå, påvirke, reservere seg eller overstyre?
+3. **Falske alarmer:** hvor mange unødige varsler tåler bruker, pårørende og tjeneste?
+4. **Manglende alarmer:** hvilke hendelser er mest kritiske å ikke overse?
+5. **Arbeidsflyt:** hvem mottar varsel, hvor raskt, og hva er forventet handling?
+6. **Ansvar:** hvem eier oppfølging, feilretting, opplæring og avvikshåndtering?
+7. **Monitorering:** hvilke signaler viser at systemet fungerer dårligere over tid?
+8. **Personvern:** hvilke data samles inn i hjemmet, hvor lenge lagres de, og hvem har tilgang?

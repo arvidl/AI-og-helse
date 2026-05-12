@@ -51,6 +51,21 @@ Denne siden samler korte, kuraterte innganger til stoff som er relevant for kurs
 - **Subgroup performance and fairness** - les sammen med uke 8 om bias, rettferdighet og ansvarlig implementering.
 - **Post-deployment monitoring** - se etter litteratur om datadrift, modellforringelse, kalibrering over tid og avvikshåndtering.
 
+## Uke 7: Velferdsteknologi
+
+### Sensorer, hjem og omsorg
+
+- **Human factors in health technology** - relevant for å forstå hvorfor brukervennlighet, arbeidsbelastning og tillit påvirker om teknologi faktisk virker.
+- **Alarm fatigue** - lesing om hvordan mange varsler kan svekke oppmerksomhet og føre til at viktige hendelser overses.
+- **Ambient assisted living / welfare technology** - inngang til sensorer, trygghetsteknologi, hjemmeoppfølging og støtte i dagligliv.
+- **Robotics in care settings** - se etter kilder som diskuterer både teknisk navigasjon, fysisk sikkerhet, brukeropplevelse og ansvar.
+
+### Implementering utenfor sykehus
+
+- **Sociotechnical systems in healthcare** - nyttig for å forstå at teknologi, mennesker, rutiner og organisasjon må vurderes samlet.
+- **Participatory design / co-design** - relevant når brukere, pårørende og ansatte bør involveres før velferdsteknologi innføres.
+- **Monitoring and incident reporting** - se etter kilder om hvordan feil, falske alarmer, manglende varsler og teknisk nedetid fanges opp over tid.
+
 ## Helsefaglig lesning
 
 - Prioriter artikler og veiledere som diskuterer validering, personvern, ansvar, dokumentasjon og menneskelig kontroll.

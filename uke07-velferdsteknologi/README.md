@@ -26,6 +26,12 @@ Uken følger en tydelig progresjon fra teknologiens grunnlag til praktisk og ans
 
 Alle eksemplene bruker syntetiske eller simulerte data og kan kjøres uten API-nøkkel, GPU eller eksterne datafiler, både lokalt og i Google Colab.
 
+## Bro fra uke 6
+
+Uke 6 viste at AI ikke kan vurderes bare ut fra modellprestasjon: klinisk forsvarlighet krever validering, terskler, monitorering, arbeidsflyt og menneskelig ansvar. Uke 7 tar dette videre til hjem, omsorg og daglig oppfølging. Her handler risiko ikke bare om feil prediksjon, men også om falske alarmer, manglende varsler, utydelig ansvar, redusert autonomi, opplevd overvåking og belastning for ansatte og brukere.
+
+Notebooks i uke 7 er tekniske og pedagogiske demoer. De viser prinsipper, ikke ferdige velferdsteknologiske tjenester. En faktisk tjeneste må i tillegg ha avklarte roller, samtykke/personvern, drift, monitorering, avvikshåndtering, opplæring og tydelige stopp- og overstyringsmuligheter.
+
 - grunnideen bak graf- og rutenettbasert søk
 - A*-algoritmen med 4-naboer
 - demo med startpunkt, målpunkt og tilfeldige hindringer
@@ -33,6 +39,7 @@ Alle eksemplene bruker syntetiske eller simulerte data og kan kjøres uten API-n
 - bruk av sensorer til å observere aktivitet i et hjemmemiljø
 - enkle eksempler på varsling og beslutningsstøtte
 - samspillet mellom teknisk sikkerhet, brukervennlighet og etikk
+- alarmtretthet, falske alarmer, brukerautonomi, arbeidsflyt og ansvar
 
 ## Arbeidsmåte
 
@@ -44,6 +51,14 @@ Alle eksemplene bruker syntetiske eller simulerte data og kan kjøres uten API-n
 ## Refleksjon
 
 Tenk over hvordan velferdsteknologi ikke bare handler om algoritmer, men også om brukssituasjon, trygghet, verdighet og ansvar. Spør ikke bare hva teknologien kan gjøre, men også hvordan den bør brukes.
+
+En kort tjenestesjekk for uke 7:
+
+1. Hvem er brukeren, og hvem har ansvar for oppfølging?
+2. Hva skjer ved falsk alarm, manglende alarm eller teknisk nedetid?
+3. Hvordan ivaretas autonomi, samtykke, verdighet og personvern i hjemmet?
+4. Hvordan monitoreres systemet over tid, og hvem reagerer på avvik?
+5. Når bør teknologien stoppes, justeres eller tas ut av bruk?
 
 ## Videre
 

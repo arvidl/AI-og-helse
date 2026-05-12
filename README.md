@@ -100,6 +100,8 @@ Uke 4 gir en innføring i generativ AI, foundation models og multimodalitet. Uke
 
 Uke 6 tar stafettpinnen videre fra demo til klinisk praksis: selv gode LLM-, RAG- og agenteksempler må vurderes gjennom validering, kalibrering, terskelvalg, subgruppeanalyse, monitorering og menneskelig arbeidsflyt før de kan nærme seg pasientnær bruk.
 
+Uke 7 flytter disse kravene fra klinisk praksis til hjem, omsorg og velferdsteknologi, der sensorer, varsler, robotikk og beslutningsstøtte må vurderes mot falske alarmer, brukerautonomi, tjenestearbeidsflyt og ansvar.
+
 ### Uke 4: Generativ AI, foundation models og multimodalitet
 | Notebok | Beskrivelse | Colab |
 |---------|-------------|-------|
@@ -129,10 +131,10 @@ Uke 6 tar stafettpinnen videre fra demo til klinisk praksis: selv gode LLM-, RAG
 ### Uke 7: Velferdsteknologi
 | Notebok | Beskrivelse | Colab |
 |---------|-------------|-------|
-| `01_robotnavigasjon_i_rutenett_med_astar.ipynb` | A* rutefinning i 2D-grid (robotnavigasjon) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke07-velferdsteknologi/01_robotnavigasjon_i_rutenett_med_astar.ipynb) |
-| `02_sensorer_aktivitet_og_hendelsesforståelse.ipynb` | Hvordan sensorer kan brukes til å tolke aktivitet og avvik | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke07-velferdsteknologi/02_sensorer_aktivitet_og_hendelsesforståelse.ipynb) |
-| `03_beslutningsstøtte_i_hjem_og_omsorg.ipynb` | Varsling, prioritering og støtte i hjem og omsorg | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke07-velferdsteknologi/03_beslutningsstøtte_i_hjem_og_omsorg.ipynb) |
-| `04_sikkerhet_etikk_og_menneske_maskin_samspill.ipynb` | Sikkerhet, etikk og menneske-maskin-samspill i velferdsteknologi | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke07-velferdsteknologi/04_sikkerhet_etikk_og_menneske_maskin_samspill.ipynb) |
+| `01_robotnavigasjon_i_rutenett_med_astar.ipynb` | A* rutefinning som teknisk demo for trygg robotnavigasjon | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke07-velferdsteknologi/01_robotnavigasjon_i_rutenett_med_astar.ipynb) |
+| `02_sensorer_aktivitet_og_hendelsesforståelse.ipynb` | Syntetiske sensordata: aktivitet, avvik, kontekst og falske alarmer | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke07-velferdsteknologi/02_sensorer_aktivitet_og_hendelsesforståelse.ipynb) |
+| `03_beslutningsstøtte_i_hjem_og_omsorg.ipynb` | Varsling, prioritering, alarmtretthet og ansvar i hjem/omsorg | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke07-velferdsteknologi/03_beslutningsstøtte_i_hjem_og_omsorg.ipynb) |
+| `04_sikkerhet_etikk_og_menneske_maskin_samspill.ipynb` | Trygg tjenesteimplementering, autonomi, personvern og menneskelig kontroll | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke07-velferdsteknologi/04_sikkerhet_etikk_og_menneske_maskin_samspill.ipynb) |
 
 ### Uke 8: Etikk og implementering
 | Notebok | Beskrivelse | Colab |
