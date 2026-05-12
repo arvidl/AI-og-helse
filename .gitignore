@@ -49,7 +49,6 @@ uke03-dyplæring/data/external/
 uke03-dyplæring/data/raw/
 uke03-dyplæring/data/medical/kaggle
 uke03-dyplæring/runs/
-uke03-dyplæring/modeller/
 uke04-generativ-ai/cache/
 uke04-generativ-ai/cache_api_demo/
 
@@ -57,6 +56,8 @@ uke04-generativ-ai/cache_api_demo/
 *.xlsx
 *.h5
 *.pkl
+*.joblib
+*.pt
 *.pth
 *.ckpt
 
@@ -64,6 +65,12 @@ uke04-generativ-ai/cache_api_demo/
 models/
 *.bin
 *.safetensors
+*.onnx
+
+# ML experiment logs and run artifacts
+wandb/
+mlruns/
+lightning_logs/
 
 # Logs
 *.log
