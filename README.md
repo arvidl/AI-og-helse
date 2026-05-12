@@ -5,12 +5,13 @@
 [![Åpne kursnettsiden](https://img.shields.io/badge/Kursnettside-AI%20og%20Helse-7d3c98?style=for-the-badge)](https://arvidl.github.io/AI-og-helse/)
 
 > [!TIP]
-> Start på kursnettsiden for en ryddig inngang til ukeoversikt, ressurser og videre lenker til notebooks:
+> Start på kursnettsiden for en inngang til ukeoversikt, ressurser og videre lenker til notebooks:
 > [Åpne kursnettsiden](https://arvidl.github.io/AI-og-helse/)
 
 > [!NOTE]
-> Forelesningsversjonen ligger også ute som Google Slides:
+> Forelesningsversjonen forligger også som Google Slides:
 > [Åpne presentasjonen](https://docs.google.com/presentation/d/e/2PACX-1vSzWu6-_2T9G9SopUObXy_tn_t1qxzXMe9PZeFBnOMN-xUtAJNZujn5ZGJ_x11zSq4jKVP_i8z6AfuU/pub?start=false&loop=false&delayms=3000)
+> [Relatert presentasjon](https://docs.google.com/presentation/d/e/2PACX-1vSgNis1ri7ZyaB6PMe4X3vVTY7BYanVDdktyB196LogRuNj01fMuY-zIbs508ieuPhzucy4FFlTnRPT/pub?start=false&loop=false&delayms=3000) THO802 Implementering av e-helse (HVL): "KI i helse" 2 x 45 min)
 > eller gå via [kursnettsiden med QR-kode](https://arvidl.github.io/AI-og-helse/).
 
 
@@ -21,11 +22,11 @@
 
 ### Kurskart: fra grunnlag til ansvarlig implementering
 
-Kurset er bygget som én sammenhengende reise. Uke 1 etablerer begrepene og den historiske rammen. Uke 2 viser hvordan klassisk maskinlæring lærer fra data og må evalueres i kontekst. Uke 3 går videre til dyplæring for bilder, signaler og mer komplekse mønstre.
+Kurset følger en tydelig rød tråd fra grunnleggende begreper til mer avanserte metoder. I uke 1 legges det konseptuelle og historiske grunnlaget. Uke 2 tar for seg klassisk maskinlæring, med vekt på hvordan modeller lærer fra data og hvordan de bør vurderes i praksis. I uke 3 utvides perspektivet til dyplæring, særlig for bilder, signaler og komplekse mønstre.
 
-Uke 4 åpner for generativ AI, språkmodeller, multimodalitet og API-bruk. Uke 5 bygger dette ut til agentiske arbeidsflyter med verktøybruk, RAG, logging og menneskelig kontroll. Uke 6 spør hva som kreves før slike modeller kan nærme seg klinisk praksis: validering, kalibrering, terskler, subgrupper, monitorering og arbeidsflyt.
+I uke 4 åpnes feltet mot generativ KI, språkmodeller, multimodale systemer og API-bruk. Uke 5 bygger videre på dette ved å vise hvordan slike modeller kan inngå i agentiske arbeidsflyter med verktøybruk, RAG, logging og menneskelig kontroll. Uke 6 tar opp hva som kreves før modellene kan nærme seg klinisk praksis: validering, kalibrering, terskler, vurdering av subgrupper, monitorering og tilpasning til arbeidsflyt.
 
-Uke 7 flytter vurderingene ut i hjem, omsorg og velferdsteknologi, der sensorer, varsling og beslutningsstøtte må fungere i reelle tjenester. Uke 8 samler hele kursreisen i ansvarlig implementering: personvern, bias/fairness, regulering, etikk, dokumentasjon og trustworthy AI.
+I uke 7 utvides perspektivet til hjem, omsorg og velferdsteknologi, der sensorer, varsling og beslutningsstøtte må vurderes i møte med reelle tjenester. Uke 8 avslutter læringsløpet med ansvarlig implementering og sentrale temaer som personvern, bias/fairness, regulering, etikk, dokumentasjon og trustworthy AI.
 
 
 ## 🎯 Læringsutbytte
