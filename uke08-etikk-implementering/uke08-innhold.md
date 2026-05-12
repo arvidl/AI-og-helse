@@ -2,6 +2,17 @@
 
 Denne filen er en intern støtteoversikt for uke 8 og er oppdatert til å samsvare med innholdet som faktisk finnes i mappen `uke08-etikk-implementering/`.
 
+## Rolle i kursrekken
+
+Uke 8 samler trådene fra uke 04-07:
+
+- fra uke 04: generativ AI, API-er, strukturert output og modellfallback
+- fra uke 05: agentiske arbeidsflyter, verktøybruk, logging og menneskelig kontroll
+- fra uke 06: klinisk validering, terskler, subgrupper, monitorering og arbeidsflyt
+- fra uke 07: sensorer, varsling, velferdsteknologi, autonomi og ansvar i hjem/omsorg
+
+Hovedpoenget er å flytte spørsmålet fra "kan dette teknisk fungere?" til "kan dette brukes lovlig, rettferdig, regulert, etisk og tillitsverdig i praksis?".
+
 ## Hovedtemaer
 
 - **GDPR og personvern**: juridiske krav og praktiske vurderinger

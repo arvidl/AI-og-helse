@@ -137,3 +137,16 @@ For sensorer, varsling, robotikk og beslutningsstøtte i hjem/omsorg bør en tek
 6. **Ansvar:** hvem eier oppfølging, feilretting, opplæring og avvikshåndtering?
 7. **Monitorering:** hvilke signaler viser at systemet fungerer dårligere over tid?
 8. **Personvern:** hvilke data samles inn i hjemmet, hvor lenge lagres de, og hvem har tilgang?
+
+## Ansvarlig implementering: sluttsjekk
+
+Uke08 samler kursets tekniske og kliniske spor. Før et AI-system flyttes fra demo, pilot eller forskningsprosjekt til reell bruk, bør teamet minst kunne dokumentere:
+
+1. **Formål og avgrensning:** hva systemet skal gjøre, og hva det ikke skal brukes til.
+2. **Personvern:** rettslig grunnlag, dataminimering, informasjonsplikt, tilgangsstyring og eventuell DPIA.
+3. **Samtykke og autonomi:** når samtykke er relevant, og hvordan pasient/bruker kan informeres, reservere seg eller be om menneskelig vurdering.
+4. **Bias og rettferdighet:** hvilke grupper som er undersøkt, hvilke forskjeller som finnes, og hvilke tiltak som er valgt.
+5. **Regulering:** om systemet kan være medisinsk utstyr, SaMD eller høyrisiko-AI, og hvilken dokumentasjon som kreves.
+6. **Menneskelig kontroll:** hvem har siste ord, hvem kan overstyre, og hvem følger opp feil.
+7. **Monitorering:** hvilke ytelses-, sikkerhets-, fairness- og driftsmål følges etter innføring.
+8. **Stoppregel:** når skal systemet pauses, endres, re-valideres eller trekkes tilbake.

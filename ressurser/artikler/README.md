@@ -66,6 +66,22 @@ Denne siden samler korte, kuraterte innganger til stoff som er relevant for kurs
 - **Participatory design / co-design** - relevant når brukere, pårørende og ansatte bør involveres før velferdsteknologi innføres.
 - **Monitoring and incident reporting** - se etter kilder om hvordan feil, falske alarmer, manglende varsler og teknisk nedetid fanges opp over tid.
 
+## Uke 8: Etikk og implementering
+
+### Personvern, regulering og styring
+
+- **GDPR i helse og forskning** - prioriter veiledere fra Datatilsynet, Helsedirektoratet og relevante forskningsetiske organer.
+- **EU AI Act** - nyttig for å forstå risikobasert regulering, særlig høyrisiko-AI i helse, dokumentasjon og tilsyn.
+- **Medical Device Regulation (MDR) / Software as Medical Device (SaMD)** - relevant når AI inngår i diagnostikk, behandling, monitorering eller beslutningsstøtte.
+- **Data protection impact assessment (DPIA)** - sentralt når AI-systemer behandler helseopplysninger eller kan gi høy personvernrisiko.
+
+### Etikk, fairness og trustworthy AI
+
+- **WHO guidance on ethics and governance of AI for health** - bred inngang til ansvar, autonomi, transparens og styring.
+- **EU High-Level Expert Group: Ethics Guidelines for Trustworthy AI** - rammeverk for menneskelig kontroll, robusthet, personvern, transparens, fairness og ansvarlighet.
+- **Algorithmic fairness in medicine** - se etter kilder som diskuterer avveininger mellom ulike fairness-mål og klinisk nytte.
+- **Post-market monitoring and incident response** - relevant for å forstå hvordan systemer må følges opp etter innføring, ikke bare før.
+
 ## Helsefaglig lesning
 
 - Prioriter artikler og veiledere som diskuterer validering, personvern, ansvar, dokumentasjon og menneskelig kontroll.

@@ -8,6 +8,12 @@ Se også Helsedirektoratets rapport: ["Utvikling og bruk av kunstig intelligens"
 
 Alle eksemplene bruker syntetiske eller innebygde data og kan kjøres uten API-nøkkel, GPU eller eksterne datafiler, både lokalt og i Google Colab.
 
+## Bro fra uke 04-07
+
+Uke 04-07 bygget en kjede fra generativ AI og API-er, via agentiske systemer, til klinisk validering og velferdsteknologi i praksis. Uke 08 samler denne kjeden i spørsmålet: Hva må være på plass for at slike systemer kan brukes ansvarlig?
+
+Det betyr at vi ikke bare vurderer modellscore eller teknisk funksjonalitet. Vi vurderer også personvern, samtykke, dataminimering, bias og rettferdighet, regulering, dokumentasjon, menneskelig kontroll, ansvar, monitorering og mulighet til å stoppe eller endre systemet når det ikke fungerer som det skal.
+
 ## Læringsmål
 
 Etter denne uken skal du kunne:
@@ -84,6 +90,16 @@ Temaer:
 - Les notebookene i rolig tempo og noter egne refleksjoner underveis.
 - Diskuter gjerne case med medstudenter, kolleger eller en AI-sparringspartner.
 - Koble stoffet til konkrete helsefaglige situasjoner: journalsystemer, triage, beslutningsstøtte, bildeanalyse og pasientkommunikasjon.
+
+## Sluttsjekk for ansvarlig implementering
+
+Før du omtaler en AI-løsning som klar for bruk i helse eller omsorg, bør du kunne svare kort på:
+
+1. Hvilke data brukes, og er dataminimering, rettslig grunnlag og informasjonsplikt vurdert?
+2. Hvilke grupper kan rammes av bias, lavere ytelse eller ulik nytte?
+3. Kan systemet regnes som medisinsk utstyr eller høyrisiko-AI?
+4. Hvem har ansvar for bruk, overstyring, feil, avvik og endringer?
+5. Hvordan valideres, monitoreres, re-evalueres og eventuelt stoppes systemet?
 
 ## Få hjelp
 

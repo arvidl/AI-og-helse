@@ -102,6 +102,8 @@ Uke 6 tar stafettpinnen videre fra demo til klinisk praksis: selv gode LLM-, RAG
 
 Uke 7 flytter disse kravene fra klinisk praksis til hjem, omsorg og velferdsteknologi, der sensorer, varsler, robotikk og beslutningsstøtte må vurderes mot falske alarmer, brukerautonomi, tjenestearbeidsflyt og ansvar.
 
+Uke 8 samler hele kjeden i ansvarlig implementering: personvern, dataminimering, bias/fairness, regulering, etiske dilemmaer, ansvar og trustworthy AI.
+
 ### Uke 4: Generativ AI, foundation models og multimodalitet
 | Notebok | Beskrivelse | Colab |
 |---------|-------------|-------|
@@ -139,11 +141,11 @@ Uke 7 flytter disse kravene fra klinisk praksis til hjem, omsorg og velferdstekn
 ### Uke 8: Etikk og implementering
 | Notebok | Beskrivelse | Colab |
 |---------|-------------|-------|
-| `01_gdpr_personvern.ipynb` | GDPR og personvern | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke08-etikk-implementering/01_gdpr_personvern.ipynb) |
-| `02_bias_rettferdighet.ipynb` | Bias og rettferdighet | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke08-etikk-implementering/02_bias_rettferdighet.ipynb) |
-| `03_ce_mdr_regulering.ipynb` | CE/MDR regulering | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke08-etikk-implementering/03_ce_mdr_regulering.ipynb) |
-| `04_ai_etikk_i_medisinen.ipynb` | Kliniske dilemmaer, etiske prinsipper og ansvarlig bruk av AI | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke08-etikk-implementering/04_ai_etikk_i_medisinen.ipynb) |
-| `05_trustworthy_ai_i_helse.ipynb` | Robusthet, usikkerhet, validering og monitorering i medisinsk AI | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke08-etikk-implementering/05_trustworthy_ai_i_helse.ipynb) |
+| `01_gdpr_personvern.ipynb` | GDPR, personvern, rettslig grunnlag, samtykke og dataminimering | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke08-etikk-implementering/01_gdpr_personvern.ipynb) |
+| `02_bias_rettferdighet.ipynb` | Bias, fairness, ulik ytelse og rettferdighet på tvers av grupper | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke08-etikk-implementering/02_bias_rettferdighet.ipynb) |
+| `03_ce_mdr_regulering.ipynb` | CE-merking, MDR, SaMD, AI Act, dokumentasjon og ansvar | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke08-etikk-implementering/03_ce_mdr_regulering.ipynb) |
+| `04_ai_etikk_i_medisinen.ipynb` | Kliniske dilemmaer, etiske prinsipper, ansvar og menneskelig kontroll | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke08-etikk-implementering/04_ai_etikk_i_medisinen.ipynb) |
+| `05_trustworthy_ai_i_helse.ipynb` | Trustworthy AI: robusthet, usikkerhet, validering, monitorering og drift | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arvidl/AI-og-helse/blob/main/uke08-etikk-implementering/05_trustworthy_ai_i_helse.ipynb) |
 
 ### Andre notebooks
 | Notebok | Beskrivelse | Colab |
