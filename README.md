@@ -201,7 +201,7 @@ Uke 8 samler hele kjeden i ansvarlig implementering: personvern, dataminimering,
 
 ## 📄 Lisens
 
-Repoet er lisensiert under [MIT-lisensen](LICENSE). Copyright (c) 2025 Arvid Lundervold.
+Repoet er lisensiert under [MIT-lisensen](LICENSE). Copyright (c) 2026 Arvid Lundervold.
 
 ## 🙏 Bidragsytere
 
