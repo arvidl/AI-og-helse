@@ -17,7 +17,7 @@
 ## 📚 Kursstruktur
 
 - **Del 1 (Uke 1-6):** AI-fundamentet - fra AI 1.0 til AI 2.0
-- **Del 2 (Uke 7-8):** Praktiske anvendelser i medisin, helse og omsorg
+- **Del 2 (Uke 7-8):** Anvendelse og ansvar i medisin, helse og omsorg
 
 ### Kurskart: fra grunnlag til ansvarlig implementering
 
