@@ -136,10 +136,11 @@ ol {
 
 h1 {
   max-width: 14ch;
-  font-size: clamp(2.35rem, 4.2vw, 4rem);
-  line-height: 1.02;
+  font-size: clamp(2.2rem, 3.8vw, 3.6rem);
+  line-height: 1.06;
   margin-bottom: 20px;
-  overflow-wrap: break-word;
+  overflow-wrap: anywhere;
+  word-break: normal;
   hyphens: auto;
 }
 
